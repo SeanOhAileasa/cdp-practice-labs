@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="HighAvailabilityandScalabilityintheCloud_files/print-styles.css" rel="stylesheet">
+    <script src="HighAvailabilityandScalabilityintheCloud_files/jquery.min.js"></script>
+    <script src="HighAvailabilityandScalabilityintheCloud_files/jspdf.js"></script>
+    <script src="HighAvailabilityandScalabilityintheCloud_files/from_html.js"></script>
+    <script src="HighAvailabilityandScalabilityintheCloud_files/addimage.js"></script>
+    <script src="HighAvailabilityandScalabilityintheCloud_files/filesaver.js"></script>
+    <script src="HighAvailabilityandScalabilityintheCloud_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="LO5inHtKjM+l7+Ijl++jAnRZ6nVx2Sr+MTLWPGBhhJ+fJXJtTUTle8J1KS572rXqICpWPM0Dt4hsqElDzLnRTU502fefhk/ELUx/oSEWtNw=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>High Availability and Scalability in the Cloud</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - High Availability and Scalability in a Private Cloud Environment</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m3-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Scalability</div>
+
+<div>High Availability</div>
+
+<div>Hypervisors</div>
+
+<div>Oversubscription</div>
+
+<div>Applications</div>
+
+<div>Containers</div>
+
+<div>Clusters</div>
+
+<div>Networking</div>
+
+<div>Single Point of Failure (SPOF)</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m3-12">Welcome to the <b>High Availability and Scalability in the Cloud </b>Practice Lab. In this module you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m3-20">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m3-21">
+
+<li id="cn-m3-21">Exercise 1 - High Availability and Scalability in a Private Cloud Environment</li>
+
+</ul>
+
+<p id="cn-m3-22">After completing this module, you should be able to:</p>
+
+<ul id="cn-m3-23">
+
+<li id="cn-m3-23">Define and Describe the Importance of High Availability and Scalability in a Cloud Environment</li>
+
+<li id="cn-m3-24">Compare Different Options to Ensure High Availability and Methods of Scaling a Cloud Infrastructure</li>
+
+<li id="cn-m3-25">Investigate and Analyze Scalability Options in a Private Cloud Environment</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m3-27">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m3-28">
+
+<li id="cn-m3-28">1.3 Explain the Importance of High Availability and Scaling in Cloud Environments</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m3-30">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m3-34">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m3-35">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m3-37"><b>Lab Topology</b></h2>
+
+<p id="cn-m3-38">During your session, you will have access to the following lab configuration.</p>
+
+<span class="atom-code hidden">b441a737-e075-40c4-a6a6-d57d4dcbeb25</span>
+
+<p id="cn-m3-41">Depending on the exercises, you may or may not use all 
+of the devices, but they are shown here in the layout to get an overall 
+understanding of the topology of the lab.</p>
+
+<ul id="cn-m3-42">
+
+<li id="cn-m3-42"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+<li id="cn-m3-43"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+<li id="cn-m3-44"><b>PLABWIN10 </b>- Domain Member Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m3-45">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m3-46"><b>Exercise 1 - High Availability and Scalability in a Private Cloud Environment</b></h2>
+
+<p id="cn-m3-47">Scalability and High Availability concepts refer to 
+always ensuring that your infrastructure can satisfy the demand and 
+utilization needed by end users. This is a key focus area when planning 
+an infrastructure, as not performing this thoroughly can result in full 
+denial of service to end users.</p>
+
+<p id="cn-m3-48"><b>High Availability </b>(<b>HA</b>) is a prime motive 
+to migrate to a cloud infrastructure and ensures redundancy, constant 
+monitoring, and failovers are in place to prevent denial of service. 
+Public clouds also implement <b>Availability Zones </b>(<b>AZs</b>) that
+ are isolated, fault-tolerant and highly unlikely to fail simultaneously
+ and can be a great tool when ensuring high availability.</p>
+
+<p id="cn-m3-49">Effectively scaling an infrastructure in a cloud 
+environment comes in different forms and ultimately depends on the 
+specific scenario of what needs to be scaled and will vary depending on 
+the circumstances. These options for scaling include:</p>
+
+<ul id="cn-m3-50">
+
+<li id="cn-m3-50"><b>Auto scaling </b>- This involves adding resources to maintain on-demand availability, typically employed in public cloud environments.</li>
+
+<li id="cn-m3-51"><b>Horizontal Scaling </b>- This involves splitting a workload to multiple host machines to make for parallel processing.</li>
+
+<li id="cn-m3-52"><b>Vertical Scaling </b>- This involves changing 
+resources to handle appropriate performance demands, such as purchasing 
+more hardware to implement in a private environment or incorporating 
+more resources in a public environment.</li>
+
+<li id="cn-m3-53"><b>Cloud Bursting </b>- This involves overflowing 
+traffic directed to a cloud infrastructure when existing infrastructure 
+and resources hit 100% utilization, “bursting” your own infrastructure 
+and “flowing” it to a second cloud infrastructure.</li>
+
+</ul>
+
+<p id="cn-m3-54">It is key to consider different applications, <b>Virtual Machines </b>(<b>VMs</b>),
+ containers (packages of software, code, and configurations in a single 
+location), clusters (a collection of virtual machine nodes connected via
+ a Virtual Private Cloud) and other types of resources when considering 
+which scaling options fit them best. Typically, it is recommended that 
+these are configured to be <b>Auto Scaling</b>, scaling when they need to.</p>
+
+<p id="cn-m3-55">To ensure HA may require spreading applications over 
+different AZs, VMs have been configured to allow failovers, and 
+containers are hosted inside a <b>Swarm</b>.</p>
+
+<span class="atom-code hidden">b558e35d-66c2-44af-b781-e72ecb16e33c</span>
+
+<p id="cn-m3-58">In this exercise, we will investigate scaling options 
+for VMs in a private cloud environment using Hyper-V in Windows Server 
+2019.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m3-60">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m3-61">
+
+<li id="cn-m3-61">Define and Describe the Importance of High Availability and Scalability in a Cloud Environment</li>
+
+<li id="cn-m3-62">Compare Different Options to Ensure High Availability and Methods of Scaling a Cloud Infrastructure</li>
+
+<li id="cn-m3-63">Investigate and Analyze Scalability Options in a Private Cloud Environment</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m3-65">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">ffa9631d-03cc-4b32-bf76-0634d67f7bb7</span>
+
+<ul id="cn-m3-68">
+
+<li id="cn-m3-68"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+</ul>
+
+<h3 id="cn-m3-69"><b>Task 1 - Private Cloud Scalability and High Availability Options</b></h3>
+
+<p id="cn-m3-70">Many Hypervisors allow both manual and dynamic scaling 
+of Virtual Machines (VMs) in a multitude of ways, provided that the host
+ device has the partition capacity to enable these changes.</p>
+
+<p id="cn-m3-71">This is invaluable in a private cloud infrastructure 
+and will likely need to be amended to ensure integrity and high 
+availability.</p>
+
+<p id="cn-m3-72">In this task, we will explore scalability controls in <b>Hyper-V</b>.</p>
+
+<h4 id="cn-m3-73"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m3-74">Connect to <b>PLABDC01</b>.</p>
+
+<p id="cn-m3-75">The <b>Server Manager </b>window will open by default.</p>
+
+<p id="cn-m3-76"></p><figure><img class="cn-img" id="cn-image-m3-c-0" src="HighAvailabilityandScalabilityintheCloud_files/image-m3-c-0.jpg" alt="Figure 1.1 Screenshot of PLABDC01: The Server Manager dashboard is displayed,"><figcaption>Figure 1.1 Screenshot of PLABDC01: The Server Manager dashboard is displayed,</figcaption></figure><p></p>
+
+<h4 id="cn-m3-78"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m3-79">At the top of the page, navigate to and select <b>Tools </b>&gt; <b>Hyper-V Manager</b>.</p>
+
+<p id="cn-m3-80"></p><figure><img class="cn-img" id="cn-image-m3-c-1" src="HighAvailabilityandScalabilityintheCloud_files/image-m3-c-1.jpg" alt="Figure 1.2 Screenshot of PLABDC01: The Server Manager dashboard is displayed, and the Tools menu is open with the Hyper-V Manager option highlighted."><figcaption>Figure
+ 1.2 Screenshot of PLABDC01: The Server Manager dashboard is displayed, 
+and the Tools menu is open with the Hyper-V Manager option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-82"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m3-83">This will open the Hyper-V Manager window.</p>
+
+<p id="cn-m3-84">Notice a pre-configured device already exists as part 
+of this infrastructure, named PLABWIN101, which will appear under the 
+Virtual Machines section.</p>
+
+<p id="cn-m3-85">Under <b>Virtual Machines</b>, right-click <b>PLABWIN101</b>, and click <b>Settings</b>….</p>
+
+<span class="cn-quote" id="cn-m3-86"><b><i>Note</i></b><i>: In a real-world scenario, it is likely that multiple VMs may be configured on a single device using </i><b><i>Affinity </i></b><i>model.</i></span>
+
+<p id="cn-m3-87"></p><figure><img class="cn-img" id="cn-image-m3-c-2" src="HighAvailabilityandScalabilityintheCloud_files/image-m3-c-2.jpg" alt="Figure 1.3 Screenshot of PLABDC01: The Hyper-V Manager window is displayed, and the PLABWIN101 device has been right-clicked, and the Settings…. option is highlighted."><figcaption>Figure
+ 1.3 Screenshot of PLABDC01: The Hyper-V Manager window is displayed, 
+and the PLABWIN101 device has been right-clicked, and the Settings…. 
+option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-89"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m3-90">This will open the configuration settings for the <b>PLABWIN101 </b>device.</p>
+
+<p id="cn-m3-91">Under the <b>Hardware </b>section in the left-hand pane, click <b>Memory</b>.</p>
+
+<span class="cn-quote" id="cn-m3-92"><b><i>Note</i></b><i>: You will notice that, by default, this device has been configured with </i><b><i>512MB RAM</i></b><i>, which we can increase to improve the performance of this device. </i></span>
+
+<p id="cn-m3-93">You can increase this directly by specifying a new amount of memory in the <b>RAM </b>textbox at the top of the page,</p>
+
+<p id="cn-m3-94">For this demonstration, leave it as 512 MB and tick the <b>Enable Dynamic Memory </b>checkbox.</p>
+
+<p id="cn-m3-95"></p><figure><img class="cn-img" id="cn-image-m3-c-3" src="HighAvailabilityandScalabilityintheCloud_files/image-m3-c-3.jpg" alt="Figure 1.4 Screenshot of PLABDC01: The Hyper-V Manager &amp;gt; Memory window is displayed."><figcaption>Figure 1.4 Screenshot of PLABDC01: The Hyper-V Manager &gt; Memory window is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-97"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m3-98">Ticking the Enable Dynamic Memory checkbox will enable the <b>Dynamic Memory </b>option, meaning that this device will dynamically scale depending on the system resource utilization by the host machine.</p>
+
+<span class="cn-quote" id="cn-m3-99"><b><i>Note</i></b><i>: In a real-world scenario, this is a good </i><b><i>Auto-scaling </i></b><i>option to use in </i><b><i>Anti-Affinity </i></b><i>models,
+ as the risk of hitting max host capacity is less, being that there is 
+only one device. Using this option, you can either leave the </i><b><i>Maximum RAM </i></b><i>to the default entry of </i><b><i>104857MB </i></b><i>(which is </i><b><i>1048GB</i></b><i>)
+ - effectively meaning it will scale upwards until it hits the max 
+capacity of the host device, or instead manually specify a maximum upper
+ limit. This option can be helpful if you have multiple devices working 
+together on a single machine in an </i><b><i>Affinity </i></b><i>configuration,
+ although this should be carefully planned to avoid the host becoming a 
+SPOF. The maximum amount supported by Hyper-V is </i><b><i>1,048,576MB</i></b><i>, or </i><b><i>1TB</i></b><i>.</i></span>
+
+<p id="cn-m3-100">In the <b>Maximum RAM </b>textbox, type over the existing value with:</p>
+
+<pre id="cn-m3-101"><code>2048
+
+</code></pre>
+
+<p id="cn-m3-102">Notice you can also specify the weight of priority for this device to have access to memory using the Memory weight setting.</p>
+
+<p id="cn-m3-103">From <b>Memory weight </b>section, click and drag the scale to <b>High</b>.</p>
+
+<p id="cn-m3-104">Click <b>Apply </b>at the foot of the window.</p>
+
+<p id="cn-m3-105"></p><figure><img class="cn-img" id="cn-image-m3-c-4" src="HighAvailabilityandScalabilityintheCloud_files/image-m3-c-4.jpg" alt="Figure 1.5 Screenshot of PLABDC01: The Hyper-V Manager &amp;gt; Memory window is displayed with the Enable Dynamic Memory checkbox ticked, and the Maximum RAM has been specified to 2048. The Memory weight slider has been set to High with the Apply button highlighted."><figcaption>Figure
+ 1.5 Screenshot of PLABDC01: The Hyper-V Manager &gt; Memory window is 
+displayed with the Enable Dynamic Memory checkbox ticked, and the 
+Maximum RAM has been specified to 2048. The Memory weight slider has 
+been set to High with the Apply button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-107"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m3-108">Next, under the <b>Hardware </b>section in the left-hand pane, click <b>Processor</b>.</p>
+
+<p id="cn-m3-109">Notice you can specify the number of <b>Virtual Processors </b>(<b>VCPU</b>) that the VM has access to.</p>
+
+<span class="cn-quote" id="cn-m3-110"><b><i>Note</i></b><i>: This can be
+ helpful to increase for devices that have a higher amount of CPU 
+utilization, and, again, is limited by the number of processors 
+available on the host machine. For example, if a machine was going to be
+ used for specifically high-CPU intensive tasks, then it would be 
+prudent to ensure that it has access to more CPU power than other 
+machines. The maximum limit supported by Hyper-V is </i><b><i>240 VCPUs </i></b></span>
+
+<p id="cn-m3-111">In the <b>Number of virtual processors </b>textbox, type over the existing value with:</p>
+
+<pre id="cn-m3-112"><code>3
+
+</code></pre>
+
+<p id="cn-m3-114"></p><figure><img class="cn-img" id="cn-image-m3-c-5" src="HighAvailabilityandScalabilityintheCloud_files/image-m3-c-5.jpg" alt="Figure 1.6 Screenshot of PLABDC01: The Hyper-V Manager &amp;gt; Processor window is displayed."><figcaption>Figure 1.6 Screenshot of PLABDC01: The Hyper-V Manager &gt; Processor window is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-116"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m3-117">Once you make this change, you will notice that the 
+percentages below change depending on the load. This will apply to the 
+host and other VMs running concurrently.</p>
+
+<span class="cn-quote" id="cn-m3-118"><b><i>Note</i></b><i>: With </i><b><i>3 VCPUs</i></b><i>, notice that the </i><b><i>Percent of total system resources </i></b><i>has increased to </i><b><i>75</i></b><i>%. With 4 or more, this would increase to 100% and higher.</i></span>
+
+<p id="cn-m3-119">Click <b>Apply </b>at the bottom of the page.</p>
+
+<p id="cn-m3-121"></p><figure><img class="cn-img" id="cn-image-m3-c-6" src="HighAvailabilityandScalabilityintheCloud_files/image-m3-c-6.jpg" alt="Figure 1.7 Screenshot of PLABDC01: The Hyper-V Manager &amp;gt; Processor window is displayed, with the number of virtual processors setting showing as 3 and the Apply button is highlighted."><figcaption>Figure
+ 1.7 Screenshot of PLABDC01: The Hyper-V Manager &gt; Processor window 
+is displayed, with the number of virtual processors setting showing as 3
+ and the Apply button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-123"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m3-124">Finally, under the <b>Management </b>section in the left-hand pane, click <b>Checkpoints</b>.</p>
+
+<span class="cn-quote" id="cn-m3-126"><b><i>Note</i></b><i>: to ensure 
+high availability and minimal downtime of machines as part of an 
+infrastructure in Hyper-V, it is imperative that checkpoints are created
+ frequently to allow easy recovery and failover if any single device 
+fails. This can be helpful in development environments, as code 
+deployments can sometimes have negative effects on machines and may 
+require frequent rollbacks.</i></span>
+
+<p id="cn-m3-128"></p><figure><img class="cn-img" id="cn-image-m3-c-7" src="HighAvailabilityandScalabilityintheCloud_files/image-m3-c-7.jpg" alt="Figure 1.8 Screenshot of PLABDC01: The Hyper-V Manager &amp;gt;Checkpoints window is displayed."><figcaption>Figure 1.8 Screenshot of PLABDC01: The Hyper-V Manager &gt;Checkpoints window is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-130"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m3-131">Tick the <b>Use automatic checkpoints </b>checkbox.</p>
+
+<p id="cn-m3-132"></p><figure><img class="cn-img" id="cn-image-m3-c-8" src="HighAvailabilityandScalabilityintheCloud_files/image-m3-c-8.jpg" alt="Figure 1.9 Screenshot of PLABDC01: The Hyper-V Manager &amp;gt; Checkpoints window is displayed, with the Use automatic checkpoints checkbox ticked."><figcaption>Figure
+ 1.9 Screenshot of PLABDC01: The Hyper-V Manager &gt; Checkpoints window
+ is displayed, with the Use automatic checkpoints checkbox ticked.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m3-135"><b><i>Note</i></b><i>: Ticking the </i><b><i>Use automatic checkpoints </i></b><i>checkbox
+ will automate the process, creating checkpoints automatically. This can
+ be helpful, although it does remove some direct control if relied on 
+100% of the time. It is key to ensure that, as well as automatic 
+checkpointing, manual reviews take place, and more checkpoints are done 
+as necessary.</i></span>
+
+<span class="atom-code hidden">7d0ac9fb-5de8-4057-8699-2545ccd83fb6</span>
+
+<h4 id="cn-m3-139"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m3-140">Click <b>OK </b>at the foot of the page to close the <b>Settings for PLABWIN101 on PLABDC01 </b>window.</p>
+
+<p id="cn-m3-141"></p><figure><img class="cn-img" id="cn-image-m3-c-9" src="HighAvailabilityandScalabilityintheCloud_files/image-m3-c-9.jpg" alt="Figure 1.10 Screenshot of PLABDC01: The Hyper-V Manager &amp;gt; Checkpoints window is displayed, with the Use automatic checkpoints checkbox ticked, and the OK button highlighted."><figcaption>Figure
+ 1.10 Screenshot of PLABDC01: The Hyper-V Manager &gt; Checkpoints 
+window is displayed, with the Use automatic checkpoints checkbox ticked,
+ and the OK button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m3-143"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m3-144">Close the <b>Hyper-V Manager </b>and <b>Server Manager </b>windows.</p>
+
+<p id="cn-m3-145"></p><figure><img class="cn-img" id="cn-image-m3-c-10" src="HighAvailabilityandScalabilityintheCloud_files/image-m3-c-10.jpg" alt="Figure 1.11 Screenshot of PLABDC01: The Hyper-V Manager window is displayed with the Close icon highlighted."><figcaption>Figure 1.11 Screenshot of PLABDC01: The Hyper-V Manager window is displayed with the Close icon highlighted.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m3-149"><b>Review</b></h2>
+
+<p id="cn-m3-150">Well done, you have completed <b>High Availability and Scalability in the Cloud </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">bd4b9c9e-891c-4f7e-9835-ceb951cba343</span>
+
+<span class="atom-code hidden">5d4624a4-c458-47d0-b4ce-81ae78d5fc0d</span>
+
+<span class="atom-code hidden">ce0a5256-16e9-4737-91da-d1b5d8816bc7</span>
+
+<span class="atom-code hidden">f7e26b68-06e4-4cb5-8df5-89021e4e6e57</span>
+
+<span class="atom-code hidden">5d9f563e-cde2-4a39-a25f-a04e6a33dfb1</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m3-161">You completed the following exercises:</p>
+
+<ul id="cn-m3-162">
+
+<li id="cn-m3-162">Exercise 1 - High Availability and Scalability in a Private Cloud Environment</li>
+
+</ul>
+
+<p id="cn-m3-163">You should now be able to:</p>
+
+<ul id="cn-m3-164">
+
+<li id="cn-m3-164">Define and Describe the Importance of High Availability and Scalability in a Cloud Environment</li>
+
+<li id="cn-m3-165">Compare Different Options to Ensure High Availability and Methods of Scaling a Cloud Infrastructure</li>
+
+<li id="cn-m3-166">Investigate and Analyze Scalability Options in a Private Cloud Environment</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m3-170">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
