@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="CloudResourceCapacityPlanning_files/print-styles.css" rel="stylesheet">
+    <script src="CloudResourceCapacityPlanning_files/jquery.min.js"></script>
+    <script src="CloudResourceCapacityPlanning_files/jspdf.js"></script>
+    <script src="CloudResourceCapacityPlanning_files/from_html.js"></script>
+    <script src="CloudResourceCapacityPlanning_files/addimage.js"></script>
+    <script src="CloudResourceCapacityPlanning_files/filesaver.js"></script>
+    <script src="CloudResourceCapacityPlanning_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="6qK6Aow9PYPyeWq4fMCn1+f0lywXa8VdO0bruOBtl0dpzzmNB3YlGuJE7aQM/QOqsDoJXlFTIkLSZsa0cn9vyE9k1z7epVbQMQfJ3oXyqKw=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Cloud Resource Capacity Planning</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Cloud Capacity Planning Factors</li><li>Exercise 2 - Cloud Density, Load, Trends and Performance Planning</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m2-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Cloud Hardware</div>
+
+<div>Cloud Software</div>
+
+<div>Budgets</div>
+
+<div>Business Needs</div>
+
+<div>Templates</div>
+
+<div>Licensing</div>
+
+<div>User density</div>
+
+<div>System load</div>
+
+<div>Trend analysis</div>
+
+<div>Performance Capacity Planning</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m2-13">Welcome to the <b>Cloud Resource Capacity Planning </b>Practice Lab. In this module you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m2-21">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m2-22">
+
+<li id="cn-m2-22">Exercise 1 - Cloud Capacity Planning Factors</li>
+
+<li id="cn-m2-23">Exercise 2 - Cloud Licencing, Density, Load, Trends and Performance Planning</li>
+
+</ul>
+
+<p id="cn-m2-24">After completing this module, you should be able to:</p>
+
+<ul id="cn-m2-25">
+
+<li id="cn-m2-25">Define and Describe Capacity Planning for Resource Requirements</li>
+
+<li id="cn-m2-26">Investigate the AWS &amp; Azure Pricing Calculators to Assess Budget Concerns</li>
+
+<li id="cn-m2-27">Define and Describe User Density and System Load Constraints</li>
+
+<li id="cn-m2-28">Define and Describe Trend Analysis, including Baselines, Patterns and Anomalies</li>
+
+<li id="cn-m2-29">Define and Describe Performance Capacity Planning</li>
+
+<li id="cn-m2-30">Investigate the Azure Platform to Locate Performance Capacity Requirement Data</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m2-32">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m2-33">
+
+<li id="cn-m2-33">1.2 Explain the factors that contribute to capacity planning</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m2-35">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m2-39">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m2-40">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m2-42"><b>Lab Topology</b></h2>
+
+<p id="cn-m2-43">During your session, you will have access to the following lab configuration.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<p id="cn-m2-46">Depending on the exercises, you may or may not use all 
+of the devices, but they are shown here in the layout to get an overall 
+understanding of the topology of the lab.</p>
+
+<ul id="cn-m2-47">
+
+<li id="cn-m2-47"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m2-48">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m2-49"><b>Exercise 1 - Cloud Capacity Planning Factors</b></h2>
+
+<p id="cn-m2-50">It is important to consider that there is always a cost
+ associated with your resources, whether working on-premises or in 
+public cloud infrastructure.</p>
+
+<p id="cn-m2-51">To measure the potential costs of cloud infrastructure,
+ it is key for organizations to plan what capacity they will require 
+before building resources to ensure that the costs are the most 
+reasonable for the business and fall into agreed <b>Return on Investment (RoI) </b>budgets.</p>
+
+<span class="atom-code hidden">44c526f1-852d-445a-bb04-2f7d619c562e</span>
+
+<p id="cn-m2-54">In this exercise, we will investigate the Azure and AWS
+ Pricing Calculators to get an idea of budgetary constraints for Cloud 
+resources.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m2-56">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m2-57">
+
+<li id="cn-m2-57">Define and Describe Capacity Planning for Resource Requirements</li>
+
+<li id="cn-m2-58">Investigate the AWS and Azure Pricing Calculators to Assess Budget Concerns</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m2-60">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<ul id="cn-m2-63">
+
+<li id="cn-m2-63"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m2-64"><b>Task 1 - Investigate Microsoft Azure Pricing Calculator</b></h3>
+
+<p id="cn-m2-65">Creating resources using a cloud provider always 
+involves a cost. Companies need to assess the costs involved when 
+planning to migrate resources to a CSP.</p>
+
+<p id="cn-m2-66">Upon creation of a resource, the subscription will be 
+charged according to the consumption on a pay-as-you-go billing 
+methodology.</p>
+
+<p id="cn-m2-67">In this task, the Azure pricing calculator will be used
+ to investigate the costing involved in the hosting of resources on the 
+Azure platform.</p>
+
+<h4 id="cn-m2-68"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m2-69">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m2-70"></p><figure><img class="cn-img" id="cn-image-m2-c-0" src="CloudResourceCapacityPlanning_files/image-m2-c-0.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: The Windows 10 desktop is displayed."><figcaption>Figure 1.1 Screenshot of PLABWIN10: The Windows 10 desktop is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-72"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m2-73">From the <b>Taskbar</b>, click on the <b>Microsoft Edge </b>icon.</p>
+
+<p id="cn-m2-74"></p><figure><img class="cn-img" id="cn-image-m2-c-1" src="CloudResourceCapacityPlanning_files/image-m2-c-1.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed, and the Microsoft Edge icon is highlighted on the Taskbar."><figcaption>Figure
+ 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed, and 
+the Microsoft Edge icon is highlighted on the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-76"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m2-77">Click into the <b>web address bar </b>and type:</p>
+
+<pre id="cn-m2-78"><code>azure pricing calculator
+
+</code></pre>
+
+<p id="cn-m2-79">Press <b>Enter</b>.</p>
+
+<p id="cn-m2-80"></p><figure><img class="cn-img" id="cn-image-m2-c-2" src="CloudResourceCapacityPlanning_files/image-m2-c-2.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: The internet web page is displayed, and search terms are typed into the web address bar."><figcaption>Figure 1.3 Screenshot of PLABWIN10: The internet web page is displayed, and search terms are typed into the web address bar.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-82"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m2-83">Click on the <b>Pricing Calculator | Azure </b>web link, which is typically found as the first search result.</p>
+
+<p id="cn-m2-85"></p><figure><img class="cn-img" id="cn-image-m2-c-3" src="CloudResourceCapacityPlanning_files/image-m2-c-3.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: Search results within Microsoft Bing are displayed with the Pricing Calculator | Microsoft Azure weblink highlighted."><figcaption>Figure
+ 1.4 Screenshot of PLABWIN10: Search results within Microsoft Bing are 
+displayed with the Pricing Calculator | Microsoft Azure weblink 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-87"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m2-88">The <b>Pricing Calculator </b>page is displayed.</p>
+
+<p id="cn-m2-89">Click <b>Accept </b>on the <b>cookies </b>message.</p>
+
+<span class="cn-quote" id="cn-m2-90"><b><i>Note</i></b><i>: If an online survey pop-up should appear, click </i><b><i>No</i></b><i>.</i></span>
+
+<p id="cn-m2-92"></p><figure><img class="cn-img" id="cn-image-m2-c-4" src="CloudResourceCapacityPlanning_files/image-m2-c-4.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: The Azure Pricing Calculator website is displayed with the cookie message showing at the top of the web page and the Accept button highlighted."><figcaption>Figure
+ 1.5 Screenshot of PLABWIN10: The Azure Pricing Calculator website is 
+displayed with the cookie message showing at the top of the web page and
+ the Accept button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-94"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m2-95">Scroll down the <b>Azure | Pricing calculator </b>webpage and select <b>Virtual Machines</b>.</p>
+
+<p id="cn-m2-96"></p><figure><img class="cn-img" id="cn-image-m2-c-5" src="CloudResourceCapacityPlanning_files/image-m2-c-5.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: The Azure pricing calculator webpage is displayed with the Virtual Machine option highlighted."><figcaption>Figure
+ 1.6 Screenshot of PLABWIN10: The Azure pricing calculator webpage is 
+displayed with the Virtual Machine option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-98"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m2-99">When the <b>Virtual Machine added </b>pop-up window appears, click <b>View</b>. Alternatively, scroll to the bottom of the webpage to get to the <b>Virtual Machines </b>section.</p>
+
+<span class="cn-quote" id="cn-m2-100"><b><i>Note</i></b><i>: The prices shown on this website may differ from the screenshots.</i></span>
+
+<p id="cn-m2-102"></p><figure><img class="cn-img" id="cn-image-m2-c-6" src="CloudResourceCapacityPlanning_files/image-m2-c-6.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: The Azure Pricing calculator webpage is displayed with a Virtual Machine added message shown and the View web link on this message highlighted."><figcaption>Figure
+ 1.7 Screenshot of PLABWIN10: The Azure Pricing calculator webpage is 
+displayed with a Virtual Machine added message shown and the View web 
+link on this message highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-104"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m2-105">From the <b>Virtual Machines </b>section of the webpage, click on the <b>Region </b>dropdown and change the selection to <b>UK South</b>.</p>
+
+<span class="cn-quote" id="cn-m2-106"><b><i>Note</i></b><i>: The 
+different regions in which resources can be created in Azure is 
+displayed. The region can be changed according to your location. For the
+ purpose of the exercise, the </i><b><i>UK South </i></b><i>region will be used.</i></span>
+
+<p id="cn-m2-108"></p><figure><img class="cn-img" id="cn-image-m2-c-7" src="CloudResourceCapacityPlanning_files/image-m2-c-7.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: The Virtual Machines section of the webpage is displayed and the region dropdown showing the selection of UK South from the list of regions."><figcaption>Figure
+ 1.8 Screenshot of PLABWIN10: The Virtual Machines section of the 
+webpage is displayed and the region dropdown showing the selection of UK
+ South from the list of regions.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-110"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m2-111">Change the <b>Instance </b>dropdown to <b>D8d v4: 8vCPU(s), 32 GB RAM, 300 GB temporary storage</b>.</p>
+
+<span class="cn-quote" id="cn-m2-112"><b><i>Note: </i></b><i>Different 
+Virtual machine sizes have different costs. A company can use the 
+pricing calculator to estimate the amount a specific virtual machine 
+will cost per month, depending on the resource utilization.</i></span>
+
+<p id="cn-m2-114"></p><figure><img class="cn-img" id="cn-image-m2-c-8" src="CloudResourceCapacityPlanning_files/image-m2-c-8.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: The Virtual Machines section of the webpage is displayed, and the Instance dropdown options is expanded with the D8d v4{….} option selected."><figcaption>Figure
+ 1.9 Screenshot of PLABWIN10: The Virtual Machines section of the 
+webpage is displayed, and the Instance dropdown options is expanded with
+ the D8d v4{….} option selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-116"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m2-117">Scroll to the bottom of the webpage to the <b>Estimated upfront cost </b>section.</p>
+
+<p id="cn-m2-118">Click the <b>CURRENCY </b>dropdown and change the selection to <b>United Kingdom - Pound (£) GBP</b>.</p>
+
+<span class="cn-quote" id="cn-m2-119"><b><i>Note: </i></b><i>The Azure 
+pricing calculator's currency can be changed to better understand the 
+cost involved when creating resources on the Azure platform. For this 
+task, it will be changed to </i><span class="cn-9999999">British </span><i>pounds.</i></span>
+
+<p id="cn-m2-121"></p><figure><img class="cn-img" id="cn-image-m2-c-9" src="CloudResourceCapacityPlanning_files/image-m2-c-9.jpg" alt="Figure 1.10 Screenshot of PLABWIN10: The Estimated upfront cost section of the webpage is displayed, showing the currency list of the dropdown expanded to show United Kingdom - Pounds being selected from the list."><figcaption>Figure
+ 1.10 Screenshot of PLABWIN10: The Estimated upfront cost section of the
+ webpage is displayed, showing the currency list of the dropdown 
+expanded to show United Kingdom - Pounds being selected from the list.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-123"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m2-124">Notice the VM upfront and monthly costs have been calculated and shown in <b>British pounds</b>.</p>
+
+<p id="cn-m2-125"></p><figure><img class="cn-img" id="cn-image-m2-c-10" src="CloudResourceCapacityPlanning_files/image-m2-c-10.jpg" alt="Figure 1.11 Screenshot of PLABWIN10: The Estimated upfront cost section of the webpage is displayed, showing the currency list is United Kingdom - Pounds."><figcaption>Figure
+ 1.11 Screenshot of PLABWIN10: The Estimated upfront cost section of the
+ webpage is displayed, showing the currency list is United Kingdom - 
+Pounds.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m2-127">Keep <b>PLABWIN10 </b>in its current state and move to the next task.</span>
+
+<h3 id="cn-m2-128"><b>Task 2 - Investigate Amazon Web Services Pricing Calculator</b></h3>
+
+<p id="cn-m2-129">As we noted in the previous task, creating resources on a cloud service provider involves a specific costing structure.</p>
+
+<p id="cn-m2-130">A company that considers migrating its resources can 
+use a cloud service provider’s pricing calculator to determine an 
+estimated cost for resources.</p>
+
+<p id="cn-m2-131">In this task, the AWS Pricing Calculator will determine the cost for a resource being hosted on this platform.</p>
+
+<h4 id="cn-m2-132"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m2-133">Ensure you are connected to <b>PLABWIN10 </b>with <b>Microsoft Edge </b>open.</p>
+
+<p id="cn-m2-134"></p><figure><img class="cn-img" id="cn-image-m2-c-11" src="CloudResourceCapacityPlanning_files/image-m2-c-11.jpg" alt="Figure 1.12 Screenshot of PLABWIN10: The Estimated upfront cost section of the webpage is displayed."><figcaption>Figure 1.12 Screenshot of PLABWIN10: The Estimated upfront cost section of the webpage is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-136"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m2-137">From the open <b>web browser</b>, click <b>+ New tab</b>.</p>
+
+<p id="cn-m2-139"></p><figure><img class="cn-img" id="cn-image-m2-c-12" src="CloudResourceCapacityPlanning_files/image-m2-c-12.jpg" alt="Figure 1.13 Screenshot of PLABWIN10: The Estimated upfront cost section of the webpage is displayed, and the New tab icon is highlighted."><figcaption>Figure
+ 1.13 Screenshot of PLABWIN10: The Estimated upfront cost section of the
+ webpage is displayed, and the New tab icon is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-141"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m2-142">Click into the <b>web address bar </b>and type:</p>
+
+<pre id="cn-m2-143"><code>aws pricing calculator
+
+</code></pre>
+
+<p id="cn-m2-144">Press <b>Enter</b>.</p>
+
+<p id="cn-m2-145"></p><figure><img class="cn-img" id="cn-image-m2-c-13" src="CloudResourceCapacityPlanning_files/image-m2-c-13.jpg" alt="Figure 1.14 Screenshot of PLABWIN10:: The New tab is displayed, and search terms have been typed into the web address bar."><figcaption>Figure 1.14 Screenshot of PLABWIN10:: The New tab is displayed, and search terms have been typed into the web address bar.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-147"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m2-148">Click on the <b>AWS Pricing Calculator </b>web link, which is typically found in the first few search results.</p>
+
+<p id="cn-m2-149"></p><figure><img class="cn-img" id="cn-image-m2-c-14" src="CloudResourceCapacityPlanning_files/image-m2-c-14.jpg" alt="Figure 1.15 Screenshot of PLABWIN10: Search results within Microsoft Bing are displayed with the AWS Pricing Calculator weblink highlighted."><figcaption>Figure
+ 1.15 Screenshot of PLABWIN10: Search results within Microsoft Bing are 
+displayed with the AWS Pricing Calculator weblink highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-151"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m2-152">In the <b>Select your cookie preferences </b>pop-up window, select <b>Accept all</b>.</p>
+
+<p id="cn-m2-153"></p><figure><img class="cn-img" id="cn-image-m2-c-15" src="CloudResourceCapacityPlanning_files/image-m2-c-15.jpg" alt="Figure 1.16 Screenshot of PLABWIN10: The AWS pricing calculator website is displayed with the cookie preference message shown with the Accept all button highlighted."><figcaption>Figure
+ 1.16 Screenshot of PLABWIN10: The AWS pricing calculator website is 
+displayed with the cookie preference message shown with the Accept all 
+button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-155"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m2-156">From the <b>AWS Pricing Calculator </b>webpage, click the <b>Create estimate </b>button.</p>
+
+<p id="cn-m2-157"></p><figure><img class="cn-img" id="cn-image-m2-c-16" src="CloudResourceCapacityPlanning_files/image-m2-c-16.jpg" alt="Figure 1.17 Screenshot of PLABWIN10: The AWS pricing calculator website is displayed with the Create estimate button highlighted."><figcaption>Figure
+ 1.17 Screenshot of PLABWIN10: The AWS pricing calculator website is 
+displayed with the Create estimate button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-159"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m2-160">From the <b>Select service </b>webpage, scroll down to <b>Amazon EC2 </b>and click the <b>Configure </b>button</p><figure><img class="cn-img" id="cn-image-m2-c-17" src="CloudResourceCapacityPlanning_files/image-m2-c-17.jpg" alt="Figure 1.18 Screenshot of PLABWIN10: The Select service webpage is displayed with the Configure button for Amazon EC2 is highlighted."><figcaption>Figure
+ 1.18 Screenshot of PLABWIN10: The Select service webpage is displayed 
+with the Configure button for Amazon EC2 is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-162"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m2-163">Change the <b>Region </b>drop-down option to <b>EU (London</b>).</p>
+
+<p id="cn-m2-164"></p><figure><img class="cn-img" id="cn-image-m2-c-18" src="CloudResourceCapacityPlanning_files/image-m2-c-18.jpg" alt="Figure 1.19 Screenshot of PLABWIN10: The Configure Amazon EC2 webpage is displayed with the Region dropdown list expanded and EU (London) highlighted on the list."><figcaption>Figure
+ 1.19 Screenshot of PLABWIN10: The Configure Amazon EC2 webpage is 
+displayed with the Region dropdown list expanded and EU (London) 
+highlighted on the list.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-166"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m2-167">When the <b>Confirm region change </b>pop-up window appears, click <b>Change Region</b>.</p>
+
+<span class="cn-quote" id="cn-m2-168"><b><i>Note</i></b><i>: The same with Azure; depending on the region you reside in, you can change this accordingly. For the purpose of the lab, the </i><b><i>EU (London) </i></b><i>region will be used.</i></span>
+
+<p id="cn-m2-170"></p><figure><img class="cn-img" id="cn-image-m2-c-19" src="CloudResourceCapacityPlanning_files/image-m2-c-19.jpg" alt="Figure 1.20 Screenshot of PLABWIN10: The Configure Amazon EC2 webpage is displayed with the Confirm region change pop-up message shown and the Change Region button selected."><figcaption>Figure
+ 1.20 Screenshot of PLABWIN10: The Configure Amazon EC2 webpage is 
+displayed with the Confirm region change pop-up message shown and the 
+Change Region button selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-172"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m2-173">From the <b>EC2 instance specifications </b>section, change the <b>Operating system </b>drop-down setting to <b>Windows Server</b>.</p>
+
+<span class="cn-quote" id="cn-m2-174"><b><i>Note: </i></b><i>Several 
+different operating systems are available with different price ranges. A
+ company can select the specific operating system and estimate the cost 
+per month for the operating system.</i></span>
+
+<p id="cn-m2-176"></p><figure><img class="cn-img" id="cn-image-m2-c-20" src="CloudResourceCapacityPlanning_files/image-m2-c-20.jpg" alt="Figure 1.21 Screenshot of PLABWIN10: The Configure Amazon EC2 calculator webpage is displayed with the Windows Server option highlighted on the expanded Operating system dropdown list."><figcaption>Figure
+ 1.21 Screenshot of PLABWIN10: The Configure Amazon EC2 calculator 
+webpage is displayed with the Windows Server option highlighted on the 
+expanded Operating system dropdown list.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-178"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m2-179">Under <b>Instance type</b>, change the <b>Memory (GiB) </b>value to:</p>
+
+<pre id="cn-m2-180"><code>32
+
+</code></pre>
+
+<p id="cn-m2-181"></p><figure><img class="cn-img" id="cn-image-m2-c-21" src="CloudResourceCapacityPlanning_files/image-m2-c-21.jpg" alt="Figure 1.22 Screenshot of PLABWIN10: The Configure Amazon EC2 webpage is displayed with the number 32 typed into the Instance type &amp;gt; Memory (GiB) textbox."><figcaption>Figure
+ 1.22 Screenshot of PLABWIN10: The Configure Amazon EC2 webpage is 
+displayed with the number 32 typed into the Instance type &gt; Memory 
+(GiB) textbox.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-183"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m2-184">Scroll down to the end of the <b>AWS Pricing calculator </b>webpage to the <b>Amazon EC2 estimate </b>section.</p>
+
+<p id="cn-m2-185">Notice you can review the monthly cost and add to your estimates if required.</p>
+
+<p id="cn-m2-186"></p><figure><img class="cn-img" id="cn-image-m2-c-22" src="CloudResourceCapacityPlanning_files/image-m2-c-22.jpg" alt="Figure 1.23 Screenshot of PLABWIN10: The Configure Amazon EC2 webpage is displayed, showing the Amazon EC2 estimate cost details."><figcaption>Figure
+ 1.23 Screenshot of PLABWIN10: The Configure Amazon EC2 webpage is 
+displayed, showing the Amazon EC2 estimate cost details.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<span class="cn-alert" id="cn-m2-191">Close all open windows and proceed to the next exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m2-193"><b>Exercise 2 - Cloud Density, Load, Trends and Performance Planning</b></h2>
+
+<p id="cn-m2-194">Alongside Capacity Planning, it is also imperative to 
+consider what performance is expected from a resource or infrastructure 
+being developed on the cloud. It is easy in business environments to 
+focus so much on Capacity planning that Resource planning takes a hit or
+ vice-versa, but it is important to find a balance between the two.</p>
+
+<p id="cn-m2-195">An infrastructure you have been instructed to build 
+needs to have the resources available to meet the needs and objectives 
+of the organization while at the same time staying within agreed 
+baselines so as not to exceed budget and build resources that will be 
+underutilized.</p>
+
+<span class="atom-code hidden">b3d61301-136d-43ce-8b2c-4ecd7bbd1f06</span>
+
+<p id="cn-m2-198">In this exercise, we will investigate how to plan resources when building them in a public cloud infrastructure.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m2-200">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m2-201">
+
+<li id="cn-m2-201">Define and Describe User Density and System Load Constraints</li>
+
+<li id="cn-m2-202">Define and Describe Trend Analysis, including Baselines, Patterns and Anomalies</li>
+
+<li id="cn-m2-203">Define and Describe Performance Capacity Planning</li>
+
+<li id="cn-m2-204">Investigate the Azure Platform to Locate Performance Capacity Requirement Data</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m2-206">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<ul id="cn-m2-209">
+
+<li id="cn-m2-209"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m2-210"><b>Task 1 - Investigate Resource Planning in Microsoft Azure</b></h3>
+
+<p id="cn-m2-211">After using different tools to investigate budgeting 
+requirements for both AWS and Microsoft Azure, there are also 
+considerations to take into account when building resources in a public 
+cloud.</p>
+
+<p id="cn-m2-212">In this task, we will investigate which specifications can impact resource planning when creating a <b>Virtual Machine (VM) </b>in Microsoft Azure.</p>
+
+<h4 id="cn-m2-213"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m2-214">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m2-215"></p><figure><img class="cn-img" id="cn-image-m2-c-23" src="CloudResourceCapacityPlanning_files/image-m2-c-23.jpg" alt="Figure 2.1 Screenshot of PLABWIN10: Windows 10 desktop is displayed."><figcaption>Figure 2.1 Screenshot of PLABWIN10: Windows 10 desktop is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-217"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m2-218">Click on the <b>Microsoft Edge </b>icon pinned to the <b>Taskbar</b>.</p>
+
+<span class="cn-quote" id="cn-m2-219"><b><i>Note</i></b><i>: When 
+opening the Microsoft Edge browser, it will automatically redirect to 
+the Azure Portal and sign in. An Azure subscription will be provided for
+ all lab activities.</i></span>
+
+<h4 id="cn-m2-222"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m2-223">The <b>Azure portal </b>page will appear. Click the <b>Create a resource </b>button.</p>
+
+<p id="cn-m2-224"></p><figure><img class="cn-img" id="cn-image-m2-c-25" src="CloudResourceCapacityPlanning_files/image-m2-c-25.jpg" alt="Figure 2.3 Screenshot of PLABWIN10: the Microsoft Azure portal home page is displayed with the Create a resource option highlighted."><figcaption>Figure
+ 2.3 Screenshot of PLABWIN10: the Microsoft Azure portal home page is 
+displayed with the Create a resource option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-226"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m2-227">The <b>Create a resource </b>page will appear.</p>
+
+<p id="cn-m2-228">From the <b>Categories </b>menu on the left-hand side of the page, select <b>Compute</b>.</p>
+
+<p id="cn-m2-229"></p><figure><img class="cn-img" id="cn-image-m2-c-26" src="CloudResourceCapacityPlanning_files/image-m2-c-26.jpg" alt="Figure 2.4: Screenshot of PLABWIN10: Displaying the Create a resource page. The Compute option is highlighted under the Categories menu."><figcaption>Figure
+ 2.4: Screenshot of PLABWIN10: Displaying the Create a resource page. 
+The Compute option is highlighted under the Categories menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-231"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m2-232">On the <b>Compute </b>section, scroll down the list to <b>Virtual machine </b>and click <b>Create</b>.</p>
+
+<p id="cn-m2-233"></p><figure><img class="cn-img" id="cn-image-m2-c-27" src="CloudResourceCapacityPlanning_files/image-m2-c-27.jpg" alt="Figure 2.5: Screenshot of PLABWIN10: The Create button is highlighted under the Virtual machine option."><figcaption>Figure 2.5: Screenshot of PLABWIN10: The Create button is highlighted under the Virtual machine option.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-235"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m2-236">This will open the <b>Create a virtual machine </b>portal.</p>
+
+<p id="cn-m2-237">Click the <b>Resource Group </b>dropdown menu and select the pre-populated resource group.</p>
+
+<span class="cn-quote" id="cn-m2-238"><b><i>Note</i></b><i>: When creating resources in a real-world environment, you may have to create a new </i><b><i>RG </i></b><i>to
+ “bundle” all extra resources as part of your infrastructure into one 
+place. For example, when creating a Virtual Machine, you will also 
+create a </i><b><i>Virtual Network</i></b><i>, </i><b><i>Virtual Network Adaptor </i></b><i>(or </i><b><i>VNIC</i></b><i>) and a </i><b><i>Subnet </i></b><i>which
+ all have their associated costs, and with multiple RGs, you can analyze
+ costs based on each specific resource. Note that inside the lab 
+environment, you will be unable to create a new RG.</i></span>
+
+<p id="cn-m2-239"></p><figure><img class="cn-img" id="cn-image-m2-c-28" src="CloudResourceCapacityPlanning_files/image-m2-c-28.jpg" alt="Figure 2.6: Screenshot of PLABWIN10: Displaying the Create a virtual machine portal. The pre-populated resource group is highlighted in the resource group dropdown menu."><figcaption>Figure
+ 2.6: Screenshot of PLABWIN10: Displaying the Create a virtual machine 
+portal. The pre-populated resource group is highlighted in the resource 
+group dropdown menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-241"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m2-242">Scroll down the page and click on the <b>Image </b>drop-down menu.</p>
+
+<p id="cn-m2-243">Ensure that <b>Ubuntu Server 20.04 LTS - Gen 2 </b>is selected.</p>
+
+<span class="cn-quote" id="cn-m2-244"><b><i>Note</i></b><i>: This is 
+also an important factor of what will ultimately affect the cost of the 
+infrastructure, as some operating systems can be more cost-effective 
+than others, but the OS you choose should ultimately depend on the 
+infrastructure you are looking to create.</i><br><i>You should consider 
+what role a device should have when choosing an operating system. For 
+example, for a low-utilization device, an older version of Microsoft 
+Server or a gen 1 image may be sufficient, provided it meets security 
+requirements, or the most recent version may also be required if the 
+opposite is true.</i></span>
+
+<p id="cn-m2-245"></p><figure><img class="cn-img" id="cn-image-m2-c-29" src="CloudResourceCapacityPlanning_files/image-m2-c-29.jpg" alt="Figure 2.7: Screenshot of PLABWIN10: Displaying the Create a virtual machine portal. The Image drop-down menu is expanded, and the Ubuntu Server 20.04 LTS - Gen 2 option is highlighted."><figcaption>Figure
+ 2.7: Screenshot of PLABWIN10: Displaying the Create a virtual machine 
+portal. The Image drop-down menu is expanded, and the Ubuntu Server 
+20.04 LTS - Gen 2 option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-247"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m2-248">Again, under the <b>Image </b>section, click the <b>Configure VM Generation </b>weblink.</p>
+
+<span class="cn-quote" id="cn-m2-249"><b><i>Note</i></b><i>: Immediately when selecting a </i><b><i>Resource Group</i></b><i>, a policy will apply to state that the currently selected size is not compatible. That is because </i><b><i>Ubuntu Server 20.04 LTS - Gen2 </i></b><i>does not support the </i><b><i>A1_v2 SKU Size </i></b><i>and has been prohibited. In a real-world scenario, which policies are applied, and which OSs are supported will differ.</i></span>
+
+<p id="cn-m2-251"></p><figure><img class="cn-img" id="cn-image-m2-c-30" src="CloudResourceCapacityPlanning_files/image-m2-c-30.jpg" alt="Figure 2.8: Screenshot of PLABWIN10: Displaying the Create a virtual machine portal. The Configure VM generation link is highlighted."><figcaption>Figure
+ 2.8: Screenshot of PLABWIN10: Displaying the Create a virtual machine 
+portal. The Configure VM generation link is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-253"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m2-254">This will open the <b>Configure VM generation </b>pane. In this pane, select <b>Generation 1</b>.</p>
+
+<p id="cn-m2-255">Click <b>Apply</b>.</p>
+
+<span class="cn-quote" id="cn-m2-256"><b><i>Note</i></b><i>: In Azure, </i><b><i>Gen 1 </i></b><i>images support most operating systems, and </i><b><i>Gen 2 </i></b><i>images support most 64-bit versions of Windows, Linux and FreeBDS operating systems. Now that you have selected </i><b><i>Gen 1</i></b><i>, the error message that appears under the </i><b><i>Size </i></b><i>section will vanish.</i></span>
+
+<p id="cn-m2-257"></p><figure><img class="cn-img" id="cn-image-m2-c-31" src="CloudResourceCapacityPlanning_files/image-m2-c-31.jpg" alt="Figure 2.9: Screenshot of PLABWIN10: Displaying the Create a virtual machine portal. The Configure VM pane is open, Generation 1 has been selected, and Apply is highlighted."><figcaption>Figure
+ 2.9: Screenshot of PLABWIN10: Displaying the Create a virtual machine 
+portal. The Configure VM pane is open, Generation 1 has been selected, 
+and Apply is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-259"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m2-260">Scroll down to the <b>Size </b>setting and click the <b>See all sizes </b>weblink.</p>
+
+<p id="cn-m2-261"></p><figure><img class="cn-img" id="cn-image-m2-c-32" src="CloudResourceCapacityPlanning_files/image-m2-c-32.jpg" alt="Figure 2.10: Screenshot of PLABWIN10: Displaying the Create a virtual machine portal. The See all sizes button is highlighted in the Size section."><figcaption>Figure
+ 2.10: Screenshot of PLABWIN10: Displaying the Create a virtual machine 
+portal. The See all sizes button is highlighted in the Size section.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-263"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m2-264">This will bring you to the <b>Select a VM size </b>portal.</p>
+
+<p id="cn-m2-265">Expand the <b>A-Series v2 </b>dropdown.</p>
+
+<span class="cn-quote" id="cn-m2-266"><b><i>Note</i></b><i>: When 
+considering performance planning for resources in a public 
+infrastructure, it is imperative that the correct sizes are used when 
+creating new resources. Typically, in a real-world scenario, you will 
+have specific requirements for what is needed from each resource, and 
+you must ensure that this resource can meet these requirements. Some 
+public cloud resources allow you to scale these resources as required. </i><b><i>SKU sizes </i></b><i>have been limited to </i><b><i>Standard_A1_v2 </i></b><i>for </i><b><i>Generation 1 </i></b><i>images in the lab environment.</i></span>
+
+<p id="cn-m2-267"></p><figure><img class="cn-img" id="cn-image-m2-c-33" src="CloudResourceCapacityPlanning_files/image-m2-c-33.jpg" alt="Figure 2.11: Screenshot of PLABWIN10: Displaying the Select a VM size page."><figcaption>Figure 2.11: Screenshot of PLABWIN10: Displaying the Select a VM size page.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-269"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m2-270">Click on the first entry on the list, <b>A1_V2</b>.</p>
+
+<span class="cn-quote" id="cn-m2-271"><b><i>Note</i></b><i>: As you can see in the list, an </i><b><i>A1_V2 </i></b><i>SKU for </i><b><i>Ubuntu Server 20.04 </i></b><i>includes 1 </i><b><i>vCPU </i></b><i>(or </i><b><i>Virtual CPU</i></b><i>, meaning that these are billed according to the number of cores used or </i><b><i>Core-based </i></b><i>billing).</i><br><i>Prices of VMs also increase with the amount of </i><b><i>RAM</i></b><i>,
+ storage disks and other metrics that determine the raw power of the VM,
+ so in a real-world environment, it is key to only use resources that 
+are required for your infrastructure, or you could risk going over 
+budget.</i></span>
+
+<p id="cn-m2-272"></p><figure><img class="cn-img" id="cn-image-m2-c-34" src="CloudResourceCapacityPlanning_files/image-m2-c-34.jpg" alt="Figure 2.12: Screenshot of PLABWIN10: Displaying the Select a VM size page. A1_V2 is highlighted."><figcaption>Figure 2.12: Screenshot of PLABWIN10: Displaying the Select a VM size page. A1_V2 is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-274"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m2-275">At the top of the page, click on the <b>Create a virtual machine </b>breadcrumb web link to be taken back to the <b>Create a virtual machine </b>portal.</p>
+
+<p id="cn-m2-276"></p><figure><img class="cn-img" id="cn-image-m2-c-35" src="CloudResourceCapacityPlanning_files/image-m2-c-35.jpg" alt="Figure 2.13: Screenshot of PLABWIN10: Displaying the Select a VM size page. A1_V2 has been clicked, and the Create a virtual machine button is highlighted."><figcaption>Figure
+ 2.13: Screenshot of PLABWIN10: Displaying the Select a VM size page. 
+A1_V2 has been clicked, and the Create a virtual machine button is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-278"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m2-279">Scroll back up to the top of the page and click the <b>Networking </b>tab.</p>
+
+<p id="cn-m2-280"></p><figure><img class="cn-img" id="cn-image-m2-c-36" src="CloudResourceCapacityPlanning_files/image-m2-c-36.jpg" alt="Figure 2.14: Screenshot of PLABWIN10: Displaying the Create a virtual machine page. The Networking heading is highlighted."><figcaption>Figure 2.14: Screenshot of PLABWIN10: Displaying the Create a virtual machine page. The Networking heading is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-282"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m2-283">This will bring you to the <b>Networking </b>page.</p>
+
+<span class="cn-quote" id="cn-m2-284"><b><i>Note</i></b><i>: As 
+discussed above, you can see that the virtual machine portal will also 
+create a relevant subnet and virtual network, both of which have their 
+associated costs. Although comparatively a small cost, these should be 
+considered when creating resources.</i></span>
+
+<p id="cn-m2-285"></p><figure><img class="cn-img" id="cn-image-m2-c-37" src="CloudResourceCapacityPlanning_files/image-m2-c-37.jpg" alt="Figure 2.15: Screenshot of PLABWIN10: Displaying the Create a virtual machine page on the Networking menu."><figcaption>Figure 2.15: Screenshot of PLABWIN10: Displaying the Create a virtual machine page on the Networking menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-287"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m2-288">At the top of the page, click the <b>Management </b>tab.</p>
+
+<p id="cn-m2-289"></p><figure><img class="cn-img" id="cn-image-m2-c-38" src="CloudResourceCapacityPlanning_files/image-m2-c-38.jpg" alt="Figure 2.16: Screenshot of PLABWIN10: Displaying the Create a virtual machine page on the Networking menu. The Management heading is highlighted."><figcaption>Figure
+ 2.16: Screenshot of PLABWIN10: Displaying the Create a virtual machine 
+page on the Networking menu. The Management heading is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-291"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m2-292">From the <b>Management </b>page, you will see options of which services have been enabled on the VM before it is created.</p>
+
+<span class="cn-quote" id="cn-m2-293"><b><i>Note</i></b><i>: Here, you could enable or disable a managed storage account or allocate a login to this device, linking it up with </i><b><i>Azure Active Directory </i></b><i>(</i><b><i>AD</i></b><i>), again, which has its own costs</i><span class="cn-9999999">. </span></span>
+
+<p id="cn-m2-294"></p><figure><img class="cn-img" id="cn-image-m2-c-39" src="CloudResourceCapacityPlanning_files/image-m2-c-39.jpg" alt="Figure 2.17: Screenshot of PLABWIN10: Displaying the Create a virtual machine page on the Management menu."><figcaption>Figure 2.17: Screenshot of PLABWIN10: Displaying the Create a virtual machine page on the Management menu.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<h4 id="cn-m2-298"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m2-299">At the top of the page, click the <b>Microsoft Azure </b>button to be brought back to the <b>Azure Dashboard</b>.</p>
+
+<p id="cn-m2-300"></p><figure><img class="cn-img" id="cn-image-m2-c-40" src="CloudResourceCapacityPlanning_files/image-m2-c-40.jpg" alt="Figure 2.18: Screenshot of PLABWIN10: Displaying the Create a virtual machine page on the Management menu. The Microsoft Azure button is highlighted."><figcaption>Figure
+ 2.18: Screenshot of PLABWIN10: Displaying the Create a virtual machine 
+page on the Management menu. The Microsoft Azure button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-302"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m2-303">You will receive a notification stating that your edits will be unsaved.</p>
+
+<p id="cn-m2-304">Click <b>OK</b>.</p>
+
+<p id="cn-m2-305"></p><figure><img class="cn-img" id="cn-image-m2-c-41" src="CloudResourceCapacityPlanning_files/image-m2-c-41.jpg" alt="Figure 2.19: Screenshot of PLABWIN10: Displaying the Create a virtual machine page on the Management menu. The Microsoft Edge notification asking to discard edits is open, and Ok is highlighted."><figcaption>Figure
+ 2.19: Screenshot of PLABWIN10: Displaying the Create a virtual machine 
+page on the Management menu. The Microsoft Edge notification asking to 
+discard edits is open, and Ok is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m2-307"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m2-308">You are now back on the <b>Azure Dashboard</b>.</p>
+
+<p id="cn-m2-309"></p><figure><img class="cn-img" id="cn-image-m2-c-42" src="CloudResourceCapacityPlanning_files/image-m2-c-42.jpg" alt="Figure 2.20: Screenshot of PLABWIN10: Displaying the Azure dashboard."><figcaption>Figure 2.20: Screenshot of PLABWIN10: Displaying the Azure dashboard.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m2-311">Close all open windows and proceed to the review section.</span>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m2-315"><b>Review</b></h2>
+
+<p id="cn-m2-316">Well done, you have completed <b>Cloud Resource Capacity Planning </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">2583be6b-33d2-4339-902a-6039041e86cb</span>
+
+<span class="atom-code hidden">f627012a-3c79-4a35-9922-5f0d77e9acc3</span>
+
+<span class="atom-code hidden">e84d7d38-310d-4d3a-b5cd-e592c91190d4</span>
+
+<span class="atom-code hidden">839cebca-48f7-4928-98d5-052017c9afdd</span>
+
+<span class="atom-code hidden">37aba866-1729-464e-b1ee-364621751e6f</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m2-327">You completed the following exercises:</p>
+
+<ul id="cn-m2-328">
+
+<li id="cn-m2-328">Exercise 1 - Cloud Capacity Planning Factors</li>
+
+<li id="cn-m2-329">Exercise 2 - Cloud Density, Load, Trends and Performance Planning</li>
+
+</ul>
+
+<p id="cn-m2-331">You should now be able to:</p>
+
+<ul id="cn-m2-332">
+
+<li id="cn-m2-332">Define and Describe Capacity Planning for Resource Requirements</li>
+
+<li id="cn-m2-333">Investigate the AWS &amp; Azure Pricing Calculators to Assess Budget Concerns</li>
+
+<li id="cn-m2-334">Define and Describe User Density and System Load Constraints</li>
+
+<li id="cn-m2-335">Define and Describe Trend Analysis, including Baselines, Patterns and Anomalies</li>
+
+<li id="cn-m2-336">Define and Describe Performance Capacity Planning</li>
+
+<li id="cn-m2-337">Investigate the Azure Platform to Locate Performance Capacity Requirement Data</li>
+
+</ul>
+
+<ol id="cn-m2-338">
+
+</ol>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m2-342">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
