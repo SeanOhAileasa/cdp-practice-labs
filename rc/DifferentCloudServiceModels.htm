@@ -1,0 +1,1139 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="DifferentCloudServiceModels_files/print-styles.css" rel="stylesheet">
+    <script src="DifferentCloudServiceModels_files/jquery.min.js"></script>
+    <script src="DifferentCloudServiceModels_files/jspdf.js"></script>
+    <script src="DifferentCloudServiceModels_files/from_html.js"></script>
+    <script src="DifferentCloudServiceModels_files/addimage.js"></script>
+    <script src="DifferentCloudServiceModels_files/filesaver.js"></script>
+    <script src="DifferentCloudServiceModels_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="JY1WEv2GOsS303bqL2M9/dBs70AtKzlBh18BHv03KE7F/nXHvllpklTsohe11f84sjIeh/TAyrSKYxEq51YzZf5k5dAMzsQgq5R75wRo7Xg=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Different Cloud Service Models</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Cloud Shared Responsibility Service Models</li><li>Exercise 2 - Advanced Cloud Services</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m1-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Cloud+</div>
+
+<div>Cloud Service Models</div>
+
+<div>Infrastructure as a Service (IaaS)</div>
+
+<div>Platform as a Service (PaaS)</div>
+
+<div>Software as a Service (SaaS)</div>
+
+<div>Internet of Things (IoT)</div>
+
+<div>Serverless</div>
+
+<div>Machine Learning</div>
+
+<div>Artificial Intelligence</div>
+
+<div>Shared Responsibility</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m1-14">Welcome to the <b>Different Cloud Service Models </b>Practice Lab. In this module you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m1-22">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m1-23">
+
+<li id="cn-m1-23">Exercise 1 - Cloud Shared Responsibility Service Models</li>
+
+<li id="cn-m1-24">Exercise 2 - Advanced Cloud Services</li>
+
+</ul>
+
+<p id="cn-m1-25">After completing this module, you should be able to:</p>
+
+<ul id="cn-m1-26">
+
+<li id="cn-m1-26">Define and Describe different Cloud Service Models, Including the Shared Responsibility Model</li>
+
+<li id="cn-m1-27">Define and Describe Software as a Service</li>
+
+<li id="cn-m1-28">Explore and Identify Infrastructure as a Service Resources in a Public Cloud</li>
+
+<li id="cn-m1-29">Explore and Identify Platform as a Service Resources in a Public Cloud</li>
+
+<li id="cn-m1-30">Define and Describe Different Emerging Cloud Technologies</li>
+
+<li id="cn-m1-31">Define and Describe Artificial Intelligence and Machine Learning in Cloud Environments</li>
+
+<li id="cn-m1-32">Explore and Identify IoT Resources</li>
+
+<li id="cn-m1-33">Explore and Identify Serverless Architectures</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m1-35">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m1-36">
+
+<li id="cn-m1-36">1.1 Compare and Contrast the Different Types of Cloud Models</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m1-38">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m1-42">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m1-43">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m1-45"><b>Lab Topology</b></h2>
+
+<p id="cn-m1-46">During your session, you will have access to the following lab configuration.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<img class="cn-img" id="cn-image-m0-c-0" src="DifferentCloudServiceModels_files/LabTopology1.png"> <!-- Azure Workstation -->
+
+<p id="cn-m1-49">Depending on the exercises, you may or may not use all 
+of the devices, but they are shown here in the layout to get an overall 
+understanding of the topology of the lab.</p>
+
+<ul id="cn-m1-50">
+
+<li id="cn-m1-50"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m1-51">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m1-52"><b>Exercise 1 - Cloud Shared Responsibility Service Models</b></h2>
+
+<p id="cn-m1-53">Different cloud resources and infrastructures require different levels of responsibility for both the user and the <b>Cloud Service Provider (CSP</b>). This is known as the <b>Shared Responsibility Model </b>and
+ allows users to give more responsibility to the provider depending on 
+what sort of environment they are looking to build and vice-versa.</p>
+
+<p id="cn-m1-54">For example, a software developer may not be interested
+ in a private on-premises infrastructure that requires networking 
+knowledge to build and configure a networking environment and instead 
+just be interested in a safe sandbox environment to test code 
+deployments.</p>
+
+<p id="cn-m1-55">In this case, a <b>Platform as a Service </b>(<b>PaaS) </b>environment would suit their needs, and they can leave the networking and infrastructure responsibility to the CSP.</p>
+
+<p id="cn-m1-56">It's important to remember that with shared responsibility comes different subscription charges.</p>
+
+<span class="cn-quote" id="cn-m1-57"><b><i>Note</i></b><i>: Billing and subscriptions will be covered in a future module.</i></span>
+
+<img class="cn-img" id="cn-image-m0-c-0" src="DifferentCloudServiceModels_files/theory.png">
+
+<span class="atom-code hidden">f55c4819-8c68-4c15-8394-7286d43106f0</span>
+
+<p id="cn-m1-60">External to this is the <b>On-Premises </b>model, wherein full responsibility lies with the organization and all private cloud infrastructure.</p>
+
+<p id="cn-m1-61">However, It’s good to consider On-Premises and <b>Software as a Service </b>(<b>SaaS</b>)
+ models as two sides of the same coin - the first gives full 
+responsibility to the user, and the second offers a full service to 
+users - including tools such as <b>Microsoft 365</b>, <b>Twilio </b>and even <b>Netflix</b>.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m1-63">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m1-64">
+
+<li id="cn-m1-64">Define and Describe different Cloud Service Models, Including the Shared Responsibility Model</li>
+
+<li id="cn-m1-65">Define and Describe Software as a Service</li>
+
+<li id="cn-m1-66">Explore and Identify Infrastructure as a Service Resources in a Public Cloud</li>
+
+<li id="cn-m1-67">Explore and Identify Platform as a Service Resources in a Public Cloud</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m1-69">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<ul id="cn-m1-72">
+
+<li id="cn-m1-72"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m1-73"><b>Task 1 - Explore Infrastructure as a Service (IaaS)</b></h3>
+
+<p id="cn-m1-74">The Microsoft Azure platform provides the functionality
+ to create Virtual Machines (VMs) that a company can use to manage to 
+host its resources and services, for example, a web server or a database
+ server. This is an example of an Infrastructure as a Service (IaaS).</p>
+
+<p id="cn-m1-75">In this task, we will create a VM using the Azure portal.</p>
+
+<h4 id="cn-m1-76"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m1-77">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m1-78"></p><figure><img class="cn-img" id="cn-image-m1-c-0" src="DifferentCloudServiceModels_files/image-m1-c-0.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: The Windows 10 desktop is displayed."><figcaption>Figure 1.1 Screenshot of PLABWIN10: The Windows 10 desktop is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-80"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m1-81">Click the <b>Microsoft Edge </b>icon from the <b>Taskbar</b>.</p>
+
+<span class="cn-quote" id="cn-m1-82"><b><i>Note: </i></b><i>When opening
+ the Microsoft Edge browser, it will automatically redirect to the Azure
+ portal. An automated log-in process will occur, giving access to the 
+Azure portal without creating a free trial account.</i></span>
+
+<p id="cn-m1-84"></p><figure><img class="cn-img" id="cn-image-m1-c-1" src="DifferentCloudServiceModels_files/image-m1-c-1.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with the Microsoft Edge icon from the Taskbar highlighted."><figcaption>Figure
+ 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with 
+the Microsoft Edge icon from the Taskbar highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-86"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m1-87">In <b>Microsoft Edge, </b>select <b>Resource Groups</b>.</p>
+
+<span class="cn-quote" id="cn-m1-88"><b><i>Note</i></b><i>: For this 
+lab, a resource group has been pre-created for the account. Please 
+ensure to utilize this resource group to conduct the lab successfully.</i></span>
+
+<p id="cn-m1-90"></p><figure><img class="cn-img" id="cn-image-m1-c-2" src="DifferentCloudServiceModels_files/image-m1-c-2.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed with the Resource groups icon highlighted."><figcaption>Figure
+ 1.3 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed with the Resource groups icon highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-92"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m1-93">From the <b>Resource groups </b>page, select the pre-populated <b>Resource group</b>.</p>
+
+<p id="cn-m1-94"></p><figure><img class="cn-img" id="cn-image-m1-c-3" src="DifferentCloudServiceModels_files/image-m1-c-3.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: The Resource groups page is displayed with the the pre-populated Resource group selected."><figcaption>Figure 1.4 Screenshot of PLABWIN10: The Resource groups page is displayed with the the pre-populated Resource group selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-96"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m1-97">On the <b>Resource group </b>page, click <b>+ Create</b>.</p>
+
+<p id="cn-m1-98"></p><figure><img class="cn-img" id="cn-image-m1-c-4" src="DifferentCloudServiceModels_files/image-m1-c-4.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: The Resource group page is displayed with the + Create icon highlighted."><figcaption>Figure 1.5 Screenshot of PLABWIN10: The Resource group page is displayed with the + Create icon highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-100"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m1-101">From the <b>Create a resource </b>page, navigate to the left-hand menu and select <b>Compute</b>.</p>
+
+<p id="cn-m1-102"></p><figure><img class="cn-img" id="cn-image-m1-c-5" src="DifferentCloudServiceModels_files/image-m1-c-5.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: The Create a resource page is displayed with the Compute option in the left-hand menu highlighted."><figcaption>Figure
+ 1.6 Screenshot of PLABWIN10: The Create a resource page is displayed 
+with the Compute option in the left-hand menu highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-104"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m1-105">In the <b>Compute </b>section, click the <b>Create </b>button located under the <b>Virtual machine </b>resource option.</p>
+
+<p id="cn-m1-107"></p><figure><img class="cn-img" id="cn-image-m1-c-6" src="DifferentCloudServiceModels_files/image-m1-c-6.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: The Create a resource page is displayed with the Virtual machine Create weblink selected."><figcaption>Figure 1.7 Screenshot of PLABWIN10: The Create a resource page is displayed with the Virtual machine Create weblink selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-109"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m1-110">Scroll down to the <b>Instance details </b>section. Click into the <b>Virtual machine name </b>textbox and type:</p>
+
+<pre id="cn-m1-111"><code>PLABSERVER
+
+</code></pre>
+
+<p id="cn-m1-112"></p><figure><img class="cn-img" id="cn-image-m1-c-7" src="DifferentCloudServiceModels_files/image-m1-c-7.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: The Create a virtual machine is displayed with the Virtual machine name typed into the textbox."><figcaption>Figure
+ 1.8 Screenshot of PLABWIN10: The Create a virtual machine is displayed 
+with the Virtual machine name typed into the textbox.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-114"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m1-115">Click into the <b>Region </b>dropdown box and ensure <b>(Europe) UK South </b>is selected.</p>
+
+<span class="cn-quote" id="cn-m1-116"><b><i>Note</i></b><i>: The Azure platform may show an option to set an </i><b><i>Availability Zone</i></b><i>, which does not appear in the below screenshots. Please leave these options as the default (</i><b><i>Zone 1</i></b><i>) and continue with the below steps.</i></span>
+
+<p id="cn-m1-117"></p><figure><img class="cn-img" id="cn-image-m1-c-8" src="DifferentCloudServiceModels_files/image-m1-c-8.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the region pre-set."><figcaption>Figure 1.9 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the region pre-set.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-119"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m1-120">In the <b>Image </b>field, click the dropdown and select the <b>Windows Server 2019 Datacenter Gen 2 </b>image.</p>
+
+<span class="cn-quote" id="cn-m1-121"><b><i>Note</i></b><i>: The version
+ of Windows may differ from what is shown in the screenshots. This is 
+due to incremental updates to the Azure platform over time.</i></span>
+
+<p id="cn-m1-123"></p><figure><img class="cn-img" id="cn-image-m1-c-9" src="DifferentCloudServiceModels_files/image-m1-c-9.jpg" alt="Figure 1.10 Screenshot of PLABWIN10: The Create a virtual machine is displayed and shows the creation of a Windows Server 2019 Datacenter - Gen 2 virtual machine on the Microsoft Azure platform."><figcaption>Figure
+ 1.10 Screenshot of PLABWIN10: The Create a virtual machine is displayed
+ and shows the creation of a Windows Server 2019 Datacenter - Gen 2 
+virtual machine on the Microsoft Azure platform.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-125"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m1-126">Under the <b>Image </b>dropdown, click the <b>Configure VM generation </b>weblink.</p>
+
+<p id="cn-m1-127"></p><figure><img class="cn-img" id="cn-image-m1-c-10" src="DifferentCloudServiceModels_files/image-m1-c-10.jpg" alt="Figure 1.11 Screenshot of PLABWIN10: The Create a virtual machine is displayed and shows the Configure VM generation weblink highlighted under the Image setting."><figcaption>Figure
+ 1.11 Screenshot of PLABWIN10: The Create a virtual machine is displayed
+ and shows the Configure VM generation weblink highlighted under the 
+Image setting.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-129"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m1-130">Under <b>VM generation</b>, select <b>Generation 1 </b>and click <b>Apply</b>.</p>
+
+<p id="cn-m1-131"></p><figure><img class="cn-img" id="cn-image-m1-c-11" src="DifferentCloudServiceModels_files/image-m1-c-11.jpg" alt="Figure 1.12 Screenshot of PLABWIN10 The Configure VM generation window is displayed and shows the selection of the generation for the virtual machine."><figcaption>Figure
+ 1.12 Screenshot of PLABWIN10 The Configure VM generation window is 
+displayed and shows the selection of the generation for the virtual 
+machine.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-133"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m1-134">You will now be back at the <b>Create a virtual machine </b>webpage. From the <b>Administrator account </b>section, click into the <b>Username </b>textbox and type:</p>
+
+<pre id="cn-m1-135"><code>Plabadmin
+
+</code></pre>
+
+<p id="cn-m1-136">In the <b>Password </b>textbox, type:</p>
+
+<pre id="cn-m1-137"><code>Passw0rd1234
+
+</code></pre>
+
+<p id="cn-m1-138">Type the password again in the <b>Confirm password </b>textbox.</p>
+
+<p id="cn-m1-139"></p><figure><img class="cn-img" id="cn-image-m1-c-12" src="DifferentCloudServiceModels_files/image-m1-c-12.jpg" alt="Figure 1.13 Screenshot of PLABWIN10: The Create a virtual machine is displayed and shows the creation of a user for the virtual machine."><figcaption>Figure
+ 1.13 Screenshot of PLABWIN10: The Create a virtual machine is displayed
+ and shows the creation of a user for the virtual machine.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-141"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m1-142">Scroll back up to the <b>Size </b>drop-down menu and click the <b>See all sizes </b>weblink.</p>
+
+<p id="cn-m1-143"></p><figure><img class="cn-img" id="cn-image-m1-c-13" src="DifferentCloudServiceModels_files/image-m1-c-13.jpg" alt="Figure 1.14 Screenshot of PLABWIN10: The Create a virtual machine is displayed and shows the selection of the computing size for the virtual machine."><figcaption>Figure
+ 1.14 Screenshot of PLABWIN10: The Create a virtual machine is displayed
+ and shows the selection of the computing size for the virtual machine.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-145"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m1-146">From the <b>Select a VM size </b>page, ensure that <b>A-Series v2 &gt; A1_v2 </b>is selected, then click <b>Select</b>.</p>
+
+<span class="cn-quote" id="cn-m1-147"><b><i>Note: </i></b><i>Due to 
+restrictions on the Azure subscription used in the lab, only specific 
+computing sizes will be used in this task. When creating a virtual 
+machine, the correct computing resources need to be allocated to fit its
+ purpose. Different computing sizes will incur different costs 
+concerning the number of resources allocated to the virtual machine. 
+Special care needs to be given to allocating computing resources to 
+prevent accruing unnecessary costs for a company. </i></span>
+
+<p id="cn-m1-148"></p><figure><img class="cn-img" id="cn-image-m1-c-14" src="DifferentCloudServiceModels_files/image-m1-c-14.jpg" alt="Figure 1.15 Screenshot of PLABWIN10: The Select a VM size page is displayed and shows the selection of the computing size for the virtual machine."><figcaption>Figure
+ 1.15 Screenshot of PLABWIN10: The Select a VM size page is displayed 
+and shows the selection of the computing size for the virtual machine.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-150"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m1-151">Back on the <b>Create a virtual machine </b>page, scroll down to the bottom of the page and click <b>Review + create</b>.</p>
+
+<span class="cn-alert" id="cn-m1-152"><b>Alert</b>: please ensure that the <b>Licensing </b>checkbox has <b>not </b>been ticked.</span>
+
+<p id="cn-m1-153"></p><figure><img class="cn-img" id="cn-image-m1-c-15" src="DifferentCloudServiceModels_files/image-m1-c-15.jpg" alt="Figure 1.16 Screenshot of PLABWIN10: The Create a virtual machine page is displayed and shows the creation of a virtual machine in the Microsoft Azure portal."><figcaption>Figure
+ 1.16 Screenshot of PLABWIN10: The Create a virtual machine page is 
+displayed and shows the creation of a virtual machine in the Microsoft 
+Azure portal.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-155"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m1-156">In the <b>Save password </b>pop-up menu, click <b>Never</b>.</p>
+
+<p id="cn-m1-157"></p><figure><img class="cn-img" id="cn-image-m1-c-16" src="DifferentCloudServiceModels_files/image-m1-c-16.jpg" alt="Figure 1.17 Screenshot of PLABWIN10: Displaying creating a virtual machine in the Microsoft Azure portal."><figcaption>Figure 1.17 Screenshot of PLABWIN10: Displaying creating a virtual machine in the Microsoft Azure portal.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-159"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m1-160">This will bring you to the <b>Validation </b>page, which will initially fail.</p>
+
+<p id="cn-m1-161">Click on the <b>Basics </b>tab.</p>
+
+<p id="cn-m1-162"></p><figure><img class="cn-img" id="cn-image-m1-c-17" src="DifferentCloudServiceModels_files/image-m1-c-17.jpg" alt="Figure 1.18 Screenshot of PLABWIN10: Displaying the validation failed page. The Basics tab is highlighted."><figcaption>Figure 1.18 Screenshot of PLABWIN10: Displaying the validation failed page. The Basics tab is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-164"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m1-165">Once again click the <b>Review </b>+ <b>create </b>button.</p>
+
+<p id="cn-m1-166">This will now allow you to proceed with the deployment.</p>
+
+<span class="cn-alert" id="cn-m1-167"><b>Alert</b>: We are currently investigating this issue with the Azure portal.</span>
+
+<p id="cn-m1-169"></p><figure><img class="cn-img" id="cn-image-m1-c-18" src="DifferentCloudServiceModels_files/image-m1-c-18.jpg" alt="Figure 1.19 Screenshot of PLABWIN10: Displaying the Create a virtual machine page. Review + create is highlighted."><figcaption>Figure 1.19 Screenshot of PLABWIN10: Displaying the Create a virtual machine page. Review + create is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-171"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m1-172">From the <b>Create a virtual machine </b>window, click the <b>Create </b>button.</p>
+
+<p id="cn-m1-173"></p><figure><img class="cn-img" id="cn-image-m1-c-19" src="DifferentCloudServiceModels_files/image-m1-c-19.jpg" alt="Figure 1.20 Screenshot of PLABWIN10: Displaying finalizing the creation of a virtual machine in the Azure portal. The Create button is highlighted."><figcaption>Figure
+ 1.20 Screenshot of PLABWIN10: Displaying finalizing the creation of a 
+virtual machine in the Azure portal. The Create button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-175"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m1-176">Click the <b>Notifications </b>bell icon in the <b>Azure </b>portal.</p>
+
+<span class="cn-quote" id="cn-m1-177"><b><i>Note</i></b><i>: The 
+creation of the virtual machine will take up to 10 minutes to complete. 
+The progress of the deployment of the virtual machine can be tracked by 
+clicking the notifications icon.</i></span>
+
+<p id="cn-m1-179"></p><figure><img class="cn-img" id="cn-image-m1-c-20" src="DifferentCloudServiceModels_files/image-m1-c-20.jpg" alt="Figure 1.21 Screenshot of PLABWIN10: Displaying creating a virtual machine in the Azure portal."><figcaption>Figure 1.21 Screenshot of PLABWIN10: Displaying creating a virtual machine in the Azure portal.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-181"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m1-182">Once the deployment has completed, a green tick icon will display.</p>
+
+<p id="cn-m1-183">Click <b>Go to resource</b>.</p>
+
+<p id="cn-m1-184"></p><figure><img class="cn-img" id="cn-image-m1-c-21" src="DifferentCloudServiceModels_files/image-m1-c-21.jpg" alt="Figure 1.22 Screenshot of PLABWIN10: Displaying creating a virtual machine in the Microsoft Azure portal."><figcaption>Figure 1.22 Screenshot of PLABWIN10: Displaying creating a virtual machine in the Microsoft Azure portal.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-186"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m1-187">In the <b>PLABSERVER </b>window, select <b>Networking</b>.</p>
+
+<span class="cn-quote" id="cn-m1-188"><b><i>Note: </i></b><i>When a 
+virtual machine is created, networking components are automatically 
+provisioned, and these networking components can be changed according to
+ the function and purpose of the virtual machine.</i></span>
+
+<p id="cn-m1-190"></p><figure><img class="cn-img" id="cn-image-m1-c-22" src="DifferentCloudServiceModels_files/image-m1-c-22.jpg" alt="Figure 1.23 Screenshot of PLABWIN10: Displaying the overview page of the Virtual machine created in the Azure portal."><figcaption>Figure 1.23 Screenshot of PLABWIN10: Displaying the overview page of the Virtual machine created in the Azure portal.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-192"><b><i>Step 24</i></b></h4>
+
+<p id="cn-m1-193">Select <b>Connect </b>in the <b>PLABSERVER | Networking </b>window.</p>
+
+<p id="cn-m1-194"></p><figure><img class="cn-img" id="cn-image-m1-c-23" src="DifferentCloudServiceModels_files/image-m1-c-23.jpg" alt="Figure 1.24 Screenshot of PLABWIN10: Displaying the Networking components of the Virtual machine."><figcaption>Figure 1.24 Screenshot of PLABWIN10: Displaying the Networking components of the Virtual machine.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-196"><b><i>Step 25</i></b></h4>
+
+<p id="cn-m1-197">On the <b>PLABSERVER | Connect </b>page, click <b>Download RDP File</b>.</p>
+
+<p id="cn-m1-198"></p><figure><img class="cn-img" id="cn-image-m1-c-24" src="DifferentCloudServiceModels_files/image-m1-c-24.jpg" alt="Figure 1.25 Screenshot of PLABWIN10: Displaying connecting to the Azure Virtual machine from the Azure portal."><figcaption>Figure 1.25 Screenshot of PLABWIN10: Displaying connecting to the Azure Virtual machine from the Azure portal.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-200"><b><i>Step 26</i></b></h4>
+
+<p id="cn-m1-201">The downloads pane will appear at the top of the screen. Select <b>Open file</b>.</p>
+
+<span class="cn-quote" id="cn-m1-202"><b><i>Note: </i></b><i>The download pane may also appear at the foot of the page.</i></span>
+
+<p id="cn-m1-203"></p><figure><img class="cn-img" id="cn-image-m1-c-25" src="DifferentCloudServiceModels_files/image-m1-c-25.jpg" alt="Figure 1.26 Screenshot of PLABWIN10: Displaying clicking Open file on the downloaded RDP file."><figcaption>Figure 1.26 Screenshot of PLABWIN10: Displaying clicking Open file on the downloaded RDP file.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-205"><b><i>Step 27</i></b></h4>
+
+<p id="cn-m1-206">In the <b>Remote Desktop Connection </b>pop-up window, select <b>Connect</b>.</p>
+
+<p id="cn-m1-207"></p><figure><img class="cn-img" id="cn-image-m1-c-26" src="DifferentCloudServiceModels_files/image-m1-c-26.jpg" alt="Figure 1.27 Screenshot of PLABWIN10: Displaying connecting to the Azure Virtual machine using a Remote Desktop connection."><figcaption>Figure 1.27 Screenshot of PLABWIN10: Displaying connecting to the Azure Virtual machine using a Remote Desktop connection.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-209"><b><i>Step 28</i></b></h4>
+
+<p id="cn-m1-210">You will now be asked to enter your credentials. Click <b>More choices </b>&gt; <b>use a different account</b>.</p>
+
+<p id="cn-m1-211"></p><figure><img class="cn-img" id="cn-image-m1-c-27" src="DifferentCloudServiceModels_files/image-m1-c-27.jpg" alt="Figure 1.28 Screenshot of PLABWIN10: Displaying connecting to the Azure Virtual machine using a Remote Desktop connection. The credentials page is shown."><figcaption>Figure
+ 1.28 Screenshot of PLABWIN10: Displaying connecting to the Azure 
+Virtual machine using a Remote Desktop connection. The credentials page 
+is shown.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-213"><b><i>Step 29</i></b></h4>
+
+<p id="cn-m1-214">Type the following credentials, which are the same as we specified when creating the machine. Enter the following username:</p>
+
+<pre id="cn-m1-215"><code>Plabadmin
+
+</code></pre>
+
+<p id="cn-m1-216">And the <b>Password</b>:</p>
+
+<span class="cn-password">Passw0rd1234</span>
+
+<p id="cn-m1-218">Click <b>Ok</b>.</p>
+
+<p id="cn-m1-219"></p><figure><img class="cn-img" id="cn-image-m1-c-28" src="DifferentCloudServiceModels_files/image-m1-c-28.jpg" alt="Figure 1.29 Screenshot of PLABWIN10: Displaying connecting to the Azure Virtual machine using a Remote Desktop connection. The credentials page is shown with the local administrator account details typed in. Ok is highlighted."><figcaption>Figure
+ 1.29 Screenshot of PLABWIN10: Displaying connecting to the Azure 
+Virtual machine using a Remote Desktop connection. The credentials page 
+is shown with the local administrator account details typed in. Ok is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-221"><b><i>Step 30</i></b></h4>
+
+<p id="cn-m1-222">Click <b>Yes </b>on the <b>Remote Desktop Connection certificate </b>window.</p>
+
+<p id="cn-m1-223"></p><figure><img class="cn-img" id="cn-image-m1-c-29" src="DifferentCloudServiceModels_files/image-m1-c-29.jpg" alt="Figure 1.30 Screenshot of PLABWIN10: Displaying connecting to the Azure Virtual machine using a Remote Desktop connection. Ok is highlighted on the certificate page."><figcaption>Figure
+ 1.30 Screenshot of PLABWIN10: Displaying connecting to the Azure 
+Virtual machine using a Remote Desktop connection. Ok is highlighted on 
+the certificate page.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-225"><b><i>Step 31</i></b></h4>
+
+<p id="cn-m1-226">The connection to the VM will now appear. As Windows is configuring for first-time use, it will take a few minutes to log in.</p>
+
+<span class="cn-quote" id="cn-m1-227"><b><i>Note</i></b><i>: Please allow up to 5 minutes.</i></span>
+
+<p id="cn-m1-228"></p><figure><img class="cn-img" id="cn-image-m1-c-30" src="DifferentCloudServiceModels_files/image-m1-c-30.jpg" alt="Figure 1.31 Screenshot of PLABWIN10: Displaying the RDP window connected to the PLABSERVER Azure vm."><figcaption>Figure 1.31 Screenshot of PLABWIN10: Displaying the RDP window connected to the PLABSERVER Azure vm.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-230"><b><i>Step 32</i></b></h4>
+
+<p id="cn-m1-231">Again after a few minutes, Windows will open to the 
+desktop. It may also open the Microsoft Edge window as is part of the 
+first-time use process, although you may close these windows.</p>
+
+<p id="cn-m1-232">Once you are ready, close the <b>RDP </b>window via the close icon in the blue bar at the top of the page.</p>
+
+<p id="cn-m1-233"></p><figure><img class="cn-img" id="cn-image-m1-c-31" src="DifferentCloudServiceModels_files/image-m1-c-31.jpg" alt="Figure 1.32 Screenshot of PLABWIN10: Displaying the RDP window connected to the PLABSERVER Azure vm. The Windows 10 desktop is shown."><figcaption>Figure
+ 1.32 Screenshot of PLABWIN10: Displaying the RDP window connected to 
+the PLABSERVER Azure vm. The Windows 10 desktop is shown.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-235"><b><i>Step 33</i></b></h4>
+
+<p id="cn-m1-236">Closing the window will return you to the <b>PLABSERVER </b>| <b>Connect </b>window.</p>
+
+<p id="cn-m1-237"></p><figure><img class="cn-img" id="cn-image-m1-c-32" src="DifferentCloudServiceModels_files/image-m1-c-32.jpg" alt="Figure 1.33 Screenshot of PLABWIN10: Displaying the PLABSERVER | Connect page."><figcaption>Figure 1.33 Screenshot of PLABWIN10: Displaying the PLABSERVER | Connect page.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m1-240">Keep <b>PLABWIN10 </b>in its current state and proceed to the next task.</span>
+
+<h3 id="cn-m1-242"><b>Task 2 - Explore Platform as a Service (PaaS)</b></h3>
+
+<p id="cn-m1-243">Because <b>Azure SQL Database </b>has a <b>Platform as a Service </b>model (<b>PaaS</b>),
+ you don’t need to focus on the infrastructure or platform. Instead, you
+ can focus on database administration and optimization activities 
+critical for your organization.</p>
+
+<p id="cn-m1-244">The AWS alternative of this tool is <b>AWS SWL Server Database</b>.</p>
+
+<p id="cn-m1-245">In this task, you will create a simple SQL database and server in Microsoft Azure.</p>
+
+<h4 id="cn-m1-246"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m1-247">Ensure you are connected to <b>PLABWIN10 </b>with the <b>PLABSERVER </b>| <b>Connect </b>page displayed.</p>
+
+<p id="cn-m1-248">Click the <b>Microsoft Azure </b>logo next to the search box at the top of the page to navigate to the dashboard.</p>
+
+<p id="cn-m1-249"></p><figure><img class="cn-img" id="cn-image-m1-c-33" src="DifferentCloudServiceModels_files/image-m1-c-33.jpg" alt="Figure 1.34 Screenshot of PLABWIN10: Displaying the PLABSERVER | Connect page. The Microsoft Azure button is highlighted."><figcaption>Figure 1.34 Screenshot of PLABWIN10: Displaying the PLABSERVER | Connect page. The Microsoft Azure button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-251"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m1-252">Click <b>Create a resource </b>on the dashboard.</p>
+
+<p id="cn-m1-253"></p><figure><img class="cn-img" id="cn-image-m1-c-34" src="DifferentCloudServiceModels_files/image-m1-c-34.jpg" alt="Figure 1.35 Screenshot of PLABWIN10: Displaying the Azure dashboard. The Create a resource option is highlighted."><figcaption>Figure 1.35 Screenshot of PLABWIN10: Displaying the Azure dashboard. The Create a resource option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-255"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m1-256">From the <b>Create a resource </b>page, navigate to <b>Databases </b>on the left-hand side of the screen.</p>
+
+<p id="cn-m1-257"></p><figure><img class="cn-img" id="cn-image-m1-c-35" src="DifferentCloudServiceModels_files/image-m1-c-35.jpg" alt="Figure 1.36 Screenshot of PLABWIN10: Displaying the Create a resource page. The Databases option is highlighted under the categories menu."><figcaption>Figure
+ 1.36 Screenshot of PLABWIN10: Displaying the Create a resource page. 
+The Databases option is highlighted under the categories menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-259"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m1-260">Click <b>Create </b>located under the <b>SQL Database </b>resource option.</p>
+
+<p id="cn-m1-261"></p><figure><img class="cn-img" id="cn-image-m1-c-36" src="DifferentCloudServiceModels_files/image-m1-c-36.jpg" alt="Figure 1.37 Screenshot of PLABWIN10: Displaying the Azure Marketplace. The Databases option is highlighted."><figcaption>Figure 1.37 Screenshot of PLABWIN10: Displaying the Azure Marketplace. The Databases option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-263"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m1-264">The <b>Create SQL Database </b>page is displayed.</p>
+
+<p id="cn-m1-265">Under the <b>Subscription </b>section, ensure that your <b>Resource Group </b>is selected in the drop-down list. This will be the same as your username.</p>
+
+<p id="cn-m1-266"></p><figure><img class="cn-img" id="cn-image-m1-c-37" src="DifferentCloudServiceModels_files/image-m1-c-37.jpg" alt="Figure 1.38 Screenshot of PLABWIN10: Displaying the Create SQL Database page. The active resource group is highlighted in the resource group drop-down menu."><figcaption>Figure
+ 1.38 Screenshot of PLABWIN10: Displaying the Create SQL Database page. 
+The active resource group is highlighted in the resource group drop-down
+ menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-268"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m1-269">Under the <b>Database details </b>section, in the <b>Database name </b>textbox,  type the following:</p>
+
+<pre id="cn-m1-270"><code>plabsql01
+
+</code></pre>
+
+<p id="cn-m1-271"></p><figure><img class="cn-img" id="cn-image-m1-c-38" src="DifferentCloudServiceModels_files/image-m1-c-38.jpg" alt="Figure 1.39 Screenshot of PLABWIN10: Displaying the Create SQL Database page. Plabsql01 is typed into the Database name field."><figcaption>Figure 1.39 Screenshot of PLABWIN10: Displaying the Create SQL Database page. Plabsql01 is typed into the Database name field.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-273"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m1-274">Under the <b>Server </b>dropdown, click the <b>Create new </b>weblink.</p>
+
+<p id="cn-m1-276"></p><figure><img class="cn-img" id="cn-image-m1-c-39" src="DifferentCloudServiceModels_files/image-m1-c-39.jpg" alt="Figure 1.40 Screenshot of PLABWIN10: Displaying the Create SQL Database page. The Create new option is highlighted under the Server field."><figcaption>Figure
+ 1.40 Screenshot of PLABWIN10: Displaying the Create SQL Database page. 
+The Create new option is highlighted under the Server field.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-278"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m1-279">From the <b>Create SQL Server </b>page, enter the following name, ensuring that you replace the <b>XX </b>in the below with your initials or two random characters:</p>
+
+<p id="cn-m1-280"><b>Server name:</b></p>
+
+<pre id="cn-m1-281"><code>plabsrvXX
+
+</code></pre>
+
+<span class="cn-quote" id="cn-m1-282"><b><i>Note</i></b><i>: The reason we are including two random characters is that the server name must be unique in the subscription.</i></span>
+
+<p id="cn-m1-283"></p><figure><img class="cn-img" id="cn-image-m1-c-40" src="DifferentCloudServiceModels_files/image-m1-c-40.jpg" alt="Figure 1.41 Screenshot of PLABWIN10:  Displaying the Create SQL Database Server page. Plabsvr01 is typed into the Server name field."><figcaption>Figure
+ 1.41 Screenshot of PLABWIN10:  Displaying the Create SQL Database 
+Server page. Plabsvr01 is typed into the Server name field.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-285"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m1-286">Ensure that the <b>Location </b>field is specified as <b>(Europe) UK South</b>.</p>
+
+<p id="cn-m1-287">Ensure that the <b>Authentication Method </b>field has been set to <b>Use SQL authentication</b>.</p>
+
+<p id="cn-m1-288"></p><figure><img class="cn-img" id="cn-image-m1-c-41" src="DifferentCloudServiceModels_files/image-m1-c-41.jpg" alt="Figure 1.42 Screenshot of PLABWIN10:  Displaying the Create SQL Database Server page. The UK South location has been selected."><figcaption>Figure 1.42 Screenshot of PLABWIN10:  Displaying the Create SQL Database Server page. The UK South location has been selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-290"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m1-291">Scroll down to the <b>Administrator account </b>section, click into the <b>Username </b>textbox and type:</p>
+
+<pre id="cn-m1-292"><code>Plabadmin
+
+</code></pre>
+
+<p id="cn-m1-293">In the <b>Password </b>textbox, type:</p>
+
+<pre id="cn-m1-294"><code><span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m1-295">Type the password again in the <b>Confirm password </b>textbox.</p>
+
+<p id="cn-m1-296">Click <b>OK </b>to proceed once all credentials have been added.</p>
+
+<p id="cn-m1-297">You may have to expand the window to see this option at the foot of the blade.</p>
+
+<p id="cn-m1-298"></p><figure><img class="cn-img" id="cn-image-m1-c-42" src="DifferentCloudServiceModels_files/image-m1-c-42.jpg" alt="Figure 1.43 Screenshot of PLABWIN10: Displaying the Create SQL Database Server page. The credentials have been entered in the relevant fields. The OK option is highlighted."><figcaption>Figure
+ 1.43 Screenshot of PLABWIN10: Displaying the Create SQL Database Server
+ page. The credentials have been entered in the relevant fields. The OK 
+option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-300"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m1-301">After a few seconds, <b>Microsoft Edge </b>will open the <b>Save password </b>prompt.</p>
+
+<p id="cn-m1-302">Click <b>Never</b>.</p>
+
+<p id="cn-m1-303"></p><figure><img class="cn-img" id="cn-image-m1-c-43" src="DifferentCloudServiceModels_files/image-m1-c-43.jpg" alt="Figure 1.44 Screenshot of PLABWIN10: Displaying the Create SQL Database page. The Save Password prompt is open, and the Never option is highlighted."><figcaption>Figure
+ 1.44 Screenshot of PLABWIN10: Displaying the Create SQL Database page. 
+The Save Password prompt is open, and the Never option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-305"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m1-306">From the <b>Create SQL Database </b>page, click the <b>Additional settings </b>tab.</p>
+
+<p id="cn-m1-307"></p><figure><img class="cn-img" id="cn-image-m1-c-44" src="DifferentCloudServiceModels_files/image-m1-c-44.jpg" alt="Figure 1.45 Screenshot of PLABWIN10: The Create SQL Database page is shown. Additional settings is highlighted."><figcaption>Figure 1.45 Screenshot of PLABWIN10: The Create SQL Database page is shown. Additional settings is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-309"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m1-310">On the <b>Additional settings </b>page, under <b>Data source</b>, set the <b>Use existing data </b>option to <b>Sample</b>.</p>
+
+<p id="cn-m1-311">This will fill the database with sample data as an example.</p>
+
+<p id="cn-m1-312">On the fly-out menu that appears, click <b>Ok</b>.</p>
+
+<p id="cn-m1-313"></p><figure><img class="cn-img" id="cn-image-m1-c-45" src="DifferentCloudServiceModels_files/image-m1-c-45.jpg" alt="Figure 1.46 Screenshot of PLABWIN10: The Additional settings page is shown. Sample has been selected under Data source."><figcaption>Figure 1.46 Screenshot of PLABWIN10: The Additional settings page is shown. Sample has been selected under Data source.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-315"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m1-316">At the bottom of the page, click the <b>Review + create </b>button.</p>
+
+<p id="cn-m1-317"></p><figure><img class="cn-img" id="cn-image-m1-c-46" src="DifferentCloudServiceModels_files/image-m1-c-46.jpg" alt="Figure 1.47 Screenshot of PLABWIN10: Displaying the Create SQL Database page. The Review + create option is highlighted."><figcaption>Figure 1.47 Screenshot of PLABWIN10: Displaying the Create SQL Database page. The Review + create option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-319"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m1-320">Once the resource has been validated, click the <b>Create </b>button.</p>
+
+<span class="cn-quote" id="cn-m1-321"><b><i>Note</i></b><i>: If you receive an error stating that </i><b><i>there were validation errors</i></b><i>, please ensure you have entered all fields as noted in the steps.</i></span>
+
+<p id="cn-m1-323"></p><figure><img class="cn-img" id="cn-image-m1-c-47" src="DifferentCloudServiceModels_files/image-m1-c-47.jpg" alt="Figure 1.48 Screenshot of PLABWIN10: Displaying the Create SQL Database validation page. The Create option is highlighted."><figcaption>Figure 1.48 Screenshot of PLABWIN10: Displaying the Create SQL Database validation page. The Create option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-325"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m1-326">Back in the <b>deployment overview </b>page, click the <b>Notifications </b>bell icon.</p>
+
+<p id="cn-m1-327">Notice the message stating <b>Deployment in process</b>….</p>
+
+<p id="cn-m1-328"></p><figure><img class="cn-img" id="cn-image-m1-c-48" src="DifferentCloudServiceModels_files/image-m1-c-48.jpg" alt="Figure 1.49 Screenshot of PLABWIN10: Displaying the Deployment page. The Notification pane is open, showing the deployment in process."><figcaption>Figure
+ 1.49 Screenshot of PLABWIN10: Displaying the Deployment page. The 
+Notification pane is open, showing the deployment in process.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-330"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m1-331">Once the deployment has successfully completed, click <b>Go to resource</b>.</p>
+
+<p id="cn-m1-332"></p><figure><img class="cn-img" id="cn-image-m1-c-49" src="DifferentCloudServiceModels_files/image-m1-c-49.jpg" alt="Figure 1.50 Screenshot of PLABWIN10: Displaying the Deployment page. The Notifications blade is open, and Go to Resource is highlighted."><figcaption>Figure
+ 1.50 Screenshot of PLABWIN10: Displaying the Deployment page. The 
+Notifications blade is open, and Go to Resource is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-334"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m1-335">The <b>plabsql01 (plabsrv01/plabsql..) overview </b>page is shown.</p>
+
+<p id="cn-m1-336">From here, there are options to further configure the database and connect it to other resources.</p>
+
+<p id="cn-m1-337"></p><figure><img class="cn-img" id="cn-image-m1-c-50" src="DifferentCloudServiceModels_files/image-m1-c-50.jpg" alt="Figure 1.51 Screenshot of PLABWIN10: Displaying the Plabsql01 (plabsrv01/plabsql01) overview page."><figcaption>Figure 1.51 Screenshot of PLABWIN10: Displaying the Plabsql01 (plabsrv01/plabsql01) overview page.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<span class="cn-alert" id="cn-m1-341">Keep <b>PLABWIN10 </b>in its current state and proceed to the next exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m1-343"><b>Exercise 2 - Advanced Cloud Services</b></h2>
+
+<p id="cn-m1-344">Further to different service models, CSPs also offer different types of more advanced services.</p>
+
+<p id="cn-m1-345">These emerging technologies aim to further assist 
+users with multiple things, from data aggregation and collection to 
+fully managed Serverless architectures, and even Artificial Intelligence
+ and Machine Learning tools to assist with the collation and processing 
+of data for insights.</p>
+
+<p id="cn-m1-346">Picture you work for a home assistant provider (such 
+as Amazon) and need to aggregate data from millions of different IoT 
+devices across the globe, all reporting information and telemetry back 
+to your Cloud infrastructure. Because of the sheer amount and volume of 
+this data, it would be highly beneficial to implement Artificial 
+Intelligence to help turn that data into usable metrics rather than 
+manually process and sift through it.</p>
+
+<p id="cn-m1-347"><b>AI </b>is used for this and many more applications 
+in Cloud environments and aims to provide users with insights and easily
+ track user trends. AI can also process images and speech patterns to 
+provide more and more insights, which cascades into more accurate 
+reporting done by the intelligence.</p>
+
+<p id="cn-m1-348">There is a differentiation between Machine Learning 
+and AI here; AI can analyze and produce insights, whereas Machine 
+Learning gives users the ability to make decisions based on those same 
+insights.</p>
+
+<p id="cn-m1-349">In this exercise, we will investigate some advanced and emerging technologies available in the Cloud.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m1-351">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m1-352">
+
+<li id="cn-m1-352">Define and Describe Different Emerging Cloud Technologies</li>
+
+<li id="cn-m1-353">Define and Describe Artificial Intelligence and Machine Learning in Cloud Environments</li>
+
+<li id="cn-m1-354">Explore and Identify IoT Resources</li>
+
+<li id="cn-m1-355">Explore and Identify Serverless Architectures</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m1-357">You will be using the following device in this lab. Please power this on now.</p>
+
+<img class="cn-img" id="cn-image-m0-c-0" src="DifferentCloudServiceModels_files/LabTopology1.png"> <!-- Azure Workstation -->
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<ul id="cn-m1-360">
+
+<li id="cn-m1-360"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m1-361"><b>Task 1 - Explore Cloud-based IoT Resources</b></h3>
+
+<p id="cn-m1-362">The term <b>IoT </b>stands for the <b>Internet of Things</b>.
+ IoT allows a device to be accessible on the Internet, such as a mobile 
+device. IoT devices can communicate with each other and gather 
+information that can be used for analysis. There are hundreds of 
+different categories of devices covered under the IoT umbrella, such as 
+wearable devices (smart watches), cameras, climate control, connected 
+and smart cars, and home assistants such as Amazon’s Alexa.</p>
+
+<p id="cn-m1-363">Most modern IoT devices use Cloud technologies to 
+communicate and relay data to users. A home assistant, for example, 
+feeds data back on user trends to a cloud location for the provider, 
+which in turn is then used to further develop and improve the 
+effectiveness of the assistant on a per-user basis. Cloud technologies 
+are better to implement here due to scalability - the sheer amount of 
+data that a home assistant provider would have to process through all 
+devices simultaneously is massive, which could be an issue if storing 
+that data was done on physical hardware.</p>
+
+<p id="cn-m1-364">In this task, we will investigate <b>IoT Hub</b>, a tool available in Azure that allows management and communication to any connected IoT devices.</p>
+
+<h4 id="cn-m1-365"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m1-366">Ensure you are connected to <b>PLABWIN10 </b>and the <b>Microsoft Azure </b>portal is displayed.</p>
+
+<p id="cn-m1-367"></p><figure><img class="cn-img" id="cn-image-m1-c-51" src="DifferentCloudServiceModels_files/image-m1-c-51.jpg" alt="Figure 2.1 Screenshot of PLABWIN10: Displaying opening the Microsoft Edge Web browser from the Taskbar."><figcaption>Figure 2.1 Screenshot of PLABWIN10: Displaying opening the Microsoft Edge Web browser from the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-369"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m1-370">In the search field at the top of the page, type the following:</p>
+
+<pre id="cn-m1-371"><code>iot
+
+</code></pre>
+
+<p id="cn-m1-372">From the drop-down menu, click <b>IoT Hub</b>.</p>
+
+<p id="cn-m1-373"></p><figure><img class="cn-img" id="cn-image-m1-c-52" src="DifferentCloudServiceModels_files/image-m1-c-52.jpg" alt="Figure 2.2 Screenshot of PLABWIN10: The Azure dashboard is displayed. IoT is typed into the search bar, and IoT hub is highlighted."><figcaption>Figure
+ 2.2 Screenshot of PLABWIN10: The Azure dashboard is displayed. IoT is 
+typed into the search bar, and IoT hub is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-375"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m1-376">This will open the <b>IoT Hub </b>tool.</p>
+
+<p id="cn-m1-377">At the top of the page, click <b>+ Create</b>.</p>
+
+<p id="cn-m1-378"></p><figure><img class="cn-img" id="cn-image-m1-c-53" src="DifferentCloudServiceModels_files/image-m1-c-53.jpg" alt="Figure 2.3 Screenshot of PLABWIN10: The IoT Hub overview page is shown. The + Create button is highlighted."><figcaption>Figure 2.3 Screenshot of PLABWIN10: The IoT Hub overview page is shown. The + Create button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-380"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m1-381">Under <b>Subscription</b>, in the <b>Resource Group </b>drop-down, select the pre-populated <b>Resource Group</b>.</p>
+
+<p id="cn-m1-382"></p><figure><img class="cn-img" id="cn-image-m1-c-54" src="DifferentCloudServiceModels_files/image-m1-c-54.jpg" alt="Figure 2.4 Screenshot of PLABWIN10: The IoT Hub overview page is shown. The Charlie RG has been selected in the Resource Group field."><figcaption>Figure
+ 2.4 Screenshot of PLABWIN10: The IoT Hub overview page is shown. The 
+Charlie RG has been selected in the Resource Group field.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-384"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m1-385">Under the <b>Instance Details </b>section, in the <b>IoT hub name field </b>textbox, type the following and replace the last two characters XX with your initials or two random characters:</p>
+
+<pre id="cn-m1-386"><code>PlabIoTHubXX
+
+</code></pre>
+
+<p id="cn-m1-387">Ensure that the <b>Region </b>field is set to <b>UK South</b>.</p>
+
+<p id="cn-m1-388"></p><figure><img class="cn-img" id="cn-image-m1-c-55" src="DifferentCloudServiceModels_files/image-m1-c-55.jpg" alt="Figure 2.5 Screenshot of PLABWIN10: The IoT Hub overview page is shown. PlabIoTHub01 is typed into the IoT hub name field, and the Region has been set to UK South."><figcaption>Figure
+ 2.5 Screenshot of PLABWIN10: The IoT Hub overview page is shown. 
+PlabIoTHub01 is typed into the IoT hub name field, and the Region has 
+been set to UK South.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-390"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m1-391">At the bottom of the page, click <b>Review + create</b>.</p>
+
+<p id="cn-m1-392"></p><figure><img class="cn-img" id="cn-image-m1-c-56" src="DifferentCloudServiceModels_files/image-m1-c-56.jpg" alt="Figure 2.6 Screenshot of PLABWIN10: The IoT Hub overview page is displayed. Review + Create is highlighted."><figcaption>Figure 2.6 Screenshot of PLABWIN10: The IoT Hub overview page is displayed. Review + Create is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-394"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m1-395">On the <b>Validation </b>page, click the <b>Create </b>button.</p>
+
+<p id="cn-m1-396"></p><figure><img class="cn-img" id="cn-image-m1-c-57" src="DifferentCloudServiceModels_files/image-m1-c-57.jpg" alt="Figure 2.7 Screenshot of PLABWIN10: The IoT Hub overview page is shown on the Validation page. Create is highlighted."><figcaption>Figure 2.7 Screenshot of PLABWIN10: The IoT Hub overview page is shown on the Validation page. Create is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-398"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m1-399">Click the <b>Notifications </b>bell icon to see an update on the progress of this deployment.</p>
+
+<span class="cn-quote" id="cn-m1-400"><b><i>Note</i></b><i>: Please allow up to five minutes for the deployment to complete.</i></span>
+
+<p id="cn-m1-401"></p><figure><img class="cn-img" id="cn-image-m1-c-58" src="DifferentCloudServiceModels_files/image-m1-c-58.jpg" alt="Figure 2.8 Screenshot of PLABWIN10: The deployment page is shown for the new IoT hub. The Notification pane is open, showing the deployment in progress."><figcaption>Figure
+ 2.8 Screenshot of PLABWIN10: The deployment page is shown for the new 
+IoT hub. The Notification pane is open, showing the deployment in 
+progress.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-403"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m1-404">Once the deployment is complete, click <b>Go to resource</b>.</p>
+
+<p id="cn-m1-405"></p><figure><img class="cn-img" id="cn-image-m1-c-59" src="DifferentCloudServiceModels_files/image-m1-c-59.jpg" alt="Figure 2.9 Screenshot of PLABWIN10: The deployment page is shown for the new IoT hub. The Notification pane is open shown as complete, and the Go to resource button is highlighted."><figcaption>Figure
+ 2.9 Screenshot of PLABWIN10: The deployment page is shown for the new 
+IoT hub. The Notification pane is open shown as complete, and the Go to 
+resource button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-407"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m1-408">This will bring you to the <b>PlabIoTHub01 </b>IoT Hub overview page, where you will see metrics regarding IoT Hub usage. Notice you have the option to change the date from <b>1 Hour </b>up to <b>30 Days</b>.</p>
+
+<p id="cn-m1-409">In our case, as no IoT devices have been connected and configured, no data will be shown.</p>
+
+<p id="cn-m1-410"></p><figure><img class="cn-img" id="cn-image-m1-c-60" src="DifferentCloudServiceModels_files/image-m1-c-60.jpg" alt="Figure 2.10 Screenshot of PLABWIN10: The PlabIoTHub01 page is displayed. IoT Hub Usage metrics are shown."><figcaption>Figure 2.10 Screenshot of PLABWIN10: The PlabIoTHub01 page is displayed. IoT Hub Usage metrics are shown.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-412"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m1-413">On the left-hand side of the page, under <b>Device Management</b>, click <b>Devices</b>.</p>
+
+<p id="cn-m1-414"></p><figure><img class="cn-img" id="cn-image-m1-c-61" src="DifferentCloudServiceModels_files/image-m1-c-61.jpg" alt="Figure 2.11 Screenshot of PLABWIN10: The PlabIoTHub01 page is displayed. The Devices option is highlighted under the Device management section."><figcaption>Figure
+ 2.11 Screenshot of PLABWIN10: The PlabIoTHub01 page is displayed. The 
+Devices option is highlighted under the Device management section.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-416"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m1-417">This <b>Devices </b>page allows users to link IoT devices to the hub.</p>
+
+<p id="cn-m1-418">Linking devices allows further management using the other <b>Hub </b>tools.</p>
+
+<span class="cn-quote" id="cn-m1-419"><b><i>Note</i></b><i>: Once 
+devices are linked, the IoT Hub provides options to roll out device 
+updates, enables communication and data aggregation, as well as gives 
+you a platform to manage connected IoT devices.</i></span>
+
+<p id="cn-m1-420"></p><figure><img class="cn-img" id="cn-image-m1-c-62" src="DifferentCloudServiceModels_files/image-m1-c-62.jpg" alt="Figure 2.12 Screenshot of PLABWIN10: The PlabIoTHub01 | Devices page is displayed."><figcaption>Figure 2.12 Screenshot of PLABWIN10: The PlabIoTHub01 | Devices page is displayed.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m1-422">Keep <b>PLABWIN10 </b>in its current state and proceed to the next task.</span>
+
+<h3 id="cn-m1-423"><b>Task 2 - Explore Serverless Architectures</b></h3>
+
+<p id="cn-m1-424">Serverless does not refer to infrastructures without 
+any actual physical servers (data always needs to be stored somewhere), 
+but instead an infrastructure that aims to take the management of 
+general server maintenance and configuration out of the user's hands.</p>
+
+<p id="cn-m1-425">Picture a scenario in which a single software 
+developer aims to build an application. If they implemented a Serverless
+ cloud infrastructure to work from, they would not need to manually 
+configure and build servers to host their code but instead have a 
+scalable infrastructure that already runs in the background, freeing up 
+the time and resources it would cost to build this on-premises. It can 
+also cut down on overhead staffing costs - the developer in our example 
+may not be a networking specialist, which may require someone with these
+ skills to also be brought on board to the project.</p>
+
+<p id="cn-m1-426">Serverless architectures provide a fully managed solution that is on-demand (or <b>pay</b>-<b>as</b>-<b>you</b>-<b>use</b>). Examples include <b>AWS Lambda</b>, <b>Azure Functions</b>, and <b>Google Cloud Functions</b>. In this task, we will explore a Serverless architecture in a public cloud.</p>
+
+<h4 id="cn-m1-427"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m1-428">Ensure you are connected to <b>PLABWIN10 </b>with the <b>PlabIoTHub01 </b>IoT Hub overview page displayed.</p>
+
+<p id="cn-m1-429">Navigate to the dashboard by clicking the <b>Microsoft Azure </b>icon next to the search textbox at the top of the page.</p>
+
+<p id="cn-m1-430"></p><figure><img class="cn-img" id="cn-image-m1-c-63" src="DifferentCloudServiceModels_files/image-m1-c-63.jpg" alt="Figure 2.13 Screenshot of PLABWIN10: The PlabIoTHub01 page is displayed. The Microsoft Azure button is highlighted."><figcaption>Figure 2.13 Screenshot of PLABWIN10: The PlabIoTHub01 page is displayed. The Microsoft Azure button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-432"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m1-433">In the <b>Search </b>textbox at the top of the page, type the following:</p>
+
+<pre id="cn-m1-434"><code>Function
+
+</code></pre>
+
+<p id="cn-m1-435">In the drop-down menu that appears, click the <b>Function App</b>.</p>
+
+<p id="cn-m1-436"></p><figure><img class="cn-img" id="cn-image-m1-c-64" src="DifferentCloudServiceModels_files/image-m1-c-64.jpg" alt="Figure 2.14 Screenshot of PLABWIN10: The Azure dashboard is displayed. Function is typed into the search menu, and Function App is highlighted."><figcaption>Figure
+ 2.14 Screenshot of PLABWIN10: The Azure dashboard is displayed. 
+Function is typed into the search menu, and Function App is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-438"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m1-439">This will open the <b>Function App </b>overview page.</p>
+
+<p id="cn-m1-440">Click <b>+ Create </b>at the top of the page.</p>
+
+<p id="cn-m1-441"></p><figure><img class="cn-img" id="cn-image-m1-c-65" src="DifferentCloudServiceModels_files/image-m1-c-65.jpg" alt="Figure 2.15 Screenshot of PLABWIN10: The Function App is shown. + Create is highlighted."><figcaption>Figure 2.15 Screenshot of PLABWIN10: The Function App is shown. + Create is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-443"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m1-444">From the <b>Create Function App </b>page, under <b>Subscriptions</b>, click on the <b>Resource group </b>dropdown and select the pre-populated resource group.</p>
+
+<p id="cn-m1-445"></p><figure><img class="cn-img" id="cn-image-m1-c-66" src="DifferentCloudServiceModels_files/image-m1-c-66.jpg" alt="Figure 2.16 Screenshot of PLABWIN10: The Create Function App page is displayed. The Charlie Resource Group has been populated in the Resource Group field."><figcaption>Figure
+ 2.16 Screenshot of PLABWIN10: The Create Function App page is 
+displayed. The Charlie Resource Group has been populated in the Resource
+ Group field.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-447"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m1-448">Scroll down to the <b>Instance Details </b>section. In the <b>Function App name </b>textbox, type the following name - replacing the last two characters XX with your initials or two random characters:</p>
+
+<pre id="cn-m1-449"><code>PlabfunctionXX
+
+</code></pre>
+
+<p id="cn-m1-450">Ensure that the <b>Publish </b>option is set to <b>Code</b>.</p>
+
+<p id="cn-m1-451"></p><figure><img class="cn-img" id="cn-image-m1-c-67" src="DifferentCloudServiceModels_files/image-m1-c-67.jpg" alt="Figure 2.17 Screenshot of PLABWIN10: The Create Function App page is displayed. And Plabfunction01 has been typed into the Function App name field."><figcaption>Figure
+ 2.17 Screenshot of PLABWIN10: The Create Function App page is 
+displayed. And Plabfunction01 has been typed into the Function App name 
+field.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-453"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m1-454">In the <b>Runtime stack </b>field, ensure that .<b>NET </b>has been selected.</p>
+
+<p id="cn-m1-455">Click the <b>Version </b>dropdown and select <b>6</b>.</p>
+
+<p id="cn-m1-456">Click the <b>Region </b>dropdown and select <b>UK South</b>.</p>
+
+<span class="cn-quote" id="cn-m1-457"><b><i>Note</i></b><i>: In a real-world scenario, you would choose whichever region is necessary for your environment.</i></span>
+
+<p id="cn-m1-458"></p><figure><img class="cn-img" id="cn-image-m1-c-68" src="DifferentCloudServiceModels_files/image-m1-c-68.jpg" alt="Figure 2.18 Screenshot of PLABWIN10: The Create Function App page is shown. The Runtime Stack field has been set to .NET, Version to 6 and the Region to UK South."><figcaption>Figure
+ 2.18 Screenshot of PLABWIN10: The Create Function App page is shown. 
+The Runtime Stack field has been set to .NET, Version to 6 and the 
+Region to UK South.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-460"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m1-461">Leave all other options as the default entry and click <b>Review + Create </b>at the foot of the page.</p>
+
+<p id="cn-m1-462"></p><figure><img class="cn-img" id="cn-image-m1-c-69" src="DifferentCloudServiceModels_files/image-m1-c-69.jpg" alt="Figure 2.19 Screenshot of PLABWIN10: The Create Function App page is shown. Review + Create is highlighted."><figcaption>Figure 2.19 Screenshot of PLABWIN10: The Create Function App page is shown. Review + Create is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-464"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m1-465">On the <b>Review + create </b>page, click <b>Create</b>.</p>
+
+<p id="cn-m1-466"></p><figure><img class="cn-img" id="cn-image-m1-c-70" src="DifferentCloudServiceModels_files/image-m1-c-70.jpg" alt="Figure 2.20 Screenshot of PLABWIN10: The Create Function App page is displayed. Create is highlighted."><figcaption>Figure 2.20 Screenshot of PLABWIN10: The Create Function App page is displayed. Create is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-468"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m1-469">This will take you to the <b>Deployment </b>page.</p>
+
+<p id="cn-m1-470">Click the <b>Notifications </b>bell icon to see an update on the progress of this deployment.</p>
+
+<span class="cn-quote" id="cn-m1-471"><b><i>Note</i></b><i>: Please allow up to one minute for the deployment to complete.</i></span>
+
+<p id="cn-m1-472"></p><figure><img class="cn-img" id="cn-image-m1-c-71" src="DifferentCloudServiceModels_files/image-m1-c-71.jpg" alt="Figure 2.21 Screenshot of PLABWIN10: The deployment page is displayed. The Notification pane is open, showing the deployment in progress."><figcaption>Figure
+ 2.21 Screenshot of PLABWIN10: The deployment page is displayed. The 
+Notification pane is open, showing the deployment in progress.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-474"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m1-475">The <b>PlabfunctionXX </b>overview page will be displayed.</p>
+
+<p id="cn-m1-476">On the left-hand side of the screen, Under the <b>Functions </b>heading, click <b>Functions</b>.</p>
+
+<p id="cn-m1-477"></p><figure><img class="cn-img" id="cn-image-m1-c-72" src="DifferentCloudServiceModels_files/image-m1-c-72.jpg" alt="Figure 2.22 Screenshot of PLABWIN10: The Plabfunction01 overview page is displayed. The Function option is highlighted."><figcaption>Figure 2.22 Screenshot of PLABWIN10: The Plabfunction01 overview page is displayed. The Function option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-479"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m1-480">On the <b>Plabfunctionxx | Functions </b>page, click <b>+ Create</b>.</p>
+
+<p id="cn-m1-481"></p><figure><img class="cn-img" id="cn-image-m1-c-73" src="DifferentCloudServiceModels_files/image-m1-c-73.jpg" alt="Figure 2.23 Screenshot of PLABWIN10: The Plabfunction01 | Functions page is displayed. + Create is highlighted."><figcaption>Figure 2.23 Screenshot of PLABWIN10: The Plabfunction01 | Functions page is displayed. + Create is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-483"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m1-484">On the <b>Create function </b>page, you can select a specific programming language to create and develop functions utilizing a serverless architecture.</p>
+
+<p id="cn-m1-485">There are different templates to select from, such as <b>HTTP trigger</b>.</p>
+
+<span class="cn-quote" id="cn-m1-486"><b><i>Note</i></b><i>: This is an 
+example of Serverless architecture as there are no servers for you to 
+manage directly. Everything is handled by Azure while still providing 
+you with a safe development environment to deploy different code 
+functions.</i></span>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<p id="cn-m1-490">Click the <b>Close </b>icon at the top-right hand corner of the screen.</p>
+
+<p id="cn-m1-491"></p><figure><img class="cn-img" id="cn-image-m1-c-74" src="DifferentCloudServiceModels_files/image-m1-c-74.jpg" alt="Figure 2.24 Screenshot of PLABWIN10: The Create Function fly-out menu is displayed. The Close icon is highlighted."><figcaption>Figure 2.24 Screenshot of PLABWIN10: The Create Function fly-out menu is displayed. The Close icon is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m1-493"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m1-494">This will return you to the <b>PlabfunctionXX </b>overview page.</p>
+
+<p id="cn-m1-495"></p><figure><img class="cn-img" id="cn-image-m1-c-75" src="DifferentCloudServiceModels_files/image-m1-c-75.jpg" alt="Figure 2.25 Screenshot of PLABWIN10: The Plabfunction01 overview page is displayed."><figcaption>Figure 2.25 Screenshot of PLABWIN10: The Plabfunction01 overview page is displayed.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m1-497">Close all open windows and proceed to the review section.</span>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m1-500"><b>Review</b></h2>
+
+<p id="cn-m1-501">Well done, you have completed the <b>Different Cloud Service Models </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">a4b02479-dd6d-436f-8e5c-9bcb0af7fa9a</span>
+
+<span class="atom-code hidden">92c717d0-afe4-40af-b207-5de0046a7691</span>
+
+<span class="atom-code hidden">8cc59a00-0338-4a03-8a6b-f76fe0f4ffff</span>
+
+<span class="atom-code hidden">f34a4522-a2b3-4a3f-8c51-ef33c26c2c90</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m1-511">You completed the following exercises:</p>
+
+<ul id="cn-m1-512">
+
+<li id="cn-m1-512">Exercise 1 - Cloud Shared Responsibility Service Models</li>
+
+<li id="cn-m1-513">Exercise 2 - Advanced Cloud Services</li>
+
+</ul>
+
+<p id="cn-m1-514">You should now be able to:</p>
+
+<ul id="cn-m1-515">
+
+<li id="cn-m1-515">Define and Describe different Cloud Service Models, Including the Shared Responsibility Model</li>
+
+<li id="cn-m1-516">Define and Describe Software as a Service</li>
+
+<li id="cn-m1-517">Explore and Identify Infrastructure as a Service Resources in a Public Cloud</li>
+
+<li id="cn-m1-518">Explore and Identify Platform as a Service Resources in a Public Cloud</li>
+
+<li id="cn-m1-519">Define and Describe Different Emerging Cloud Technologies</li>
+
+<li id="cn-m1-520">Define and Describe Artificial Intelligence and Machine Learning in Cloud Environments</li>
+
+<li id="cn-m1-521">Explore and Identify IoT Resources</li>
+
+<li id="cn-m1-522">Explore and Identify Serverless Architectures</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m1-526">Shut down all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
