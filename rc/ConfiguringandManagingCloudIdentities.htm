@@ -1,0 +1,1147 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="ConfiguringandManagingCloudIdentities_files/print-styles.css" rel="stylesheet">
+    <script src="ConfiguringandManagingCloudIdentities_files/jquery.min.js"></script>
+    <script src="ConfiguringandManagingCloudIdentities_files/jspdf.js"></script>
+    <script src="ConfiguringandManagingCloudIdentities_files/from_html.js"></script>
+    <script src="ConfiguringandManagingCloudIdentities_files/addimage.js"></script>
+    <script src="ConfiguringandManagingCloudIdentities_files/filesaver.js"></script>
+    <script src="ConfiguringandManagingCloudIdentities_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="GOi+X8aKHWa/cohtAW/KQMG55N2a9Eu4GwItluPhas7Fg+D7+QV2aJgCgCDKnetXl2oTxcWCtiKf8UX19Keo1WvPdLAFiZpzXl3rVUw1SWw=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Configuring and Managing Cloud Identities</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Using Active Directory Administrative Center</li><li>Exercise 2 - Using Azure Key Vault</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m5-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>CompTIA Cloud+</div>
+
+<div>Public Cloud</div>
+
+<div>Active Directory Group</div>
+
+<div>Active Directory Administrative Center</div>
+
+<div>Azure Key Vault</div>
+
+<div>Share File</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m5-9">Welcome to the <b>Configuring and Managing Cloud Identities </b>Practice Lab. In this module you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m5-17">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m5-18">
+
+<li id="cn-m5-18">Exercise 1 - Using Active Directory Administrative Center</li>
+
+<li id="cn-m5-19">Exercise 2 - Using New Share Wizard</li>
+
+</ul>
+
+<p id="cn-m5-20">After completing this module, you should be able to:</p>
+
+<ul id="cn-m5-21">
+
+<li id="cn-m5-21">Create Active Directory Groups and add Members to this New Group</li>
+
+<li id="cn-m5-22">Create a File Share and Configure Access Permissions</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<ul id="cn-m5-24">
+
+<li id="cn-m5-24">2.1 Given a scenario, configure identity and access management</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m5-26">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m5-30">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m5-31">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m5-33"><b>Lab Topology</b></h2>
+
+<p id="cn-m5-34">During your session, you will have access to the following lab configuration.</p>
+
+<h3 id="cn-m5-35"><b>Lab Topology 1</b></h3>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<h3 id="cn-m5-38"><b>Lab Topology 2</b></h3>
+
+<span class="atom-code hidden">b441a737-e075-40c4-a6a6-d57d4dcbeb25</span>
+
+<p id="cn-m5-41">Depending on the exercises, you may or may not use all 
+of the devices, but they are shown here in the layout to get an overall 
+understanding of the topology of the lab.</p>
+
+<h3 id="cn-m5-42"><b>Lab Topology 1</b></h3>
+
+<ul id="cn-m5-43">
+
+<li id="cn-m5-43"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m5-44"><b>Lab Topology 2</b></h3>
+
+<ul id="cn-m5-45">
+
+<li id="cn-m5-45"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+<li id="cn-m5-46"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+<li id="cn-m5-47"><b>PLABWIN10 </b>- Domain Member Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m5-48">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m5-49"><b>Exercise 1 - Using Active Directory Administrative Center</b></h2>
+
+<p id="cn-m5-50">Management of dynamic environments presents various 
+challenges, as an organization’s network complexity tends to grow over 
+time, adding requirements to address network security and maintaining a 
+coherent record of IT infrastructure.</p>
+
+<p id="cn-m5-51">Active Directory Administrative Center can be used to 
+enforce a logical approach to manage network object access and store 
+necessary information about these objects as they relate to an 
+organization’s hierarchical structure. Utilizing this native Active 
+Directory tool in Window Server Management proves a means for 
+administrator and security engineers to maintain logical user access, 
+while following  Least Privilege Access.</p>
+
+<p id="cn-m5-52">In this exercise, the features and functionality of Active Directory Administrative Center will be explored.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m5-55">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m5-56">
+
+<li id="cn-m5-56">Create Active Directory Groups and add Members to these new groups</li>
+
+<li id="cn-m5-57">Create a File Share and configure access permissions</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m5-59">You will be using the following devices in this lab. Please power these on now.</p>
+
+<span class="atom-code hidden">94285176-9579-496f-8775-eea252ce49e5</span>
+
+<ul id="cn-m5-62">
+
+<li id="cn-m5-62"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+<li id="cn-m5-63"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+</ul>
+
+<h3 id="cn-m5-64"><b>Task 1 - Create and Populate a New Active Directory Group</b></h3>
+
+<p id="cn-m5-65">Using Active Directory Administrative Center, administrators and security engineers have access to the following:</p>
+
+<ul id="cn-m5-66">
+
+<li id="cn-m5-66">Control over user access through logical hierarchical groups.</li>
+
+<li id="cn-m5-67">Management of Role-based Access Controls for groups 
+and users, to implement mandatory access control and discretionary 
+access control.</li>
+
+</ul>
+
+<p id="cn-m5-68">They can also:</p>
+
+<ul id="cn-m5-69">
+
+<li id="cn-m5-69">Allocate and deallocate resource access to users based on security groups following Least Privilege Access.</li>
+
+<li id="cn-m5-70">Programmatically configure the distribution of Group Policy.</li>
+
+</ul>
+
+<p id="cn-m5-71">In this task, Active Directory Administrative Center will be used to create a Security Group and populate a user within it.</p>
+
+<h4 id="cn-m5-72"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m5-73">Connect to <b>PLABDC01</b>.</p>
+
+<p id="cn-m5-74"></p><figure><img class="cn-img" id="cn-image-m5-c-0" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-0.jpg" alt="Figure 1.1 Screenshot of PLABDC01: The Server Manager &amp;gt; Dashboard window is displayed."><figcaption>Figure 1.1 Screenshot of PLABDC01: The Server Manager &gt; Dashboard window is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-76"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m5-77">Once in the <b>Dashboard</b>, navigate to <b>Tools </b>and click on <b>Active Directory Administrative Center</b>.</p>
+
+<p id="cn-m5-78"></p><figure><img class="cn-img" id="cn-image-m5-c-1" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-1.jpg" alt="Figure 1.2 Screenshot of PLABDC01:  The Server Manager &amp;gt; Dashboard window is displayed with the Tools menu selected and the Active Directory Administrative Center option highlighted."><figcaption>Figure
+ 1.2 Screenshot of PLABDC01:  The Server Manager &gt; Dashboard window 
+is displayed with the Tools menu selected and the Active Directory 
+Administrative Center option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-80"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m5-81">On the <b>Active Directory Administrative Center</b>, click on the <b>arrow </b>next to <b>practicelabs (local) </b>and from the dropdown menu, double-click <b>Users</b></p><figure><img class="cn-img" id="cn-image-m5-c-2" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-2.jpg" alt="Figure 1.3 Screenshot of PLABDC01: The Active Directory Administrative Center window is displayed with the practiceLabs (local) menu arrow selected and the Users option highlighted in the pop-out menu."><figcaption>Figure
+ 1.3 Screenshot of PLABDC01: The Active Directory Administrative Center 
+window is displayed with the practiceLabs (local) menu arrow selected 
+and the Users option highlighted in the pop-out menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-83"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m5-84">Navigate to <b>New </b>under <b>Tasks</b>, and select <b>Group </b>in the dropdown menu. </p><figure><img class="cn-img" id="cn-image-m5-c-3" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-3.jpg" alt="Figure 1.4 Screenshot of PLABDC01: The Active Directory Administrative Center window is displayed with the New menu item selected and the Group option highlighted in the sub-menu."><figcaption>Figure
+ 1.4 Screenshot of PLABDC01: The Active Directory Administrative Center 
+window is displayed with the New menu item selected and the Group option
+ highlighted in the sub-menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-86"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m5-87">On the <b>Create Group </b>page, type the following into the <b>Group name </b>textbox:</p>
+
+<pre id="cn-m5-88"><code>FileShareGroup
+
+</code></pre>
+
+<p id="cn-m5-89"></p><figure><img class="cn-img" id="cn-image-m5-c-4" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-4.jpg" alt="Figure 1.5 Screenshot of PLABDC01: The Create Group window is displayed. The Group name FileShareGroup is typed into the textbox."><figcaption>Figure
+ 1.5 Screenshot of PLABDC01: The Create Group window is displayed. The 
+Group name FileShareGroup is typed into the textbox.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-91"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m5-92">Scroll down to the <b>Members </b>section.</p>
+
+<p id="cn-m5-93">Under the <b>Members </b>section, click <b>Add</b>. </p><figure><img class="cn-img" id="cn-image-m5-c-5" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-5.jpg" alt="Figure 1.6 Screenshot of PLABDC01: The Create Group: FileShareGroup window is displayed, showing the Members section Add button highlighted."><figcaption>Figure
+ 1.6 Screenshot of PLABDC01: The Create Group: FileShareGroup window is 
+displayed, showing the Members section Add button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-95"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m5-96">The <b>Select Users, Contacts, Computers, Service Accounts, or Groups </b>dialog box will appear.</p>
+
+<p id="cn-m5-97">In the <b>Enter the object names to select </b>textbox, type the following:</p>
+
+<pre id="cn-m5-98"><code>Administrator
+
+</code></pre>
+
+<p id="cn-m5-99">Click <b>OK</b></p><figure><img class="cn-img" id="cn-image-m5-c-6" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-6.jpg" alt="Figure 1.7 Screenshot of PLABDC01: The Select Users, Contacts, Computers, Service Accounts, or Groups dialog box is displayed with the text Administrator typed into the Enter the object names field and the OK button highlighted."><figcaption>Figure
+ 1.7 Screenshot of PLABDC01: The Select Users, Contacts, Computers, 
+Service Accounts, or Groups dialog box is displayed with the text 
+Administrator typed into the Enter the object names field and the OK 
+button highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m5-101"><b><i>Note</i></b><i>: If you receive an error stating </i><b><i>An object named cannot be found, </i></b><i>please ensure you have entered the user name as noted above.</i></span>
+
+<h4 id="cn-m5-102"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m5-103">On the <b>Create Group: FileShareGroup </b>page, click <b>OK</b></p><figure><img class="cn-img" id="cn-image-m5-c-7" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-7.jpg" alt="Figure 1.8 Screenshot of PLABDC01: The Create Group: FileShareGroup window is displayed showing the newly added Administrator member included under the Members section. The OK button is highlighted."><figcaption>Figure
+ 1.8 Screenshot of PLABDC01: The Create Group: FileShareGroup window is 
+displayed showing the newly added Administrator member included under 
+the Members section. The OK button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-105"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m5-106">You will return to the <b>Active Directory Administrative Center </b>window.</p>
+
+<p id="cn-m5-107">Scroll down the <b>Users </b>list and verify <b>FileShareGroup </b>is now listed. </p><figure><img class="cn-img" id="cn-image-m5-c-8" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-8.jpg" alt="Figure 1.9 Screenshot of PLABDC01: The Active Directory Administrative Center window is displayed with the FileShareGroup user highlighted."><figcaption>Figure
+ 1.9 Screenshot of PLABDC01: The Active Directory Administrative Center 
+window is displayed with the FileShareGroup user highlighted.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m5-109">Keep <b>PLABWIN10 </b>in its current state for the next task.</span>
+
+<h3 id="cn-m5-110"><b>Task 2 - Creating and Assigning Permissions to New File Share</b></h3>
+
+<p id="cn-m5-111">Using File Share Services in Server Manager, administrators and security engineers have access to the following:</p>
+
+<ul id="cn-m5-112">
+
+<li id="cn-m5-112">Control over user access to shared folder resources.</li>
+
+<li id="cn-m5-113">Services to create logical folder IT infrastructure to shared resources</li>
+
+</ul>
+
+<p id="cn-m5-114">They can also:</p>
+
+<ul id="cn-m5-115">
+
+<li id="cn-m5-115">Allocate and deallocate resource access to users based on security groups following Least Privilege Access.</li>
+
+<li id="cn-m5-116">Grant network access to shared resources stored on a remote server.</li>
+
+</ul>
+
+<p id="cn-m5-118">In this task, File Share Services will be used to 
+create a file share and populate it with an active directory group 
+created in a previous task.</p>
+
+<h4 id="cn-m5-119"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m5-120">Connect to <b>PLABDM01</b></p><figure><img class="cn-img" id="cn-image-m5-c-9" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-9.jpg" alt="Figure 1.10 Screenshot of PLABDM01: The Server Manager &amp;gt; Dashboard window is displayed."><figcaption>Figure 1.10 Screenshot of PLABDM01: The Server Manager &gt; Dashboard window is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-122"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m5-123">Once in the <b>Dashboard &gt; Servers </b>page, click on <b>File and Storage Services</b>. </p><figure><img class="cn-img" id="cn-image-m5-c-10" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-10.jpg" alt="Figure 1.11 Screenshot of PLABDM01: The Server Manager &amp;gt; Dashboard window is displayed with the File and Storage Services menu option highlighted."><figcaption>Figure
+ 1.11 Screenshot of PLABDM01: The Server Manager &gt; Dashboard window 
+is displayed with the File and Storage Services menu option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-125"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m5-126">On the <b>Files and Storage Services &gt; Servers </b>page, select <b>Shares</b>. </p><figure><img class="cn-img" id="cn-image-m5-c-11" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-11.jpg" alt="Figure 1.12 Screenshot of PLABDM01: The File and Storage Services &amp;gt; Servers page is displayed with the Shares menu option highlighted."><figcaption>Figure
+ 1.12 Screenshot of PLABDM01: The File and Storage Services &gt; Servers
+ page is displayed with the Shares menu option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-128"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m5-129">From the <b>Shares </b>page, click the <b>Tasks </b>dropdown arrow and select <b>New Share… </b>from the dropdown</p><figure><img class="cn-img" id="cn-image-m5-c-12" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-12.jpg" alt="Figure 1.13 Screenshot of PLABDM01: The File and Storage Services &amp;gt; Shares page is displayed with the TASKS dropdown selected and the New Share menu option highlighted."><figcaption>Figure
+ 1.13 Screenshot of PLABDM01: The File and Storage Services &gt; Shares 
+page is displayed with the TASKS dropdown selected and the New Share 
+menu option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-131"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m5-132">The <b>New Share Wizard &gt; Selection the profile for this share </b>window is displayed.</p>
+
+<p id="cn-m5-133">The New Share Wizard will give you five options when 
+creating a new share, Server Message Block (SMB) Quick, Advanced and 
+Share Application, and Network File System(NFS) Quick and Advanced. The 
+Differences are as follows:</p>
+
+<ul id="cn-m5-134">
+
+<li id="cn-m5-134"><b>SMB Share Quick: </b>a standard file sharing used by all versions of Windows. SMB Share Quick enables management of full share and NTFS permissions.</li>
+
+<li id="cn-m5-135"><b>SMB Share Advanced: </b>enables SMB sharing with full share and NTFS permission as well as services provided by File Server Resource Manager.</li>
+
+<li id="cn-m5-136"><b>SMB Share Application: </b>Provides SMB sharing with settings aligned for use with Hyper-V and other applications.</li>
+
+<li id="cn-m5-137"><b>NFS Share Quick: </b>a standard file sharing 
+protocol used extensively by UNIX and Linux systems. NFS Share Quick 
+enables NFS sharing with authentication permissions and access to 
+services provided by File Resource Manager.</li>
+
+<li id="cn-m5-138"><b>NFS Share Advanced: </b>provides NFS Sharing with authentication permissions and access to services provided by File Resource Manager.</li>
+
+</ul>
+
+<p id="cn-m5-139">Ensure that <b>SMB Share - Quick </b>option is highlighted.</p>
+
+<p id="cn-m5-140">Click <b>Next &gt; </b>at the bottom of the window.</p>
+
+<p id="cn-m5-141"></p><figure><img class="cn-img" id="cn-image-m5-c-13" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-13.jpg" alt="Figure 1.14 Screenshot of PLABDM01: The New Share Wizard &amp;gt; Selection the profile for this share window is displayed with the SMB Share - Quick option selected, and the Next button is highlighted."><figcaption>Figure
+ 1.14 Screenshot of PLABDM01: The New Share Wizard &gt; Selection the 
+profile for this share window is displayed with the SMB Share - Quick 
+option selected, and the Next button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-143"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m5-144">The <b>New Share Wizard &gt; Select the server and path for this share </b>window is displayed.</p>
+
+<p id="cn-m5-145">Under <b>Select by volume</b>, select <b>C</b>:.</p>
+
+<p id="cn-m5-146">Click <b>Next </b>&gt;. </p><figure><img class="cn-img" id="cn-image-m5-c-14" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-14.jpg" alt="Figure 1.15 Screenshot of PLABDM01: The New Share Wizard &amp;gt; Select the server and path for this share window is displayed with the C drive selected under the Share location section and the Next button is highlighted."><figcaption>Figure
+ 1.15 Screenshot of PLABDM01: The New Share Wizard &gt; Select the 
+server and path for this share window is displayed with the C drive 
+selected under the Share location section and the Next button is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-148"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m5-149">The <b>New Share Wizard &gt; Specify share name </b>window is displayed.</p>
+
+<p id="cn-m5-150">Type the following in the <b>Share name </b>textbox replacing the <b>XXXX </b>shown below with four random characters or digits:</p>
+
+<pre id="cn-m5-151"><code>PLABFSXXXX
+
+</code></pre>
+
+<p id="cn-m5-152">For example purposes, the name <b>PLABFS12AB </b>will be used in the steps. Please use your unique share name when this is referenced.</p>
+
+<span class="cn-alert" id="cn-m5-153"><b>Important</b>: The Key Vault 
+must be unique in the subscription, thus the four random characters. Key
+ Vaults cannot be traditionally removed until the retention period has 
+expired due to security reasons in a real-world environment.</span>
+
+<p id="cn-m5-154">Notice the Local path and Remote paths to share have been pre-populated to include the share name you typed in.</p>
+
+<p id="cn-m5-155">And click <b>Next </b>&gt;. </p><figure><img class="cn-img" id="cn-image-m5-c-15" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-15.jpg" alt="Figure 1.16 Screenshot of PLABDM01: The New Share Wizard &amp;gt; Specify share name window is displayed with the Share name field populated."><figcaption>Figure
+ 1.16 Screenshot of PLABDM01: The New Share Wizard &gt; Specify share 
+name window is displayed with the Share name field populated.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-157"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m5-158">The <b>New Share Wizard &gt; Configure share settings </b>window is displayed.</p>
+
+<p id="cn-m5-159">Tick the <b>Enable access-based enumeration </b>checkbox and ensure the <b>Allow caching of share </b>checkbox has been ticked.</p>
+
+<p id="cn-m5-160">Click <b>Next </b>&gt;. </p><figure><img class="cn-img" id="cn-image-m5-c-16" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-16.jpg" alt="Figure 1.17 Screenshot of PLABDM01: The New Share Wizard &amp;gt; Configure share settings window is displayed with the Enable access-based enumeration and Allow caching of share checkboxes have been ticked."><figcaption>Figure
+ 1.17 Screenshot of PLABDM01: The New Share Wizard &gt; Configure share 
+settings window is displayed with the Enable access-based enumeration 
+and Allow caching of share checkboxes have been ticked.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-162"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m5-163">The <b>New Share Wizard &gt; Specify permissions to control access </b>window is displayed.</p>
+
+<p id="cn-m5-164">Click the <b>Customize permissions </b>button</p><figure><img class="cn-img" id="cn-image-m5-c-17" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-17.jpg" alt="Figure 1.18 Screenshot of PLABDM01: The New Share Wizard &amp;gt; Specify permissions to control access window is displayed with the Customize permissions button highlighted."><figcaption>Figure
+ 1.18 Screenshot of PLABDM01: The New Share Wizard &gt; Specify 
+permissions to control access window is displayed with the Customize 
+permissions button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-166"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m5-167">From the <b>Advanced Security Settings for PLABFS12AB </b>window, click the <b>Disable inheritance </b>button in the bottom left-hand corner.</p>
+
+<p id="cn-m5-168"></p><figure><img class="cn-img" id="cn-image-m5-c-18" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-18.jpg" alt="Figure 1.19 Screenshot of PLABDM01: The Advanced Security Settings for PLABFS12AB dialog box is displayed with the Disable inheritance button highlighted."><figcaption>Figure
+ 1.19 Screenshot of PLABDM01: The Advanced Security Settings for 
+PLABFS12AB dialog box is displayed with the Disable inheritance button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-170"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m5-171">A <b>Block Inheritance </b>warning window will display to verify the intent to make the change.</p>
+
+<p id="cn-m5-172">Select <b>Convert inherited permissions into explicit permissions on this object</b>. </p><figure><img class="cn-img" id="cn-image-m5-c-19" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-19.jpg" alt="Figure 1.20 Screenshot of PLABDM01: The Block Inheritance dialog box is displayed with the Convert inherited permissions into explicit permissions on this object option highlighted."><figcaption>Figure
+ 1.20 Screenshot of PLABDM01: The Block Inheritance dialog box is 
+displayed with the Convert inherited permissions into explicit 
+permissions on this object option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-174"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m5-175">From the <b>Advanced Security Settings for PLABFS12AB </b>window, select the Principal <b>Users(PLABDM01\Users) </b>with <b>Read &amp; execute </b>access.</p>
+
+<p id="cn-m5-176">Click <b>Remove</b>.</p>
+
+<p id="cn-m5-177"></p><figure><img class="cn-img" id="cn-image-m5-c-20" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-20.jpg" alt="Figure 1.21 Screenshot of PLABDM01: The Advanced Security Settings for PLABFS12AB dialog box is displayed with the Users (PLABDM01\Users) with Read &amp;amp; execute access selected and the Remove button highlighted."><figcaption>Figure
+ 1.21 Screenshot of PLABDM01: The Advanced Security Settings for 
+PLABFS12AB dialog box is displayed with the Users (PLABDM01\Users) with 
+Read &amp; execute access selected and the Remove button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-179"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m5-180">From the <b>Advanced Security Settings for PLABFS12AB </b>window, select the Principal <b>Users(PLABDM01\Users) </b>with <b>Special </b>access.</p>
+
+<p id="cn-m5-181">Click <b>Remove</b>.</p>
+
+<p id="cn-m5-182"></p><figure><img class="cn-img" id="cn-image-m5-c-21" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-21.jpg" alt="Figure 1.22 Screenshot of PLABDM01: The Advanced Security Settings for PLABFS12AB dialog box is displayed with the Users (PLABDM01\Users) with Special access selected and the Remove button highlighted."><figcaption>Figure
+ 1.22 Screenshot of PLABDM01: The Advanced Security Settings for 
+PLABFS12AB dialog box is displayed with the Users (PLABDM01\Users) with 
+Special access selected and the Remove button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-184"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m5-185">Ensure that the only <b>Permission entries </b>displayed are the following:</p>
+
+<ul id="cn-m5-186">
+
+<li id="cn-m5-186"><b>SYSTEM</b></li>
+
+<li id="cn-m5-187"><b>Administrators (PLABDM01\Administrators)</b></li>
+
+<li id="cn-m5-188"><b>CREATOR OWNER</b></li>
+
+</ul>
+
+<p id="cn-m5-189">Click the <b>Add </b>button.</p>
+
+<p id="cn-m5-190"></p><figure><img class="cn-img" id="cn-image-m5-c-22" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-22.jpg" alt="Figure 1.23 Screenshot of PLABDM01: The Advanced Security Settings for PLABFS12AB dialog box is displayed with the Add button highlighted."><figcaption>Figure
+ 1.23 Screenshot of PLABDM01: The Advanced Security Settings for 
+PLABFS12AB dialog box is displayed with the Add button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-192"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m5-193">From <b>Permission Entry for PLABFS12AB</b>, click the <b>Select a principal </b>weblink.</p>
+
+<p id="cn-m5-194"></p><figure><img class="cn-img" id="cn-image-m5-c-23" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-23.jpg" alt="Figure 1.24 Screenshot of PLABDM01: The Permission Entry for PLABFS12AB dialog box is displayed with the Select a principal weblink highlighted."><figcaption>Figure
+ 1.24 Screenshot of PLABDM01: The Permission Entry for PLABFS12AB dialog
+ box is displayed with the Select a principal weblink highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-196"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m5-197">From the <b>Select User, Computer, Service Account, or Group </b>dialog box, in the <b>Enter the object names to select </b>textbox, type the following:</p>
+
+<pre id="cn-m5-198"><code>FileShareGroup
+
+</code></pre>
+
+<p id="cn-m5-199">Click <b>OK</b>.</p>
+
+<p id="cn-m5-200"></p><figure><img class="cn-img" id="cn-image-m5-c-24" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-24.jpg" alt="Figure 1.25 Screenshot of PLABDM01: The Select Users, Contacts, Computers, Service Accounts, or Groups dialog box is displayed with the text FileShareGroup typed into the Enter the object names field and the OK button highlighted."><figcaption>Figure
+ 1.25 Screenshot of PLABDM01: The Select Users, Contacts, Computers, 
+Service Accounts, or Groups dialog box is displayed with the text 
+FileShareGroup typed into the Enter the object names field and the OK 
+button highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m5-203"><b><i>Note</i></b><i>: If you receive an error stating </i><b><i>An object named cannot be found, </i></b><i>please ensure you have entered the user name as noted above.</i></span>
+
+<h4 id="cn-m5-204"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m5-205">From the <b>Permission Entry for PLABFS12AB </b>window, under <b>Basic permissions </b>ensure the three checkboxes for <b>Read &amp; execute List folder contents</b>, and <b>Read </b>are ticked.</p>
+
+<p id="cn-m5-206">Select <b>OK</b>.</p>
+
+<p id="cn-m5-207"></p><figure><img class="cn-img" id="cn-image-m5-c-25" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-25.jpg" alt="Figure 1.26 Screenshot of PLABDM01: The Permission Entry for PLABFS12AB dialog box is displayed with the Read &amp;amp; execute, List folder contents and Read checkboxes ticked and the OK button highlighted."><figcaption>Figure
+ 1.26 Screenshot of PLABDM01: The Permission Entry for PLABFS12AB dialog
+ box is displayed with the Read &amp; execute, List folder contents and 
+Read checkboxes ticked and the OK button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-209"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m5-210">Verify the following Principals are listed: <b>FileShareGroup(PRACTICELABS\ FileShareGroup</b>), <b>SYSTEM</b>, <b>Administrators(PLABDM01\Administrators</b>), and <b>CREATOR OWNER</b>.</p>
+
+<p id="cn-m5-211">Click <b>Apply </b>to update object permissions, and click <b>OK</b>.</p>
+
+<p id="cn-m5-212"></p><figure><img class="cn-img" id="cn-image-m5-c-26" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-26.jpg" alt="Figure 1.27 Screenshot of PLABDM01: The Advanced Security Settings for PLABFS12AB dialog box is displayed with the OK button highlighted."><figcaption>Figure
+ 1.27 Screenshot of PLABDM01: The Advanced Security Settings for 
+PLABFS12AB dialog box is displayed with the OK button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-214"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m5-215">The <b>New Share Wizard &gt; Specify permissions to control access </b>window is displayed.</p>
+
+<p id="cn-m5-216">Click <b>Next </b>&gt;.</p>
+
+<p id="cn-m5-217"></p><figure><img class="cn-img" id="cn-image-m5-c-27" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-27.jpg" alt="Figure 1.28 Screenshot of PLABDM01: The New Share Wizard &amp;gt; Specify permissions to control access window is displayed with the Next button highlighted."><figcaption>Figure
+ 1.28 Screenshot of PLABDM01: The New Share Wizard &gt; Specify 
+permissions to control access window is displayed with the Next button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-219"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m5-220">The <b>New Share Wizard &gt; Confirm selections </b>window is displayed.</p>
+
+<p id="cn-m5-221">Click <b>Create</b>.</p>
+
+<p id="cn-m5-222"></p><figure><img class="cn-img" id="cn-image-m5-c-28" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-28.jpg" alt="Figure 1.29 Screenshot of PLABDM01: The New Share Wizard &amp;gt; Confirm selections window is displayed with the Create button highlighted."><figcaption>Figure
+ 1.29 Screenshot of PLABDM01: The New Share Wizard &gt; Confirm 
+selections window is displayed with the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-224"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m5-225">The <b>New Share Wizard &gt; View results </b>windows is displayed.</p>
+
+<p id="cn-m5-226">Ensure all Tasks listed show a status of <b>Completed</b>.</p>
+
+<p id="cn-m5-227">Then, click <b>Close</b>.</p>
+
+<p id="cn-m5-228"></p><figure><img class="cn-img" id="cn-image-m5-c-29" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-29.jpg" alt="Figure 1.30 Screenshot of PLABDM01: The New Share Wizard &amp;gt; View results windows is displayed showing the tasks listed with completed statuses and the Close button highlighted."><figcaption>Figure
+ 1.30 Screenshot of PLABDM01: The New Share Wizard &gt; View results 
+windows is displayed showing the tasks listed with completed statuses 
+and the Close button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-230"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m5-231">The Wizard will close, then you will return to the <b>File and Storage Services &gt; Shares </b>dashboard.</p>
+
+<p id="cn-m5-232">Verify the Share <b>PLABFS12AB </b>displays under the <b>Shares </b>selection box.</p>
+
+<p id="cn-m5-233"></p><figure><img class="cn-img" id="cn-image-m5-c-30" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-30.jpg" alt="Figure 1.31 Screenshot of PLABDM01: The File and Storage Services &amp;gt; Shares window is displayed with the newly created share PLABFS12AB highlighted for reference under the Shares selection box."><figcaption>Figure
+ 1.31 Screenshot of PLABDM01: The File and Storage Services &gt; Shares 
+window is displayed with the newly created share PLABFS12AB highlighted 
+for reference under the Shares selection box.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-235"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m5-236">Open <b>File Explorer</b>.</p>
+
+<p id="cn-m5-237"></p><figure><img class="cn-img" id="cn-image-m5-c-31" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-31.jpg" alt="Figure 1.32 Screenshot of PLABDM01: The File and Storage Services &amp;gt; Shares window is displayed with the File Explorer icon highlighted on the Taskbar."><figcaption>Figure
+ 1.32 Screenshot of PLABDM01: The File and Storage Services &gt; Shares 
+window is displayed with the File Explorer icon highlighted on the 
+Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-239"><b><i>Step 24</i></b></h4>
+
+<p id="cn-m5-240">Navigate to the <b>This PC &gt; Local (C:) &gt; Shares </b>folder.</p>
+
+<p id="cn-m5-242"></p><figure><img class="cn-img" id="cn-image-m5-c-32" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-32.jpg" alt="Figure 1.33 Screenshot of PLABDM01: The File Explorer &amp;gt; This PC &amp;gt; Local Disk (C:) window is displayed with the Shares folder highlighted."><figcaption>Figure
+ 1.33 Screenshot of PLABDM01: The File Explorer &gt; This PC &gt; Local 
+Disk (C:) window is displayed with the Shares folder highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-244"><b><i>Step 25</i></b></h4>
+
+<p id="cn-m5-245">Double-click the folder <b>PLABFSXXXX</b>.</p>
+
+<p id="cn-m5-246"></p><figure><img class="cn-img" id="cn-image-m5-c-33" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-33.jpg" alt="Figure 1.34 Screenshot of PLABDM01: The File Explorer &amp;gt; This PC &amp;gt; Local Disk (C:) &amp;gt; Shares &amp;gt; PLABFS12AB window is displayed with the PLABFS12AB folder highlighted."><figcaption>Figure
+ 1.34 Screenshot of PLABDM01: The File Explorer &gt; This PC &gt; Local 
+Disk (C:) &gt; Shares &gt; PLABFS12AB window is displayed with the 
+PLABFS12AB folder highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m5-249"><b><i>Note</i></b><i>: This can also be accomplished by typing the following in the address bar: </i><b><i>C:\Shares\PLabFSXXXX\ </i></b><i>and pressing </i><b><i>Enter </i></b><i>on your keyboard.</i></span>
+
+<h4 id="cn-m5-251"><b><i>Step 26</i></b></h4>
+
+<p id="cn-m5-252">Click in the <b>File Explorer </b>with the <b>mouse’s right button</b>, scroll down to <b>New </b>and select <b>Text Document </b>from the dropdown menu.</p>
+
+<p id="cn-m5-253"></p><figure><img class="cn-img" id="cn-image-m5-c-34" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-34.jpg" alt="Figure 1.35 Screenshot of PLABDM01: The File Explorer &amp;gt; This PC &amp;gt; Local Disk (C:) &amp;gt; Shares &amp;gt; PLABFS12AB window is displayed with the whitespace right-clicked and shows the New option on the context menu selected and the Text Documentation sub-menu option highlighted."><figcaption>Figure
+ 1.35 Screenshot of PLABDM01: The File Explorer &gt; This PC &gt; Local 
+Disk (C:) &gt; Shares &gt; PLABFS12AB window is displayed with the 
+whitespace right-clicked and shows the New option on the context menu 
+selected and the Text Documentation sub-menu option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-255"><b><i>Step 27</i></b></h4>
+
+<p id="cn-m5-256">A new file will be generated in the PLABFSXXXX folder. Name the file by typing the following:</p>
+
+<pre id="cn-m5-257"><code>PLABTestFile01
+
+</code></pre>
+
+<p id="cn-m5-258"></p><figure><img class="cn-img" id="cn-image-m5-c-35" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-35.jpg" alt="Figure 1.36 Screenshot of PLABDM01: The File Explorer &amp;gt; This PC &amp;gt; Local Disk (C:) &amp;gt; Shares &amp;gt; PLABFS12AB window is displayed with the New Text Document.txt shown being named PLABTestFile01 in the textbox."><figcaption>Figure
+ 1.36 Screenshot of PLABDM01: The File Explorer &gt; This PC &gt; Local 
+Disk (C:) &gt; Shares &gt; PLABFS12AB window is displayed with the New 
+Text Document.txt shown being named PLABTestFile01 in the textbox.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m5-260"><b><i>Note</i></b><i>: If the new 
+file name displays as New Text Document without the option to name the 
+file, select the file and click the function button </i><b><i>F2 </i></b><i>on your keyboard, or right click and select </i><b><i>Rename</i></b><i>.</i></span>
+
+<h4 id="cn-m5-261"><b><i>Step 28</i></b></h4>
+
+<p id="cn-m5-262">Right-click on the newly created file <b>PLABTestFile01</b>, and select <b>Properties </b>from the context menu.</p>
+
+<p id="cn-m5-263"></p><figure><img class="cn-img" id="cn-image-m5-c-36" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-36.jpg" alt="Figure 1.37 Screenshot of PLABDM01: The File Explorer &amp;gt; This PC &amp;gt; Local Disk (C:) &amp;gt; Shares &amp;gt; PLABFS12AB window is displayed with the file PLABTestFile01.txt right-clicked and the Properties option from the context menu highlighted."><figcaption>Figure
+ 1.37 Screenshot of PLABDM01: The File Explorer &gt; This PC &gt; Local 
+Disk (C:) &gt; Shares &gt; PLABFS12AB window is displayed with the file 
+PLABTestFile01.txt right-clicked and the Properties option from the 
+context menu highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-265"><b><i>Step 29</i></b></h4>
+
+<p id="cn-m5-266">In the <b>PLABTestFile01 Properties </b>window, click the <b>Security </b>tab.</p>
+
+<p id="cn-m5-268"></p><figure><img class="cn-img" id="cn-image-m5-c-37" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-37.jpg" alt="Figure 1.38 Screenshot of PLABDM01: The PLABTestFile01 Properties dialog box is displayed with the Security tab highlighted."><figcaption>Figure 1.38 Screenshot of PLABDM01: The PLABTestFile01 Properties dialog box is displayed with the Security tab highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-270"><b><i>Step 30</i></b></h4>
+
+<p id="cn-m5-271">Select <b>FileShareGroup</b>. Permissions will display Read &amp; execute and Read with a check under the Allow column.</p>
+
+<p id="cn-m5-272">Click <b>OK</b>.</p>
+
+<span class="cn-quote" id="cn-m5-273"><b><i>Note</i></b><i>: Permissions have now been applied to the file share.</i></span>
+
+<p id="cn-m5-274"></p><figure><img class="cn-img" id="cn-image-m5-c-38" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-38.jpg" alt="Figure 1.39 Screenshot of PLABDM01: The PLABTestFile01 Properties dialog is displayed with the FileShareGroup selected and the OK button highlighted."><figcaption>Figure
+ 1.39 Screenshot of PLABDM01: The PLABTestFile01 Properties dialog is 
+displayed with the FileShareGroup selected and the OK button 
+highlighted.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">4fc41e74-9fe4-4fa6-882f-498e560b7d03</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m5-277"><b>Exercise 2 - Using Azure Key Vault</b></h2>
+
+<p id="cn-m5-278">Hosting and managing certain resources in Azure (for 
+example, a web application) would add a requirement to securely store 
+credentials to allow access.</p>
+
+<p id="cn-m5-279">Azure Key Vault can be used to store these security 
+credentials without the need for a third-party key management suite. 
+Utilizing the native suite of tools available in Azure will ensure the 
+ease of manageability and compatibility of resources.</p>
+
+<p id="cn-m5-280">In this exercise, the features and functionality of Azure Key Vault will be explored.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m5-282">After completing this exercise, you will be able to:</p>
+
+<ul id="cn-m5-283">
+
+<li id="cn-m5-283">Enable and Configure Azure Key Vault</li>
+
+<li id="cn-m5-284">Create Security Keys, Secrets and Certificates using Azure Key Vault</li>
+
+</ul>
+
+<h2 class="cn-learningobjectives"><b>Your Devices</b></h2>
+
+<p id="cn-m5-286">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<ul id="cn-m5-290">
+
+<li id="cn-m5-290"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<h2 class="cn-learningobjectives"><b>Task 1 - Create and Populate Azure Vault</b></h2>
+
+<p id="cn-m5-292">Using Azure Key Vault, administrators and Security Engineers have access to the following:</p>
+
+<ul id="cn-m5-293">
+
+<li id="cn-m5-293">Control over all access keys and passwords</li>
+
+<li id="cn-m5-294">Control over Hardware Security Modules (HSMs), including the ability to maintain and configure them as necessary</li>
+
+</ul>
+
+<p id="cn-m5-295">They can also:</p>
+
+<ul id="cn-m5-296">
+
+<li id="cn-m5-296">Ensure that applications used on Azure have no access to keys</li>
+
+<li id="cn-m5-297">Automate tasks for SSL and TLS Certificates</li>
+
+</ul>
+
+<p id="cn-m5-299">In this task, Azure Key Vault will be used to create a vault and populate several items within it.</p>
+
+<h4 id="cn-m5-300"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m5-301">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m5-302"></p><figure><img class="cn-img" id="cn-image-m5-c-39" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-39.jpg" alt="Figure 2.1 Screenshot of PLABWIN10: The Windows 10 desktop is displayed."><figcaption>Figure 2.1 Screenshot of PLABWIN10: The Windows 10 desktop is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-304"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m5-305">From the <b>Taskbar</b>, open <b>Microsoft Edge</b>.</p>
+
+<p id="cn-m5-306"></p><figure><img class="cn-img" id="cn-image-m5-c-40" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-40.jpg" alt="Figure 2.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with the Microsoft Edge icon highlighted on the Taskbar."><figcaption>Figure 2.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with the Microsoft Edge icon highlighted on the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-308"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m5-309">Once logged on to the <b>Azure </b>portal, click <b>Create a Resource</b>.</p>
+
+<p id="cn-m5-310"></p><figure><img class="cn-img" id="cn-image-m5-c-41" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-41.jpg" alt="Figure 2.3 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed and the Create a resource button highlighted."><figcaption>Figure
+ 2.3 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed and the Create a resource button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-312"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m5-313">On the <b>Create a resource </b>page, type the following into the <b>Search </b>textbox:</p>
+
+<pre id="cn-m5-314"><code>key vault
+
+</code></pre>
+
+<p id="cn-m5-315">From the results listed, click <b>Key Vault</b>.</p>
+
+<p id="cn-m5-316"></p><figure><img class="cn-img" id="cn-image-m5-c-42" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-42.jpg" alt="Figure 2.4 Screenshot of PLABWIN10: The Create a resource page is displayed with the search term of Key Vault typed into the search bar, and Key Vault is highlighted in the results list."><figcaption>Figure
+ 2.4 Screenshot of PLABWIN10: The Create a resource page is displayed 
+with the search term of Key Vault typed into the search bar, and Key 
+Vault is highlighted in the results list.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-318"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m5-319">On the <b>Key Vault </b>page, click <b>Create</b>.</p>
+
+<p id="cn-m5-320"></p><figure><img class="cn-img" id="cn-image-m5-c-43" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-43.jpg" alt="Figure 2.5 Screenshot of PLABWIN10: The Key Vault page is displayed with the Create button highlighted."><figcaption>Figure 2.5 Screenshot of PLABWIN10: The Key Vault page is displayed with the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-322"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m5-323">On the <b>Create key vault </b>page, from the <b>Resource group </b>dropdown, select the pre-populated resource group.</p>
+
+<p id="cn-m5-325"></p><figure><img class="cn-img" id="cn-image-m5-c-44" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-44.jpg" alt="Figure 2.6 Screenshot of PLABWIN10: The Create a key vault page is displayed with the pre-populated resource group being selected in the Resource group dropdown field."><figcaption>Figure
+ 2.6 Screenshot of PLABWIN10: The Create a key vault page is displayed 
+with the pre-populated resource group being selected in the Resource 
+group dropdown field.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m5-327"><b><i>Note</i></b><i>: This will be the same as your username, as noted in the top-right of the Azure portal.</i></span>
+
+<h4 id="cn-m5-328"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m5-329">Under the <b>Instance details</b>, in <b>Key Vault name </b>textbox, PLABKV and replacing the <b>XXXX </b>shown below with four random characters or digits:</p>
+
+<pre id="cn-m5-330"><code>PLABKVXXXX
+
+</code></pre>
+
+<p id="cn-m5-331">For example purposes, the name <b>PLABKV12AB </b>will be used in the steps. Please use your unique key vault name when this is referenced.</p>
+
+<span class="cn-alert" id="cn-m5-332"><b>Important</b>: The Key Vault 
+must be unique under the subscription, thus the four random characters. 
+Key Vaults cannot be traditionally removed until the retention period 
+has expired due to security reasons in a real-world environment.</span>
+
+<p id="cn-m5-333">Under <b>Region</b>, select <b>UK South </b>and leave the <b>Pricing tier </b>set as <b>Standard</b>.</p>
+
+<p id="cn-m5-334"></p><figure><img class="cn-img" id="cn-image-m5-c-45" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-45.jpg" alt="Figure 2.7 Screenshot of PLABWIN10: The Create a key vault page is displayed with the UK South option highlighted from the Region dropdown."><figcaption>Figure
+ 2.7 Screenshot of PLABWIN10: The Create a key vault page is displayed 
+with the UK South option highlighted from the Region dropdown.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-336"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m5-337">Finally, scroll down to the final section to the <b>Days to retain deleted vaults </b>option and re-type over the existing figure to:</p>
+
+<pre id="cn-m5-338"><code>7
+
+</code></pre>
+
+<p id="cn-m5-339">Ensure that the <b>Disable purge protection </b>option is highlighted.</p>
+
+<p id="cn-m5-340">Click the <b>Review + create </b>button.</p>
+
+<p id="cn-m5-341"></p><figure><img class="cn-img" id="cn-image-m5-c-46" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-46.jpg" alt="Figure 2.8 Screenshot of PLABWIN10: The Create a key vault page is displayed with the number 7 typed into the Days to retain deleted vaults option, and Purge protection is set to Disable purge protection. The Review + create option is highlighted."><figcaption>Figure
+ 2.8 Screenshot of PLABWIN10: The Create a key vault page is displayed 
+with the number 7 typed into the Days to retain deleted vaults option, 
+and Purge protection is set to Disable purge protection. The Review + 
+create option is highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m5-343"><b><i>Note</i></b><i>: The 
+retention period refers to how long the Key Vault should be kept in 
+background storage after deletion (between 7 and 90 days). If you were 
+to remove the Key Vault using the typical resource deletion process, it 
+would warn that only a Global Administrator can remove them.</i></span>
+
+<h4 id="cn-m5-344"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m5-345">The <b>Validation </b>page opens.</p>
+
+<p id="cn-m5-346">Once it has been validated, click <b>Review + create </b>button at the bottom of the page.</p>
+
+<p id="cn-m5-347"></p><figure><img class="cn-img" id="cn-image-m5-c-47" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-47.jpg" alt="Figure 2.9 Screenshot of PLABWIN10: The Validation page is displayed with the Review + create button highlighted."><figcaption>Figure 2.9 Screenshot of PLABWIN10: The Validation page is displayed with the Review + create button highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m5-349"><b>Note</b><i>: If you receive an error stating that there were validation errors, please ensure you have entered all fields as noted above.</i></span>
+
+<h4 id="cn-m5-350"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m5-351">The <b>PLABKV12AB | Overview </b>page is displayed showing the <b>Deployment is in progress </b>message.</p>
+
+<p id="cn-m5-352"></p><figure><img class="cn-img" id="cn-image-m5-c-48" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-48.jpg" alt="Figure 2.10 Screenshot of PLABWIN10: The PLABKV12AB &amp;gt; Overview page is displayed showing the Deployment is in progress message."><figcaption>Figure
+ 2.10 Screenshot of PLABWIN10: The PLABKV12AB &gt; Overview page is 
+displayed showing the Deployment is in progress message.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-354"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m5-355">Azure will open a notification in the top right-hand side of the screen to state that the deployment is in progress.</p>
+
+<p id="cn-m5-356">Once the resource has been deployed, click <b>Go to resource</b>.</p>
+
+<p id="cn-m5-357"></p><figure><img class="cn-img" id="cn-image-m5-c-49" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-49.jpg" alt="Figure 2.11 Screenshot of PLABWIN10: The PLABKV12AB &amp;gt; Overview page is displayed, showing a message stating your deployment is complete, and the Go to resource button is highlighted."><figcaption>Figure
+ 2.11 Screenshot of PLABWIN10: The PLABKV12AB &gt; Overview page is 
+displayed, showing a message stating your deployment is complete, and 
+the Go to resource button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-359"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m5-360">This will take you to the <b>PLABKV12AB &gt; Key vault </b>overview page for your newly created vault.</p>
+
+<p id="cn-m5-361">On the left-hand pane of the browser window in <b>Settings</b>, click <b>Keys</b>.</p>
+
+<p id="cn-m5-362"></p><figure><img class="cn-img" id="cn-image-m5-c-50" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-50.jpg" alt="Figure 2.12 Screenshot of PLABWIN10: The PLABKV12AB &amp;gt; Key vault page is displayed with the Keys menu option highlighted under the Settings section."><figcaption>Figure
+ 2.12 Screenshot of PLABWIN10: The PLABKV12AB &gt; Key vault page is 
+displayed with the Keys menu option highlighted under the Settings 
+section.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-364"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m5-365">By using the <b>PLABKV12AB | Keys </b>page, you can 
+either import or create new security keys to be stored in the vault. The
+ option to import pre-existing keys ensures that Administrators can 
+migrate these keys from their previous solution to Azure.</p>
+
+<p id="cn-m5-366">Let’s see how you would create a new key.</p>
+
+<p id="cn-m5-367">Click <b>Generate/Import </b>at the top of the pane.</p>
+
+<p id="cn-m5-368"></p><figure><img class="cn-img" id="cn-image-m5-c-51" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-51.jpg" alt="Figure 2.13 Screenshot of PLABWIN10: The PLABKV12AB &amp;gt; Keys page is displayed with the Generate/Import button highlighted."><figcaption>Figure 2.13 Screenshot of PLABWIN10: The PLABKV12AB &gt; Keys page is displayed with the Generate/Import button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-370"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m5-371">Azure will give you two encryption options when creating keys, <b>Rivest, Shamir and Adleman </b>(<b>RSA </b>for short, named after the creators of the method), and <b>Elliptic Curve </b>(<b>EC</b>). The differences are as follows:</p>
+
+<p id="cn-m5-372"><b>RSA keys </b>refer to a type of encryption where 
+the RSA algorithm is used to generate a pair of public and private keys.
+ This is the typical encryption method used by SSL certificates for 
+websites.</p>
+
+<p id="cn-m5-373"><b>EC Keys </b>refer to a type of encryption where the same pair of keys are generated via an elliptic curve using an algebraic formula.</p>
+
+<p id="cn-m5-375">For an example, let’s use an RSA key. Azure also asks 
+what size you would like this key to be, which notes how many bits are 
+used in the encryption method. Keep the default size of <b>2048</b>.</p>
+
+<p id="cn-m5-376">On the <b>Create a key </b>page, ensure that the option dropdown is set to <b>Generate</b>.</p>
+
+<p id="cn-m5-377">Type the following into the <b>Name </b>field:</p>
+
+<pre id="cn-m5-378"><code>PlabKey01
+
+</code></pre>
+
+<p id="cn-m5-379"></p><figure><img class="cn-img" id="cn-image-m5-c-52" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-52.jpg" alt="Figure 2.14 Screenshot of PLABWIN10: The Create a Key page is displayed with PlabKey01 typed into the Name field, and the other options have been left as the default."><figcaption>Figure
+ 2.14 Screenshot of PLABWIN10: The Create a Key page is displayed with 
+PlabKey01 typed into the Name field, and the other options have been 
+left as the default.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-381"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m5-382">Scrolling down the page, to the Tick both the <b>Set activation date </b>and <b>Set expiration date </b>checkboxes.</p>
+
+<p id="cn-m5-383">Leave the default date information as is.</p>
+
+<p id="cn-m5-384"></p><figure><img class="cn-img" id="cn-image-m5-c-53" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-53.jpg" alt="Figure 2.15 Screenshot of PLABWIN10: The Create a key page is displayed with the Set activation date and Expiration date checkboxes shown as ticked."><figcaption>Figure
+ 2.15 Screenshot of PLABWIN10: The Create a key page is displayed with 
+the Set activation date and Expiration date checkboxes shown as ticked.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m5-386"><b><i>Note</i></b><i>: Setting 
+these dates is not mandatory but is shown here for reference. In a 
+real-world scenario, it is best practice to ensure that security keys 
+are enabled and disabled regularly to maximize security.</i></span>
+
+<h4 id="cn-m5-387"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m5-388">Ensure the <b>Enabled </b>option is set as <b>Yes</b>.</p>
+
+<p id="cn-m5-389">Click <b>Create</b>.</p>
+
+<p id="cn-m5-390"></p><figure><img class="cn-img" id="cn-image-m5-c-54" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-54.jpg" alt="Figure 2.16 Screenshot of PLABWIN10: The Create a key page is displayed with the Enabled toggle set to Yes and the Create button highlighted."><figcaption>Figure
+ 2.16 Screenshot of PLABWIN10: The Create a key page is displayed with 
+the Enabled toggle set to Yes and the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-392"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m5-393">This will bring you back to the <b>PLABKV12AB | Keys </b>page.</p>
+
+<p id="cn-m5-394">Notice The new key is listed in the central panel.</p>
+
+<p id="cn-m5-395">Click <b>Secrets </b>under the <b>Settings </b>menu on the left-hand side of the page.</p>
+
+<p id="cn-m5-396"></p><figure><img class="cn-img" id="cn-image-m5-c-55" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-55.jpg" alt="Figure 2.17 Screenshot of PLABWIN10: The PLABKV12AB &amp;gt; Keys page is displayed, showing PlabKey01 in the central panel. The Secrets option is highlighted on the left-hand side of the page under the Settings section."><figcaption>Figure
+ 2.17 Screenshot of PLABWIN10: The PLABKV12AB &gt; Keys page is 
+displayed, showing PlabKey01 in the central panel. The Secrets option is
+ highlighted on the left-hand side of the page under the Settings 
+section.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-398"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m5-399">On the <b>PLABKV12AB | Secrets </b>page, click on <b>Generate/Import</b>.</p>
+
+<p id="cn-m5-400"></p><figure><img class="cn-img" id="cn-image-m5-c-56" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-56.jpg" alt="Figure 2.18 Screenshot of PLABWIN10: The PLABKV12AB &amp;gt; Secrets page is displayed with the Generate/Import button highlighted."><figcaption>Figure 2.18 Screenshot of PLABWIN10: The PLABKV12AB &gt; Secrets page is displayed with the Generate/Import button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-402"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m5-403"><b>Secrets</b>, in this sense, refers to anything that
+ you may want to store in a secure vault, such as a password (although 
+there are many uses for this function).</p>
+
+<p id="cn-m5-404">Leave the <b>Upload option </b>as <b>Manual</b>.</p>
+
+<p id="cn-m5-405">Type the following into the <b>Name </b>textbox:</p>
+
+<pre id="cn-m5-406"><code>SecurePW01
+
+</code></pre>
+
+<p id="cn-m5-407"></p><figure><img class="cn-img" id="cn-image-m5-c-57" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-57.jpg" alt="Figure 2.19 Screenshot of PLABWIN10: The Create a secret page is displayed with SecurePW01 typed into the Name textbox."><figcaption>Figure 2.19 Screenshot of PLABWIN10: The Create a secret page is displayed with SecurePW01 typed into the Name textbox.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-409"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m5-410">In the <b>Value </b>field, type the following password:</p>
+
+<pre id="cn-m5-411"><code><span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m5-412">In the <b>Content type </b>field, type the following:</p>
+
+<pre id="cn-m5-413"><code>Password
+
+</code></pre>
+
+<p id="cn-m5-414">For this secret, let’s not set an activation or expiration date.</p>
+
+<p id="cn-m5-415">Click <b>Create </b>at the bottom of the page.</p>
+
+<p id="cn-m5-416"></p><figure><img class="cn-img" id="cn-image-m5-c-58" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-58.jpg" alt="Figure 2.20 Screenshot of PLABWIN10: The Create a secret page is displayed with Passw0rd is typed into the Value textbox, and Password is typed into the Content type textbox. The Create button is highlighted."><figcaption>Figure
+ 2.20 Screenshot of PLABWIN10: The Create a secret page is displayed 
+with Passw0rd is typed into the Value textbox, and Password is typed 
+into the Content type textbox. The Create button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-418"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m5-419">Microsoft Edge will assume that this is a password being entered into a login field - click <b>Never </b>in the <b>Save password </b>dialogue box that appears.</p>
+
+<p id="cn-m5-420"></p><figure><img class="cn-img" id="cn-image-m5-c-59" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-59.jpg" alt="Figure 2.21 Screenshot of PLABWIN10: The PLABKV12AB &amp;gt; Secrets page is displayed with the Save password prompt open, with the Never option highlighted."><figcaption>Figure
+ 2.21 Screenshot of PLABWIN10: The PLABKV12AB &gt; Secrets page is 
+displayed with the Save password prompt open, with the Never option 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-422"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m5-423">You can now see your password listed on the <b>PLABKV12AB | Secrets </b>page.</p>
+
+<p id="cn-m5-424">On the left-hand side of the page, click <b>Certificates</b>.</p>
+
+<p id="cn-m5-425"></p><figure><img class="cn-img" id="cn-image-m5-c-60" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-60.jpg" alt="Figure 2.22 Screenshot of PLABWIN10: The PLABKV12AB &amp;gt; Secrets page is displayed with the SecurePW01 secret listed in the central panel."><figcaption>Figure
+ 2.22 Screenshot of PLABWIN10: The PLABKV12AB &gt; Secrets page is 
+displayed with the SecurePW01 secret listed in the central panel.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-427"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m5-428">This will direct you to the <b>PLABKV12AB | Certificates </b>page.</p>
+
+<p id="cn-m5-429">Click <b>Generate/Import</b>.</p>
+
+<p id="cn-m5-430"></p><figure><img class="cn-img" id="cn-image-m5-c-61" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-61.jpg" alt="Figure 2.23 Screenshot of PLABWIN10: The PLABKV12AB &amp;gt; Certificates page is displayed with the Generate/Import button highlighted."><figcaption>Figure
+ 2.23 Screenshot of PLABWIN10: The PLABKV12AB &gt; Certificates page is 
+displayed with the Generate/Import button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-432"><b><i>Step 24</i></b></h4>
+
+<p id="cn-m5-433">The <b>Create a certificate </b>page opens.</p>
+
+<p id="cn-m5-434">In <b>Certificate Name</b>, type the following:</p>
+
+<pre id="cn-m5-435"><code>PLABCE01
+
+</code></pre>
+
+<p id="cn-m5-436"></p><figure><img class="cn-img" id="cn-image-m5-c-62" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-62.jpg" alt="Figure 2.24 Screenshot of PLABWIN10: The Create a certificate page is displayed with PLABCE01 typed into the Certificate Name textbox."><figcaption>Figure
+ 2.24 Screenshot of PLABWIN10: The Create a certificate page is 
+displayed with PLABCE01 typed into the Certificate Name textbox.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-438"><b><i>Step 25</i></b></h4>
+
+<p id="cn-m5-439">When selecting a certificate authority, Azure provides you with three options:</p>
+
+<p id="cn-m5-440"><b>Self-signed certificates </b>are signed by the 
+creator of the signature, and as such, have not been verified by a 
+certification authority. A browser that detects a self-signed 
+certificate may warn users that the certificate cannot be verified 
+before accessing the website.</p>
+
+<p id="cn-m5-441"><b>Certificates issued by integrated CA’s </b>are certificates that have been authorized by CA’s that Key Vault uses, for example, DigiCert and GlobalSign.</p>
+
+<p id="cn-m5-442"><b>Certificates issued by a non-integrated CA </b>refers to any certificate certified by a third-party CA external to Azure.</p>
+
+<p id="cn-m5-444">Leave <b>Type of Certificate Authority </b>as the default entry for this example, and type the following into the subject field:</p>
+
+<pre id="cn-m5-445"><code>“CN=Test”
+
+</code></pre>
+
+<p id="cn-m5-446">Scroll down the page leaving all other options as the default, and click <b>Create</b>.</p>
+
+<p id="cn-m5-447"></p><figure><img class="cn-img" id="cn-image-m5-c-63" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-63.jpg" alt="Figure 2.25 Screenshot of PLABWIN10: The Create a certificate page is displayed, showing all options with the default entries, and the Create button highlighted."><figcaption>Figure
+ 2.25 Screenshot of PLABWIN10: The Create a certificate page is 
+displayed, showing all options with the default entries, and the Create 
+button highlighted.</figcaption></figure><p></p>
+
+<p id="cn-m5-449" class="cn-wdTeal"><b><i>Step 26</i></b></p>
+
+<p id="cn-m5-450">Again, upon clicking <b>Create</b>, the <b>PLABKV12AB | Certificates </b>page will open with the new certificate configured as <b>Disabled</b>.</p>
+
+<p id="cn-m5-452"></p><figure><img class="cn-img" id="cn-image-m5-c-64" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-64.jpg" alt="Figure 2.26 Screenshot of PLABWIN10: The PLABKV12AB &amp;gt; Certificates page is displayed, showing the new certificate configured as Disabled."><figcaption>Figure
+ 2.26 Screenshot of PLABWIN10: The PLABKV12AB &gt; Certificates page is 
+displayed, showing the new certificate configured as Disabled.</figcaption></figure><p></p>
+
+<h4 id="cn-m5-454"><b><i>Step 27</i></b></h4>
+
+<p id="cn-m5-455">After a few seconds, click <b>Refresh </b>at the top of the screen.</p>
+
+<p id="cn-m5-456">The certificate will now appear as <b>Enabled</b>, and has been auto-assigned an <b>Expiration date </b>and <b>Thumbprint </b>(also known as a Hash value).</p>
+
+<p id="cn-m5-457"></p><figure><img class="cn-img" id="cn-image-m5-c-65" src="ConfiguringandManagingCloudIdentities_files/image-m5-c-65.jpg" alt="Figure 2.27 Screenshot of PLABWIN10: The PLABKV12AB &amp;gt; Certificates page is displayed with the PlabCE01 certificate shown as enabled in the central panel."><figcaption>Figure
+ 2.27 Screenshot of PLABWIN10: The PLABKV12AB &gt; Certificates page is 
+displayed with the PlabCE01 certificate shown as enabled in the central 
+panel.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m5-463"><b>Review</b></h2>
+
+<p id="cn-m5-464">Well done, you have completed the <b>Configuring and Managing Cloud Identities </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">a0e871ab-c1da-4681-be67-2c716430e9fe</span>
+
+<span class="atom-code hidden">6355ba39-0d80-49be-b8c1-914bfe1357a7</span>
+
+<span class="atom-code hidden">9ed08c0d-f9fe-4efb-ad60-bacdfef34315</span>
+
+<span class="atom-code hidden">513a2f7d-e30d-481a-b960-7156b8d702e8</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m5-476">You completed the following exercises:</p>
+
+<ul id="cn-m5-477">
+
+<li id="cn-m5-477">Exercise 1 - Using Active Directory Administrative Center</li>
+
+<li id="cn-m5-478">Exercise 2 - Using New Share Wizard</li>
+
+</ul>
+
+<p id="cn-m5-479">You should now be able to:</p>
+
+<ul id="cn-m5-480">
+
+<li id="cn-m5-480">Create Active Directory Groups and add Members to this New Group</li>
+
+<li id="cn-m5-481">Create a File Share and Configure Access Permissions</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m5-485">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
