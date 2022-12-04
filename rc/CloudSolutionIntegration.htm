@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="CloudSolutionIntegration_files/print-styles.css" rel="stylesheet">
+    <script src="CloudSolutionIntegration_files/jquery.min.js"></script>
+    <script src="CloudSolutionIntegration_files/jspdf.js"></script>
+    <script src="CloudSolutionIntegration_files/from_html.js"></script>
+    <script src="CloudSolutionIntegration_files/addimage.js"></script>
+    <script src="CloudSolutionIntegration_files/filesaver.js"></script>
+    <script src="CloudSolutionIntegration_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="zvu7AgcgaSzqcJoXaBsb4XmZCSNmI8fziQeKBfX/Q+ED8z+SQtVByrujikrNSDjAuWB9E4UXoZGA5sIM9ZycI6NcFl1OYwX/C9nwxej+I+Q=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Cloud Solution Integration</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Exploring Integration in Cloud Environments</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m11-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Cloud+</div>
+
+<div>Microsoft 365</div>
+
+<div>Cloud Environments</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m11-6">Welcome to the <b>Cloud Solution Integration </b>Practice Lab. In this module you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m11-14">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m11-15">
+
+<li id="cn-m11-15">Exercise 1 - Exploring Integration in Cloud Environments</li>
+
+</ul>
+
+<p id="cn-m11-16">After completing this module, you should be able to:</p>
+
+<ul id="cn-m11-17">
+
+<li id="cn-m11-17">Define and Describe Integrating Different Components into a Cloud Solution</li>
+
+<li id="cn-m11-18">Define and Describe Different Subscription Services, VDIs, Collaboration and Directory Tools</li>
+
+<li id="cn-m11-19">Define and Describe Different Resource Types in a Cloud Environment</li>
+
+<li id="cn-m11-20">Explore Microsoft 365</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m11-22">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m11-23">
+
+<li id="cn-m11-23">3.1 Given a Scenario, Integrate Components into a Cloud Solution</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m11-25">It will take approximately <b>30 minutes </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m11-29">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m11-30">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m11-32"><b>Lab Topology</b></h2>
+
+<p id="cn-m11-33">During your session, you will have access to the following lab configuration.</p>
+
+<span class="atom-code hidden">b441a737-e075-40c4-a6a6-d57d4dcbeb25</span>
+
+<p id="cn-m11-36">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m11-37">
+
+<li id="cn-m11-37"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+<li id="cn-m11-38"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+<li id="cn-m11-39"><b>PLABWIN10 </b>- Domain Member Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m11-40">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m11-41"><b>Exercise 1 - Exploring Integration in Cloud Environments</b></h2>
+
+<p id="cn-m11-42">When it comes to integrating a cloud environment, an 
+organization needs to consider what kind of functions the infrastructure
+ will serve, and what kinds of resources are needed.</p>
+
+<p id="cn-m11-43">This could include things such as <b>Software as a Service </b>(<b>SaaS</b>)
+ subscriptions for office-based software, storage media and e-mail 
+messaging, as well as collaboration tools and directory services.</p>
+
+<p id="cn-m11-44">In this exercise, we will explore a common SaaS subscription service used by organizations, Microsoft 365.</p>
+
+<span class="atom-code hidden">58bad88e-dc81-4ab2-9235-111028f1f53b</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m11-50">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m11-51">
+
+<li id="cn-m11-51">Define and Describe Integrating Different Components into a Cloud Solution</li>
+
+<li id="cn-m11-52">Define and Describe Different Subscription Services, VDIs, Collaboration and Directory Tools</li>
+
+<li id="cn-m11-53">Define and Describe Different Resource Types in a Cloud Environment</li>
+
+<li id="cn-m11-54">Explore Microsoft 365</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m11-56">You will be using the following device in this lab. Please power this on now.</p>
+
+<p id="cn-m11-57"><img class="cn-img" id="cn-image-m11-c-0" src="CloudSolutionIntegration_files/image-m11-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<ul id="cn-m11-58">
+
+<li id="cn-m11-58"><b>PLABWIN10 </b>- Domain Member Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m11-59"><b>Task 1 - Explore Microsoft 365</b></h3>
+
+<p id="cn-m11-60">External to tools provided by public cloud 
+infrastructure, there are also several different services that can be 
+employed for private or non-cloud-based infrastructures.</p>
+
+<p id="cn-m11-61">One of these is <b>Microsoft 365</b>, which provides different tools to businesses through a subscription model.</p>
+
+<p id="cn-m11-62">In this task, we will explore Microsoft 365 and the SaaS solution it provides businesses.</p>
+
+<span class="cn-quote" id="cn-m11-63"><b><i>Note</i></b><i>: A Microsoft
+ 365 license is needed to further explore the topics covered in this 
+exercise. In a real-world scenario, it is likely that a business would 
+purchase a license key to each piece of software and install them as 
+needed.</i></span>
+
+<h4 id="cn-m11-64"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m11-65">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m11-66"></p><figure><img class="cn-img" id="cn-image-m11-c-1" src="CloudSolutionIntegration_files/image-m11-c-1.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: The Windows 10 desktop is displayed."><figcaption>Figure 1.1 Screenshot of PLABWIN10: The Windows 10 desktop is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-68"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m11-69">From the <b>Taskbar</b>, select <b>Microsoft Edge</b>.</p>
+
+<p id="cn-m11-70"></p><figure><img class="cn-img" id="cn-image-m11-c-2" src="CloudSolutionIntegration_files/image-m11-c-2.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with the Microsoft Edge icon highlighted on the Toolbar."><figcaption>Figure 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with the Microsoft Edge icon highlighted on the Toolbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-72"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m11-73">In the Intranet webpage, in the <b>Address bar</b>, type the following:</p>
+
+<pre id="cn-m11-74"><code>microsoft 365
+
+</code></pre>
+
+<p id="cn-m11-75">Press <b>Enter</b>.</p>
+
+<p id="cn-m11-76"></p><figure><img class="cn-img" id="cn-image-m11-c-3" src="CloudSolutionIntegration_files/image-m11-c-3.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: The Intranet web page is displayed with the Microsoft 365 search term is typed into the Address bar."><figcaption>Figure
+ 1.3 Screenshot of PLABWIN10: The Intranet web page is displayed with 
+the Microsoft 365 search term is typed into the Address bar.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-78"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m11-79">Scroll down the list of results and select the <b>Microsoft 365 - Subscription of Office Apps | Microsoft 365 </b>weblink.</p>
+
+<p id="cn-m11-80"></p><figure><img class="cn-img" id="cn-image-m11-c-4" src="CloudSolutionIntegration_files/image-m11-c-4.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: The Bing search web page is displayed with the result list shown and the Microsoft 365 -Subscription for Office Apps […] weblink highlighted."><figcaption>Figure
+ 1.4 Screenshot of PLABWIN10: The Bing search web page is displayed with
+ the result list shown and the Microsoft 365 -Subscription for Office 
+Apps […] weblink highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-82"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m11-83">This will bring you to the <b>Microsoft 365 </b>homepage.</p>
+
+<p id="cn-m11-84">From the Cookie <b>notice </b>at the top of the page, click <b>Accept</b>.</p>
+
+<span class="cn-quote" id="cn-m11-85"><b><i>Note</i></b><i>: This window
+ may not appear, depending on the IP address the lab environment uses. 
+The URL may also default to the UK version of the webpage, in which case
+ the </i><b><i>en-GB </i></b><i>section will be replaced with </i><b><i>en-us</i></b><i>. These websites are practically identical, although the currencies will change depending on your location.</i></span>
+
+<p id="cn-m11-86"></p><figure><img class="cn-img" id="cn-image-m11-c-5" src="CloudSolutionIntegration_files/image-m11-c-5.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: The Microsoft 365 webpage is displayed with the Accept button highlighted in the Cookies pop-up pane."><figcaption>Figure
+ 1.5 Screenshot of PLABWIN10: The Microsoft 365 webpage is displayed 
+with the Accept button highlighted in the Cookies pop-up pane.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-88"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m11-89">Go to the <b>Find the right plan for you </b>section.</p>
+
+<p id="cn-m11-90">Click <b>Business</b>.</p>
+
+<p id="cn-m11-91"></p><figure><img class="cn-img" id="cn-image-m11-c-6" src="CloudSolutionIntegration_files/image-m11-c-6.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: The Microsoft 365 webpage is displayed with the Business option highlighted."><figcaption>Figure 1.6 Screenshot of PLABWIN10: The Microsoft 365 webpage is displayed with the Business option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-93"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m11-94">Scroll down to view the <b>For business </b>tab.</p>
+
+<p id="cn-m11-95">Here, you will see the different service tiers and subscription offerings by Microsoft.</p>
+
+<span class="cn-quote" id="cn-m11-96"><b><i>Note</i></b><i>: Microsoft 
+365 is classified as SaaS due to the subscription-style arrangement to 
+be able to use the software. Microsoft 365 is possibly the most common 
+SaaS used across the world, as many different businesses require the use
+ of general Office software such as Outlook and Excel to function.</i></span>
+
+<p id="cn-m11-97"></p><figure><img class="cn-img" id="cn-image-m11-c-7" src="CloudSolutionIntegration_files/image-m11-c-7.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: The Microsoft 365 webpage displayed with one of the different service tiers and subscription plans shown."><figcaption>Figure
+ 1.7 Screenshot of PLABWIN10: The Microsoft 365 webpage displayed with 
+one of the different service tiers and subscription plans shown.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-99"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m11-100">Notice they show the different software included in each bundle, ramping up with each tier.</p>
+
+<p id="cn-m11-101">These are as follows (at the time of this module development), from each tier:</p>
+
+<ul id="cn-m11-102">
+
+<li id="cn-m11-102"><b>Word</b>: a globally accepted document processor.</li>
+
+<li id="cn-m11-103"><b>Excel</b>: a globally accepted spreadsheet processor.</li>
+
+<li id="cn-m11-104"><b>PowerPoint</b>: a globally accepted PowerPoint creator.</li>
+
+<li id="cn-m11-105"><b>Teams</b>: a work collaboration tool, allowing Instant Messaging and allowing conference calls and meetings.</li>
+
+<li id="cn-m11-106"><b>Outlook</b>: a globally accepted E-mail program, which works in tandem with Exchange.</li>
+
+<li id="cn-m11-107"><b>SharePoint</b>: a SaaS storage location to allow for easy document sharing and collaboration.</li>
+
+<li id="cn-m11-108"><b>Exchange</b>: a cloud-based e-mail infrastructure tool, typically used in private environments.</li>
+
+<li id="cn-m11-109"><b>OneDrive</b>: another SaaS storage location.</li>
+
+<li id="cn-m11-110"><b>Access</b>: a program that allows the creation of databases.</li>
+
+<li id="cn-m11-111"><b>Publisher</b>: a program that allows more creative document design, intended to be used for things such as marketing materials.</li>
+
+<li id="cn-m11-112"><b>Intune</b>: a cloud-based service that allows <b>Mobile Device Management </b>(<b>MDM</b>) and <b>Mobile Application Management </b>(<b>MAM</b>)</li>
+
+<li id="cn-m11-113"><b>Azure Information Protection</b>: a cloud-based service that is used to classify, identify and protect sensitive data.</li>
+
+</ul>
+
+<span class="cn-quote" id="cn-m11-114"><b><i>Note</i></b><i>: Once a 
+subscription is purchased, the most recent and up-to-date versions of 
+these tools are provided. You can see which products are offered with 
+each tier using this tool. In a real-world scenario, you would decide 
+which is the best tool for your business before selecting a tier. It 
+could be that Microsoft Intune and Azure information protection are not 
+necessary, so you may go with the Business Standard tier.</i></span>
+
+<p id="cn-m11-115"></p><figure><img class="cn-img" id="cn-image-m11-c-8" src="CloudSolutionIntegration_files/image-m11-c-8.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: The Microsoft 365 webpage is displayed with the applications included for Microsoft 365 Business Premium shown."><figcaption>Figure
+ 1.8 Screenshot of PLABWIN10: The Microsoft 365 webpage is displayed 
+with the applications included for Microsoft 365 Business Premium shown.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-117"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m11-118">Under the <b>Explore Microsoft 365 </b>heading, click the <b>Learn more about Microsoft 365 for business </b>heading &gt; <b>Learn more </b>web link.</p>
+
+<p id="cn-m11-119"></p><figure><img class="cn-img" id="cn-image-m11-c-9" src="CloudSolutionIntegration_files/image-m11-c-9.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: The Microsoft 365 webpage is displayed with the Learn more weblink highlighted under the Microsoft 365 for business &amp;gt; Learn more about Microsoft 365 for business headings."><figcaption>Figure
+ 1.9 Screenshot of PLABWIN10: The Microsoft 365 webpage is displayed 
+with the Learn more weblink highlighted under the Microsoft 365 for 
+business &gt; Learn more about Microsoft 365 for business headings.</figcaption></figure><p></p>
+
+<h4 id="cn-m11-121"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m11-122">Review the information on why you may wish to implement Microsoft 365 into your infrastructure and wider business.</p>
+
+<p id="cn-m11-123"></p><figure><img class="cn-img" id="cn-image-m11-c-10" src="CloudSolutionIntegration_files/image-m11-c-10.jpg" alt="Figure 1.10 Screenshot of PLABWIN10: The Microsoft 365 webpage is displayed with the benefits of using Microsoft 365 page shown."><figcaption>Figure 1.10 Screenshot of PLABWIN10: The Microsoft 365 webpage is displayed with the benefits of using Microsoft 365 page shown.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<h4 id="cn-m11-127"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m11-128">Once you are ready, click the <b>Close </b>button at the top-right-hand corner of the window.</p>
+
+<p id="cn-m11-129"></p><figure><img class="cn-img" id="cn-image-m11-c-11" src="CloudSolutionIntegration_files/image-m11-c-11.jpg" alt="Figure 1.11 Screenshot of PLABWIN10: The Microsoft 365 webpage is displayed with the Close button highlighted."><figcaption>Figure 1.11 Screenshot of PLABWIN10: The Microsoft 365 webpage is displayed with the Close button highlighted.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m11-135"><b>Review</b></h2>
+
+<p id="cn-m11-136">Well done, you have completed <b>Cloud Solution Integration </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">70062391-3978-4862-a932-b8c182c8e0cc</span>
+
+<span class="atom-code hidden">1b77f011-835b-41e0-84cb-5620dd9667e2</span>
+
+<span class="atom-code hidden">f064003e-35d4-4c05-a30b-df2822e5980e</span>
+
+<span class="atom-code hidden">2319da5d-6ce1-4972-855b-196a1891b053</span>
+
+<span class="atom-code hidden">ee351c11-0569-412a-84db-a447b974811b</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m11-147">You completed the following exercises:</p>
+
+<ul id="cn-m11-148">
+
+<li id="cn-m11-148">Exercise 1 - Exploring Integration in Cloud Environments</li>
+
+</ul>
+
+<p id="cn-m11-149">You should now be able to:</p>
+
+<ul id="cn-m11-150">
+
+<li id="cn-m11-150">Define and Describe Integrating Different Components into a Cloud Solution</li>
+
+<li id="cn-m11-151">Define and Describe Different Subscription Services, VDIs, Collaboration and Directory Tools</li>
+
+<li id="cn-m11-152">Define and Describe Different Resource Types in a Cloud Environment</li>
+
+<li id="cn-m11-153">Explore Microsoft 365</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m11-157">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
