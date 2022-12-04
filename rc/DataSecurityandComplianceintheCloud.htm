@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="DataSecurityandComplianceintheCloud_files/print-styles.css" rel="stylesheet">
+    <script src="DataSecurityandComplianceintheCloud_files/jquery.min.js"></script>
+    <script src="DataSecurityandComplianceintheCloud_files/jspdf.js"></script>
+    <script src="DataSecurityandComplianceintheCloud_files/from_html.js"></script>
+    <script src="DataSecurityandComplianceintheCloud_files/addimage.js"></script>
+    <script src="DataSecurityandComplianceintheCloud_files/filesaver.js"></script>
+    <script src="DataSecurityandComplianceintheCloud_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="N/jfonTMlvTcem3YFmnYRww8+3xbyGGZW+k6161qCjf6EWyJdPO9LTS+VVkchW8dankdkrKL6TkwO0b6ExfOJg+Nk1Kaiwc612FcJPm2Rw4=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Data Security and Compliance in the Cloud</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Applying Data Security Controls</li><li>Exercise 2 - Investigating Cloud Compliance Controls</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m8-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Cloud+</div>
+
+<div>Encryption</div>
+
+<div>Hashing</div>
+
+<div>HashCalc</div>
+
+<div>Signatures</div>
+
+<div>File Integrity Monitoring (FIM)</div>
+
+<div>Segmentation</div>
+
+<div>Access Control</div>
+
+<div>Laws and Regulations</div>
+
+<div>Record Management</div>
+
+<div>Data Loss Prevention (DLP)</div>
+
+<div>AWS Artifact</div>
+
+<div>Cloud Access Security Broker (CASB)</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m8-16">Welcome to the <b>Data Security and Compliance in the Cloud </b>Practice Lab. In this module you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m8-24">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m8-25">
+
+<li id="cn-m8-25">Exercise 1 - Applying Data Security Controls</li>
+
+<li id="cn-m8-26">Exercise 2 - Investigating Cloud Compliance Controls</li>
+
+</ul>
+
+<p id="cn-m8-27">After completing this module, you should be able to:</p>
+
+<ul id="cn-m8-28">
+
+<li id="cn-m8-28">Define and Describe Encryption methods in a Cloud Context</li>
+
+<li id="cn-m8-29">Define and Describe Hashing Algorithms, Digital Signatures and File Integrity Monitoring (FIM)</li>
+
+<li id="cn-m8-30">Define and Describe Segmentation and Access Control</li>
+
+<li id="cn-m8-31">Encrypt Files using the HashCalc tool</li>
+
+<li id="cn-m8-32">Define and Describe the Impact of Laws and Regulations in Cloud Computing</li>
+
+<li id="cn-m8-33">Define and Describe Record Management in the Cloud</li>
+
+<li id="cn-m8-34">Define and Describe Data Loss Prevention</li>
+
+<li id="cn-m8-35">Navigate and Explain the use of AWS Artifact</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m8-37">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m8-38">
+
+<li id="cn-m8-38">2.4 Given a Scenario, Apply Data Security and Compliance Controls in a Cloud Environment</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m8-40">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m8-44">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m8-45">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m8-47"><b>Lab Topology</b></h2>
+
+<p id="cn-m8-48">During your session, you will have access to the following lab configuration.</p>
+
+<h3 id="cn-m8-50"><b>Lab Topology 1</b></h3>
+
+<span class="atom-code hidden">4153b532-d93b-4759-b999-5667d2abe624</span>
+
+<h3 id="cn-m8-53"><b>Lab Topology 2</b></h3>
+
+<span class="atom-code hidden">b441a737-e075-40c4-a6a6-d57d4dcbeb25</span>
+
+<p id="cn-m8-56">Depending on the exercises, you may or may not use all 
+of the devices, but they are shown here in the layout to get an overall 
+understanding of the topology of the lab.</p>
+
+<h3 id="cn-m8-57"><b>Lab Topology 1</b></h3>
+
+<ul id="cn-m8-58">
+
+<li id="cn-m8-58"><b>PLABWIN10 </b>- Standalone AWS Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m8-59"><b>Lab Topology 2</b></h3>
+
+<ul id="cn-m8-60">
+
+<li id="cn-m8-60"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+<li id="cn-m8-61"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+<li id="cn-m8-62"><b>PLABWIN10 </b>- Domain Member Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m8-63">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m8-64"><b>Exercise 1 - Applying Data Security Controls</b></h2>
+
+<p id="cn-m8-65">When you are working with data, you must ensure that it
+ is kept secure. Data can be kept secure using different methods such as
+ encryption, ensuring data integrity, enabling data classification and 
+limiting access to data to unauthorized parties.</p>
+
+<p id="cn-m8-66">In this exercise, we will investigate how to encrypt files and discuss ways this could be utilized in a Cloud context.</p>
+
+<span class="atom-code hidden">c4ae2c48-cb36-4a42-836d-0ed6b652125f</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m8-70">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m8-71">
+
+<li id="cn-m8-71">Define and Describe Encryption methods in a Cloud Context</li>
+
+<li id="cn-m8-72">Define and Describe Hashing Algorithms, Digital Signatures and File Integrity Monitoring (FIM)</li>
+
+<li id="cn-m8-73">Define and Describe Segmentation and Access Control</li>
+
+<li id="cn-m8-74">Encrypt Files using the HashCalc tool</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m8-76">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">13204a44-8abe-4426-8a36-20597085f51d</span>
+
+<ul id="cn-m8-81">
+
+<li id="cn-m8-81"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+</ul>
+
+<h3 id="cn-m8-82"><b>Task 1 - Use HashCalc to Encrypt Files</b></h3>
+
+<p id="cn-m8-83">Hashes are "one-way cryptographic" algorithms that mask
+ data with various characters based on the output of that data processed
+ through said algorithm. The two main hashes are <b>MD5 </b>and <b>SHA</b>.</p>
+
+<p id="cn-m8-84"><b>HashCalc </b>is a tool that allows you to check thirteen popular hash and checksum algorithms. In this task, you will learn to use HashCalc.</p>
+
+<p id="cn-m8-86">In this task, you will be using the HashCalc tool.</p>
+
+<h4 id="cn-m8-87"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m8-88">Connect to <b>PLABDM01</b>.</p>
+
+<p id="cn-m8-89"></p><figure><img class="cn-img" id="cn-image-m8-c-0" src="DataSecurityandComplianceintheCloud_files/image-m8-c-0.jpg" alt="Figure 1.1 Screenshot of PLABDM01: The Server Manager window is displayed."><figcaption>Figure 1.1 Screenshot of PLABDM01: The Server Manager window is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-91"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m8-92">In the <b>Type here to search </b>text box, type the following:</p>
+
+<pre id="cn-m8-93"><code>hash
+
+</code></pre>
+
+<p id="cn-m8-94">From the <b>Best match </b>results, select the <b>HashCalc </b>Desktop app.</p>
+
+<p id="cn-m8-95"></p><figure><img class="cn-img" id="cn-image-m8-c-1" src="DataSecurityandComplianceintheCloud_files/image-m8-c-1.jpg" alt="Figure 1.2 Screenshot of PLABDM01: The Desktop is displayed. Hash is typed into the search field, and the HashCalc tool is highlighted."><figcaption>Figure
+ 1.2 Screenshot of PLABDM01: The Desktop is displayed. Hash is typed 
+into the search field, and the HashCalc tool is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-97"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m8-98">Go back into the <b>Type here to search </b>field, type the following:</p>
+
+<pre id="cn-m8-99"><code>notepad
+
+</code></pre>
+
+<p id="cn-m8-100">From the <b>Best match </b>menu, click <b>Notepad</b>.</p>
+
+<p id="cn-m8-101"></p><figure><img class="cn-img" id="cn-image-m8-c-2" src="DataSecurityandComplianceintheCloud_files/image-m8-c-2.jpg" alt="Figure 1.3 Screenshot of PLABDM01: The Desktop is displayed. Notepad is typed into the search field, and the Notepad tool is highlighted."><figcaption>Figure
+ 1.3 Screenshot of PLABDM01: The Desktop is displayed. Notepad is typed 
+into the search field, and the Notepad tool is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-103"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m8-104">Type the following in <b>Notepad</b>:</p>
+
+<pre id="cn-m8-105"><code>We are testing HashCalc!
+
+</code></pre>
+
+<p id="cn-m8-107"></p><figure><img class="cn-img" id="cn-image-m8-c-3" src="DataSecurityandComplianceintheCloud_files/image-m8-c-3.jpg" alt="Figure 1.4 Screenshot of PLABDM01: The Notepad window is displayed with text typed in the Untitled file."><figcaption>Figure 1.4 Screenshot of PLABDM01: The Notepad window is displayed with text typed in the Untitled file.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-109"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m8-110">Click <b>File &gt; Save As</b>.</p>
+
+<p id="cn-m8-111">Under <b>Quick access</b>, select <b>Desktop</b>.</p>
+
+<p id="cn-m8-112">In the <b>File name </b>textbox, replace the existing entry with:</p>
+
+<pre id="cn-m8-113"><code>hashme.txt
+
+</code></pre>
+
+<p id="cn-m8-114">Click <b>Save</b>.</p>
+
+<p id="cn-m8-115"></p><figure><img class="cn-img" id="cn-image-m8-c-4" src="DataSecurityandComplianceintheCloud_files/image-m8-c-4.jpg" alt="Figure 1.5 Screenshot of PLABDM01: The Notepad window is shown on the Save As menu. The Desktop has been selected as the file location, and the file has been named hashme.txt. Save is highlighted."><figcaption>Figure
+ 1.5 Screenshot of PLABDM01: The Notepad window is shown on the Save As 
+menu. The Desktop has been selected as the file location, and the file 
+has been named hashme.txt. Save is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-117"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m8-118"><b>Minimize </b>all open windows.</p>
+
+<p id="cn-m8-119">Notice the <b>hashme.txt </b>icon on the <b>Desktop</b>.</p>
+
+<p id="cn-m8-120"></p><figure><img class="cn-img" id="cn-image-m8-c-5" src="DataSecurityandComplianceintheCloud_files/image-m8-c-5.jpg" alt="Figure 1.6 Screenshot of PLABDM01: The Notepad window is displayed with the HashCalc tool in the background."><figcaption>Figure 1.6 Screenshot of PLABDM01: The Notepad window is displayed with the HashCalc tool in the background.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-122"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m8-123">From the <b>Toolbar</b>, click <b>Notepad</b>.</p>
+
+<p id="cn-m8-124">Click <b>File &gt; New </b>to open another text document using <b>Notepad</b>.</p>
+
+<p id="cn-m8-125"></p><figure><img class="cn-img" id="cn-image-m8-c-6" src="DataSecurityandComplianceintheCloud_files/image-m8-c-6.jpg" alt="Figure 1.7 Screenshot of PLABDM01: The Notepad window is open, showing File &amp;gt; New being highlighted."><figcaption>Figure 1.7 Screenshot of PLABDM01: The Notepad window is open, showing File &gt; New being highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-127"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m8-128">Reduce the size of the <b>Untitled - Notepad </b>window and move the window to the top left-hand corner of the screen.</p>
+
+<p id="cn-m8-129"></p><figure><img class="cn-img" id="cn-image-m8-c-7" src="DataSecurityandComplianceintheCloud_files/image-m8-c-7.jpg" alt="Figure 1.8 Screenshot of PLABDM01: The Notepad window is open, showing File &amp;gt; New being highlighted."><figcaption>Figure 1.8 Screenshot of PLABDM01: The Notepad window is open, showing File &gt; New being highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-131"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m8-132">From the <b>Desktop</b>, double-click <b>hashme.txt</b>.</p>
+
+<p id="cn-m8-133">Reduce the size of the <b>hashme </b>- <b>Notepad </b>window and move the window to the bottom left-hand corner of the screen.</p>
+
+<p id="cn-m8-134"></p><figure><img class="cn-img" id="cn-image-m8-c-8" src="DataSecurityandComplianceintheCloud_files/image-m8-c-8.jpg" alt="Figure 1.9 Screenshot of PLABDM01: The HashCalc tool is displayed alongside two Notepad windows. The hashme.txt file is shown alongside an unsaved blank txt file."><figcaption>Figure
+ 1.9 Screenshot of PLABDM01: The HashCalc tool is displayed alongside 
+two Notepad windows. The hashme.txt file is shown alongside an unsaved 
+blank txt file.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-136"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m8-137">From the <b>Toolbar</b>, click <b>HashCalc</b>.</p>
+
+<p id="cn-m8-138"></p><figure><img class="cn-img" id="cn-image-m8-c-9" src="DataSecurityandComplianceintheCloud_files/image-m8-c-9.jpg" alt="Figure 1.10 Screenshot of PLABDM01: xx"><figcaption>Figure 1.10 Screenshot of PLABDM01: xx</figcaption></figure><p></p>
+
+<h4 id="cn-m8-140"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m8-141">The Untitled text file will be used to compare hashes created by <b>HashCalc </b>on <b>hashme.txt </b>before and after you change it.</p>
+
+<p id="cn-m8-142">From the <b>HashCalc </b>window, ensure that the <b>Data Format </b>dropdown is set to <b>File</b>.</p>
+
+<p id="cn-m8-143">From the <b>Data </b>field, select the <b>[....] </b>button.</p>
+
+<p id="cn-m8-145"></p><figure><img class="cn-img" id="cn-image-m8-c-10" src="DataSecurityandComplianceintheCloud_files/image-m8-c-10.jpg" alt="Figure 1.11 Screenshot of PLABDM01: The HashCalc window is displayed with the … icon highlighted next to the Data field."><figcaption>Figure 1.11 Screenshot of PLABDM01: The HashCalc window is displayed with the … icon highlighted next to the Data field.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-147"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m8-148">From the <b>Find </b>dialog box, click the <b>Look in </b>dropdown and select <b>Desktop</b>.</p>
+
+<p id="cn-m8-149">Scroll down the list and click <b>hashme</b>.</p>
+
+<p id="cn-m8-150">Click <b>Open</b>.</p>
+
+<p id="cn-m8-151"></p><figure><img class="cn-img" id="cn-image-m8-c-11" src="DataSecurityandComplianceintheCloud_files/image-m8-c-11.jpg" alt="Figure 1.12 Screenshot of PLABDM01: Displaying the HashCalc Find window, selecting the hashme txt file. The Open button is highlighted."><figcaption>Figure
+ 1.12 Screenshot of PLABDM01: Displaying the HashCalc Find window, 
+selecting the hashme txt file. The Open button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-153"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m8-154">Notice the <b>hashme.txt </b>file details have been added to the <b>Data </b>textbox</p>
+
+<p id="cn-m8-155">You can select any algorithm(s) you desire, but for this task, keep the default hash algorithms ticked and select <b>Calculate</b>.</p>
+
+<p id="cn-m8-156"></p><figure><img class="cn-img" id="cn-image-m8-c-12" src="DataSecurityandComplianceintheCloud_files/image-m8-c-12.jpg" alt="Figure 1.13 Screenshot of PLABDM01: The HashCalc tool is displayed alongside two Notepad windows. The MD5, SHA1, RIPEMD16 and CRC32 hashes are shown. The Calculate button is highlighted."><figcaption>Figure
+ 1.13 Screenshot of PLABDM01: The HashCalc tool is displayed alongside 
+two Notepad windows. The MD5, SHA1, RIPEMD16 and CRC32 hashes are shown.
+ The Calculate button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-158"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m8-159">Notice that the fields next to the ticked options have been populated.</p>
+
+<p id="cn-m8-160">Copy the <b>MD5 </b>hash and paste it into the <b>Untitled - Notepad </b>text file.</p>
+
+<span class="cn-quote" id="cn-m8-161"><b><i>Note</i></b><i>: There is no need to save this file.</i></span>
+
+<p id="cn-m8-162"></p><figure><img class="cn-img" id="cn-image-m8-c-13" src="DataSecurityandComplianceintheCloud_files/image-m8-c-13.jpg" alt="Figure 1.14 Screenshot of PLABDM01: The HashCalc tool is displayed alongside two Notepad windows. The MD5 hash has been typed into the untitled txt file."><figcaption>Figure
+ 1.14 Screenshot of PLABDM01: The HashCalc tool is displayed alongside 
+two Notepad windows. The MD5 hash has been typed into the untitled txt 
+file.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-164"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m8-165">Click into the <b>hashme - Notepad </b>window.</p>
+
+<p id="cn-m8-166">Leaving a space after the existing sentence, type the following text:</p>
+
+<pre id="cn-m8-167"><code> It’s fun!
+
+</code></pre>
+
+<span class="cn-quote" id="cn-m8-168"><b><i>Note</i></b><i>: Ensure you have </i><b><i>one space </i></b><i>in between the sentences.</i></span>
+
+<p id="cn-m8-169">Click <b>File &gt; Save</b>.</p>
+
+<p id="cn-m8-170"></p><figure><img class="cn-img" id="cn-image-m8-c-14" src="DataSecurityandComplianceintheCloud_files/image-m8-c-14.jpg" alt="Figure 1.15 Screenshot of PLABDM01: The HashCalc tool is displayed alongside two Notepad windows. The words It’s fun! Has been typed into the hashme txt file."><figcaption>Figure
+ 1.15 Screenshot of PLABDM01: The HashCalc tool is displayed alongside 
+two Notepad windows. The words It’s fun! Has been typed into the hashme 
+txt file.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-172"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m8-173">From the <b>HashCalc </b>window, click <b>Calculate</b>.</p>
+
+<p id="cn-m8-174">Copy and paste the new <b>MD5 </b>hash into the <b>Untitled - Notepad </b>text file underneath the first hash.</p>
+
+<p id="cn-m8-175"></p><figure><img class="cn-img" id="cn-image-m8-c-15" src="DataSecurityandComplianceintheCloud_files/image-m8-c-15.jpg" alt="Figure 1.16 Screenshot of PLABDM01: The HashCalc tool is displayed alongside two Notepad windows. The new MD5 has been pasted into the untitled text file."><figcaption>Figure
+ 1.16 Screenshot of PLABDM01: The HashCalc tool is displayed alongside 
+two Notepad windows. The new MD5 has been pasted into the untitled text 
+file.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-177"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m8-178">When you compare the two hashes, you will notice that they are not the same.</p>
+
+<p id="cn-m8-179">This is because you changed the text of the <b>hashme.txt </b>file by adding the second sentence and saving it.</p>
+
+<p id="cn-m8-180">Delete <b>It’s fun! </b>added in a step previously, then click <b>File &gt; Save</b>.</p>
+
+<p id="cn-m8-181">From the <b>HashCalc </b>window, click <b>Calculate </b>again.</p>
+
+<span class="cn-alert" id="cn-m8-182"><b>Alert</b>: Ensure you remove the space in between the sentences.</span>
+
+<p id="cn-m8-183"></p><figure><img class="cn-img" id="cn-image-m8-c-16" src="DataSecurityandComplianceintheCloud_files/image-m8-c-16.jpg" alt="Figure 1.17 Screenshot of PLABDM01: The HashCalc tool is displayed alongside two Notepad windows. The original MD5 hash has been highlighted inside of the untitled txt file."><figcaption>Figure
+ 1.17 Screenshot of PLABDM01: The HashCalc tool is displayed alongside 
+two Notepad windows. The original MD5 hash has been highlighted inside 
+of the untitled txt file.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-185"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m8-186">Copy the <b>MD5 </b>hash and paste it on a new line in the <b>Untitled - Notepad </b>text file.</p>
+
+<p id="cn-m8-187">Compare the hashes on the first and third lines. As 
+opposed to the above, they are identical. This is because the file was 
+changed back to its original format.</p>
+
+<p id="cn-m8-188">Therefore, its integrity is valid.</p>
+
+<span class="cn-quote" id="cn-m8-189"><b><i>Note</i></b><i>: This has 
+been shown as an example of how to manually encrypt files, although, 
+with Server-side encryption as part of a public cloud, this will be 
+automatic and fully managed by the CSP.</i></span>
+
+<p id="cn-m8-190"></p><figure><img class="cn-img" id="cn-image-m8-c-17" src="DataSecurityandComplianceintheCloud_files/image-m8-c-17.jpg" alt="Figure 1.18 Screenshot of PLABDM01: The HashCalc tool is displayed alongside two Notepad windows. The same MD5 hash has been pasted into the untitled txt file."><figcaption>Figure
+ 1.18 Screenshot of PLABDM01: The HashCalc tool is displayed alongside 
+two Notepad windows. The same MD5 hash has been pasted into the untitled
+ txt file.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">4fc41e74-9fe4-4fa6-882f-498e560b7d03</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m8-193"><b>Exercise 2 - Investigating Cloud Compliance Controls</b></h2>
+
+<p id="cn-m8-194">It is key that anything created and stored inside of a
+ Cloud is compliant with relevant regulatory standards. Most 
+organizations have retention policies for data (such as Personally 
+Identifiable Information or PII) to ensure that they are compliant. In 
+the context of Cloud computing, data can be given a <b>Retention Hold </b>which
+ means that any resource tagged this way will be retained for a time as 
+specified by the hold, and then once expired, can be deleted. Typically,
+ a management policy would be enabled that automatically deletes and 
+destroys data that has passed a retention period.</p>
+
+<p id="cn-m8-195">Data can also be tagged by <b>Legal Holds</b>, which 
+ensures that data is not deleted or overwritten. In public cloud 
+subscriptions, you can add this tag to many different types of 
+resources, such as an <b>S3 Object Lock </b>in <b>AWS </b>(which has 
+options for either Legal or Retention Holds). This ensures that the 
+locked resource cannot be deleted or overwritten as long as the lock is 
+applied. Another term for this is a <b>Write Once Read Many </b>(<b>WORM</b>)
+ drive, which is a storage device that only allows data to be written 
+onto it and retrieved for reading, but excludes anyone from editing that
+ data, useful for archiving purposes.</p>
+
+<p id="cn-m8-196">These different options are part of what is known as <b>Records Management</b>,
+ a term that refers to managing data for business critical and legal 
+purposes. These policies exist to enforce compliance with regulations, 
+as well as ensure that the most recent and up-to-date versions of 
+documentation are available at any time.</p>
+
+<p id="cn-m8-197">Part of this is ensuring that data kept for regulatory
+ purposes (typically documentation such as legal charters, business 
+proposals etc.) are correctly versioned to ensure that all data 
+modifications can be tracked, and that the most up-to-date version of 
+that data is available for anyone that might need it.</p>
+
+<p id="cn-m8-198">Legal documentation can also be provided directly by 
+CSPs for public clouds in the instance that a regulatory body or auditor
+ needs to verify a requirement is being met. <b>AWS Artifact</b>, a 
+database which stores Amazon’s internal, can be accessed by users with 
+specific privileges, which can, in turn, be shared to ensure compliance.</p>
+
+<p id="cn-m8-199"><b>Data Loss Prevention </b>(<b>DLP</b>) is a policy 
+that exists to protect sensitive data, which is generally any 
+information that can be used to track down to a specific user. This data
+ should be protected against any unauthorized sharing, such as 
+third-party attacks. DLP should be implemented at the policy level (such
+ as content analysis policies) alongside data security controls, to 
+ensure that sensitive information is tagged as such and is protected.</p>
+
+<p id="cn-m8-200">A <b>Cloud Access Security Broker </b>(<b>CASB</b>) is
+ a service available in public cloud subscriptions that act as an agent 
+to streamline all of these processes together. A broker will handle all 
+information, streamline cloud access security, provides visibility of 
+secure applications. An example of this is <b>SkyHigh Security CASB </b>in AWS.</p>
+
+<p id="cn-m8-201">In this exercise, we will investigate AWS Artifact, S3
+ Object Locks, WORM storage and how to implement a Cloud Access Security
+ Broker (CASB) in AWS.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m8-203">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m8-204">
+
+<li id="cn-m8-204">Define and Describe the Impact of Laws and Regulations in Cloud Computing</li>
+
+<li id="cn-m8-205">Define and Describe Record Management in the Cloud</li>
+
+<li id="cn-m8-206">Define and Describe Data Loss Prevention</li>
+
+<li id="cn-m8-207">Navigate and Explain the use of AWS Artifact</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m8-209">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">4153b532-d93b-4759-b999-5667d2abe624</span>
+
+<ul id="cn-m8-212">
+
+<li id="cn-m8-212"><b>PLABWIN10 </b>- Standalone AWS Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m8-213"><b>Task 1 - Investigating AWS Artifact</b></h3>
+
+<p id="cn-m8-214">AWS Artifact is a tool that allows users to download 
+Amazon’s security and compliance documentation to be shared with 
+auditors and regulators. This allows users to demonstrate compliance 
+with resources held inside of their AWS public cloud subscription.</p>
+
+<p id="cn-m8-215">In this task, we will investigate how to navigate to and use AWS Artifact.</p>
+
+<h4 id="cn-m8-216"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m8-217">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m8-218"></p><figure><img class="cn-img" id="cn-image-m8-c-18" src="DataSecurityandComplianceintheCloud_files/image-m8-c-18.jpg" alt="Figure 2.1 Screenshot of PLABWIN10: Displaying opening the Microsoft Edge Web browser from the Taskbar."><figcaption>Figure 2.1 Screenshot of PLABWIN10: Displaying opening the Microsoft Edge Web browser from the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-220"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m8-221">From the <b>Toolbar</b>, click the <b>Microsoft Edge </b>icon.</p>
+
+<p id="cn-m8-222"></p><figure><img class="cn-img" id="cn-image-m8-c-19" src="DataSecurityandComplianceintheCloud_files/image-m8-c-19.jpg" alt="Figure 2.2 Screenshot of PLABWIN10:"><figcaption>Figure 2.2 Screenshot of PLABWIN10:</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m8-224"><b><i>Note</i></b><i>: When 
+opening the Microsoft Edge browser, it will automatically redirect to 
+the AWS portal. Login credentials have been provided, so a trial account
+ does not need to be created.</i></span>
+
+<h4 id="cn-m8-225"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m8-226">After a few moments, the <b>AWS App Authentication </b>webpage appears.</p>
+
+<p id="cn-m8-227">Click <b>Sign In </b>without changing the automatically filled credentials.</p>
+
+<p id="cn-m8-228"></p><figure><img class="cn-img" id="cn-image-m8-c-20" src="DataSecurityandComplianceintheCloud_files/image-m8-c-20.jpg" alt="Figure 2.3 Screenshot of PLABWIN10: Displaying the AWS login page. The login credentials have been pre-populated, and Sign In is highlighted."><figcaption>Figure
+ 2.3 Screenshot of PLABWIN10: Displaying the AWS login page. The login 
+credentials have been pre-populated, and Sign In is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-230"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m8-231">Click <b>Services </b>at the top left-hand corner of the page.</p>
+
+<p id="cn-m8-232"></p><figure><img class="cn-img" id="cn-image-m8-c-21" src="DataSecurityandComplianceintheCloud_files/image-m8-c-21.jpg" alt="Figure 2.4 Screenshot of PLABWIN10: Displaying the AWS Management Console. The Services button is highlighted."><figcaption>Figure 2.4 Screenshot of PLABWIN10: Displaying the AWS Management Console. The Services button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-234"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m8-235">From the <b>Services </b>menu, select <b>Security, Identity, &amp; Compliance</b>.</p>
+
+<p id="cn-m8-236">Then, from the <b>Security, Identity, &amp; Compliance </b>submenu, click <b>Artifact</b>.</p>
+
+<p id="cn-m8-237"></p><figure><img class="cn-img" id="cn-image-m8-c-22" src="DataSecurityandComplianceintheCloud_files/image-m8-c-22.jpg" alt="Figure 2.5 Screenshot of PLABWIN10: Displaying the AWS Management Console. The Services menu has been expanded, and the Security Identity, &amp;amp; Compliance heading has been expanded. Artifact is highlighted."><figcaption>Figure
+ 2.5 Screenshot of PLABWIN10: Displaying the AWS Management Console. The
+ Services menu has been expanded, and the Security Identity, &amp; 
+Compliance heading has been expanded. Artifact is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-239"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m8-240">From the <b>AWS Artifact </b>splash page, click <b>View reports</b>.</p>
+
+<p id="cn-m8-241"></p><figure><img class="cn-img" id="cn-image-m8-c-23" src="DataSecurityandComplianceintheCloud_files/image-m8-c-23.jpg" alt="Figure 2.6 Screenshot of PLABWIN10: Displaying the AWS Artifact splash page. The View reports option is highlighted."><figcaption>Figure 2.6 Screenshot of PLABWIN10: Displaying the AWS Artifact splash page. The View reports option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-243"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m8-244">After a few moments, the Reports table will populate with a list of reports available for download.</p>
+
+<p id="cn-m8-245">In the <b>Search reports </b>textbox, type the following:</p>
+
+<pre id="cn-m8-246"><code>PCI
+
+</code></pre>
+
+<p id="cn-m8-247">The list should automatically update to reflect this search criteria.</p>
+
+<p id="cn-m8-248"></p><figure><img class="cn-img" id="cn-image-m8-c-24" src="DataSecurityandComplianceintheCloud_files/image-m8-c-24.jpg" alt="Figure 2.7 Screenshot of PLABWIN10: Displaying the AWS Artifact &amp;gt;Reports page. PCI has been typed in the search reports field."><figcaption>Figure
+ 2.7 Screenshot of PLABWIN10: Displaying the AWS Artifact &gt;Reports 
+page. PCI has been typed in the search reports field.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m8-250"><b><i>Note</i></b><i>: The 
+Security, Identity, &amp; Compliance section in AWS allows you to 
+implement different controls and quick access to tools such as AWS 
+Certificate Manager, Cognito, IAM, Audit Manager etc. However, access to
+ these tools in a real-world environment will depend on your privileges,
+ and due to restrictions in the lab environment cannot be accessed.</i></span>
+
+<h4 id="cn-m8-251"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m8-252">This will filter the list to show you the most relevant search. Select the first report listed.</p>
+
+<p id="cn-m8-253">Click <b>Download report</b>.</p>
+
+<p id="cn-m8-254"></p><figure><img class="cn-img" id="cn-image-m8-c-25" src="DataSecurityandComplianceintheCloud_files/image-m8-c-25.jpg" alt="Figure 2.8 Screenshot of PLABWIN10: Displaying the AWS Artifact &amp;gt;Reports page. PCI has been typed in the search reports field, and the PCI 3DS Attestation of Compliance document is highlighted."><figcaption>Figure
+ 2.8 Screenshot of PLABWIN10: Displaying the AWS Artifact &gt;Reports 
+page. PCI has been typed in the search reports field, and the PCI 3DS 
+Attestation of Compliance document is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m8-256"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m8-257">Notice that a <b>Permission required </b>message is shown as this lab environment, restricts access to these reports.</p>
+
+<p id="cn-m8-258"></p><figure><img class="cn-img" id="cn-image-m8-c-26" src="DataSecurityandComplianceintheCloud_files/image-m8-c-26.jpg" alt="Figure 2.9 Screenshot of PLABWIN10: The AWS Artifact &amp;gt; Reports page is displayed, showing the Permission required message."><figcaption>Figure 2.9 Screenshot of PLABWIN10: The AWS Artifact &gt; Reports page is displayed, showing the Permission required message.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m8-261"><b><i>Note</i></b><i>: In a 
+real-world environment, you could use this report to satisfy regulatory 
+bodies that the resources and infrastructure created as part of this 
+cloud subscription fulfils all requirements.</i></span>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<span class="cn-alert" id="cn-m8-268">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m8-270"><b>Review</b></h2>
+
+<p id="cn-m8-271">Well done, you have completed <b>Data Security and Compliance in the Cloud </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">f4487945-8524-40b3-9ea4-5c23bd6e199f</span>
+
+<span class="atom-code hidden">d84725ef-0149-46e2-9739-f106186d392f</span>
+
+<span class="atom-code hidden">079dbc9f-78a8-4ccc-8b51-226e1e503ad7</span>
+
+<span class="atom-code hidden">976e68bd-10ca-450a-b973-1ebdbe90485e</span>
+
+<span class="atom-code hidden">5924cdd4-c225-45d9-a23a-62571771c042</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m8-283">You completed the following exercises:</p>
+
+<ul id="cn-m8-284">
+
+<li id="cn-m8-284">Exercise 1 - Applying Data Security Controls</li>
+
+<li id="cn-m8-285">Exercise 2 - Investigating Cloud Compliance Controls</li>
+
+</ul>
+
+<p id="cn-m8-286">You should now be able to:</p>
+
+<ul id="cn-m8-287">
+
+<li id="cn-m8-287">Define and Describe Encryption methods in a Cloud Context</li>
+
+<li id="cn-m8-288">Define and Describe Hashing Algorithms, Digital Signatures and File Integrity Monitoring (FIM)</li>
+
+<li id="cn-m8-289">Define and Describe Segmentation and Access Control</li>
+
+<li id="cn-m8-290">Encrypt Files using the HashCalc tool</li>
+
+<li id="cn-m8-291">Define and Describe the Impact of Laws and Regulations in Cloud Computing</li>
+
+<li id="cn-m8-292">Define and Describe Record Management in the Cloud</li>
+
+<li id="cn-m8-293">Define and Describe Data Loss Prevention</li>
+
+<li id="cn-m8-294">Navigate and Explain the use of AWS Artifact</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m8-298">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
