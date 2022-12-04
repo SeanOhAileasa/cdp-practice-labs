@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="CloudPatchesUpgradingandLifecycleManagement_files/print-styles.css" rel="stylesheet">
+    <script src="CloudPatchesUpgradingandLifecycleManagement_files/jquery.min.js"></script>
+    <script src="CloudPatchesUpgradingandLifecycleManagement_files/jspdf.js"></script>
+    <script src="CloudPatchesUpgradingandLifecycleManagement_files/from_html.js"></script>
+    <script src="CloudPatchesUpgradingandLifecycleManagement_files/addimage.js"></script>
+    <script src="CloudPatchesUpgradingandLifecycleManagement_files/filesaver.js"></script>
+    <script src="CloudPatchesUpgradingandLifecycleManagement_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="ebq4WnLOEqxRS3LmQnBD+Y8xV6fW6a5krvbt8NFcfmpOrvdYnH2cgKnr1Ge/Qbv9SbGJTGhXiTmSg1InctKR8iBUr5y7qg0xJ8eISF+rLXc=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Cloud Patches, Upgrading and Lifecycle Management</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Examine Patching, Upgrading and Lifecycle Management</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m22-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>CompTIA Cloud+</div>
+
+<div>Lifecycle management</div>
+
+<div>Upgrading and migrating systems</div>
+
+<div>Change management</div>
+
+<div>Asset management</div>
+
+<div>Patching</div>
+
+<div>Features or enhancements</div>
+
+<div>Hypervisors</div>
+
+<div>VMs</div>
+
+<div>Virtual appliances</div>
+
+<div>Applications</div>
+
+<div>Storage components</div>
+
+<div>OS</div>
+
+<div>Rollbacks</div>
+
+<div>Upgrade methods</div>
+
+<div>Rolling upgrades</div>
+
+<div>Blue-green</div>
+
+<div>Canary</div>
+
+<div>Active-passive</div>
+
+<div>Development / QA / production / DR&nbsp;</div>
+
+</div>
+
+<span class="atom-code hidden">75296463-a56a-494d-b22e-f5e4a621289a</span>
+
+<p id="cn-m22-23">Welcome to the <b>Patching, Upgrading and Lifecycle Management </b>Practice
+ Lab. In this module you will be provided with the instructions and 
+devices needed to develop your hands-on skills.&nbsp;</p>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m22-27">In this module, you will complete the following exercises:&nbsp;</p>
+
+<ul id="cn-m22-28">
+
+<li id="cn-m22-28">Exercise 1 - Examine Patching, Upgrading and Lifecycle Management.&nbsp;</li>
+
+</ul>
+
+<p id="cn-m22-30">After completing this module, you should be able to:</p>
+
+<ul id="cn-m22-31">
+
+<li id="cn-m22-31">Define and Describe backups, Lifecycle management, 
+change management, asset management, patching cloud elements, rollbacks,
+ and upgrade methods.&nbsp;</li>
+
+<li id="cn-m22-32">Deploy and Upgrade a Virtual Machine in a Private Cloud Environment.</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m22-34">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m22-35">
+
+<li id="cn-m22-35">4.2 Given a scenario, maintain efficient operation of a cloud environment</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m22-37">It will take approximately <b>45 minutes </b>to complete this lab.</p>
+
+<span class="atom-code hidden">760ea31a-d9dc-4993-9fbb-bc5f9c1ca141</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m22-41">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m22-42">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m22-45"><b>Lab Topology</b></h2>
+
+<p id="cn-m22-46">During your session, you will have access to the following lab configuration.</p>
+
+<span class="atom-code hidden">b441a737-e075-40c4-a6a6-d57d4dcbeb25</span>
+
+<p id="cn-m22-49">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m22-50">
+
+<li id="cn-m22-50"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+<li id="cn-m22-51"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+<li id="cn-m22-52"><b>PLABWIN10 </b>- Domain Member Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m22-53">Click <b>Next </b>to proceed to the first exercise.&nbsp;</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m22-54"><b>Exercise 1 - Examine Patching, Upgrading and Lifecycle Management</b></h2>
+
+<p id="cn-m22-55">In this exercise, you will review the methodologies of
+ applying patches, upgrades, and deployments we use to manage an 
+environment. You will also manage backups and the Lifecycle of data, 
+including solutions for long-term retention as well as methods to 
+determine the frequency and quality of these backups.&nbsp;</p>
+
+<p id="cn-m22-56">You will also learn the details of backups and the 
+Lifecycle process of methodologies used to determine how frequently to 
+perform backups and how much data to retain. You will review different 
+resources typically patched in a cloud environment that include 
+hypervisors, VMs, virtual appliances, applications, storage, operating 
+systems, and rolling back in the event of any issues that arise.</p>
+
+<p id="cn-m22-57">You will also cover upgrade methods and deployment 
+methodologies used in the field, such as rolling upgrades, blue-green, 
+and canary.</p>
+
+<span class="atom-code hidden">b169513b-8bbf-4f39-a2ff-4e011dc39858</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m22-61">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m22-62">
+
+<li id="cn-m22-62">Define and Describe backups, Lifecycle management, 
+change management, asset management, patching cloud elements, rollbacks,
+ and upgrade methods.&nbsp;</li>
+
+<li id="cn-m22-63">Deploy and Upgrade a Virtual Machine in a Private Cloud Environment.</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m22-65">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">13204a44-8abe-4426-8a36-20597085f51d</span>
+
+<ul id="cn-m22-68">
+
+<li id="cn-m22-68"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+</ul>
+
+<h3 id="cn-m22-69"><b>Task 1 - Deploy Ubuntu Server 22.04 LTS Virtual Machine using Hyper-V</b></h3>
+
+<p id="cn-m22-70">In this task, you will deploy Ubuntu Server 22.04 LTS using Hyper-V.</p>
+
+<h4 id="cn-m22-71"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m22-72">Connect to <b>PLABDM01</b>.</p>
+
+<p id="cn-m22-74"></p><figure><img class="cn-img" id="cn-image-m22-c-0" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-0.jpg" alt="Figure 1.1 Screenshot of PLABDM01: Displaying the desktop."><figcaption>Figure 1.1 Screenshot of PLABDM01: Displaying the desktop.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-76"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m22-77">Click on the <b>Start </b>button and type the following:</p>
+
+<pre id="cn-m22-78"><code>Hyper-V Manager
+
+</code></pre>
+
+<p id="cn-m22-79">Click on the <b>Hyper-V Manager </b>application.</p>
+
+<p id="cn-m22-80"></p><figure><img class="cn-img" id="cn-image-m22-c-1" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-1.jpg" alt="Figure 1.2 Screenshot of PLABDM01: Displaying the Start menu. Hyper-V Manager is highlighted in the Best match search results."><figcaption>Figure 1.2 Screenshot of PLABDM01: Displaying the Start menu. Hyper-V Manager is highlighted in the Best match search results.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-82"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m22-83">The Hyper-V application will open.</p>
+
+<p id="cn-m22-84">Click on <b>PLABDM01 </b>on the left-hand pane.</p>
+
+<p id="cn-m22-86"></p><figure><img class="cn-img" id="cn-image-m22-c-2" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-2.jpg" alt="Figure 1.3 Screenshot of PLABDM01: Displaying the Hyper-V manager window. PLABDM01 is highlighted."><figcaption>Figure 1.3 Screenshot of PLABDM01: Displaying the Hyper-V manager window. PLABDM01 is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-88"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m22-89">Click on <b>Import Virtual Machine </b>on the far right-hand side of the window.</p>
+
+<p id="cn-m22-91"></p><figure><img class="cn-img" id="cn-image-m22-c-3" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-3.jpg" alt="Figure 1.4 Screenshot of PLABDM01: Displaying the Hyper-V manager window. PLABDM01 has been selected, and the Import Virtual Machine option has been highlighted."><figcaption>Figure
+ 1.4 Screenshot of PLABDM01: Displaying the Hyper-V manager window. 
+PLABDM01 has been selected, and the Import Virtual Machine option has 
+been highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-93"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m22-94">You will see the <b>Import Virtual Machine Wizard.</b></p>
+
+<p id="cn-m22-95">Click <b>Next</b>.</p>
+
+<p id="cn-m22-97"></p><figure><img class="cn-img" id="cn-image-m22-c-4" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-4.jpg" alt="Figure 1.5 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Before you begin page. Next is highlighted."><figcaption>Figure
+ 1.5 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The 
+Import Virtual machine window is shown on the Before you begin page. 
+Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-99"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m22-100">From the <b>Import Virtual Machine </b>window again, click on the <b>Browse </b>button.</p>
+
+<p id="cn-m22-102"></p><figure><img class="cn-img" id="cn-image-m22-c-5" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-5.jpg" alt="Figure 1.6 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Locate folder page. Browse is highlighted."><figcaption>Figure
+ 1.6 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The 
+Import Virtual machine window is shown on the Locate folder page. Browse
+ is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-104"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m22-105">The <b>Select Folder </b>box will appear in File Explorer. Navigate to the following folder:</p>
+
+<pre id="cn-m22-106"><code>Downloads &gt; Ubuntu-VM &gt; Module 29 &gt; Ubuntu29
+
+</code></pre>
+
+<p id="cn-m22-107">Highlight the <b>Virtual Machines </b>folder, and click on the <b>Select Folder </b>button.</p>
+
+<p id="cn-m22-109"></p><figure><img class="cn-img" id="cn-image-m22-c-6" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-6.jpg" alt="Figure 1.7 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The File Manager window is shown with the Virtual Machines window selected. Select folder is highlighted."><figcaption>Figure
+ 1.7 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The 
+File Manager window is shown with the Virtual Machines window selected. 
+Select folder is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-111"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m22-112">You will now see the <b>Import Virtual Machine </b>window again.</p>
+
+<p id="cn-m22-113">Click <b>Next</b>.</p>
+
+<p id="cn-m22-115"></p><figure><img class="cn-img" id="cn-image-m22-c-7" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-7.jpg" alt="Figure 1.8 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Locate folder page. Next is highlighted."><figcaption>Figure
+ 1.8 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The 
+Import Virtual machine window is shown on the Locate folder page. Next 
+is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-117"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m22-118">You will now see the <b>Select Virtual Machine </b>window.</p>
+
+<p id="cn-m22-119">Highlight <b>ubuntu29 </b>and click <b>Next</b>.</p>
+
+<p id="cn-m22-121"></p><figure><img class="cn-img" id="cn-image-m22-c-8" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-8.jpg" alt="Figure 1.9 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Select Virtual Machine page. Ubuntu29 has been selected, and Next is highlighted."><figcaption>Figure
+ 1.9 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The 
+Import Virtual machine window is shown on the Select Virtual Machine 
+page. Ubuntu29 has been selected, and Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-123"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m22-124">You will now see the <b>Choose Import Type </b>window.</p>
+
+<p id="cn-m22-125">Select <b>Copy the virtual machine </b>option, and click <b>Next</b>.</p>
+
+<p id="cn-m22-127"></p><figure><img class="cn-img" id="cn-image-m22-c-9" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-9.jpg" alt="Figure 1.10 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Choose Import Type page. The Copy the virtual machine (create a new unique ID) option has been checked, and Next is highlighted."><figcaption>Figure
+ 1.10 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ Import Virtual machine window is shown on the Choose Import Type page. 
+The Copy the virtual machine (create a new unique ID) option has been 
+checked, and Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-129"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m22-130">On the <b>Choose Folders for Virtual Machine Files </b>window, click <b>Next</b>.</p>
+
+<p id="cn-m22-132"></p><figure><img class="cn-img" id="cn-image-m22-c-10" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-10.jpg" alt="Figure 1.11 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Choose Folders for Virtual Machine Files page. Next is highlighted."><figcaption>Figure
+ 1.11 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ Import Virtual machine window is shown on the Choose Folders for 
+Virtual Machine Files page. Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-134"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m22-135">From the <b>Choose Folders for to Store Virtual Hard Drives </b>window, click <b>Next</b>.</p>
+
+<p id="cn-m22-137"></p><figure><img class="cn-img" id="cn-image-m22-c-11" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-11.jpg" alt="Figure 1.12 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Choose Folders to Store Virtual Hard Disks page. Next is highlighted."><figcaption>Figure
+ 1.12 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ Import Virtual machine window is shown on the Choose Folders to Store 
+Virtual Hard Disks page. Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-139"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m22-140">On the <b>Saved State Errors </b>window, click <b>Delete Saved State</b>.</p>
+
+<p id="cn-m22-142"></p><figure><img class="cn-img" id="cn-image-m22-c-12" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-12.jpg" alt="Figure 1.13 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Saved State Errors window is shown, and Delete Saved State is highlighted."><figcaption>Figure
+ 1.13 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ Saved State Errors window is shown, and Delete Saved State is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-144"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m22-145">From the <b>Connect Network </b>window, click on the <b>Connection </b>dropdown menu and select <b>Microsoft Hyper-V Network Adapter - Virtual Switch</b>.</p>
+
+<p id="cn-m22-146">Click <b>Next</b>.</p>
+
+<p id="cn-m22-147"></p><figure><img class="cn-img" id="cn-image-m22-c-13" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-13.jpg" alt="Figure 1.14 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Connect Network page. The Microsoft Hyper-V Network Adapter - Virtual Switch option has been selected in the Connection field, and Next is highlighted."><figcaption>Figure
+ 1.14 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ Import Virtual machine window is shown on the Connect Network page. The
+ Microsoft Hyper-V Network Adapter - Virtual Switch option has been 
+selected in the Connection field, and Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-149"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m22-150">Click on the <b>Finish </b>button.</p>
+
+<p id="cn-m22-152"></p><figure><img class="cn-img" id="cn-image-m22-c-14" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-14.jpg" alt="Figure 1.15 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Completing Import Wizard page. Finish is highlighted."><figcaption>Figure
+ 1.15 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ Import Virtual machine window is shown on the Completing Import Wizard 
+page. Finish is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-154"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m22-155">The copying process will begin.</p>
+
+<p id="cn-m22-157"></p><figure><img class="cn-img" id="cn-image-m22-c-15" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-15.jpg" alt="Figure 1.16 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Completing Import Wizard page."><figcaption>Figure
+ 1.16 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ Import Virtual machine window is shown on the Completing Import Wizard 
+page.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-159"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m22-160">Once complete, you will now see the VM named <b>ubuntu29 </b>appear in the central pane.</p>
+
+<p id="cn-m22-161">Right click on the VM, and select <b>Start</b>.</p>
+
+<p id="cn-m22-162"></p><figure><img class="cn-img" id="cn-image-m22-c-16" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-16.jpg" alt="Figure 1.17 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The ubuntu29 VM has been right-clicked, and Start is highlighted in the context menu."><figcaption>Figure
+ 1.17 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ ubuntu29 VM has been right-clicked, and Start is highlighted in the 
+context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-164"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m22-165">Once the VM is running, right click on the VM and select <b>Connect</b>.</p>
+
+<p id="cn-m22-166"></p><figure><img class="cn-img" id="cn-image-m22-c-17" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-17.jpg" alt="Figure 1.18 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The ubuntu29 VM has been right-clicked, and Connect is highlighted in the context menu."><figcaption>Figure
+ 1.18 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ ubuntu29 VM has been right-clicked, and Connect is highlighted in the 
+context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-168"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m22-169">You will now see the <b>Virtual Machine Connection </b>window appear, click on the <b>Maximize </b>button at the top right.</p>
+
+<p id="cn-m22-170"></p><figure><img class="cn-img" id="cn-image-m22-c-18" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-18.jpg" alt="Figure 1.19 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The Maximize button is highlighted."><figcaption>Figure 1.19 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The Maximize button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-172"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m22-173">The server will finish booting and you will be presented with the prompt <b>ubuntu00 login</b>. Type the following:</p>
+
+<pre id="cn-m22-174"><code>ubuntu
+
+</code></pre>
+
+<p id="cn-m22-175">Press <b>Enter</b>.</p>
+
+<p id="cn-m22-176"></p><figure><img class="cn-img" id="cn-image-m22-c-19" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-19.jpg" alt="Figure 1.20 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The Username has been entered."><figcaption>Figure 1.20 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The Username has been entered.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-178"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m22-179">You will be presented with the <b>Password </b>prompt.</p>
+
+<p id="cn-m22-180">Type the following:</p>
+
+<pre id="cn-m22-181"><code><span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m22-182">Press <b>Enter</b>. Once this has been completed, you have successfully logged into the VM.</p>
+
+<p id="cn-m22-184"></p><figure><img class="cn-img" id="cn-image-m22-c-20" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-20.jpg" alt="Figure 1.21 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The Password has been entered."><figcaption>Figure 1.21 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The Password has been entered.</figcaption></figure><p></p>
+
+<h3 id="cn-m22-186"><b>Task 2 - Update and Upgrade Ubuntu </b></h3>
+
+<p id="cn-m22-187">Now that the Ubuntu VM has been created and installed, we will explore the upgrading and patching process.</p>
+
+<p id="cn-m22-188">In this task, you will upgrade <b>Ubuntu Server 22.04 LTS</b>.</p>
+
+<h4 id="cn-m22-189"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m22-190">Before performing upgrades to the new VM, firstly the
+ proxy will need to be updated in order to allow the connection through 
+the lab environment.</p>
+
+<p id="cn-m22-191">Type the following command:</p>
+
+<pre id="cn-m22-192"><code>sudo nano /etc/apt/apt.conf.d/proxy.conf
+
+</code></pre>
+
+<p id="cn-m22-193">Press <b>Enter</b>.</p>
+
+<p id="cn-m22-194"></p><figure><img class="cn-img" id="cn-image-m22-c-21" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-21.jpg" alt="Figure 1.22 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The proxy.conf creation command has been entered."><figcaption>Figure
+ 1.22 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The proxy.conf creation command has been entered.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-196"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m22-197">This will create and open the proxy configuration file.</p>
+
+<p id="cn-m22-198"></p><figure><img class="cn-img" id="cn-image-m22-c-22" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-22.jpg" alt="Figure 1.23 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The proxy.conf file has been opened."><figcaption>Figure 1.23 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The proxy.conf file has been opened.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-200"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m22-201">In the new file, type the following:</p>
+
+<pre id="cn-m22-202"><code>Acquire::http::Proxy "http://192.168.255.13:8080/";
+
+Acquire::https::Proxy "http://192.168.255.13:8080/";
+
+</code></pre>
+
+<p id="cn-m22-204"></p><figure><img class="cn-img" id="cn-image-m22-c-23" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-23.jpg" alt="Figure 1.24 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. Proxy confiruation data has been entered in the proxy.conf file."><figcaption>Figure
+ 1.24 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. Proxy confiruation data has been entered in the proxy.conf file.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-206"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m22-207">To save and close the configuration file, execute the
+ Control + O keyboard shortcut, followed by the Control + X keyboard 
+shortcut.</p>
+
+<p id="cn-m22-208">The prompt will return at the foot of the window.</p>
+
+<p id="cn-m22-209"></p><figure><img class="cn-img" id="cn-image-m22-c-24" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-24.jpg" alt="Figure 1.25 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The proxy.conf file has been saved, and the command prompt is shown at the bottom of the window."><figcaption>Figure
+ 1.25 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The proxy.conf file has been saved, and the command prompt is 
+shown at the bottom of the window.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-211"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m22-212">From the command line type:</p>
+
+<pre id="cn-m22-213"><code>sudo apt-get update
+
+</code></pre>
+
+<p id="cn-m22-214">Press <b>Enter</b>.</p>
+
+<p id="cn-m22-215">If you are asked to provide a password type:</p>
+
+<pre id="cn-m22-216"><code><span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m22-217">Press <b>Enter</b>.</p>
+
+<p id="cn-m22-218"></p><figure><img class="cn-img" id="cn-image-m22-c-25" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-25.jpg" alt="Figure 1.26 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The sudo apt-get update command has been executed in the terminal."><figcaption>Figure
+ 1.26 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The sudo apt-get update command has been executed in the 
+terminal.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-220"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m22-221">Once the command has executed, type the following:</p>
+
+<pre id="cn-m22-222"><code>sudo apt-get upgrade
+
+</code></pre>
+
+<p id="cn-m22-223">Press <b>Enter</b>.</p>
+
+<span class="cn-alert" id="cn-m22-224"><b>Alert</b>: If you are prompted asking if you wish to continue, type the <b>Y </b>key and press <b>Enter</b>.</span>
+
+<p id="cn-m22-225"></p><figure><img class="cn-img" id="cn-image-m22-c-26" src="CloudPatchesUpgradingandLifecycleManagement_files/image-m22-c-26.jpg" alt="Figure 1.27 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The sudo apt-get upgrade command has been executed in the terminal."><figcaption>Figure
+ 1.27 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The sudo apt-get upgrade command has been executed in the 
+terminal.</figcaption></figure><p></p>
+
+<h4 id="cn-m22-227"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m22-228">Once the upgrade process finishes, type the following:</p>
+
+<pre id="cn-m22-229"><code>sudo reboot
+
+</code></pre>
+
+<p id="cn-m22-230">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m22-231"><b><i>Note</i></b><i>: This will 
+reboot the machine, and all updates will take effect. This is is a 
+simple demonstration of how you may apply patches to a Linux machine, 
+although the methods to apply patches will depend on the operating 
+system or application. </i></span>
+
+<span class="atom-code hidden">7d0ac9fb-5de8-4057-8699-2545ccd83fb6</span>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<span class="cn-alert" id="cn-m22-237">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m22-238"><b>Review</b></h2>
+
+<p id="cn-m22-239">Well done, you have completed the <b>Patching, Upgrading and Lifecycle Management </b>Practice Lab.&nbsp;</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">e68229d8-7bb6-45da-9f25-3ad27570c674</span>
+
+<span class="atom-code hidden">100e79aa-7dd1-4ec5-ae5b-0009d17274fc</span>
+
+<span class="atom-code hidden">65ae8cc0-346a-4c90-95eb-cfe8689940bf</span>
+
+<span class="atom-code hidden">6ddeace0-c63b-4c1b-a3e0-9575a8de0d20</span>
+
+<span class="atom-code hidden">12c2fe59-3151-4884-b388-2fe643ca05cb</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m22-249">You completed the following exercises:</p>
+
+<ul id="cn-m22-250">
+
+<li id="cn-m22-250">Exercise 1 - Examine Patching, Upgrading and Lifecycle Management.&nbsp;</li>
+
+</ul>
+
+<p id="cn-m22-251">You should now be able to:</p>
+
+<ul id="cn-m22-252">
+
+<li id="cn-m22-252">Define and Describe backups, Lifecycle management, 
+change management, asset management, patching cloud elements, rollbacks,
+ and upgrade methods.&nbsp;</li>
+
+</ul>
+
+<ol id="cn-m22-253">
+
+<li id="cn-m22-253">Deploy and Upgrade a Virtual Machine in a Private Cloud Environment.</li>
+
+</ol>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m22-257">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.&nbsp;</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
