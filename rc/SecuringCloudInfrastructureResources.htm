@@ -1,0 +1,1247 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="SecuringCloudInfrastructureResources_files/print-styles.css" rel="stylesheet">
+    <script src="SecuringCloudInfrastructureResources_files/jquery.min.js"></script>
+    <script src="SecuringCloudInfrastructureResources_files/jspdf.js"></script>
+    <script src="SecuringCloudInfrastructureResources_files/from_html.js"></script>
+    <script src="SecuringCloudInfrastructureResources_files/addimage.js"></script>
+    <script src="SecuringCloudInfrastructureResources_files/filesaver.js"></script>
+    <script src="SecuringCloudInfrastructureResources_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="M2uHxEObxYpNHbqiMeFp+m605TEyUhEe/8LV96Qsw5SjX1cLDK+8RJAzP2dzPj9AL4ygK1Auifg+RX/d6XkLtQxH3ql2yiNpT6SyVK0MOmU=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+                <h1>CompTIA Cloud+</h1>
+                <h2>Securing Cloud Infrastructure Resources</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Securing Cloud Infrastructure Resources</li><li>Exercise 2 - Applying Encryption to Resources</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m7-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>CompTIA Cloud+</div>
+
+<div>Group Policy</div>
+
+<div>Event Viewer</div>
+
+<div>Microsoft Azure</div>
+
+<div>Cloud Infrastructure</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m7-8">Welcome to the <b>Securing Cloud Infrastructure Resources </b>Practice Lab. In this module you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m7-16">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m7-17">
+
+<li id="cn-m7-17">Exercise 1 - Securing Cloud Infrastructure</li>
+
+</ul>
+
+<p id="cn-m7-18">After completing this module, you should be able to:</p>
+
+<ul id="cn-m7-19">
+
+<li id="cn-m7-19">Configure group policy</li>
+
+<li id="cn-m7-20">Locate and use event viewer</li>
+
+<li id="cn-m7-21">Encrypt Azure OS and data disks</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m7-23">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m7-24">
+
+<li id="cn-m7-24">2.3 Given a scenario, apply the appropriate OS and application security controls</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m7-26">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m7-30">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m7-31">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m7-33"><b>Lab </b><span class="cn-9999999">Topology</span></h2>
+
+<p id="cn-m7-34">During your session, you will have access to the following lab configuration.</p>
+
+<h3 id="cn-m7-35"><b>Lab Topology 1</b></h3>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<h3 id="cn-m7-38"><b>Lab Topology 2</b></h3>
+
+<span class="atom-code hidden">b441a737-e075-40c4-a6a6-d57d4dcbeb25</span>
+
+<p id="cn-m7-41">Depending on the exercises, you may or may not use all 
+of the devices, but they are shown here in the layout to get an overall 
+understanding of the topology of the lab.</p>
+
+<h3 id="cn-m7-42"><b>Lab Topology 1</b></h3>
+
+<ul id="cn-m7-43">
+
+<li id="cn-m7-43"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m7-44"><b>Lab Topology 2</b></h3>
+
+<ul id="cn-m7-45">
+
+<li id="cn-m7-45"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+<li id="cn-m7-46"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+<li id="cn-m7-47"><b>PLABWIN10 </b>- Domain Member Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m7-48">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m7-49"><b>Exercise 1 - Securing Cloud Infrastructure Resources</b></h2>
+
+<p id="cn-m7-50">Regardless of an organization’s preferred environment, 
+on-premises or on cloud, one aspect remains consistent, the need to 
+secure resources. Cloud security spans over several tools, protocols and
+ best practices; familiarizing yourselves with these will enable your 
+ability to address these needs.</p>
+
+<p id="cn-m7-51">Securing cloud infrastructure resources does not end at
+ the initial configuration. Any change brings risk. Even if the 
+environment is secured today, it may not be tomorrow.</p>
+
+<p id="cn-m7-52">In this exercise, you will explore various tools used to secure infrastructure resources.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m7-55">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m7-56">
+
+<li id="cn-m7-56">Configure group policy</li>
+
+<li id="cn-m7-57">Locate and use event viewer</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m7-59">You will be using the following devices in this lab. Please power these on now.</p>
+
+<span class="atom-code hidden">b67ffbe4-4798-47b4-8618-c715c08c5f5f</span>
+
+<ul id="cn-m7-63">
+
+<li id="cn-m7-63"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+<li id="cn-m7-64"><b>PLABWIN10 </b>- Domain Member Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m7-66"><b>Task 1 - Configure a Group Policy</b></h3>
+
+<p id="cn-m7-67">Group policy is a Windows Administration tool that 
+allows System Administrators and Security Engineers to configure various
+ settings across an organization’s infrastructure.</p>
+
+<p id="cn-m7-68">While exploring some of the features of this 
+administrative tool, it should be noted how extensive and thorough some 
+of the policies can extend to.</p>
+
+<p id="cn-m7-69">Any changes to group policy should be first tested in a controlled environment before pushing updates to production.</p>
+
+<p id="cn-m7-70">Given the extensive nature of this administrative tool, this task will cover some more commonly used group policies.</p>
+
+<p id="cn-m7-72">In this task, you will configure group policies using the Windows Administration tool.</p>
+
+<h4 id="cn-m7-73"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m7-74">Connect to <b>PLABDC01</b>.</p>
+
+<p id="cn-m7-75"></p><figure><img class="cn-img" id="cn-image-m7-c-0" src="SecuringCloudInfrastructureResources_files/image-m7-c-0.jpg" alt="Figure 1.1 Screenshot of PLABDC01: The Server Manager &amp;gt; Dashboard window is displayed."><figcaption>Figure 1.1 Screenshot of PLABDC01: The Server Manager &gt; Dashboard window is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-77"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m7-78">From <b>Server Manager</b>, click <b>Tools</b>, then select <b>Group Policy Management</b>.</p>
+
+<p id="cn-m7-79"></p><figure><img class="cn-img" id="cn-image-m7-c-1" src="SecuringCloudInfrastructureResources_files/image-m7-c-1.jpg" alt="Figure 1.2 Screenshot of PLABDC01: The Server Manager &amp;gt; Dashboard page is displayed with the Tools context Menu open and the Group Policy Management option highlighted."><figcaption>Figure
+ 1.2 Screenshot of PLABDC01: The Server Manager &gt; Dashboard page is 
+displayed with the Tools context Menu open and the Group Policy 
+Management option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-81"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m7-82">From the <b>Group Policy Management</b>, expand the console object paths <b>Forest: practicelabs.com &gt; Domains &gt; practicelabs.com</b>.</p>
+
+<p id="cn-m7-83"></p><figure><img class="cn-img" id="cn-image-m7-c-2" src="SecuringCloudInfrastructureResources_files/image-m7-c-2.jpg" alt="Figure 1.3 Screenshot of PLABDC01: The Group Policy Management window is displayed with the group policy objects expanded in the left-hand pane to show practicelabs.com."><figcaption>Figure
+ 1.3 Screenshot of PLABDC01: The Group Policy Management window is 
+displayed with the group policy objects expanded in the left-hand pane 
+to show practicelabs.com.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-85"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m7-86">Under <b>practicelabs.com</b>, right-click <b>Group Policy Objects </b>and select <b>New</b>.</p>
+
+<p id="cn-m7-87"></p><figure><img class="cn-img" id="cn-image-m7-c-3" src="SecuringCloudInfrastructureResources_files/image-m7-c-3.jpg" alt="Figure 1.4 Screenshot of PLABDC01: The Group Policy Management window is displayed with Group Policy Objects shown as right-clicked, and the New option is highlighted."><figcaption>Figure
+ 1.4 Screenshot of PLABDC01: The Group Policy Management window is 
+displayed with Group Policy Objects shown as right-clicked, and the New 
+option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-89"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m7-90">From the <b>New GPO </b>dialog box, in the <b>Name </b>textbox, replace the current name with:</p>
+
+<pre id="cn-m7-91"><code>New PLAB group policy
+
+</code></pre>
+
+<p id="cn-m7-92">Click <b>OK</b>.</p>
+
+<p id="cn-m7-93"></p><figure><img class="cn-img" id="cn-image-m7-c-4" src="SecuringCloudInfrastructureResources_files/image-m7-c-4.jpg" alt="Figure 1.5 Screenshot of PLABDC01: The. New GPO dialog box is displayed with the text, New PLAB group policy typed into the Name textbox, and the OK button highlighted."><figcaption>Figure
+ 1.5 Screenshot of PLABDC01: The. New GPO dialog box is displayed with 
+the text, New PLAB group policy typed into the Name textbox, and the OK 
+button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-95"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m7-96">Once back to the <b>Group Policy Management </b>window, expand the console object path <b>Group Policy Objects</b>.</p>
+
+<p id="cn-m7-97">Notice that the newly created group policy object <b>New PLAB group policy </b>appears in the list.</p>
+
+<p id="cn-m7-98"></p><figure><img class="cn-img" id="cn-image-m7-c-5" src="SecuringCloudInfrastructureResources_files/image-m7-c-5.jpg" alt="Figure 1.6 Screenshot of PLABDC01: The Group Policy Management window is displayed with the Group Policy Objects in practicelabs.com pane open and the newly created group policy object listed."><figcaption>Figure
+ 1.6 Screenshot of PLABDC01: The Group Policy Management window is 
+displayed with the Group Policy Objects in practicelabs.com pane open 
+and the newly created group policy object listed.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-100"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m7-101">Right-click <b>New PLAB Group Policy </b>and select <b>Edit</b>….</p>
+
+<p id="cn-m7-102"></p><figure><img class="cn-img" id="cn-image-m7-c-6" src="SecuringCloudInfrastructureResources_files/image-m7-c-6.jpg" alt="Figure 1.7 Screenshot of PLABDC01: The Group Policy Management window is displayed with the New PLAB group policy object shown as right-clicked, and the Edit option highlighted."><figcaption>Figure
+ 1.7 Screenshot of PLABDC01: The Group Policy Management window is 
+displayed with the New PLAB group policy object shown as right-clicked, 
+and the Edit option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-104"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m7-105">From the <b>Group Policy Management Editor </b>window, expand <b>Computer Configuration &gt; Policies</b>.</p>
+
+<p id="cn-m7-106"></p><figure><img class="cn-img" id="cn-image-m7-c-7" src="SecuringCloudInfrastructureResources_files/image-m7-c-7.jpg" alt="Figure 1.8 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed with the Computer Configuration folder expanded and the Policies folder highlighted."><figcaption>Figure
+ 1.8 Screenshot of PLABDC01: The Group Policy Management Editor window 
+is displayed with the Computer Configuration folder expanded and the 
+Policies folder highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-108"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m7-109">From <b>Policies</b>, expand <b>Windows Settings &gt; Security Settings &gt; Account Policies</b>.</p>
+
+<p id="cn-m7-110">From the right-hand pane, click <b>Password Policy</b>.</p>
+
+<p id="cn-m7-111"></p><figure><img class="cn-img" id="cn-image-m7-c-8" src="SecuringCloudInfrastructureResources_files/image-m7-c-8.jpg" alt="Figure 1.9 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed with the folders Windows Settings &amp;gt; Security Settings expanded and the Account Policies folder selected, and the Password Policy option highlighted."><figcaption>Figure
+ 1.9 Screenshot of PLABDC01: The Group Policy Management Editor window 
+is displayed with the folders Windows Settings &gt; Security Settings 
+expanded and the Account Policies folder selected, and the Password 
+Policy option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-113"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m7-114">Right-click <b>Password must meet complexity requirements </b>and select <b>Properties</b>.</p>
+
+<p id="cn-m7-116"></p><figure><img class="cn-img" id="cn-image-m7-c-9" src="SecuringCloudInfrastructureResources_files/image-m7-c-9.jpg" alt="Figure 1.10 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed with the Password must meet complexity requirements option shown as right-clicked, and the Properties option highlighted."><figcaption>Figure
+ 1.10 Screenshot of PLABDC01: The Group Policy Management Editor window 
+is displayed with the Password must meet complexity requirements option 
+shown as right-clicked, and the Properties option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-118"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m7-119">From the <b>Password must meet complexity requirement Properties </b>dialog box, tick the <b>Define this policy setting </b>checkbox.</p>
+
+<p id="cn-m7-120">Select <b>Enabled</b>, click <b>Apply</b>, then <b>OK</b>.</p>
+
+<p id="cn-m7-122"></p><figure><img class="cn-img" id="cn-image-m7-c-10" src="SecuringCloudInfrastructureResources_files/image-m7-c-10.jpg" alt="Figure 1.11 Screenshot of PLABDC01: The. Password must meet complexity requirement properties dialog box is displayed with the Enabled option selected and the OK button highlighted."><figcaption>Figure
+ 1.11 Screenshot of PLABDC01: The. Password must meet complexity 
+requirement properties dialog box is displayed with the Enabled option 
+selected and the OK button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-124"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m7-125">From the left-hand pane, click <b>Account Lockout Policy</b>.</p>
+
+<p id="cn-m7-126">Notice in the right-hand pane that the policy settings for the Account Lockout Policy are currently showing as <b>not defined</b>.</p>
+
+<p id="cn-m7-127">Right-click <b>Account lockout threshold </b>and select <b>Properties</b>.</p>
+
+<p id="cn-m7-128"></p><figure><img class="cn-img" id="cn-image-m7-c-11" src="SecuringCloudInfrastructureResources_files/image-m7-c-11.jpg" alt="Figure 1.12 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed with the Account lockout threshold option shown as right-clicked, and the Properties option highlighted."><figcaption>Figure
+ 1.12 Screenshot of PLABDC01: The Group Policy Management Editor window 
+is displayed with the Account lockout threshold option shown as 
+right-clicked, and the Properties option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-130"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m7-131">In the <b>Account Lockout Threshold Properties </b>dialog box, tick the <b>Define this policy setting </b>checkbox.</p>
+
+<p id="cn-m7-132">Then, under <b>Account will lock out, </b>type the following:</p>
+
+<pre id="cn-m7-133"><code>3
+
+</code></pre>
+
+<p id="cn-m7-134">Notice the wording has now changed to <b>Account will lockout after</b>.</p>
+
+<p id="cn-m7-135">Click <b>Apply</b></p><figure><img class="cn-img" id="cn-image-m7-c-12" src="SecuringCloudInfrastructureResources_files/image-m7-c-12.jpg" alt="Figure 1.13 Screenshot of PLABDC01: The. Account lockout threshold properties dialog box is displayed with Account will be locked after: Set to 3 invalid login attempts. The Apply button is highlighted."><figcaption>Figure
+ 1.13 Screenshot of PLABDC01: The. Account lockout threshold properties 
+dialog box is displayed with Account will be locked after: Set to 3 
+invalid login attempts. The Apply button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-137"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m7-138">A <b>Suggested Value Changes </b>window will pop up.</p>
+
+<p id="cn-m7-139">For this policy change, click <b>OK </b>to the suggested value changes.</p>
+
+<p id="cn-m7-140"></p><figure><img class="cn-img" id="cn-image-m7-c-13" src="SecuringCloudInfrastructureResources_files/image-m7-c-13.jpg" alt="Figure 1.14 Screenshot of PLABDC01: The Suggested Value Changes pop-up box is displayed with the OK button highlighted."><figcaption>Figure 1.14 Screenshot of PLABDC01: The Suggested Value Changes pop-up box is displayed with the OK button highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m7-143"><b><i>Note</i></b><i>: Adjusting 
+some policies will prompt the group policy management editor to give 
+suggested value changes to additional policies that have direct 
+dependencies or relations to the policy being changed.</i></span>
+
+<h4 id="cn-m7-144"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m7-145">Click <b>OK </b>to finalize the changes.</p>
+
+<p id="cn-m7-146"></p><figure><img class="cn-img" id="cn-image-m7-c-14" src="SecuringCloudInfrastructureResources_files/image-m7-c-14.jpg" alt="Figure 1.15 Screenshot of PLABDC01: The Account lockout threshold Properties dialog box is displayed with the OK button highlighted."><figcaption>Figure
+ 1.15 Screenshot of PLABDC01: The Account lockout threshold Properties 
+dialog box is displayed with the OK button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-148"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m7-149">Notice that after completing the policy change and 
+accepting the suggested value changes, the policy settings for the 
+Account Lockout Policy have changed from not defined to the recommended 
+values.</p>
+
+<p id="cn-m7-150"></p><figure><img class="cn-img" id="cn-image-m7-c-15" src="SecuringCloudInfrastructureResources_files/image-m7-c-15.jpg" alt="Figure 1.16 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed with the Account lockout threshold policy setting highlighted."><figcaption>Figure
+ 1.16 Screenshot of PLABDC01: The Group Policy Management Editor window 
+is displayed with the Account lockout threshold policy setting 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-152"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m7-153">Expand <b>Security Settings </b>&gt; <b>Software Restriction Policies</b>.</p>
+
+<p id="cn-m7-154">Then, right-click <b>Software Restriction Policies </b>and select <b>New Software Restriction Policies</b>.</p>
+
+<p id="cn-m7-155"></p><figure><img class="cn-img" id="cn-image-m7-c-16" src="SecuringCloudInfrastructureResources_files/image-m7-c-16.jpg" alt="Figure 1.17 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed with the Software Restriction Policies option shown as right-clicked, and the New Software Restrictions Policies option highlighted."><figcaption>Figure
+ 1.17 Screenshot of PLABDC01: The Group Policy Management Editor window 
+is displayed with the Software Restriction Policies option shown as 
+right-clicked, and the New Software Restrictions Policies option 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-157"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m7-158">Right-click <b>Designated File Types </b>and select <b>Properties</b>.</p>
+
+<p id="cn-m7-159"></p><figure><img class="cn-img" id="cn-image-m7-c-17" src="SecuringCloudInfrastructureResources_files/image-m7-c-17.jpg" alt="Figure 1.18 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed with the Designated File Types option shown as right-clicked, and the Properties option highlighted."><figcaption>Figure
+ 1.18 Screenshot of PLABDC01: The Group Policy Management Editor window 
+is displayed with the Designated File Types option shown as 
+right-clicked, and the Properties option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-161"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m7-162">Under the <b>Designated File Types </b>list, scroll down and select the <b>LNK </b>extension.</p>
+
+<p id="cn-m7-163">Click <b>Remove</b>.</p>
+
+<p id="cn-m7-164"></p><figure><img class="cn-img" id="cn-image-m7-c-18" src="SecuringCloudInfrastructureResources_files/image-m7-c-18.jpg" alt="Figure 1.19 Screenshot of PLABDC01: The Designated File Types Properties window is displayed with LNK type selected and the Remove button highlighted."><figcaption>Figure
+ 1.19 Screenshot of PLABDC01: The Designated File Types Properties 
+window is displayed with LNK type selected and the Remove button 
+highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m7-167"><b><i>Note</i></b><i>: it is 
+important to remove the LNK files as the Start menu, and pin items use 
+these designated file types by default. Not removing it would cause the 
+links to break.</i></span>
+
+<h4 id="cn-m7-168"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m7-169">A warning window will pop up, notifying you that this file type will run with unrestricted privileges.</p>
+
+<p id="cn-m7-170">Click <b>Yes</b>.</p>
+
+<p id="cn-m7-171"></p><figure><img class="cn-img" id="cn-image-m7-c-19" src="SecuringCloudInfrastructureResources_files/image-m7-c-19.jpg" alt="Figure 1.20 Screenshot of PLABDC01: The Software Restriction Policies notification window is displayed with the Yes button highlighted."><figcaption>Figure
+ 1.20 Screenshot of PLABDC01: The Software Restriction Policies 
+notification window is displayed with the Yes button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-173"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m7-174">Click <b>OK </b>in the <b>Designated File Type Properties </b>window to finalize the changes.</p>
+
+<p id="cn-m7-175"></p><figure><img class="cn-img" id="cn-image-m7-c-20" src="SecuringCloudInfrastructureResources_files/image-m7-c-20.jpg" alt="Figure 1.21 Screenshot of PLABDC01: The Designated File Types Properties dialog box is displayed with the OK button highlighted."><figcaption>Figure 1.21 Screenshot of PLABDC01: The Designated File Types Properties dialog box is displayed with the OK button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-177"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m7-178">Right-click <b>Additional Rules </b>and select <b>New Path Rule</b>.</p>
+
+<p id="cn-m7-179"></p><figure><img class="cn-img" id="cn-image-m7-c-21" src="SecuringCloudInfrastructureResources_files/image-m7-c-21.jpg" alt="Figure 1.22 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed, with the Additional Rules option shown as right-clicked, and the New Path Rule option highlighted."><figcaption>Figure
+ 1.22 Screenshot of PLABDC01: The Group Policy Management Editor window 
+is displayed, with the Additional Rules option shown as right-clicked, 
+and the New Path Rule option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-181"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m7-182">In the <b>Path </b>textbox, type:</p>
+
+<pre id="cn-m7-183"><code>C:\Program Files (x86)
+
+</code></pre>
+
+<p id="cn-m7-184">Click <b>OK </b>to finalize the change.</p>
+
+<p id="cn-m7-185"></p><figure><img class="cn-img" id="cn-image-m7-c-22" src="SecuringCloudInfrastructureResources_files/image-m7-c-22.jpg" alt="Figure 1.23 Screenshot of PLABDC01: The New Path Rule dialog box is displayed with the Path field typed in and the OK button highlighted."><figcaption>Figure
+ 1.23 Screenshot of PLABDC01: The New Path Rule dialog box is displayed 
+with the Path field typed in and the OK button highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m7-188"><b><i>Note</i></b><i>: By default,
+ C:\Windows and C:\Program Files are permitted. On 64-bit Windows 
+Program Files (x86) is not automatically whitelist, and thus needs to be
+ added manually.</i></span>
+
+<h4 id="cn-m7-189"><b><i>Step 24</i></b></h4>
+
+<p id="cn-m7-190">Expand <b>Application Control Policies </b>and select <b>Applocker</b>.</p>
+
+<p id="cn-m7-191"></p><figure><img class="cn-img" id="cn-image-m7-c-23" src="SecuringCloudInfrastructureResources_files/image-m7-c-23.jpg" alt="Figure 1.24 Screenshot of PLABDC01: The Group Policy Manager Editor is displayed with the Application Control Policies folder expanded and AppLocker highlighted."><figcaption>Figure
+ 1.24 Screenshot of PLABDC01: The Group Policy Manager Editor is 
+displayed with the Application Control Policies folder expanded and 
+AppLocker highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-193"><b><i>Step 25</i></b></h4>
+
+<p id="cn-m7-194">From the Configure Rule Enforcement pane, click the <b>Configure rule enforcement </b>weblink.</p>
+
+<p id="cn-m7-195"></p><figure><img class="cn-img" id="cn-image-m7-c-24" src="SecuringCloudInfrastructureResources_files/image-m7-c-24.jpg" alt="Figure 1.25 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed with AppLocker selected and the Configure rule enforcement weblink highlighted."><figcaption>Figure
+ 1.25 Screenshot of PLABDC01: The Group Policy Management Editor window 
+is displayed with AppLocker selected and the Configure rule enforcement 
+weblink highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-197"><b><i>Step 26</i></b></h4>
+
+<p id="cn-m7-198">The four rule sets are used to differentiate between the different types of apps they correspond with.</p>
+
+<span class="atom-code hidden">8f9d0850-4646-4610-8cc4-1ea3b552400e</span>
+
+<p id="cn-m7-201">From the <b>AppLocker Properties </b>dialog box, under <b>Executable rules</b>, tick the <b>Configured </b>checkbox.</p>
+
+<p id="cn-m7-202">Then, click <b>OK</b>.</p>
+
+<p id="cn-m7-203"></p><figure><img class="cn-img" id="cn-image-m7-c-25" src="SecuringCloudInfrastructureResources_files/image-m7-c-25.jpg" alt="Figure 1.26 Screenshot of PLABDC01: The AppLocker Properties dialog box is displayed with the Executable rules &amp;gt; Configured checkbox ticked and the OK button highlighted."><figcaption>Figure
+ 1.26 Screenshot of PLABDC01: The AppLocker Properties dialog box is 
+displayed with the Executable rules &gt; Configured checkbox ticked and 
+the OK button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-205"><b><i>Step 27</i></b></h4>
+
+<p id="cn-m7-206">Expand <b>AppLocker </b>and select <b>Executable Rules</b>.</p>
+
+<p id="cn-m7-207">Right-click <b>Executable Rules </b>and select <b>Create New Rule</b>.</p>
+
+<p id="cn-m7-208"></p><figure><img class="cn-img" id="cn-image-m7-c-26" src="SecuringCloudInfrastructureResources_files/image-m7-c-26.jpg" alt="Figure 1.27 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed with the Executable Rules option shown as right-clicked, and the Create New Rule option highlighted."><figcaption>Figure
+ 1.27 Screenshot of PLABDC01: The Group Policy Management Editor window 
+is displayed with the Executable Rules option shown as right-clicked, 
+and the Create New Rule option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-210"><b><i>Step 28</i></b></h4>
+
+<p id="cn-m7-211">The <b>Create Executable Rules </b>wizard will display.</p>
+
+<p id="cn-m7-212">Click <b>Next</b>.</p>
+
+<p id="cn-m7-213"></p><figure><img class="cn-img" id="cn-image-m7-c-27" src="SecuringCloudInfrastructureResources_files/image-m7-c-27.jpg" alt="Figure 1.28 Screenshot of PLABDC01: The Create Executable Rules wizard home page is displayed with the Next button highlighted."><figcaption>Figure 1.28 Screenshot of PLABDC01: The Create Executable Rules wizard home page is displayed with the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-215"><b><i>Step 29</i></b></h4>
+
+<p id="cn-m7-216">From <b>Permissions</b>, set <b>Action </b>to <b>Deny</b>.</p>
+
+<p id="cn-m7-217">Click <b>Next</b>.</p>
+
+<p id="cn-m7-218"></p><figure><img class="cn-img" id="cn-image-m7-c-28" src="SecuringCloudInfrastructureResources_files/image-m7-c-28.jpg" alt="Figure 1.29 Screenshot of PLABDC01: The Create Executable Rules Wizard &amp;gt; Permission page is displayed with the Action option set to Deny and the Next button highlighted."><figcaption>Figure
+ 1.29 Screenshot of PLABDC01: The Create Executable Rules Wizard &gt; 
+Permission page is displayed with the Action option set to Deny and the 
+Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-220"><b><i>Step 30</i></b></h4>
+
+<p id="cn-m7-221">Under <b>Conditions</b>, select the <b>File hash </b>radio button.</p>
+
+<p id="cn-m7-222">Click <b>Next</b>.</p>
+
+<p id="cn-m7-223"></p><figure><img class="cn-img" id="cn-image-m7-c-29" src="SecuringCloudInfrastructureResources_files/image-m7-c-29.jpg" alt="Figure 1.30 Screenshot of PLABDC01: The Create Executable Rules Wizard &amp;gt; Conditions page is displayed with the File Hash option selected and the Next button highlighted."><figcaption>Figure
+ 1.30 Screenshot of PLABDC01: The Create Executable Rules Wizard &gt; 
+Conditions page is displayed with the File Hash option selected and the 
+Next button highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m7-226"><b><i>Note</i></b><i>: There are three types of primary conditions that you can create. </i><b><i>Publisher </i></b><i>identifies an app based on its digital signature. </i><b><i>Path </i></b><i>identifies an app by its location in the file system of the computer or on the network. </i><b><i>File hash </i></b><i>represents the system computed cryptographic hash of the identified file.</i></span>
+
+<h4 id="cn-m7-227"><b><i>Step 31</i></b></h4>
+
+<p id="cn-m7-228">From <b>File Hash</b>, to set the reference file, click <b>Browse Files</b>.</p>
+
+<p id="cn-m7-229"></p><figure><img class="cn-img" id="cn-image-m7-c-30" src="SecuringCloudInfrastructureResources_files/image-m7-c-30.jpg" alt="Figure 1.31 Screenshot of PLABDC01: The Create Executable Rules Wizard &amp;gt; Conditions &amp;gt; File Hash page is displayed with the Browse Files button highlighted."><figcaption>Figure
+ 1.31 Screenshot of PLABDC01: The Create Executable Rules Wizard &gt; 
+Conditions &gt; File Hash page is displayed with the Browse Files button
+ highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-231"><b><i>Step 32</i></b></h4>
+
+<p id="cn-m7-232">For this example, we will be locking down the native calculator application in Windows.</p>
+
+<p id="cn-m7-233">From the <b>Open </b>window, navigate to <b>This PC &gt; Local (C:) &gt; Windows &gt; System32</b>.</p>
+
+<p id="cn-m7-234">Click on the <b>calc </b>app.</p>
+
+<p id="cn-m7-235">Then, click <b>Open</b>.</p>
+
+<p id="cn-m7-236"></p><figure><img class="cn-img" id="cn-image-m7-c-31" src="SecuringCloudInfrastructureResources_files/image-m7-c-31.jpg" alt="Figure 1.32 Screenshot of PLABDC01: The Open window is displayed with the calc app selected and the Open button highlighted."><figcaption>Figure 1.32 Screenshot of PLABDC01: The Open window is displayed with the calc app selected and the Open button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-238"><b><i>Step 33</i></b></h4>
+
+<p id="cn-m7-239">Back on <b>File Hash</b>, click <b>Next</b>.</p>
+
+<p id="cn-m7-240"></p><figure><img class="cn-img" id="cn-image-m7-c-32" src="SecuringCloudInfrastructureResources_files/image-m7-c-32.jpg" alt="Figure 1.33 Screenshot of PLABDC01: The Create Executable Rules Wizard &amp;gt; Conditions &amp;gt; File Hash page is displayed with the calc.exe file appearing in the Files list, and the Next button highlighted."><figcaption>Figure
+ 1.33 Screenshot of PLABDC01: The Create Executable Rules Wizard &gt; 
+Conditions &gt; File Hash page is displayed with the calc.exe file 
+appearing in the Files list, and the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-242"><b><i>Step 34</i></b></h4>
+
+<p id="cn-m7-243">Under <b>Name</b>, click <b>Create</b>.</p>
+
+<p id="cn-m7-244"></p><figure><img class="cn-img" id="cn-image-m7-c-33" src="SecuringCloudInfrastructureResources_files/image-m7-c-33.jpg" alt="Figure 1.34 Screenshot of PLABDC01: The Create Executable Rules Wizard &amp;gt; Name and Description page is displayed with the Create button highlighted."><figcaption>Figure
+ 1.34 Screenshot of PLABDC01: The Create Executable Rules Wizard &gt; 
+Name and Description page is displayed with the Create button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-246"><b><i>Step 35</i></b></h4>
+
+<p id="cn-m7-247">As this is the first time that executive rules are 
+being generated, AppLocker will populate a notification to create the 
+default rules.</p>
+
+<p id="cn-m7-248">Click <b>Yes</b>.</p>
+
+<p id="cn-m7-249"></p><figure><img class="cn-img" id="cn-image-m7-c-34" src="SecuringCloudInfrastructureResources_files/image-m7-c-34.jpg" alt="Figure 1.35 Screenshot of PLABDC01: The Applocker warning message is displayed asking Do you want to create the default rules now? The Yes button is highlighted."><figcaption>Figure
+ 1.35 Screenshot of PLABDC01: The Applocker warning message is displayed
+ asking Do you want to create the default rules now? The Yes button is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-251"><b><i>Step 36</i></b></h4>
+
+<p id="cn-m7-252">Once complete, notice that Execute rules has populated
+ three default rules, all set to Allow and also showing the Deny rule 
+that was just created.</p>
+
+<p id="cn-m7-253"></p><figure><img class="cn-img" id="cn-image-m7-c-35" src="SecuringCloudInfrastructureResources_files/image-m7-c-35.jpg" alt="Figure 1.36 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed with three new default Executable rules shown as well as the newly created Deny rule."><figcaption>Figure
+ 1.36 Screenshot of PLABDC01: The Group Policy Management Editor window 
+is displayed with three new default Executable rules shown as well as 
+the newly created Deny rule.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-255"><b><i>Step 37</i></b></h4>
+
+<p id="cn-m7-256">Expand <b>Administrative Templates: Policy definitions retrieved from the local computer </b>&gt; <b>Window Components</b>.</p>
+
+<p id="cn-m7-257"></p><figure><img class="cn-img" id="cn-image-m7-c-36" src="SecuringCloudInfrastructureResources_files/image-m7-c-36.jpg" alt="Figure 1.37 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed with the Windows Components folder selected."><figcaption>Figure
+ 1.37 Screenshot of PLABDC01: The Group Policy Management Editor window 
+is displayed with the Windows Components folder selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-259"><b><i>Step 38</i></b></h4>
+
+<p id="cn-m7-260">Expand <b>Windows Defender Antivirus </b>and select <b>Scan</b><span class="cn-9999999">.</span></p>
+
+<p id="cn-m7-261">Click on the policy <b>Check for the latest virus and spyware definitions before running a scheduled scan</b>.</p>
+
+<p id="cn-m7-262"></p><figure><img class="cn-img" id="cn-image-m7-c-37" src="SecuringCloudInfrastructureResources_files/image-m7-c-37.jpg" alt="Figure 1.38 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed with the Windows Defender Antivirus folder expanded and the Scan folder selected."><figcaption>Figure
+ 1.38 Screenshot of PLABDC01: The Group Policy Management Editor window 
+is displayed with the Windows Defender Antivirus folder expanded and the
+ Scan folder selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-264"><b><i>Step 39</i></b></h4>
+
+<p id="cn-m7-265">Right-click <b>Check for the latest virus and spyware definitions before running a scheduled scan </b>policy and select <b>Edit</b>.</p>
+
+<p id="cn-m7-266"></p><figure><img class="cn-img" id="cn-image-m7-c-38" src="SecuringCloudInfrastructureResources_files/image-m7-c-38.jpg" alt="Figure 1.39 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed with the Windows Defender Antivirus folder expanded and the Scan folder selected. The Check for the latest virus and spyware definitions before running a scheduled scan policy is right-clicked, and the Edit option is highlighted."><figcaption>Figure
+ 1.39 Screenshot of PLABDC01: The Group Policy Management Editor window 
+is displayed with the Windows Defender Antivirus folder expanded and the
+ Scan folder selected. The Check for the latest virus and spyware 
+definitions before running a scheduled scan policy is right-clicked, and
+ the Edit option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-268"><b><i>Step 40</i></b></h4>
+
+<p id="cn-m7-269">From the <b>Check for the latest virus and spyware definitions before running a scheduled scan </b>window, select <b>Enabled</b>.</p>
+
+<p id="cn-m7-270">Then, select <b>Next Setting</b>.</p>
+
+<span class="cn-quote" id="cn-m7-271"><b><i>Note</i></b><i>: Clicking the Next Setting button will progress the configuration to the next policy on the list.</i></span>
+
+<p id="cn-m7-272"></p><figure><img class="cn-img" id="cn-image-m7-c-39" src="SecuringCloudInfrastructureResources_files/image-m7-c-39.jpg" alt="Figure 1.40 Screenshot of PLABDC01: The Check for the latest virus and spyware definitions before running a scheduled scan window is displayed with the Enabled radio button selected and the Next Setting button highlighted."><figcaption>Figure
+ 1.40 Screenshot of PLABDC01: The Check for the latest virus and spyware
+ definitions before running a scheduled scan window is displayed with 
+the Enabled radio button selected and the Next Setting button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-274"><b><i>Step 41</i></b></h4>
+
+<p id="cn-m7-275">From the <b>Allow users to pause scan </b>window, select <b>Disabled</b>.</p>
+
+<p id="cn-m7-276">Click <b>Next Setting</b>.</p>
+
+<p id="cn-m7-277"></p><figure><img class="cn-img" id="cn-image-m7-c-40" src="SecuringCloudInfrastructureResources_files/image-m7-c-40.jpg" alt="Figure 1.41 Screenshot of PLABDC01: The Allow users to pause scan window is displayed with the Disabled radio button selected and the Next settings button highlighted."><figcaption>Figure
+ 1.41 Screenshot of PLABDC01: The Allow users to pause scan window is 
+displayed with the Disabled radio button selected and the Next settings 
+button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-279"><b><i>Step 42</i></b></h4>
+
+<p id="cn-m7-280">From the <b>Specify the maximum depth to scan archive files </b>window, click <b>X</b>.</p>
+
+<p id="cn-m7-281"></p><figure><img class="cn-img" id="cn-image-m7-c-41" src="SecuringCloudInfrastructureResources_files/image-m7-c-41.jpg" alt="Figure 1.42 Screenshot of PLABDC01: The Specify the maximum depth to scan archive files window is displayed with the X icon highlighted."><figcaption>Figure
+ 1.42 Screenshot of PLABDC01: The Specify the maximum depth to scan 
+archive files window is displayed with the X icon highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-283"><b><i>Step 43</i></b></h4>
+
+<p id="cn-m7-284">Select <b>Start Menu and Taskbar</b>.</p>
+
+<p id="cn-m7-285">Right-click the <b>Remove and prevent access to the shutdown, restart, sleep and hibernation commands </b>setting and select <b>Edit</b>.</p>
+
+<p id="cn-m7-286"></p><figure><img class="cn-img" id="cn-image-m7-c-42" src="SecuringCloudInfrastructureResources_files/image-m7-c-42.jpg" alt="Figure 1.43 Screenshot of PLABDC01: The Start Menu and Taskbar folder is displayed with the Remove and prevent access to the shutdown, restart, sleep and hibernation commands setting right-clicked and the Edit button highlighted."><figcaption>Figure
+ 1.43 Screenshot of PLABDC01: The Start Menu and Taskbar folder is 
+displayed with the Remove and prevent access to the shutdown, restart, 
+sleep and hibernation commands setting right-clicked and the Edit button
+ highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-288"><b><i>Step 44</i></b></h4>
+
+<p id="cn-m7-289">From the <b>Remove and prevent access to the shutdown, restart, sleep and hibernation commands </b>window, select <b>Enabled</b>.</p>
+
+<p id="cn-m7-290">Then, click <b>OK</b>.</p>
+
+<p id="cn-m7-292"></p><figure><img class="cn-img" id="cn-image-m7-c-43" src="SecuringCloudInfrastructureResources_files/image-m7-c-43.jpg" alt="Figure 1.44 Screenshot of PLABDC01: The Remove and prevent access to the shutdown, restart, sleep, and hibernation commands window is displayed with the Enabled radio button selected and the OK button highlighted."><figcaption>Figure
+ 1.44 Screenshot of PLABDC01: The Remove and prevent access to the 
+shutdown, restart, sleep, and hibernation commands window is displayed 
+with the Enabled radio button selected and the OK button highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m7-295"><b><i>Note</i></b><i>: Enabling 
+this policy prevents users without administrative permissions from 
+shutting down the computers Associated with this group policy. This 
+policy is often used for virtual machine instances that users will RDP 
+into.</i></span>
+
+<h4 id="cn-m7-296"><b><i>Step 45</i></b></h4>
+
+<p id="cn-m7-297">Close the <b>Group Policy Management Editor </b>window.</p>
+
+<p id="cn-m7-298"></p><figure><img class="cn-img" id="cn-image-m7-c-44" src="SecuringCloudInfrastructureResources_files/image-m7-c-44.jpg" alt="Figure 1.45 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed with the X icon highlighted."><figcaption>Figure 1.45 Screenshot of PLABDC01: The Group Policy Management Editor window is displayed with the X icon highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-300"><b><i>Step 46</i></b></h4>
+
+<p id="cn-m7-301">Expand the <b>Group Policy Objects </b>and select <b>New PLAB group policy</b>.</p>
+
+<p id="cn-m7-302">From the <b>New PLAB group policy </b>window, under Security Filtering, click <b>Add</b>.</p>
+
+<p id="cn-m7-303"></p><figure><img class="cn-img" id="cn-image-m7-c-45" src="SecuringCloudInfrastructureResources_files/image-m7-c-45.jpg" alt="Figure 1.46 Screenshot of PLABDC01: The New PLAB group policy window is displayed with the Add button highlighted under the Security Filtering pane."><figcaption>Figure
+ 1.46 Screenshot of PLABDC01: The New PLAB group policy window is 
+displayed with the Add button highlighted under the Security Filtering 
+pane.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-305"><b><i>Step 47</i></b></h4>
+
+<p id="cn-m7-306">From the <b>Select User, Computer, or Group </b>dialog box, click <b>Object Types</b>.</p>
+
+<p id="cn-m7-307"></p><figure><img class="cn-img" id="cn-image-m7-c-46" src="SecuringCloudInfrastructureResources_files/image-m7-c-46.jpg" alt="Figure 1.47 Screenshot of PLABDC01: The Select User, Computer, or Group dialog box is displayed with the Object Types button highlighted."><figcaption>Figure
+ 1.47 Screenshot of PLABDC01: The Select User, Computer, or Group dialog
+ box is displayed with the Object Types button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-309"><b><i>Step 48</i></b></h4>
+
+<p id="cn-m7-310">The <b>Object Types </b>dialog box will appear. Ensure that the object type <b>Computers </b>checkbox is ticked.</p>
+
+<p id="cn-m7-311">Click <b>OK</b>.</p>
+
+<p id="cn-m7-312"></p><figure><img class="cn-img" id="cn-image-m7-c-47" src="SecuringCloudInfrastructureResources_files/image-m7-c-47.jpg" alt="Figure 1.48 Screenshot of PLABDC01: The Object Types dialog box is displayed, showing all object type checkboxes ticked."><figcaption>Figure 1.48 Screenshot of PLABDC01: The Object Types dialog box is displayed, showing all object type checkboxes ticked.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-314"><b><i>Step 49</i></b></h4>
+
+<p id="cn-m7-315">In the <b>Enter the object name to select </b>textbox type:</p>
+
+<pre id="cn-m7-316"><code>PLABWIN10
+
+</code></pre>
+
+<p id="cn-m7-317">Click <b>Check Names </b>to verify that the name was entered in correctly.</p>
+
+<p id="cn-m7-318"></p><figure><img class="cn-img" id="cn-image-m7-c-48" src="SecuringCloudInfrastructureResources_files/image-m7-c-48.jpg" alt="Figure 1.49 Screenshot of PLABDC01: The Enter the object name to select field is typed in, and the Check Names button is highlighted."><figcaption>Figure
+ 1.49 Screenshot of PLABDC01: The Enter the object name to select field 
+is typed in, and the Check Names button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-320"><b><i>Step 50</i></b></h4>
+
+<p id="cn-m7-321">Click <b>OK </b>to add the computer to the list.</p>
+
+<p id="cn-m7-322"></p><figure><img class="cn-img" id="cn-image-m7-c-49" src="SecuringCloudInfrastructureResources_files/image-m7-c-49.jpg" alt="Figure 1.50 Screenshot of PLABDC01: The Enter the object name to select field is typed in, and the OK button is highlighted."><figcaption>Figure 1.50 Screenshot of PLABDC01: The Enter the object name to select field is typed in, and the OK button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-324"><b><i>Step 51</i></b></h4>
+
+<p id="cn-m7-325">Notice that in the <b>Security Filtering </b>pane, <b>PLABWIN10$ (PRACTICELABS\PLABWIN10$) </b>has now been populated.</p>
+
+<p id="cn-m7-326"></p><figure><img class="cn-img" id="cn-image-m7-c-50" src="SecuringCloudInfrastructureResources_files/image-m7-c-50.jpg" alt="Figure 1.51 Screenshot of PLABDC01: The Group Policy Management window is displayed with PLABWIN10$ (PRACTICELABS\PLABWIN10$) shown in the Security Filtering pane."><figcaption>Figure
+ 1.51 Screenshot of PLABDC01: The Group Policy Management window is 
+displayed with PLABWIN10$ (PRACTICELABS\PLABWIN10$) shown in the 
+Security Filtering pane.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m7-328"><b><i>Note</i></b><i>: Leveraging 
+group policy management, you can apply created policies across 
+organizational units. As demonstrated in this task, it could also be 
+applied to individual instances, in this case, the virtual machine 
+PLABWIN10.</i></span>
+
+<h3 id="cn-m7-329"><b>Task 2 - Explore Event Viewer</b></h3>
+
+<p id="cn-m7-330">Event viewer is a native tool to windows, used to log 
+application and system operational data from errors to informational 
+messages.</p>
+
+<p id="cn-m7-331">This tool is used for various forms of troubleshooting Windows systems and applications that run on them.</p>
+
+<p id="cn-m7-332">In this task, you will get a quick overview of where this tool is located and the kind of information it displays.</p>
+
+<h4 id="cn-m7-334"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m7-335">Ensure that you are connected to <b>PLABDC01</b>.</p>
+
+<p id="cn-m7-336"></p><figure><img class="cn-img" id="cn-image-m7-c-51" src="SecuringCloudInfrastructureResources_files/image-m7-c-51.jpg" alt="Figure 1.52 Screenshot of PLABDC01: The Group Policy Management window is displayed with the Server Manager icon highlighted."><figcaption>Figure 1.52 Screenshot of PLABDC01: The Group Policy Management window is displayed with the Server Manager icon highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-338"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m7-339">From <b>Server Manager &gt; Dashboard</b>, click <b>Tools </b>and select <b>Event Viewer</b></p><figure><img class="cn-img" id="cn-image-m7-c-52" src="SecuringCloudInfrastructureResources_files/image-m7-c-52.jpg" alt="Figure 1.53 Screenshot of PLABDC01: The Server Manager &amp;gt; Dashboard window is displayed with the Tools menu expanded and the Event Viewer option highlighted in the context menu."><figcaption>Figure
+ 1.53 Screenshot of PLABDC01: The Server Manager &gt; Dashboard window 
+is displayed with the Tools menu expanded and the Event Viewer option 
+highlighted in the context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-342"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m7-343">From the <b>Event Viewer </b>window, expand <b>Windows Logs </b>and select <b>System</b></p><figure><img class="cn-img" id="cn-image-m7-c-53" src="SecuringCloudInfrastructureResources_files/image-m7-c-53.jpg" alt="Figure 1.54 Screenshot of PLABDC01: The Event Viewer window is displayed with the Windows Logs folder expanded and System selected."><figcaption>Figure
+ 1.54 Screenshot of PLABDC01: The Event Viewer window is displayed with 
+the Windows Logs folder expanded and System selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-345"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m7-346">Right-click <b>System </b>and select <b>Filter Current Log</b></p><figure><img class="cn-img" id="cn-image-m7-c-54" src="SecuringCloudInfrastructureResources_files/image-m7-c-54.jpg" alt="Figure 1.55 Screenshot of PLABDC01: The Event Viewer window is displayed with System right-clicked and the Filter Current Log option highlighted."><figcaption>Figure
+ 1.55 Screenshot of PLABDC01: The Event Viewer window is displayed with 
+System right-clicked and the Filter Current Log option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-348"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m7-349">Under <b>Event Level</b>, tick the checkboxes for <b>Critical</b>, <b>Warning </b>and <b>Error</b>.</p>
+
+<p id="cn-m7-350">Click <b>OK</b>. </p><figure><img class="cn-img" id="cn-image-m7-c-55" src="SecuringCloudInfrastructureResources_files/image-m7-c-55.jpg" alt="Figure 1.56 Screenshot of PLABDC01: The Filter Current Log window is displayed with the checkboxes for Critical, Warning and Error ticket under Event level. The OK button is highlighted."><figcaption>Figure
+ 1.56 Screenshot of PLABDC01: The Filter Current Log window is displayed
+ with the checkboxes for Critical, Warning and Error ticket under Event 
+level. The OK button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-352"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m7-353">Notice that the log entries will now filter to only display <b>Error</b>, <b>Warning </b>and <b>Critical </b>event level type messages.</p>
+
+<p id="cn-m7-354">Click any of the error messages.</p>
+
+<p id="cn-m7-355"><b>Under Event 144, Time-Service </b>notice in the <b>General </b>tab, it gives you a brief description of the error being examined, as well as the time it was generated</p><figure><img class="cn-img" id="cn-image-m7-c-56" src="SecuringCloudInfrastructureResources_files/image-m7-c-56.jpg" alt="Figure 1.57 Screenshot of PLABDC01: The Event Viewer window is displayed with an event level warning selected and a description of that warning shown in the General tab."><figcaption>Figure
+ 1.57 Screenshot of PLABDC01: The Event Viewer window is displayed with 
+an event level warning selected and a description of that warning shown 
+in the General tab.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m7-358"><b><i>Note</i></b><i>: The </i><b><i>Level </i></b><i>column indicates what type of log it is. The most common type is </i><b><i>Information</i></b><i>. The </i><b><i>Information </i></b><i>log will notify you when something has been changed, and an app or service is logging an event. A </i><b><i>Warning </i></b><i>log notifies you that something might not be quite right. An </i><b><i>Error </i></b><i>log is notifying you that something unexpected happened, whereas a </i><b><i>Critical </i></b><i>log will notify you when something is down, broken or crashed and needs urgent attention.</i></span>
+
+<h4 id="cn-m7-359"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m7-360">From the expanded <b>Windows Logs</b>, click <b>Security, </b>then right-click <b>Security </b>and select <b>Filter Current Log</b></p><figure><img class="cn-img" id="cn-image-m7-c-57" src="SecuringCloudInfrastructureResources_files/image-m7-c-57.jpg" alt="Figure 1.58 Screenshot of PLABDC01: The Event Viewer window is displayed with Windows Logs &amp;gt; Security right-clicked and the Filter Current Log highlighted."><figcaption>Figure
+ 1.58 Screenshot of PLABDC01: The Event Viewer window is displayed with 
+Windows Logs &gt; Security right-clicked and the Filter Current Log 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-362"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m7-363">From the <b>Filter Current Log </b>dialog box, expand the <b>Keywords </b>dropdown and tick the <b>Audit Failure </b>checkbox.</p>
+
+<p id="cn-m7-364">Then, click <b>OK</b>. </p><figure><img class="cn-img" id="cn-image-m7-c-58" src="SecuringCloudInfrastructureResources_files/image-m7-c-58.jpg" alt="Figure 1.59 Screenshot of PLABDC01: The Filter Current Log dialog box is displayed with the Keywords dropdown list shown and the Audit Failure checkbox ticked."><figcaption>Figure
+ 1.59 Screenshot of PLABDC01: The Filter Current Log dialog box is 
+displayed with the Keywords dropdown list shown and the Audit Failure 
+checkbox ticked.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-367"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m7-368">The log will generate any failed instances of login attempts</p><figure><img class="cn-img" id="cn-image-m7-c-59" src="SecuringCloudInfrastructureResources_files/image-m7-c-59.jpg" alt="Figure 1.60 Screenshot of PLABDC01: The Event Viewer window is displayed with the log showing failed instances of login attempts."><figcaption>Figure
+ 1.60 Screenshot of PLABDC01: The Event Viewer window is displayed with 
+the log showing failed instances of login attempts.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m7-371"><b><i>Note</i></b><i>: There’s a 
+possibility that no logs have been generated for this section yet. But 
+it’s important to take note that these security logs are useful in 
+determining failed login attempts by </i><span class="cn-9999999">malactors </span><i>or even users who have forgotten their passwords or attempting to access resources they do not have permissions for.</i></span>
+
+<span class="atom-code hidden">7d0ac9fb-5de8-4057-8699-2545ccd83fb6</span>
+
+<h4 id="cn-m7-376"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m7-377">From the <b>Group Policy Management </b>window, click <b>X</b>.</p>
+
+<p id="cn-m7-378"></p><figure><img class="cn-img" id="cn-image-m7-c-60" src="SecuringCloudInfrastructureResources_files/image-m7-c-60.jpg" alt="Figure 1.61 Screenshot of PLABDC01: The Group Policy Management window is displayed with the x Close icon highlighted."><figcaption>Figure 1.61 Screenshot of PLABDC01: The Group Policy Management window is displayed with the x Close icon highlighted.</figcaption></figure><p></p>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m7-380"><b>Exercise 2 - Applying Encryption to Resources</b></h2>
+
+<p id="cn-m7-381">Applying encryption to resources isn’t something new, 
+it's been used for years to add security to physical devices. Making it 
+harder for attackers to gain access to sensitive data.</p>
+
+<p id="cn-m7-382">In this exercise, you will encrypt a virtual machine’s OS and data disk in the Microsoft Azure platform.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m7-385">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m7-386">
+
+<li id="cn-m7-386">Encrypt Azure OS and data disks</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m7-388">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<ul id="cn-m7-392">
+
+<li id="cn-m7-392"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m7-394"><b>Task 1 - Encrypt an Azure VM OS and Data Disks</b></h3>
+
+<p id="cn-m7-395">As more organizations move to the cloud, it’s easy to 
+forget, resources in Azure still have a physical form. Housed in 
+Microsoft datacenters, the newly spun VM is created on a physical 
+device. Encrypting resources adds additional layers of security to these
+ devices.</p>
+
+<p id="cn-m7-396">In this task, you will learn how to encrypt an Azure VM’s OS and data disk.</p>
+
+<h4 id="cn-m7-397"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m7-398">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m7-399"></p><figure><img class="cn-img" id="cn-image-m7-c-61" src="SecuringCloudInfrastructureResources_files/image-m7-c-61.jpg" alt="Figure 2.1 Screenshot of PLABWIN10: The Windows 10 desktop is displayed."><figcaption>Figure 2.1 Screenshot of PLABWIN10: The Windows 10 desktop is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-401"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m7-402">From the <b>Taskbar</b>, select <b>Microsoft Edge</b>.</p>
+
+<p id="cn-m7-403"></p><figure><img class="cn-img" id="cn-image-m7-c-62" src="SecuringCloudInfrastructureResources_files/image-m7-c-62.jpg" alt="Figure 2.2 Screenshot of PLABWIN10: Displaying opening the Microsoft Edge browser."><figcaption>Figure 2.2 Screenshot of PLABWIN10: Displaying opening the Microsoft Edge browser.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m7-405"><b><i>Note</i></b><i>: When opening the Microsoft Edge browser, it will redirect you to the Azure portal and sign in automatically.</i><br><i>An Azure subscription will be provided for all lab activities that utilize the Azure platform.</i><br><i>Note
+ that in a real-world scenario, either a subscription will need to be 
+purchased or will already exist as part of an existing company 
+infrastructure.</i></span>
+
+<h4 id="cn-m7-407"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m7-408">Click <b>Create a resource</b>.</p>
+
+<p id="cn-m7-409"></p><figure><img class="cn-img" id="cn-image-m7-c-63" src="SecuringCloudInfrastructureResources_files/image-m7-c-63.jpg" alt="Figure 2.3 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed, and the Create a resource button highlighted."><figcaption>Figure
+ 2.3 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed, and the Create a resource button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-411"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m7-412">Under <b>Virtual machine</b>, click the <b>Create </b>weblink.</p>
+
+<p id="cn-m7-413"></p><figure><img class="cn-img" id="cn-image-m7-c-64" src="SecuringCloudInfrastructureResources_files/image-m7-c-64.jpg" alt="Figure 2.4 Screenshot of PLABWIN10: The Create a resource page is displayed with the Create weblink highlighted under Virtual machine."><figcaption>Figure
+ 2.4 Screenshot of PLABWIN10: The Create a resource page is displayed 
+with the Create weblink highlighted under Virtual machine.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-415"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m7-416">On the <b>Create a virtual machine </b>page, from the <b>Resource group </b>dropdown, select the pre-populated resource group.</p>
+
+<p id="cn-m7-418"></p><figure><img class="cn-img" id="cn-image-m7-c-65" src="SecuringCloudInfrastructureResources_files/image-m7-c-65.jpg" alt="Figure 2.5 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the pre-populated resource group name highlighted on the expanded dropdown list."><figcaption>Figure
+ 2.5 Screenshot of PLABWIN10: The Create a virtual machine page is 
+displayed with the pre-populated resource group name highlighted on the 
+expanded dropdown list.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-420"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m7-421">Under the <b>Instance details</b>, in the <b>Virtual machine name </b>textbox, type:</p>
+
+<pre id="cn-m7-422"><code>PlabStab-VM
+
+</code></pre>
+
+<p id="cn-m7-423">Under <b>Region</b>, ensure this is set to <b>(Europe) UK South</b>.</p>
+
+<p id="cn-m7-424"></p><figure><img class="cn-img" id="cn-image-m7-c-66" src="SecuringCloudInfrastructureResources_files/image-m7-c-66.jpg" alt="Figure 2.6 Screenshot of PLABWIN10: The Create a virtual machine page is displayed showing the virtual machine name typed in and the Region dropdown shown as (Europe) UK South."><figcaption>Figure
+ 2.6 Screenshot of PLABWIN10: The Create a virtual machine page is 
+displayed showing the virtual machine name typed in and the Region 
+dropdown shown as (Europe) UK South.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-426"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m7-427">Also, under the <b>Instance details</b>, ensure the <b>Security type </b>dropdown is set to <b>Standard</b>.</p>
+
+<p id="cn-m7-428">Then, from the <b>Image </b>dropdown, select <b>Windows Server 2019 Datacenter - Gen 1</b>.</p>
+
+<p id="cn-m7-429"></p><figure><img class="cn-img" id="cn-image-m7-c-67" src="SecuringCloudInfrastructureResources_files/image-m7-c-67.jpg" alt="Figure 2.7 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the Security type dropdown set to Standard and the Image dropdown set to Windows Server 2019 Datacenter - Gen 1."><figcaption>Figure
+ 2.7 Screenshot of PLABWIN10: The Create a virtual machine page is 
+displayed with the Security type dropdown set to Standard and the Image 
+dropdown set to Windows Server 2019 Datacenter - Gen 1.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-431"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m7-432">From the <b>Administrator account </b>section, click into the <b>Username </b>textbox and type:</p>
+
+<pre id="cn-m7-433"><code>Plabadmin
+
+</code></pre>
+
+<p id="cn-m7-434">In the <b>Password </b>textbox, type:</p>
+
+<pre id="cn-m7-435"><code>Passw0rd1234
+
+</code></pre>
+
+<p id="cn-m7-436">Type this again in the <b>Confirm password </b>textbox.</p>
+
+<p id="cn-m7-437"></p><figure><img class="cn-img" id="cn-image-m7-c-68" src="SecuringCloudInfrastructureResources_files/image-m7-c-68.jpg" alt="Figure 2.8 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the Username, Password and Confirm password text boxes filled in under the Administrator account section."><figcaption>Figure
+ 2.8 Screenshot of PLABWIN10: The Create a virtual machine page is 
+displayed with the Username, Password and Confirm password text boxes 
+filled in under the Administrator account section.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-439"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m7-440">Click <b>Review + create</b>.</p>
+
+<p id="cn-m7-441"></p><figure><img class="cn-img" id="cn-image-m7-c-69" src="SecuringCloudInfrastructureResources_files/image-m7-c-69.jpg" alt="Figure 2.9 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the Review + create button highlighted."><figcaption>Figure 2.9 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the Review + create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-443"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m7-444">If the <b>Save password </b>notification appears, click <b>Never</b>.</p>
+
+<p id="cn-m7-445">From the <b>Review + create </b>tab, click <b>Create</b>.</p>
+
+<p id="cn-m7-446"></p><figure><img class="cn-img" id="cn-image-m7-c-70" src="SecuringCloudInfrastructureResources_files/image-m7-c-70.jpg" alt="Figure 2.10 Screenshot of PLABWIN10: The Create a virtual machine page is displayed, showing the message to confirm that the Validation passed, and the Create button is highlighted."><figcaption>Figure
+ 2.10 Screenshot of PLABWIN10: The Create a virtual machine page is 
+displayed, showing the message to confirm that the Validation passed, 
+and the Create button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-448"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m7-449">The <b>Overview </b>page will load, and the <b>Deployment is in progress </b>information will be displayed.</p>
+
+<p id="cn-m7-451"></p><figure><img class="cn-img" id="cn-image-m7-c-71" src="SecuringCloudInfrastructureResources_files/image-m7-c-71.jpg" alt="Figure 2.11 Screenshot of PLABWIN10: The Overview page is displayed with the message to show that Deployment is in progress."><figcaption>Figure 2.11 Screenshot of PLABWIN10: The Overview page is displayed with the message to show that Deployment is in progress.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-453"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m7-454">The <b>Overview </b>page will display <b>Your deployment is complete </b>when it’s finished.</p>
+
+<p id="cn-m7-455">Click <b>Go to resource</b>.</p>
+
+<p id="cn-m7-457"></p><figure><img class="cn-img" id="cn-image-m7-c-72" src="SecuringCloudInfrastructureResources_files/image-m7-c-72.jpg" alt="Figure 2.12 Screenshot of PLABWIN10: The Overview page is displayed with the message to show that Your deployment is complete. The Go to resource button is highlighted."><figcaption>Figure
+ 2.12 Screenshot of PLABWIN10: The Overview page is displayed with the 
+message to show that Your deployment is complete. The Go to resource 
+button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-459"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m7-460">You’ll be taken to the newly created <b>PlabStab-VM - Virtual Machine </b>page.</p>
+
+<p id="cn-m7-461">From the left-hand menu pane, under <b>Settings</b>, Select <b>Disks</b>.</p>
+
+<p id="cn-m7-462"></p><figure><img class="cn-img" id="cn-image-m7-c-73" src="SecuringCloudInfrastructureResources_files/image-m7-c-73.jpg" alt="Figure 2.13 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed, PlabStab-VM page. Highlighting disks and blade selection."><figcaption>Figure
+ 2.13 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed, PlabStab-VM page. Highlighting disks and blade 
+selection.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-464"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m7-465">From <b>Disks</b>, under <b>Data disks</b>, select <b>Create add attach a new disk</b>.</p>
+
+<p id="cn-m7-466"></p><figure><img class="cn-img" id="cn-image-m7-c-74" src="SecuringCloudInfrastructureResources_files/image-m7-c-74.jpg" alt="Figure 2.14 Screenshot of PLABWIN10: The PlabStab-VM Disks page is displayed with the Create and attach a new disk button highlighted."><figcaption>Figure
+ 2.14 Screenshot of PLABWIN10: The PlabStab-VM Disks page is displayed 
+with the Create and attach a new disk button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-468"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m7-469">Still under the <b>Data disks </b>section, leave <b>LUN </b>as <b>0</b>.</p>
+
+<p id="cn-m7-470">In the <b>Disk name </b>textbox, type:</p>
+
+<pre id="cn-m7-471"><code>PlabStab-VM-0
+
+</code></pre>
+
+<p id="cn-m7-472">Ensure the <b>Storage type </b>dropdown is set to <b>Standard SSD</b>.</p>
+
+<p id="cn-m7-473">In the <b>Size (GiB) </b>textbox, type over the existing value with:</p>
+
+<pre id="cn-m7-474"><code>32
+
+</code></pre>
+
+<p id="cn-m7-476"></p><figure><img class="cn-img" id="cn-image-m7-c-75" src="SecuringCloudInfrastructureResources_files/image-m7-c-75.jpg" alt="Figure 2.15 Screenshot of PLABWIN10: The PlabStab-VM Disks page is displayed with the Data disks entry fields populated with information."><figcaption>Figure
+ 2.15 Screenshot of PLABWIN10: The PlabStab-VM Disks page is displayed 
+with the Data disks entry fields populated with information.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-478"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m7-479">From the <b>Toolbar</b>, click <b>Save</b>.</p>
+
+<p id="cn-m7-480"></p><figure><img class="cn-img" id="cn-image-m7-c-76" src="SecuringCloudInfrastructureResources_files/image-m7-c-76.jpg" alt="Figure 2.16 Screenshot of PLABWIN10: The PlabStab-VM Disks page is displayed with the Save button highlighted."><figcaption>Figure 2.16 Screenshot of PLABWIN10: The PlabStab-VM Disks page is displayed with the Save button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-482"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m7-483">Once the disk has been successfully created, from the <b>Toolbar</b>, click <b>Additional settings</b>.</p>
+
+<p id="cn-m7-484"></p><figure><img class="cn-img" id="cn-image-m7-c-77" src="SecuringCloudInfrastructureResources_files/image-m7-c-77.jpg" alt="Figure 2.17 Screenshot of PLABWIN10: The PlabStab-VM Disks page is displayed with the Additional settings button highlighted."><figcaption>Figure 2.17 Screenshot of PLABWIN10: The PlabStab-VM Disks page is displayed with the Additional settings button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-486"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m7-487">From the <b>Disk settings </b>page, expand the <b>Disks to encrypt </b>dropdown and select <b>OS and data disks</b>.</p>
+
+<p id="cn-m7-488"></p><figure><img class="cn-img" id="cn-image-m7-c-78" src="SecuringCloudInfrastructureResources_files/image-m7-c-78.jpg" alt="Figure 2.18 Screenshot of PLABWIN10: The Disk settings page is displayed with the Disks to encrypt dropdown expanded, and OS and data disks highlighted."><figcaption>Figure
+ 2.18 Screenshot of PLABWIN10: The Disk settings page is displayed with 
+the Disks to encrypt dropdown expanded, and OS and data disks 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-490"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m7-491">Scroll down to <b>Key Vault</b>, then click the <b>Create new </b>weblink.</p>
+
+<p id="cn-m7-492"></p><figure><img class="cn-img" id="cn-image-m7-c-79" src="SecuringCloudInfrastructureResources_files/image-m7-c-79.jpg" alt="Figure 2.19 Screenshot of PLABWIN10: The Disk settings page is displayed with the Create new weblink highlighted for the Key Vault setting."><figcaption>Figure
+ 2.19 Screenshot of PLABWIN10: The Disk settings page is displayed with 
+the Create new weblink highlighted for the Key Vault setting.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-494"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m7-495">From the <b>Create a key vault </b>page, under the <b>Instance details </b>section, enter the following name, ensuring that you replace the <b>XX </b>in the below with your initials or two random characters or digits:</p>
+
+<p id="cn-m7-497">In the <b>Key vault name </b>textbox, type:</p>
+
+<pre id="cn-m7-498"><code>PlabKVEncryptedXX
+
+</code></pre>
+
+<p id="cn-m7-499">For example purposes, the name <b>PlabKVEncryptedVM </b>will be used in the steps.  Please use your unique key vault name when this is referenced.</p>
+
+<span class="cn-quote" id="cn-m7-501"><b><i>Note</i></b><i>: The reason we are including two random characters is that the key vault name must be unique in the subscription.</i></span>
+
+<p id="cn-m7-503">Next, ensure <b>Pricing tier </b>is set to <b>Standard</b>.</p>
+
+<p id="cn-m7-504"></p><figure><img class="cn-img" id="cn-image-m7-c-80" src="SecuringCloudInfrastructureResources_files/image-m7-c-80.jpg" alt="Figure 2.20 Screenshot of PLABWIN10: The Create a key vault page is displayed with the Key vault name typed in and the Pricing tier dropdown set to Standard."><figcaption>Figure
+ 2.20 Screenshot of PLABWIN10: The Create a key vault page is displayed 
+with the Key vault name typed in and the Pricing tier dropdown set to 
+Standard.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-506"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m7-507">In the <b>Days to retain deleted vaults </b>textbox, type over the existing value with:</p>
+
+<pre id="cn-m7-508"><code>7
+
+</code></pre>
+
+<p id="cn-m7-509">Click <b>Review + create</b>.</p>
+
+<p id="cn-m7-511"></p><figure><img class="cn-img" id="cn-image-m7-c-81" src="SecuringCloudInfrastructureResources_files/image-m7-c-81.jpg" alt="Figure 2.21 Screenshot of PLABWIN10: The Create a key vault page is displayed with the Days to retain deleted vaults set to 7 and the Review + create button highlighted."><figcaption>Figure
+ 2.21 Screenshot of PLABWIN10: The Create a key vault page is displayed 
+with the Days to retain deleted vaults set to 7 and the Review + create 
+button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-513"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m7-514">On the <b>Review + create </b>tab, click the <b>Review + create </b>button.</p>
+
+<p id="cn-m7-515"></p><figure><img class="cn-img" id="cn-image-m7-c-82" src="SecuringCloudInfrastructureResources_files/image-m7-c-82.jpg" alt="Figure 2.22 Screenshot of PLABWIN10: The Create a key vault page is displayed with the Review + create button highlighted on the Review + create tab."><figcaption>Figure
+ 2.22 Screenshot of PLABWIN10: The Create a key vault page is displayed 
+with the Review + create button highlighted on the Review + create tab.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-517"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m7-518">The <b>Running validation </b>message will appear.</p>
+
+<p id="cn-m7-519">After creating the new key vault, it should return you to the <b>Disk settings </b>page.</p>
+
+<p id="cn-m7-520">From <b>Key</b>, click the <b>Create new </b>weblink.</p>
+
+<p id="cn-m7-521"></p><figure><img class="cn-img" id="cn-image-m7-c-83" src="SecuringCloudInfrastructureResources_files/image-m7-c-83.jpg" alt="Figure 2.23 Screenshot of PLABWIN10: The Disk setting page is displayed with the Create new weblink highlighted from the Key setting."><figcaption>Figure
+ 2.23 Screenshot of PLABWIN10: The Disk setting page is displayed with 
+the Create new weblink highlighted from the Key setting.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-523"><b><i>Step 24</i></b></h4>
+
+<p id="cn-m7-524">From the <b>Create a key </b>page, in the <b>Name </b>textbox, type:</p>
+
+<pre id="cn-m7-525"><code>Plabkey1
+
+</code></pre>
+
+<p id="cn-m7-526">Ensure <b>RSA key size </b>to set to <b>2048</b>.</p>
+
+<p id="cn-m7-527">Ensure the <b>Enabled </b>checkbox is ticked.</p>
+
+<p id="cn-m7-528">Click <b>Create</b>.</p>
+
+<p id="cn-m7-529"></p><figure><img class="cn-img" id="cn-image-m7-c-84" src="SecuringCloudInfrastructureResources_files/image-m7-c-84.jpg" alt="Figure 2.24 Screenshot of PLABWIN10: The Create a key page is displayed with the name typed in, and the Create button highlighted."><figcaption>Figure
+ 2.24 Screenshot of PLABWIN10: The Create a key page is displayed with 
+the name typed in, and the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-531"><b><i>Step 25</i></b></h4>
+
+<p id="cn-m7-532">Once back on the <b>Disk settings </b>page, ensure the newly created <b>PLabkey1 </b>is shown in the <b>Key </b>dropdown.</p>
+
+<p id="cn-m7-533">From <b>Version</b>, select the generated current version.</p>
+
+<p id="cn-m7-534"></p><figure><img class="cn-img" id="cn-image-m7-c-85" src="SecuringCloudInfrastructureResources_files/image-m7-c-85.jpg" alt="Figure 2.25 Screenshot of PLABWIN10: The Disk settings page is displayed with the Key and Version dropdowns populated."><figcaption>Figure 2.25 Screenshot of PLABWIN10: The Disk settings page is displayed with the Key and Version dropdowns populated.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m7-536"><b><i>Note</i></b><i>: If you see the Version dropdown link is greyed out, it means the enabled checkbox was not ticked when creating Plabkey1.</i></span>
+
+<h4 id="cn-m7-537"><b><i>Step 26</i></b></h4>
+
+<p id="cn-m7-538">Click <b>Save</b>.</p>
+
+<p id="cn-m7-539"></p><figure><img class="cn-img" id="cn-image-m7-c-86" src="SecuringCloudInfrastructureResources_files/image-m7-c-86.jpg" alt="Figure 2.26 Screenshot of PLABWIN10: The Disk settings page is displayed with the Save button highlighted."><figcaption>Figure 2.26 Screenshot of PLABWIN10: The Disk settings page is displayed with the Save button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-541"><b><i>Step 27</i></b></h4>
+
+<p id="cn-m7-542">Wait a few minutes while the validation is processed.</p>
+
+<p id="cn-m7-543"></p><figure><img class="cn-img" id="cn-image-m7-c-87" src="SecuringCloudInfrastructureResources_files/image-m7-c-87.jpg" alt="Figure 2.27 Screenshot of PLABWIN10: The PlabStab-VM Disks page is displayed with an Updating disk encryption settings notification pop-up on the top right corner."><figcaption>Figure
+ 2.27 Screenshot of PLABWIN10: The PlabStab-VM Disks page is displayed 
+with an Updating disk encryption settings notification pop-up on the top
+ right corner.</figcaption></figure><p></p>
+
+<h4 id="cn-m7-545"><b><i>Step 28</i></b></h4>
+
+<p id="cn-m7-546">After a few minutes, a <b>Successfully updated disk encryption setting </b>notification will pop up on the top right corner.</p>
+
+<p id="cn-m7-547"></p><figure><img class="cn-img" id="cn-image-m7-c-88" src="SecuringCloudInfrastructureResources_files/image-m7-c-88.jpg" alt="Figure 2.28 Screenshot of PLABWIN10: The PlabStab-VM Disks page is displayed with a Successfully updated disk encryption setting notification pop-up on the top right corner."><figcaption>Figure
+ 2.28 Screenshot of PLABWIN10: The PlabStab-VM Disks page is displayed 
+with a Successfully updated disk encryption setting notification pop-up 
+on the top right corner.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<span class="cn-alert" id="cn-m7-554">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m7-555"><b>Review</b></h2>
+
+<p id="cn-m7-556">Well done, you have completed the <b>Securing Cloud Infrastructure Resources </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">13d8dbeb-cd80-4ed5-ae77-762804a592a6</span>
+
+<span class="atom-code hidden">79a20f09-18be-4b58-a275-a8754e34c9d4</span>
+
+<span class="atom-code hidden">33ba0bd8-fcf1-4f72-a2a7-83845abcc289</span>
+
+<span class="atom-code hidden">cf75a6e2-7b20-4682-9e31-2b5ec98b6f15</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m7-566">You completed the following exercises:</p>
+
+<ul id="cn-m7-567">
+
+<li id="cn-m7-567">Exercise 1 - Securing Cloud Infrastructure Resources</li>
+
+</ul>
+
+<p id="cn-m7-568">You should now be able to:</p>
+
+<ul id="cn-m7-569">
+
+<li id="cn-m7-569">Configuration group policy</li>
+
+<li id="cn-m7-570">Locate and use event viewer</li>
+
+<li id="cn-m7-571">Encrypt Azure OS and data disks</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m7-575">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
