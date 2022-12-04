@@ -1,0 +1,786 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="ProvisioningPublicCloudStorageSolutions_files/print-styles.css" rel="stylesheet">
+    <script src="ProvisioningPublicCloudStorageSolutions_files/jquery.min.js"></script>
+    <script src="ProvisioningPublicCloudStorageSolutions_files/jspdf.js"></script>
+    <script src="ProvisioningPublicCloudStorageSolutions_files/from_html.js"></script>
+    <script src="ProvisioningPublicCloudStorageSolutions_files/addimage.js"></script>
+    <script src="ProvisioningPublicCloudStorageSolutions_files/filesaver.js"></script>
+    <script src="ProvisioningPublicCloudStorageSolutions_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="tkuuCw5LXJTT+j38/vlz42kzVxWWAZwjCoChhKo/XKTLLY2LTt071hTGFGjHx35N9Qm5KLDNUJ78h6x0FPgOyrdjT+m3Lbg4UE04fprBB48=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Provisioning Public Cloud Storage Solutions</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Provisioning a S3 Bucket</li><li>Exercise 2 - Provisioning Azure Storage Account Resources</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m13-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>CompTIA Cloud+</div>
+
+<div>Microsoft Azure</div>
+
+<div>AWS</div>
+
+<div>Storage</div>
+
+<div>Tiers</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m13-8">Welcome to the <b>Provisioning Public Cloud Storage Solutions </b>Practice Lab. In this module you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m13-16">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m13-17">
+
+<li id="cn-m13-17">Exercise 1 - Provisioning S3 Bucket</li>
+
+<li id="cn-m13-18">Exercise 2 - Provisioning Azure Storage Account Resources</li>
+
+</ul>
+
+<p id="cn-m13-19">After completing this module, you should be able to: Create a S3 bucket</p>
+
+<ul id="cn-m13-20">
+
+<li id="cn-m13-20">Provision a storage account in Azure</li>
+
+<li id="cn-m13-21">Create an azure blob container</li>
+
+<li id="cn-m13-22">Create an azure Fileshare</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m13-24">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m13-25">
+
+<li id="cn-m13-25">3.2 Given a scenario, provision storage in cloud environments</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m13-27">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m13-31">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m13-32">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m13-34"><b>Lab Topology</b></h2>
+
+<p id="cn-m13-35">During your session, you will have access to the following lab configuration.</p>
+
+<p id="cn-m13-36"><b>Lab Topology 1</b></p>
+
+<span class="atom-code hidden">4153b532-d93b-4759-b999-5667d2abe624</span>
+
+<p id="cn-m13-39"><b>Lab Topology 2</b></p>
+
+<p id="cn-m13-40"><img class="cn-img" id="cn-image-m13-c-0" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m13-41">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<p id="cn-m13-42"><b>Lab Topology 1</b></p>
+
+<ul id="cn-m13-43">
+
+<li id="cn-m13-43"><b>PLABWIN10 </b>- Standalone AWS Workstation (Windows 10)</li>
+
+</ul>
+
+<p id="cn-m13-44"><b>Lab Topology 2</b></p>
+
+<ul id="cn-m13-45">
+
+<li id="cn-m13-45"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<ol id="cn-m13-46">
+
+</ol>
+
+<span class="cn-alert" id="cn-m13-47">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m13-48"><b>Exercise 1 - Provisioning a S3 Bucket</b></h2>
+
+<p id="cn-m13-49">Amazon Simple Storage Service, better known as Amazon S3 is a service offered within AWS.</p>
+
+<p id="cn-m13-50">S3 provides high durability, high availability, and high performance, making it a massively scalable storage solution.</p>
+
+<p id="cn-m13-51">In this exercise, you will provision a S3 bucket within AWS.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m13-54">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m13-55">
+
+<li id="cn-m13-55">Create an AWS S3 Bucket</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m13-57">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">4153b532-d93b-4759-b999-5667d2abe624</span>
+
+<h3 id="cn-m13-61"><b>Task 1 - Create an S3 Bucket</b></h3>
+
+<p id="cn-m13-62">Objects are entities stored in Amazon S3, such as files and the associated metadata that describes those files.</p>
+
+<p id="cn-m13-63">Once an object is uploaded to S3, it must be stored in a container known as an S3 bucket.</p>
+
+<p id="cn-m13-64">In this task, you will create an S3 bucket an upload an object.</p>
+
+<h4 id="cn-m13-66"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m13-67">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m13-68"></p><figure><img class="cn-img" id="cn-image-m13-c-1" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-1.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: The Windows 10 desktop is displayed."><figcaption>Figure 1.1 Screenshot of PLABWIN10: The Windows 10 desktop is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-71"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m13-72">From the <b>Taskbar</b>, click <b>Microsoft Edge</b>.</p>
+
+<p id="cn-m13-73"></p><figure><img class="cn-img" id="cn-image-m13-c-2" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-2.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with the Microsoft Edge icon highlighted on the Taskbar."><figcaption>Figure 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with the Microsoft Edge icon highlighted on the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-76"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m13-77">From the <b>AWS login </b>page, click <b>Sign In</b></p><figure><img class="cn-img" id="cn-image-m13-c-3" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-3.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: The login screen for AWS is displayed with the Sign in button highlighted."><figcaption>Figure 1.3 Screenshot of PLABWIN10: The login screen for AWS is displayed with the Sign in button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-79"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m13-80">Click on <b>Services </b>in the top left corner, and scroll down the list and select <b>Storage</b>. </p><figure><img class="cn-img" id="cn-image-m13-c-4" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-4.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: The AWS homepage is displayed with the Services menu open and the Storage menu option highlighted."><figcaption>Figure
+ 1.4 Screenshot of PLABWIN10: The AWS homepage is displayed with the 
+Services menu open and the Storage menu option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-82"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m13-83">From the <b>Storage </b>submenu, select <b>S3</b>. </p><figure><img class="cn-img" id="cn-image-m13-c-5" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-5.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: The AWS homepage is displayed with the Services &amp;gt; Storage menu option selected and the S3 option highlighted on the submenu."><figcaption>Figure
+ 1.5 Screenshot of PLABWIN10: The AWS homepage is displayed with the 
+Services &gt; Storage menu option selected and the S3 option highlighted
+ on the submenu.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-85"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m13-86">From the <b>Amazon S3 &gt; Buckets </b>page click <b>Create bucket</b>. </p><figure><img class="cn-img" id="cn-image-m13-c-6" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-6.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: The Amazon S3 page is displayed with the Create bucket button highlighted."><figcaption>Figure 1.6 Screenshot of PLABWIN10: The Amazon S3 page is displayed with the Create bucket button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-88"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m13-89">In the <b>Bucket name </b>textbox type:</p>
+
+<pre id="cn-m13-90"><code>plabbucket00
+
+</code></pre>
+
+<p id="cn-m13-91">Ensure <b>AWS Region </b>is set for <b>EU (Ireland) eu-west-1</b>.</p>
+
+<span class="cn-quote" id="cn-m13-93"><b><i>Note</i></b><i>: If a message appears stating the bucket name already exists, increase the last number e.g. change to 01.</i></span>
+
+<p id="cn-m13-95"></p><figure><img class="cn-img" id="cn-image-m13-c-7" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-7.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: The Create bucket page is displayed with the Bucket name plabbucket00 typed-in the textbox."><figcaption>Figure 1.7 Screenshot of PLABWIN10: The Create bucket page is displayed with the Bucket name plabbucket00 typed-in the textbox.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m13-98"><b><i>Note</i></b><i>: The Bucket name you create can’t be made up of spaces or uppercase letters and needs to be unique. </i></span>
+
+<h4 id="cn-m13-99"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m13-100">Scroll down to the end of the page and click <b>Create bucket</b>. </p><figure><img class="cn-img" id="cn-image-m13-c-8" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-8.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: The Create bucket page is displayed with Create bucket button highlighted."><figcaption>Figure 1.8 Screenshot of PLABWIN10: The Create bucket page is displayed with Create bucket button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-103"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m13-104">It will return to <b>Amazon S3 &gt; Bucket</b>.</p>
+
+<p id="cn-m13-105">Notice the newly created <b>plabbucket00 </b>is on the list.</p>
+
+<p id="cn-m13-106"></p><figure><img class="cn-img" id="cn-image-m13-c-9" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-9.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: The Amazon S3 page is displayed with plabbucket00 highlighted to show the learner its now showing in the list."><figcaption>Figure
+ 1.9 Screenshot of PLABWIN10: The Amazon S3 page is displayed with 
+plabbucket00 highlighted to show the learner its now showing in the 
+list.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-109"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m13-110">Click <b>plabbucket00</b>.</p>
+
+<p id="cn-m13-111"></p><figure><img class="cn-img" id="cn-image-m13-c-10" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-10.jpg" alt="Figure 1.10 Screenshot of PLABWIN10: The Amazon S3 page is displayed with the plabbucket00 weblink highlighted."><figcaption>Figure 1.10 Screenshot of PLABWIN10: The Amazon S3 page is displayed with the plabbucket00 weblink highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-114"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m13-115">From the <b>Objects </b>tab, click <b>Upload</b>.</p>
+
+<p id="cn-m13-116"></p><figure><img class="cn-img" id="cn-image-m13-c-11" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-11.jpg" alt="Figure 1.11 Screenshot of PLABWIN10: The Amazon S3 &amp;gt; Objects tab is displayed with the Upload button highlighted."><figcaption>Figure 1.11 Screenshot of PLABWIN10: The Amazon S3 &gt; Objects tab is displayed with the Upload button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-119"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m13-120">From the <b>Upload </b>page, click <b>Add folder</b>.</p>
+
+<p id="cn-m13-121"></p><figure><img class="cn-img" id="cn-image-m13-c-12" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-12.jpg" alt="Figure 1.12 Screenshot of PLABWIN10:  The Upload page is displayed with the Add folder button highlighted."><figcaption>Figure 1.12 Screenshot of PLABWIN10:  The Upload page is displayed with the Add folder button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-124"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m13-125">From the <b>Open </b>dialog box, go to <b>This PC &gt; Local (C:) &gt; Program files</b>.</p>
+
+<p id="cn-m13-126">Select <b>Windows Media Player</b>.</p>
+
+<p id="cn-m13-127">Click <b>Upload</b>.</p>
+
+<p id="cn-m13-128"></p><figure><img class="cn-img" id="cn-image-m13-c-13" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-13.jpg" alt="Figure 1.13 Screenshot of PLABWIN10: The Select folder to upload dialog box is displayed with the Windows Media Player folder selected and the Upload button highlighted."><figcaption>Figure
+ 1.13 Screenshot of PLABWIN10: The Select folder to upload dialog box is
+ displayed with the Windows Media Player folder selected and the Upload 
+button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-131"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m13-132">On the pop-up message, click <b>Upload</b>.</p>
+
+<p id="cn-m13-134"></p><figure><img class="cn-img" id="cn-image-m13-c-14" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-14.jpg" alt="Figure 1.14 Screenshot of PLABWIN10: The Upload page is displayed with a pop-up message shown asking if you want to upload 40 files to this site. The Upload button is highlighted."><figcaption>Figure
+ 1.14 Screenshot of PLABWIN10: The Upload page is displayed with a 
+pop-up message shown asking if you want to upload 40 files to this site.
+ The Upload button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-137"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m13-138">Click <b>Upload</b>.</p>
+
+<p id="cn-m13-139"></p><figure><img class="cn-img" id="cn-image-m13-c-15" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-15.jpg" alt="Figure 1.15 Screenshot of PLABWIN10: The Upload page is displayed and the Upload button is highlighted."><figcaption>Figure 1.15 Screenshot of PLABWIN10: The Upload page is displayed and the Upload button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-142"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m13-143">A message will appear stating the <b>Upload succeeded</b>.</p>
+
+<p id="cn-m13-144">Click <b>Close</b>.</p>
+
+<p id="cn-m13-146"></p><figure><img class="cn-img" id="cn-image-m13-c-16" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-16.jpg" alt="Figure 1.16 Screenshot of PLABWIN10: The Upload page is displayed with a green Upload succeeded banner shown at the top of the window. The Close button is highlighted."><figcaption>Figure
+ 1.16 Screenshot of PLABWIN10: The Upload page is displayed with a green
+ Upload succeeded banner shown at the top of the window. The Close 
+button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-149"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m13-150">Notice on the <b>Objects </b>tab, the <b>Windows Media Player </b>folder is now listed.</p>
+
+<p id="cn-m13-151">Click the <b>Properties </b>tab.</p>
+
+<p id="cn-m13-153"></p><figure><img class="cn-img" id="cn-image-m13-c-17" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-17.jpg" alt="Figure 1.17 Screenshot of PLABWIN10: The Objects tab is displayed with Windows Media Player/ appearing in the list of objects. The Properties tab is highlighted."><figcaption>Figure
+ 1.17 Screenshot of PLABWIN10: The Objects tab is displayed with Windows
+ Media Player/ appearing in the list of objects. The Properties tab is 
+highlighted.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<h4 id="cn-m13-159"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m13-160">Notice you can view and configure the properties for plabbucket00 such as:</p>
+
+<ul id="cn-m13-161">
+
+<li id="cn-m13-161">Bucket versioning</li>
+
+<li id="cn-m13-162">Tags</li>
+
+<li id="cn-m13-163">Default encryption</li>
+
+<li id="cn-m13-164">Server access logging</li>
+
+<li id="cn-m13-165">AWS CloudTrail data events</li>
+
+<li id="cn-m13-166">Event notifications</li>
+
+<li id="cn-m13-167">Transfer acceleration</li>
+
+<li id="cn-m13-168">Object Lock</li>
+
+<li id="cn-m13-169">Requester pays</li>
+
+<li id="cn-m13-170">Static website hosting</li>
+
+</ul>
+
+<p id="cn-m13-171"></p><figure><img class="cn-img" id="cn-image-m13-c-18" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-18.jpg" alt="Figure 1.18 Screenshot of PLABWIN10: The Properties tab is displayed showing the properties for plabbucket00."><figcaption>Figure 1.18 Screenshot of PLABWIN10: The Properties tab is displayed showing the properties for plabbucket00.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-174"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m13-175"><b>Close </b>all open windows.</p>
+
+<p id="cn-m13-177"></p><figure><img class="cn-img" id="cn-image-m13-c-19" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-19.jpg" alt="Figure 1.19 Screenshot of PLABWIN10: The Properties tab is displayed with the Close button highlighted."><figcaption>Figure 1.19 Screenshot of PLABWIN10: The Properties tab is displayed with the Close button highlighted.</figcaption></figure><p></p>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m13-180"><b>Exercise 2 - Provisioning Azure Storage Account Resources</b></h2>
+
+<p id="cn-m13-181">Azure offers various solutions for provisioning 
+storage to meet any environment’s needs. Each solution optimized for its
+ intended function, grants system administrators access to massively 
+scalable, highly available, durable, and secure storage.</p>
+
+<p id="cn-m13-182">In this exercise, you will provision a storage account and configure a blob container and Azure fileshare.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m13-185">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m13-186">
+
+<li id="cn-m13-186">Provision a Storage Account in Azure</li>
+
+<li id="cn-m13-187">Create a blob container</li>
+
+<li id="cn-m13-188">Create an Azure Fileshare</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m13-190">You will be using the following devices in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df23</span>
+
+<h3 id="cn-m13-193"><b>Task 1 - Provision a Storage Account in Azure</b></h3>
+
+<p id="cn-m13-194">Creating the required storage necessary for any environment in Azure is a quick process.</p>
+
+<p id="cn-m13-195">As the provisioning of these resources are highly modularized and flexible, they can be created pre-emptively, or on the fly.</p>
+
+<p id="cn-m13-196">In this task, you will create a storage account.</p>
+
+<h4 id="cn-m13-197"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m13-198">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m13-199"></p><figure><img class="cn-img" id="cn-image-m13-c-20" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-20.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: Windows 10 desktop is displayed."><figcaption>Figure 1.1 Screenshot of PLABWIN10: Windows 10 desktop is displayed.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m13-202"><b><i>Note</i></b><i>: When opening the Microsoft Edge browser, it will redirect you to the Azure portal and sign in automatically.</i><br><i>An Azure subscription will be provided for all lab activities that utilize the Azure platform.</i><br><i>Note
+ that in a real-world scenario, either a subscription will need to be 
+purchased or will already exist as part of an existing company 
+infrastructure.</i></span>
+
+<h4 id="cn-m13-204"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m13-205">From the <b>Taskbar</b>, click <b>Microsoft Edge</b>.</p>
+
+<p id="cn-m13-206"></p><figure><img class="cn-img" id="cn-image-m13-c-21" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-21.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with the Microsoft Edge icon is highlighted from the Taskbar."><figcaption>Figure
+ 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with 
+the Microsoft Edge icon is highlighted from the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-210"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m13-211">In the <b>Azure Portal</b>, click into the <b>Search resources, services and docs </b>textbox and type:</p>
+
+<pre id="cn-m13-212"><code>storage
+
+</code></pre>
+
+<p id="cn-m13-214">Under the results for <b>Services</b>, select <b>Storage accounts</b>.</p>
+
+<p id="cn-m13-215"></p><figure><img class="cn-img" id="cn-image-m13-c-22" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-22.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: Microsoft Azure window is displayed with the word storage typed into the search textbox and the Storage accounts result is highlighted from the search results."><figcaption>Figure
+ 1.3 Screenshot of PLABWIN10: Microsoft Azure window is displayed with 
+the word storage typed into the search textbox and the Storage accounts 
+result is highlighted from the search results.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-218"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m13-219">From the <b>Storage accounts </b>page, click <b>Create</b>.</p>
+
+<p id="cn-m13-220"></p><figure><img class="cn-img" id="cn-image-m13-c-23" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-23.jpg" alt="Figure 1.4 Screenshot of PLABWIN10:  The Microsoft Azure &amp;gt; Storage accounts page is displayed with the Create button highlighted."><figcaption>Figure
+ 1.4 Screenshot of PLABWIN10:  The Microsoft Azure &gt; Storage accounts
+ page is displayed with the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-223"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m13-224">From the <b>Create a storage account </b>page, scroll down to the <b>Instance details </b>section, click into the <b>Storage account name </b>textbox and type:</p>
+
+<pre id="cn-m13-225"><code>cloudplusstorage01
+
+</code></pre>
+
+<span class="cn-quote" id="cn-m13-227"><b><i>Note</i></b><i>: Names 
+should be 3-24 characters, and can only contain lowercase letters and 
+numbers. If a message states it already exists, increase the number e.g 
+to 02.</i></span>
+
+<p id="cn-m13-228"></p><figure><img class="cn-img" id="cn-image-m13-c-24" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-24.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: The Create a storage account page is displayed with a name typed into the Storage account name textbox."><figcaption>Figure
+ 1.5 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with a name typed into the Storage account name textbox.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-230"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m13-231">From the <b>Region </b>dropdown, select <b>(Europe) UK South</b>.</p>
+
+<p id="cn-m13-232"></p><figure><img class="cn-img" id="cn-image-m13-c-25" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-25.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Region dropdown expanded and the (Europe UK South) option highlighted."><figcaption>Figure
+ 1.6 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the Region dropdown expanded and the (Europe UK South) 
+option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-235"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m13-236">Under <b>Performance</b>, ensure the <b>Standard </b>option is selected.</p>
+
+<p id="cn-m13-237">From the <b>Redundancy </b>dropdown, select the <b>Locally-redundant storage (LRS</b>).</p>
+
+<p id="cn-m13-238">Click <b>Next : Advanced </b>&gt;.</p>
+
+<p id="cn-m13-239"></p><figure><img class="cn-img" id="cn-image-m13-c-26" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-26.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Redundancy dropdown set to Locally-redundant storage (LRS) and the Next : Advanced button highlighted."><figcaption>Figure
+ 1.7 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the Redundancy dropdown set to Locally-redundant storage 
+(LRS) and the Next : Advanced button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-242"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m13-243">In the <b>Advanced </b>tab, ensure the checkboxes for <b>REST API, blob public access </b>and <b>key access </b>are ticked.</p>
+
+<p id="cn-m13-244">Keep the default options for the <b>Minimum TLS version</b>.</p>
+
+<p id="cn-m13-245">Click <b>Next : Networking </b>&gt;.</p>
+
+<p id="cn-m13-248"></p><figure><img class="cn-img" id="cn-image-m13-c-27" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-27.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Review button highlighted."><figcaption>Figure 1.8 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Review button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-251"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m13-252">From the <b>Networking </b>tab, under <b>Network connectivity &gt; Network access</b>, ensure <b>Enable public access from all networks </b>is selected.</p>
+
+<p id="cn-m13-254"></p><figure><img class="cn-img" id="cn-image-m13-c-28" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-28.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: The Create a storage account page is displayed with Enable public access from all networks selected."><figcaption>Figure
+ 1.9 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with Enable public access from all networks selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-257"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m13-258">Under the <b>Network routing &gt; Routing preference</b>, ensure <b>Microsoft network routing </b>is selected.</p>
+
+<p id="cn-m13-260">Click <b>Next : Data protection </b>&gt;.</p>
+
+<p id="cn-m13-261"></p><figure><img class="cn-img" id="cn-image-m13-c-29" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-29.jpg" alt="Figure 1.10 Screenshot of PLABWIN10: The Create a storage account page is displayed with the default settings shown and the Next : Data protection button highlighted."><figcaption>Figure
+ 1.10 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the default settings shown and the Next : Data protection
+ button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-264"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m13-265">From the <b>Data protection </b>tab, click <b>Review</b>.</p>
+
+<span class="cn-alert" id="cn-m13-266"><b>Alert</b>: ensure that all checkboxes on this page have not been checked.</span>
+
+<p id="cn-m13-268"></p><figure><img class="cn-img" id="cn-image-m13-c-30" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-30.jpg" alt="Figure 1.11 Screenshot of PLABWIN10: The Create a storage account page is displayed with the default settings shown and the Review button highlighted."><figcaption>Figure
+ 1.11 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the default settings shown and the Review button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-271"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m13-272">From the <b>Review </b>tab, click <b>Create</b>.</p>
+
+<p id="cn-m13-273"></p><figure><img class="cn-img" id="cn-image-m13-c-31" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-31.jpg" alt="Figure 1.12 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Create button highlighted."><figcaption>Figure 1.12 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-276"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m13-277">Notice the <b>Deployment is in progress </b>message is displayed.</p>
+
+<p id="cn-m13-278"></p><figure><img class="cn-img" id="cn-image-m13-c-32" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-32.jpg" alt="Figure 1.13 Screenshot of PLABWIN10: The cloudplusstorage01 page is displayed with the message Deployment is in progress shown."><figcaption>Figure 1.13 Screenshot of PLABWIN10: The cloudplusstorage01 page is displayed with the message Deployment is in progress shown.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m13-281"><b><i>Note</i></b><i>: Depending on the options you have set, in a real-life scenario, it could take a while to provision the storage account.</i></span>
+
+<h4 id="cn-m13-283"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m13-284">Notice that the message <b>Your deployment is complete </b>has appeared.</p>
+
+<p id="cn-m13-285"></p><figure><img class="cn-img" id="cn-image-m13-c-33" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-33.jpg" alt="Figure 1.14 Screenshot of PLABWIN10: The cloudplusstorage01 page is displayed with the message Your deployment is complete shown. The Go to resource button is highlighted."><figcaption>Figure
+ 1.14 Screenshot of PLABWIN10: The cloudplusstorage01 page is displayed 
+with the message Your deployment is complete shown. The Go to resource 
+button is highlighted.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m13-287">Keep <b>PLABWIN10 </b>in its current state for the next task.</span>
+
+<h3 id="cn-m13-288"><b>Task 2 - Create a Blob Container</b></h3>
+
+<p id="cn-m13-289">Certain forms of data don’t always fit a specific 
+mold or scheme, for files that tend to be more diverse, provisioning a 
+blob container is highly recommended.</p>
+
+<p id="cn-m13-290">While highly flexible, blob containers can also be 
+attached to Virtual machines directly as mapped storage, or accessed by 
+utilizing tools like Azure Storage Explorer</p>
+
+<p id="cn-m13-291">In this task, you will provision a blob container.</p>
+
+<h4 id="cn-m13-293"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m13-294">Ensure you are connected to <b>PLABWIN10 </b>with the <b>Azure portal </b>window open to the <b>cloudplusstorage01 </b>page.</p>
+
+<p id="cn-m13-296">Click <b>Go to resource</b>.</p>
+
+<p id="cn-m13-297"></p><figure><img class="cn-img" id="cn-image-m13-c-34" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-34.jpg" alt="Figure 1.15 Screenshot of PLABWIN10: The cloudplusstorage01 page is displayed with the Go to resource button highlighted."><figcaption>Figure 1.15 Screenshot of PLABWIN10: The cloudplusstorage01 page is displayed with the Go to resource button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-300"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m13-301">Under the <b>Data storage </b>menu, click <b>Containers</b>.</p>
+
+<p id="cn-m13-302"></p><figure><img class="cn-img" id="cn-image-m13-c-35" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-35.jpg" alt="Figure 1.16 Screenshot of PLABWIN10: The cloudplusstorage01 page is displayed with the Containers menu option highlighted under Data storage."><figcaption>Figure
+ 1.16 Screenshot of PLABWIN10: The cloudplusstorage01 page is displayed 
+with the Containers menu option highlighted under Data storage.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-305"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m13-306">Click <b>Container</b>.</p>
+
+<p id="cn-m13-307"></p><figure><img class="cn-img" id="cn-image-m13-c-36" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-36.jpg" alt="Figure 1.17 Screenshot of PLABWIN10: The cloudplusstorage01 page is displayed with the Container button highlighted."><figcaption>Figure 1.17 Screenshot of PLABWIN10: The cloudplusstorage01 page is displayed with the Container button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-309"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m13-310">In the <b>Name </b>textbox, type:</p>
+
+<pre id="cn-m13-311"><code>cloudpluscontainer
+
+</code></pre>
+
+<p id="cn-m13-312">Keep <b>Public access level </b>as <b>Private</b>.</p>
+
+<p id="cn-m13-313">Click <b>Create</b>.</p>
+
+<p id="cn-m13-314"></p><figure><img class="cn-img" id="cn-image-m13-c-37" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-37.jpg" alt="Figure 1.18 Screenshot of PLABWIN10: The New container fly-out window is displayed with the Name textbox typed-in and the Create button highlighted."><figcaption>Figure
+ 1.18 Screenshot of PLABWIN10: The New container fly-out window is 
+displayed with the Name textbox typed-in and the Create button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-316"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m13-317">Now that we have a container, we can look to upload information into the cloud.</p>
+
+<p id="cn-m13-318">Click on the newly created <b>cloudpluscontainer </b>container.</p>
+
+<p id="cn-m13-319"></p><figure><img class="cn-img" id="cn-image-m13-c-38" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-38.jpg" alt="Figure 1.19 Screenshot of PLABWIN10: The cloudplusstorage01 page is displayed with the cloudpluscontainer container highlighted."><figcaption>Figure 1.19 Screenshot of PLABWIN10: The cloudplusstorage01 page is displayed with the cloudpluscontainer container highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-322"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m13-323">Within <b>cloudpluscontainer</b>, click <b>Upload</b>.</p>
+
+<p id="cn-m13-324"></p><figure><img class="cn-img" id="cn-image-m13-c-39" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-39.jpg" alt="Figure 1.20 Screenshot of PLABWIN10: The cloudpluscontainer page is displayed with the Upload button highlighted."><figcaption>Figure 1.20 Screenshot of PLABWIN10: The cloudpluscontainer page is displayed with the Upload button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-327"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m13-328">Under <b>Upload blob</b>, click on the <b>blue folder icon </b>to browse for a file.</p>
+
+<p id="cn-m13-329"></p><figure><img class="cn-img" id="cn-image-m13-c-40" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-40.jpg" alt="Figure 1.21 Screenshot of PLABWIN10: The Upload blob fly-out window is displayed with the Select a file button highlighted."><figcaption>Figure 1.21 Screenshot of PLABWIN10: The Upload blob fly-out window is displayed with the Select a file button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-332"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m13-333">Go to <b>This PC &gt;Downloads </b>and select <b>example.txt</b>.</p>
+
+<p id="cn-m13-334">Click <b>Open</b>.</p>
+
+<p id="cn-m13-335"></p><figure><img class="cn-img" id="cn-image-m13-c-41" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-41.jpg" alt="Figure 1.22 Screenshot of PLABWIN10: The Open dialog box is displayed with the This PC &amp;gt; Download folder open and the Example.txt file selected. The Open button is highlighted."><figcaption>Figure
+ 1.22 Screenshot of PLABWIN10: The Open dialog box is displayed with the
+ This PC &gt; Download folder open and the Example.txt file selected. 
+The Open button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-337"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m13-338">Once selected, click <b>Upload</b>.</p>
+
+<p id="cn-m13-339"></p><figure><img class="cn-img" id="cn-image-m13-c-42" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-42.jpg" alt="Figure 1.23 Screenshot of PLABWIN10: The Upload blob fly-out window is displayed with the File details populated in the Files field and the Upload button highlighted."><figcaption>Figure
+ 1.23 Screenshot of PLABWIN10: The Upload blob fly-out window is 
+displayed with the File details populated in the Files field and the 
+Upload button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-342"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m13-343">Close the <b>Upload blob </b>window using the <b>X </b>icon.</p>
+
+<p id="cn-m13-344">Once uploaded, notice that the metadata is also visible. You can see file information such as <b>Modified </b>date, <b>Access tier </b>and <b>Blob type</b>.</p>
+
+<p id="cn-m13-345">Click the <b>example.txt </b>file.</p>
+
+<p id="cn-m13-346"></p><figure><img class="cn-img" id="cn-image-m13-c-43" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-43.jpg" alt="Figure 1.24 Screenshot of PLABWIN10: The cloudpluscontainer page is displayed with the example.txt file highlighted."><figcaption>Figure 1.24 Screenshot of PLABWIN10: The cloudpluscontainer page is displayed with the example.txt file highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-348"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m13-349">Notice that full metadata details for this file is shown.</p>
+
+<p id="cn-m13-350"></p><figure><img class="cn-img" id="cn-image-m13-c-44" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-44.jpg" alt="Figure 1.25 Screenshot of PLABWIN10: The example.txt file is displayed showing the Overview tab details."><figcaption>Figure 1.25 Screenshot of PLABWIN10: The example.txt file is displayed showing the Overview tab details.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m13-352"><b><i>Note</i></b><i>: The </i><b><i>Change tier </i></b><i>option is also available from this page. This can be helpful for example, to amend files that should now be moved into </i><b><i>Archive</i></b><i>.</i></span>
+
+<span class="cn-alert" id="cn-m13-354">Keep <b>PLABWIN10 </b>in its current state for the next task.</span>
+
+<h3 id="cn-m13-356"><b>Task 3 - Create an Azure Fileshare</b></h3>
+
+<p id="cn-m13-357">Covered in a previous module was the creation of a file share on an on-premises environment.</p>
+
+<p id="cn-m13-358">Azure offers a cloud solution that allows more 
+scalability when setting up a file share, whether the intention is to 
+replace or supplement an existing on-premises file servers.</p>
+
+<p id="cn-m13-359">Offering fully managed file shares accessible through multiple industry standards; Azure Files Rest API, NFS, and SMB protocols.</p>
+
+<p id="cn-m13-360">In this task, you will provision a fileshare.</p>
+
+<h4 id="cn-m13-362"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m13-363">Reconnect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m13-364">The <b>Azure portal </b>window will be open on the <b>cloudplusstorage01 &gt; example.txt </b>page.</p>
+
+<p id="cn-m13-365">Click the <b>cloudplusstorage01 </b>breadcrumb weblink.</p>
+
+<p id="cn-m13-366">From the <b>cloudplusstorage01 | Containers </b>page, under the <b>Data storage </b>menu, click <b>File shares</b>.  </p><figure><img class="cn-img" id="cn-image-m13-c-45" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-45.jpg" alt="Figure 1.26 Screenshot of PLABWIN10: The cloudplusstorage01 page is displayed with the File shares menu option selected under Data storage."><figcaption>Figure
+ 1.26 Screenshot of PLABWIN10: The cloudplusstorage01 page is displayed 
+with the File shares menu option selected under Data storage.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-368"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m13-369">Click <b>File share</b>.</p>
+
+<p id="cn-m13-370"></p><figure><img class="cn-img" id="cn-image-m13-c-46" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-46.jpg" alt="Figure 1.27 Screenshot of PLABWIN10: The cloudplusstorage01 | Files shares page is displayed with the File share button highlighted."><figcaption>Figure
+ 1.27 Screenshot of PLABWIN10: The cloudplusstorage01 | Files shares 
+page is displayed with the File share button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-372"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m13-373">In the <b>Name </b>textbox, type:</p>
+
+<pre id="cn-m13-374"><code>cloudplusfileshare
+
+</code></pre>
+
+<p id="cn-m13-375">Keep <b>Tier </b>as <b>Transaction Optimized</b>.</p>
+
+<p id="cn-m13-376">Click <b>Create</b>.</p>
+
+<p id="cn-m13-377"></p><figure><img class="cn-img" id="cn-image-m13-c-47" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-47.jpg" alt="Figure 1.28 Screenshot of PLABWIN10: The New file share fly-out window is displayed with Name textbox typed-in and the Create button highlighted."><figcaption>Figure
+ 1.28 Screenshot of PLABWIN10: The New file share fly-out window is 
+displayed with Name textbox typed-in and the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-380"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m13-381">Click the <b>three dots </b>on the fileshare <b>cloudplusfileshare</b>, and select <b>Edit quota</b>.</p>
+
+<p id="cn-m13-382"></p><figure><img class="cn-img" id="cn-image-m13-c-48" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-48.jpg" alt="Figure 1.29 Screenshot of PLABWIN10: The cloudplusstorage-1 | File shares page is displayed with … next to cloudplusfileshare selected and the Edit quota menu option highlighted."><figcaption>Figure
+ 1.29 Screenshot of PLABWIN10: The cloudplusstorage-1 | File shares page
+ is displayed with … next to cloudplusfileshare selected and the Edit 
+quota menu option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m13-384"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m13-385">In the <b>Quota </b>textbox replace the existing value with:</p>
+
+<pre id="cn-m13-386"><code>2000
+
+</code></pre>
+
+<p id="cn-m13-387">Click <b>OK</b>. </p><figure><img class="cn-img" id="cn-image-m13-c-49" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-49.jpg" alt="Figure 1.30 Screenshot of PLABWIN10: The Edit quota popup window is displayed with the Quota changed to 2000 and the OK button highlighted."><figcaption>Figure
+ 1.30 Screenshot of PLABWIN10: The Edit quota popup window is displayed 
+with the Quota changed to 2000 and the OK button highlighted.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<h4 id="cn-m13-392"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m13-393"><b>Close </b>all open windows.</p>
+
+<p id="cn-m13-394"></p><figure><img class="cn-img" id="cn-image-m13-c-50" src="ProvisioningPublicCloudStorageSolutions_files/image-m13-c-50.jpg" alt="Figure 1.31 Screenshot of PLABWIN10: The cloudplusstorage-1 | File shares page is displayed with the Close X icon highlighted."><figcaption>Figure 1.31 Screenshot of PLABWIN10: The cloudplusstorage-1 | File shares page is displayed with the Close X icon highlighted.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<span class="cn-alert" id="cn-m13-399">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m13-401"><b>Review</b></h2>
+
+<p id="cn-m13-402">Well done, you have completed the <b>Provisioning Public Cloud Storage Solutions </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">e8451a28-5127-4418-ac6f-065712330048</span>
+
+<span class="atom-code hidden">c481c7a7-8040-4beb-a8e6-0368b9f7482c</span>
+
+<span class="atom-code hidden">deebcbb4-bba4-4d21-8a78-5a26627ee283</span>
+
+<span class="atom-code hidden">a5402cf6-eb06-4200-9ccf-edc755f1976a</span>
+
+<span class="atom-code hidden">118d8fa0-431f-4ed4-8baf-3f6b9a117b64</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m13-413">You completed the following exercises:</p>
+
+<ul id="cn-m13-414">
+
+<li id="cn-m13-414">Exercise 1 - Provisioning S3 Bucket</li>
+
+<li id="cn-m13-415">Exercise 2 - Provisioning Azure Storage Account Resources</li>
+
+</ul>
+
+<p id="cn-m13-416">You should now be able to:</p>
+
+<ul id="cn-m13-417">
+
+<li id="cn-m13-417">Create a S3 Bucket</li>
+
+<li id="cn-m13-418">Provision a Storage Account in Azure</li>
+
+<li id="cn-m13-419">Create an Azure Blob Container</li>
+
+<li id="cn-m13-420">Create an Azure Fileshare</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m13-424">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
