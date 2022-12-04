@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="CloudDashboardsandReporting_files/print-styles.css" rel="stylesheet">
+    <script src="CloudDashboardsandReporting_files/jquery.min.js"></script>
+    <script src="CloudDashboardsandReporting_files/jspdf.js"></script>
+    <script src="CloudDashboardsandReporting_files/from_html.js"></script>
+    <script src="CloudDashboardsandReporting_files/addimage.js"></script>
+    <script src="CloudDashboardsandReporting_files/filesaver.js"></script>
+    <script src="CloudDashboardsandReporting_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="5d7rZeqAROxQrPSQfI4BRveMJmlb3bmhkvJ18NvXBbXr5ehfUb/RBXg9rc1B9uLzuc9RifiSlnMtcXpKfXUaOXqugQAgc0D3pyxkdAqorS0=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Cloud Dashboards and Reporting</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Examining and Configuring Dashboard and Reports</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m21-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Cloud+</div>
+
+<div>Dashboard and Reporting</div>
+
+<div>Tagging</div>
+
+<div>Costs</div>
+
+<div>Chargebacks and Showbacks</div>
+
+<div>Elasticity Usage</div>
+
+<div>Latency</div>
+
+<div>Capacity</div>
+
+<div>Incidents</div>
+
+<div>Health</div>
+
+<div>Utilization</div>
+
+<div>Availability</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m21-15">Welcome to the <b>Cloud Dashboard and Reporting </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m21-21">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m21-22">
+
+<li id="cn-m21-22">Exercise 1 - Examining and Configuring Dashboard and Reporting</li>
+
+</ul>
+
+<p id="cn-m21-24">After completing this module, you should be able to:</p>
+
+<ul id="cn-m21-25">
+
+<li id="cn-m21-25">Explain Dashboard and Reporting with an emphasis on 
+Costs, Elasticity Usage, Connectivity, Latency, Capacity, Incidents, 
+Health, Utilization, and Availability</li>
+
+<li id="cn-m21-26">Configure Reporting within a Dashboard</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m21-28">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m21-29">
+
+<li id="cn-m21-29">4.2 Given a scenario, maintain efficient operation of a cloud environment, Dashboard and reporting</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m21-31">It will take approximately <b>45 minutes </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m21-35">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m21-36">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m21-38"><b>Lab Topology</b></h2>
+
+<p id="cn-m21-39">During your session, you will have access to the following lab configuration.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<p id="cn-m21-42">Depending on the exercises, you may or may not use all
+ the devices, but they are shown here in the layout to get an overall 
+understanding of the topology of the lab.</p>
+
+<ul id="cn-m21-43">
+
+<li id="cn-m21-43"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m21-44">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m21-45"><b>Exercise 1 - Examining and Configuring Dashboard and Reports</b></h2>
+
+<span class="atom-code hidden">698c76b2-606c-4d2a-af5a-9308bfd16e35</span>
+
+<p id="cn-m21-48">As you can see, utilizing dashboards and reporting is 
+very important. For example, a Cloud Administrator will find themselves 
+spending a lot of time working on their professional life.</p>
+
+<p id="cn-m21-49">Configuring dashboards and creating reports can be one of the most fun and rewarding aspects of this career path.</p>
+
+<p id="cn-m21-50">Reporting plays a vital role in showing us aspects of 
+our environment that we don’t get from a dashboard, or what happens when
+ we aren’t in front of a dashboard, out of hours.</p>
+
+<p id="cn-m21-51">For example, imagine you look at bandwidth usage 
+metrics and see that at 4:00 am every day, the NIC on a server is 
+saturated with traffic for a little over an hour, and then by carrying 
+out a review, find out that’s when someone like a DB admin is running 
+their offsite backups.</p>
+
+<p id="cn-m21-52">These are examples of how dashboards and reporting work together.</p>
+
+<p id="cn-m21-53">In this exercise, you will configure and deploy 
+resources with tagging within Microsoft Azure. You will also utilize the
+ Azure dashboard and filter resources by the tags you assign to them.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m21-56">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m21-57">
+
+<li id="cn-m21-57">Explain Dashboard and reporting with an emphasis on 
+Costs, Elasticity usage, Connectivity, Latency, Capacity, Incidents, 
+Health, Utilization, and Availability</li>
+
+<li id="cn-m21-58">Configure reporting within a dashboard</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m21-60">You will be using the following devices in this lab. Please power these on now.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<ul id="cn-m21-63">
+
+<li id="cn-m21-63"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m21-64"><b>Task 1 - Configure Resources to view in the Dashboard</b></h3>
+
+<p id="cn-m21-65">In this task, you will configure and deploy resources 
+using tagging within Azure. You will also utilize the Azure dashboard 
+and filter resources by the tags you added to them.</p>
+
+<h4 id="cn-m21-66"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m21-67">Connect to&nbsp;<b>PLABWIN10</b>.</p>
+
+<p id="cn-m21-68"></p><figure><img class="cn-img" id="cn-image-m21-c-0" src="CloudDashboardsandReporting_files/image-m21-c-0.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: Windows 10 desktop is displayed."><figcaption>Figure 1.1 Screenshot of PLABWIN10: Windows 10 desktop is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-70"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m21-71">From the <b>Taskbar</b>, click <b>Microsoft Edge</b>.</p>
+
+<span class="cn-quote" id="cn-m21-73"><b><i>Note: </i></b><i>When 
+opening the Microsoft Edge browser, it will automatically redirect to 
+the Azure Portal and sign in. An Azure subscription will be provided for
+ all lab activities.</i></span>
+
+<h4 id="cn-m21-74"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m21-75">From the <b>Azure </b>portal page, click <b>Create a resource</b>.</p>
+
+<p id="cn-m21-76"></p><figure><img class="cn-img" id="cn-image-m21-c-2" src="CloudDashboardsandReporting_files/image-m21-c-2.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: the Microsoft Azure portal home page is displayed with the Create a resource option highlighted."><figcaption>Figure
+ 1.3 Screenshot of PLABWIN10: the Microsoft Azure portal home page is 
+displayed with the Create a resource option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-78"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m21-79">From the <b>Create a resource </b>page, under the <b>Storage account </b>resource option, click the <b>Create </b>weblink.</p>
+
+<p id="cn-m21-80"></p><figure><img class="cn-img" id="cn-image-m21-c-3" src="CloudDashboardsandReporting_files/image-m21-c-3.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: The Create a resource page is displayed with the Storage account &amp;gt; Create weblink highlighted."><figcaption>Figure
+ 1.4 Screenshot of PLABWIN10: The Create a resource page is displayed 
+with the Storage account &gt; Create weblink highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-82"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m21-83">The <b>Create a storage account </b>page will appear.</p>
+
+<p id="cn-m21-84">Ensure the <b>Resource group </b>dropdown is showing the pre-populated resource group.</p>
+
+<p id="cn-m21-85"></p><figure><img class="cn-img" id="cn-image-m21-c-4" src="CloudDashboardsandReporting_files/image-m21-c-4.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: The Create a storage account page is displayed with the pre-populated resource group name shown under Subscription &amp;gt; Resource group."><figcaption>Figure
+ 1.5 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the pre-populated resource group name shown under 
+Subscription &gt; Resource group.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-87"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m21-88">From the <b>Instance details </b>section, click in the <b>Storage account name </b>textbox and type:</p>
+
+<pre id="cn-m21-89"><code>plstoreone
+
+</code></pre>
+
+<p id="cn-m21-90"></p><figure><img class="cn-img" id="cn-image-m21-c-5" src="CloudDashboardsandReporting_files/image-m21-c-5.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: The Create a storage account is displayed with the Storage account name typed in under the Instance details section."><figcaption>Figure
+ 1.6 Screenshot of PLABWIN10: The Create a storage account is displayed 
+with the Storage account name typed in under the Instance details 
+section.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-92"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m21-93">Click in the <b>Region </b>dropdown box and select <b>(Europe) UK South </b>option.</p>
+
+<p id="cn-m21-94"></p><figure><img class="cn-img" id="cn-image-m21-c-6" src="CloudDashboardsandReporting_files/image-m21-c-6.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Region dropdown selected and the appropriate region selected from the pop-out list."><figcaption>Figure
+ 1.7 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the Region dropdown selected and the appropriate region 
+selected from the pop-out list.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-96"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m21-97">From the <b>Performance</b>, ensure that the <b>Standard </b>option is selected.</p>
+
+<p id="cn-m21-98"></p><figure><img class="cn-img" id="cn-image-m21-c-7" src="CloudDashboardsandReporting_files/image-m21-c-7.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Standard setting selected in the Performance section."><figcaption>Figure
+ 1.8 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the Standard setting selected in the Performance section.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-100"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m21-101">Click the <b>Redundancy </b>dropdown and select <b>Locally-redundant storage (LRS</b>).</p>
+
+<p id="cn-m21-102"></p><figure><img class="cn-img" id="cn-image-m21-c-8" src="CloudDashboardsandReporting_files/image-m21-c-8.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Redundancy dropdown shown and the Locally-redundant storage (LRS) option highlighted."><figcaption>Figure
+ 1.9 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the Redundancy dropdown shown and the Locally-redundant 
+storage (LRS) option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-104"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m21-105">Click the <b>Review </b>button.</p>
+
+<p id="cn-m21-106"></p><figure><img class="cn-img" id="cn-image-m21-c-9" src="CloudDashboardsandReporting_files/image-m21-c-9.jpg" alt="Figure 1.10 Screenshot of PLABWIN10:  The Create a storage account page is displayed with the Review + create button highlighted."><figcaption>Figure
+ 1.10 Screenshot of PLABWIN10:  The Create a storage account page is 
+displayed with the Review + create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-108"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m21-109">From the <b>Validation </b>page, click the <b>Create </b>button.</p>
+
+<p id="cn-m21-111"></p><figure><img class="cn-img" id="cn-image-m21-c-10" src="CloudDashboardsandReporting_files/image-m21-c-10.jpg" alt="Figure 1.11 Screenshot of PLABWIN10: The Create a storage account page is displayed, showing the message to confirm that the Validation passed, and the Create button is highlighted."><figcaption>Figure
+ 1.11 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed, showing the message to confirm that the Validation passed, 
+and the Create button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-113"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m21-114">The <b>Overview </b>page of the storage resource will load, and the <b>Deployment is in progress </b>information will be displayed.</p>
+
+<p id="cn-m21-116"></p><figure><img class="cn-img" id="cn-image-m21-c-11" src="CloudDashboardsandReporting_files/image-m21-c-11.jpg" alt="Figure 1.12 Screenshot of PLABWIN10: plstoreone_[.....] | Overview is displayed with the message to show that Deployment is in progress."><figcaption>Figure
+ 1.12 Screenshot of PLABWIN10: plstoreone_[.....] | Overview is 
+displayed with the message to show that Deployment is in progress.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-118"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m21-119">The <b>Overview </b>page will display the message <b>Your deployment is complete </b>when it’s finished.</p>
+
+<p id="cn-m21-121"></p><figure><img class="cn-img" id="cn-image-m21-c-12" src="CloudDashboardsandReporting_files/image-m21-c-12.jpg" alt="Figure 1.13 Screenshot of PLABWIN10: plstoreone_[.....] | Overview is displayed with the message to show that Your deployment is complete."><figcaption>Figure
+ 1.13 Screenshot of PLABWIN10: plstoreone_[.....] | Overview is 
+displayed with the message to show that Your deployment is complete.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-123"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m21-124">Click on the <b>Home </b>weblink.</p>
+
+<p id="cn-m21-125"></p><figure><img class="cn-img" id="cn-image-m21-c-13" src="CloudDashboardsandReporting_files/image-m21-c-13.jpg" alt="Figure 1.14 Screenshot of PLABWIN10: plstoreone_[.....] | Overview is displayed with the message to show that Your deployment is complete, and the Home weblink is highlighted."><figcaption>Figure
+ 1.14 Screenshot of PLABWIN10: plstoreone_[.....] | Overview is 
+displayed with the message to show that Your deployment is complete, and
+ the Home weblink is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-127"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m21-128">Click the <b>Create a resource </b>button.</p>
+
+<p id="cn-m21-129"></p><figure><img class="cn-img" id="cn-image-m21-c-14" src="CloudDashboardsandReporting_files/image-m21-c-14.jpg" alt="Figure 1.15 Screenshot of PLABWIN10: The Microsoft Azure home page is displayed, and the Create a resource option is highlighted."><figcaption>Figure
+ 1.15 Screenshot of PLABWIN10: The Microsoft Azure home page is 
+displayed, and the Create a resource option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-131"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m21-132">From the <b>Create a resource </b>page, under <b>Virtual machine</b>, click the <b>Create </b>weblink.</p>
+
+<p id="cn-m21-134"></p><figure><img class="cn-img" id="cn-image-m21-c-15" src="CloudDashboardsandReporting_files/image-m21-c-15.jpg" alt="Figure 1.16 Screenshot of PLABWIN10: The Create a resource page is displayed with the Create web link under the Virtual Machine Azure service is highlighted."><figcaption>Figure
+ 1.16 Screenshot of PLABWIN10: The Create a resource page is displayed 
+with the Create web link under the Virtual Machine Azure service is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-136"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m21-137">The <b>Create a virtual machine </b>page will appear.</p>
+
+<p id="cn-m21-138">Click the <b>Resource Group </b>dropdown menu and select the pre-populated option.</p>
+
+<p id="cn-m21-139"></p><figure><img class="cn-img" id="cn-image-m21-c-16" src="CloudDashboardsandReporting_files/image-m21-c-16.jpg" alt="Figure 1.17 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the pre-populated resource group shown in the Subscription &amp;gt; Resource group dropdown."><figcaption>Figure
+ 1.17 Screenshot of PLABWIN10: The Create a virtual machine page is 
+displayed with the pre-populated resource group shown in the 
+Subscription &gt; Resource group dropdown.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-141"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m21-142">From the <b>Instance details </b>section, click into the <b>Virtual machine name </b>textbox and type:</p>
+
+<pre id="cn-m21-143"><code>practicevm01
+
+</code></pre>
+
+<p id="cn-m21-144"></p><figure><img class="cn-img" id="cn-image-m21-c-17" src="CloudDashboardsandReporting_files/image-m21-c-17.jpg" alt="Figure 1.18 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the Virtual machine name textbox filled in under the Instance details section."><figcaption>Figure
+ 1.18 Screenshot of PLABWIN10: The Create a virtual machine page is 
+displayed with the Virtual machine name textbox filled in under the 
+Instance details section.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-146"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m21-147">Ensure the <b>Region </b>dropdown shows <b>(Europe) UK South </b>as selected.</p>
+
+<p id="cn-m21-148"></p><figure><img class="cn-img" id="cn-image-m21-c-18" src="CloudDashboardsandReporting_files/image-m21-c-18.jpg" alt="Figure 1.19 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the region selected from the dropdown under the Instance details section."><figcaption>Figure
+ 1.19 Screenshot of PLABWIN10: The Create a virtual machine page is 
+displayed with the region selected from the dropdown under the Instance 
+details section.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-150"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m21-151">Still under <b>Instance details &gt; Image</b>, click the <b>See all images </b>weblink.</p>
+
+<p id="cn-m21-153"></p><figure><img class="cn-img" id="cn-image-m21-c-19" src="CloudDashboardsandReporting_files/image-m21-c-19.jpg" alt="Figure 1.20 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the weblink titled See all images highlighted from the Image option under the Instance details section."><figcaption>Figure
+ 1.20 Screenshot of PLABWIN10: The Create a virtual machine page is 
+displayed with the weblink titled See all images highlighted from the 
+Image option under the Instance details section.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-155"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m21-156">The <b>Select an image </b>webpage will be displayed.</p>
+
+<p id="cn-m21-157">Under <b>Microsoft Windows 10</b>, click the <b>Select </b>dropdown.</p>
+
+<p id="cn-m21-158"></p><figure><img class="cn-img" id="cn-image-m21-c-20" src="CloudDashboardsandReporting_files/image-m21-c-20.jpg" alt="Figure 1.21 Screenshot of PLABWIN10: The Select an image page is displayed with the Select dropdown for Microsoft Windows 10 highlighted."><figcaption>Figure
+ 1.21 Screenshot of PLABWIN10: The Select an image page is displayed 
+with the Select dropdown for Microsoft Windows 10 highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-160"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m21-161">From the <b>Select </b>dropdown list, find the <b>Windows 10 Pro, version 21H2 - x64 Gen 1 </b>image.</p>
+
+<p id="cn-m21-162"></p><figure><img class="cn-img" id="cn-image-m21-c-21" src="CloudDashboardsandReporting_files/image-m21-c-21.jpg" alt="Figure 1.22 Screenshot of PLABWIN10: The Create an image page is displayed with the Select dropdown for the Windows 10 option shown, and the appropriate image has been selected from the dropdown list."><figcaption>Figure
+ 1.22 Screenshot of PLABWIN10: The Create an image page is displayed 
+with the Select dropdown for the Windows 10 option shown, and the 
+appropriate image has been selected from the dropdown list.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-164"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m21-165">You will now be back at the <b>Create a virtual machine </b>webpage. Scroll down to the <b>Administrator account </b>section.</p>
+
+<p id="cn-m21-166">Under <b>Size</b>, click the <b>See all sizes </b>weblink.</p>
+
+<p id="cn-m21-167"></p><figure><img class="cn-img" id="cn-image-m21-c-22" src="CloudDashboardsandReporting_files/image-m21-c-22.jpg" alt="Figure 1.23 Screenshot of PLABWIN10: The Create a virtual machine page is shown with the administrator credentials added. The Size weblink is highlighted."><figcaption>Figure
+ 1.23 Screenshot of PLABWIN10: The Create a virtual machine page is 
+shown with the administrator credentials added. The Size weblink is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-169"><b><i>Step 24</i></b></h4>
+
+<p id="cn-m21-170">From the <b>Select a VM size </b>page, click the <b>A-Series v2 </b>dropdown and select <b>A1_v2</b>.</p>
+
+<p id="cn-m21-171">Then, click the <b>Select </b>button.</p>
+
+<p id="cn-m21-172"></p><figure><img class="cn-img" id="cn-image-m21-c-23" src="CloudDashboardsandReporting_files/image-m21-c-23.jpg" alt="Figure 1.24 Screenshot of PLABWIN10: The Select a VM size page is shown, with the Select button highlighted on the A1_V2 option."><figcaption>Figure 1.24 Screenshot of PLABWIN10: The Select a VM size page is shown, with the Select button highlighted on the A1_V2 option.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-174"><b><i>Step 25</i></b></h4>
+
+<p id="cn-m21-175">From the <b>Administrator account </b>section, click into the <b>Username </b>textbox and type:</p>
+
+<pre id="cn-m21-176"><code>plab
+
+</code></pre>
+
+<p id="cn-m21-177">In the <b>Password </b>textbox, type:</p>
+
+<pre id="cn-m21-178"><code>adminPassw0rd
+
+</code></pre>
+
+<p id="cn-m21-179">Do this again for the <b>Confirm password </b>textbox.</p>
+
+<p id="cn-m21-180"></p><figure><img class="cn-img" id="cn-image-m21-c-24" src="CloudDashboardsandReporting_files/image-m21-c-24.jpg" alt="Figure 1.25 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the Username, Password and Confirm password text boxes filled in under the Administrator account section."><figcaption>Figure
+ 1.25 Screenshot of PLABWIN10: The Create a virtual machine page is 
+displayed with the Username, Password and Confirm password text boxes 
+filled in under the Administrator account section.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-182"><b><i>Step 26</i></b></h4>
+
+<p id="cn-m21-183">From the <b>Create a virtual machine </b>webpage, under <b>Public inbound ports</b>, check <b>Allow selected ports</b>.</p>
+
+<p id="cn-m21-184">Ensure the <b>Select inbound ports </b>dropdown box shows the <b>RDP (3389) </b>option as selected.</p>
+
+<p id="cn-m21-185">Under <b>Licensing</b>, tick the <b>I confirm I have an eligible Windows 10 license with multi-tenant hosting </b>checkbox.</p>
+
+<p id="cn-m21-186"></p><figure><img class="cn-img" id="cn-image-m21-c-25" src="CloudDashboardsandReporting_files/image-m21-c-25.jpg" alt="Figure 1.26 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the Public inbound ports option set to Allow and the Select inbound ports dropdown defaulted to RDP (3389)."><figcaption>Figure
+ 1.26 Screenshot of PLABWIN10: The Create a virtual machine page is 
+displayed with the Public inbound ports option set to Allow and the 
+Select inbound ports dropdown defaulted to RDP (3389).</figcaption></figure><p></p>
+
+<h4 id="cn-m21-188"><b><i>Step 27</i></b></h4>
+
+<p id="cn-m21-189">Scroll back up to the top of the <b>Create a Virtual machine </b>page.</p>
+
+<p id="cn-m21-190">Click Review &amp; create at the foot of the page.</p>
+
+<p id="cn-m21-191"></p><figure><img class="cn-img" id="cn-image-m21-c-26" src="CloudDashboardsandReporting_files/image-m21-c-26.jpg" alt="Figure 1.27 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the Tags tab highlighted."><figcaption>Figure 1.27 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the Tags tab highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-193"><b><i>Step 28</i></b></h4>
+
+<p id="cn-m21-194">Click the <b>Review + create </b>button.</p>
+
+<p id="cn-m21-195"></p><figure><img class="cn-img" id="cn-image-m21-c-27" src="CloudDashboardsandReporting_files/image-m21-c-27.jpg" alt="Figure 1.28 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the Review + create button highlighted."><figcaption>Figure 1.28 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the Review + create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-197"><b><i>Step 29</i></b></h4>
+
+<p id="cn-m21-198">From the <b>Validation </b>page, click the <b>Create </b>button.</p>
+
+<p id="cn-m21-199"></p><figure><img class="cn-img" id="cn-image-m21-c-28" src="CloudDashboardsandReporting_files/image-m21-c-28.jpg" alt="Figure 1.29 Screenshot of PLABWIN10: The Create a storage account page is displayed, showing the message to confirm that the Validation passed, and the Create button is highlighted."><figcaption>Figure
+ 1.29 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed, showing the message to confirm that the Validation passed, 
+and the Create button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-201"><b><i>Step 30</i></b></h4>
+
+<p id="cn-m21-202">The <b>Overview </b>page of the storage resource will load, and the <b>Deployment is in progress </b>information will be displayed.</p>
+
+<p id="cn-m21-203"></p><figure><img class="cn-img" id="cn-image-m21-c-29" src="CloudDashboardsandReporting_files/image-m21-c-29.jpg" alt="Figure 1.30 Screenshot of PLABWIN10: plstoreone_[.....] | Overview is displayed with the message to show that Deployment is in progress."><figcaption>Figure
+ 1.30 Screenshot of PLABWIN10: plstoreone_[.....] | Overview is 
+displayed with the message to show that Deployment is in progress.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-205"><b><i>Step 31</i></b></h4>
+
+<p id="cn-m21-206">The <b>Overview </b>page will display <b>Your deployment is complete </b>when it’s finished.</p>
+
+<p id="cn-m21-208"></p><figure><img class="cn-img" id="cn-image-m21-c-30" src="CloudDashboardsandReporting_files/image-m21-c-30.jpg" alt="Figure 1.31 Screenshot of PLABWIN10: plstoreone_[.....] | Overview is displayed with the message to show that Your deployment is complete."><figcaption>Figure
+ 1.31 Screenshot of PLABWIN10: plstoreone_[.....] | Overview is 
+displayed with the message to show that Your deployment is complete.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-210"><b><i>Step 32</i></b></h4>
+
+<p id="cn-m21-211">Click the <b>Home </b>weblink.</p>
+
+<p id="cn-m21-212"></p><figure><img class="cn-img" id="cn-image-m21-c-31" src="CloudDashboardsandReporting_files/image-m21-c-31.jpg" alt="Figure 1.32 Screenshot of PLABWIN10: plstoreone_[.....] | Overview is displayed with the message to show that Your deployment is complete, and the Home weblink is highlighted."><figcaption>Figure
+ 1.32 Screenshot of PLABWIN10: plstoreone_[.....] | Overview is 
+displayed with the message to show that Your deployment is complete, and
+ the Home weblink is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-214"><b><i>Step 33</i></b></h4>
+
+<p id="cn-m21-215">Click the <b>three-line icon </b>at the top left.</p>
+
+<p id="cn-m21-217"></p><figure><img class="cn-img" id="cn-image-m21-c-32" src="CloudDashboardsandReporting_files/image-m21-c-32.jpg" alt="Figure 1.33 Screenshot of PLABWIN10: The Microsoft Azure home page is displayed, and the Show portal menu icon is highlighted."><figcaption>Figure 1.33 Screenshot of PLABWIN10: The Microsoft Azure home page is displayed, and the Show portal menu icon is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-219"><b><i>Step 34</i></b></h4>
+
+<p id="cn-m21-220">From the pop-out menu, select <b>Dashboard</b>.</p>
+
+<p id="cn-m21-222"></p><figure><img class="cn-img" id="cn-image-m21-c-33" src="CloudDashboardsandReporting_files/image-m21-c-33.jpg" alt="Figure 1.34 Screenshot of PLABWIN10: The Show portal menu is displayed with the Dashboard option highlighted."><figcaption>Figure 1.34 Screenshot of PLABWIN10: The Show portal menu is displayed with the Dashboard option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-224"><b><i>Step 35</i></b></h4>
+
+<p id="cn-m21-225">The <b>My Dashboard </b>page will appear. Click the <b>All resources </b>option.</p>
+
+<p id="cn-m21-226"></p><figure><img class="cn-img" id="cn-image-m21-c-34" src="CloudDashboardsandReporting_files/image-m21-c-34.jpg" alt="Figure 1.35 Screenshot of PLABWIN10: My Dashboard page is displayed with the All resources page shown after selecting the All resources option from the list."><figcaption>Figure
+ 1.35 Screenshot of PLABWIN10: My Dashboard page is displayed with the 
+All resources page shown after selecting the All resources option from 
+the list.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-228"><b><i>Step 36</i></b></h4>
+
+<p id="cn-m21-229">The <b>All resources </b>page will appear. Click the <b>Add filter </b>button on the right.</p>
+
+<p id="cn-m21-231"></p><figure><img class="cn-img" id="cn-image-m21-c-35" src="CloudDashboardsandReporting_files/image-m21-c-35.jpg" alt="Figure 1.36 Screenshot of PLABWIN10: The All resources page is displayed with the Add filter button highlighted."><figcaption>Figure 1.36 Screenshot of PLABWIN10: The All resources page is displayed with the Add filter button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-233"><b><i>Step 37</i></b></h4>
+
+<p id="cn-m21-234">From the <b>Add filter </b>pop-up box, select the <b>Filter </b>dropdown. under <b>Tags, </b>select <b>Practice VM 01</b>.</p>
+
+<p id="cn-m21-236"></p><figure><img class="cn-img" id="cn-image-m21-c-36" src="CloudDashboardsandReporting_files/image-m21-c-36.jpg" alt="Figure 1.37 Screenshot of PLABWIN10: The Add filter pop-out box is displayed from the All resources page with the Filter dropdown selected and the Practice VM 01 list option highlighted."><figcaption>Figure
+ 1.37 Screenshot of PLABWIN10: The Add filter pop-out box is displayed 
+from the All resources page with the Filter dropdown selected and the 
+Practice VM 01 list option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-238"><b><i>Step 38</i></b></h4>
+
+<p id="cn-m21-239">Ensure that the <b>Value </b>is set to <b>all</b>, then, click <b>Apply</b>.</p>
+
+<p id="cn-m21-240">This will display only the resources associated with <b>Practice VM 01 </b>that we created earlier in our dashboard.</p>
+
+<p id="cn-m21-241"></p><figure><img class="cn-img" id="cn-image-m21-c-37" src="CloudDashboardsandReporting_files/image-m21-c-37.jpg" alt="Figure 1.38 Screenshot of PLABWIN10: The Add filter pop-out box is displayed from the All resources page with the Value dropdown selected as ’all’ and the Apply button highlighted."><figcaption>Figure
+ 1.38 Screenshot of PLABWIN10: The Add filter pop-out box is displayed 
+from the All resources page with the Value dropdown selected as ’all’ 
+and the Apply button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-243"><b><i>Step 39</i></b></h4>
+
+<p id="cn-m21-244">Now from the <b>All resources </b>webpage in our dashboard, click on the <b>Network Interface </b>type that is associated with our VM.</p>
+
+<p id="cn-m21-245">In this example, it is listed as <b>practicevm01892</b>. This will show slightly differently for you.</p>
+
+<p id="cn-m21-246"></p><figure><img class="cn-img" id="cn-image-m21-c-38" src="CloudDashboardsandReporting_files/image-m21-c-38.jpg" alt="Figure 1.39 Screenshot of PLABWIN10: The All resources page is displayed with the Network security group type entry highlighted."><figcaption>Figure 1.39 Screenshot of PLABWIN10: The All resources page is displayed with the Network security group type entry highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-248"><b><i>Step 40</i></b></h4>
+
+<p id="cn-m21-249">Now the <b>Overview </b>webpage will load for our <b>practicevm01892 Network interface </b>resource.</p>
+
+<p id="cn-m21-250">Click <b>Metrics </b>from the left-hand pane.</p>
+
+<p id="cn-m21-251"></p><figure><img class="cn-img" id="cn-image-m21-c-39" src="CloudDashboardsandReporting_files/image-m21-c-39.jpg" alt="Figure 1.40 Screenshot of PLABWIN10:  The Network interface page is displayed with the Metrics menu option highlighted under the Monitoring section on the left-hand side of the window."><figcaption>Figure
+ 1.40 Screenshot of PLABWIN10:  The Network interface page is displayed 
+with the Metrics menu option highlighted under the Monitoring section on
+ the left-hand side of the window.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-253"><b><i>Step 41</i></b></h4>
+
+<p id="cn-m21-254">Now the <b>Metrics </b>webpage will load for our <b>practicevm01892 Network interface </b>resource.</p>
+
+<p id="cn-m21-255">Click on the <b>Metric </b>dropdown box and select <b>Bytes Received</b>.</p>
+
+<p id="cn-m21-256"></p><figure><img class="cn-img" id="cn-image-m21-c-40" src="CloudDashboardsandReporting_files/image-m21-c-40.jpg" alt="Figure 1.41 Screenshot of PLABWIN10: The Network interface &amp;gt; Metrics page is displayed with the Metric dropdown selected as Bytes received."><figcaption>Figure
+ 1.41 Screenshot of PLABWIN10: The Network interface &gt; Metrics page 
+is displayed with the Metric dropdown selected as Bytes received.</figcaption></figure><p></p>
+
+<h4 id="cn-m21-258"><b><i>Step 42</i></b></h4>
+
+<p id="cn-m21-259">You will now see the reported <b>Bytes Received </b>metrics displayed in the dashboard.</p>
+
+<p id="cn-m21-260"></p><figure><img class="cn-img" id="cn-image-m21-c-41" src="CloudDashboardsandReporting_files/image-m21-c-41.jpg" alt="Figure 1.42 Screenshot of PLABWIN10: The Network interface &amp;gt; Metrics page is displayed with the Bytes received data shown in a line table."><figcaption>Figure
+ 1.42 Screenshot of PLABWIN10: The Network interface &gt; Metrics page 
+is displayed with the Bytes received data shown in a line table.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<span class="cn-alert" id="cn-m21-266">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m21-267"><b>Review</b></h2>
+
+<p id="cn-m21-268">Well done, you have completed the <b>Cloud Dashboard and Reporting </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">a507ac5a-0d86-4a75-b8fa-d653391ceb40</span>
+
+<span class="atom-code hidden">174931e9-48d5-414e-b0df-261f6fc353fd</span>
+
+<span class="atom-code hidden">b5fffd8c-0ecc-4920-b5cb-a217fe9cd27f</span>
+
+<span class="atom-code hidden">9dd22626-fb59-4773-ae5c-e7fb4f5ded4b</span>
+
+<span class="atom-code hidden">95ac04d2-aa11-4735-b665-f1d3024fe3b8</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m21-279">You completed the following exercises:</p>
+
+<ul id="cn-m21-280">
+
+<li id="cn-m21-280">Exercise 1 - Examining and Configuring Dashboard and Reporting</li>
+
+</ul>
+
+<p id="cn-m21-281">You should now be able to:</p>
+
+<ul id="cn-m21-282">
+
+<li id="cn-m21-282">Explain Dashboard and reporting with an emphasis on 
+Costs, Elasticity usage, Connectivity, Latency, Capacity, Incidents, 
+Health, Utilization, and Availability</li>
+
+<li id="cn-m21-283">Configure reporting within a dashboard</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m21-288">Shut down all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
