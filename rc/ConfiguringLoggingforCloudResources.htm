@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="ConfiguringLoggingforCloudResources_files/print-styles.css" rel="stylesheet">
+    <script src="ConfiguringLoggingforCloudResources_files/jquery.min.js"></script>
+    <script src="ConfiguringLoggingforCloudResources_files/jspdf.js"></script>
+    <script src="ConfiguringLoggingforCloudResources_files/from_html.js"></script>
+    <script src="ConfiguringLoggingforCloudResources_files/addimage.js"></script>
+    <script src="ConfiguringLoggingforCloudResources_files/filesaver.js"></script>
+    <script src="ConfiguringLoggingforCloudResources_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="x7NLsAEbmGV0tBBnpoCf9D5gzZcfAka8Rv/07rgJEYybA6O4r0FOtC5GQ2scc7xlZnG/hZFi/ppb7j79IFyXx8Wj/046zupqN22FqBi2NLs=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Configuring Logging for Cloud Resources</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Exploring General Logging in a Public Cloud Environment</li><li>Exercise 2 - Exploring Audit Logging in a Private Cloud Environment</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m18-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Logging</div>
+
+<div>General Logging</div>
+
+<div>Audit Logging</div>
+
+<div>Log Collectors</div>
+
+<div>Log Analysis</div>
+
+<div>Log Severity Categories</div>
+
+<div>Azure Monitor</div>
+
+<div>Event Viewer</div>
+
+<div>Local Group Policy Editor</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m18-12">Welcome to the <b>Configuring Logging for Cloud Resources </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m18-18">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m18-19">
+
+<li id="cn-m18-19">Exercise 1 - Exploring General Logging in a Public Cloud Environment</li>
+
+<li id="cn-m18-20">Exercise 2 - Exploring Audit Logging in a Private Cloud Environment</li>
+
+</ul>
+
+<p id="cn-m18-21">After completing this module, you should be able to:</p>
+
+<ul id="cn-m18-22">
+
+<li id="cn-m18-22">Define and Describe Logging Concepts</li>
+
+<li id="cn-m18-23">Define and Describe Log Collectors</li>
+
+<li id="cn-m18-24">Define and Describe Analysis Methods</li>
+
+<li id="cn-m18-25">Define and Describe Log Severity Categorization</li>
+
+<li id="cn-m18-26">Explore Azure Monitor</li>
+
+<li id="cn-m18-27">Define and Describe Audit Logging Principles and Types</li>
+
+<li id="cn-m18-28">Define and Describe Logging Automation</li>
+
+<li id="cn-m18-29">Explore and Enable Audit Logging in a Private Cloud Environment</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m18-31">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m18-32">
+
+<li id="cn-m18-32">4.1 Given a scenario, configure logging, monitoring, and alerting to maintain operational status</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m18-34">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m18-38">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m18-39">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m18-41"><b>Lab Topology</b></h2>
+
+<p id="cn-m18-42">During your session, you will have access to the following lab configuration.</p>
+
+<h3 id="cn-m18-43"><b>Lab Topology 1</b></h3>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<h3 id="cn-m18-46"><b>Lab Topology 2</b></h3>
+
+<span class="atom-code hidden">b441a737-e075-40c4-a6a6-d57d4dcbeb25</span>
+
+<p id="cn-m18-49">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<h3 id="cn-m18-50"><b>Lab Topology 1</b></h3>
+
+<ul id="cn-m18-51">
+
+<li id="cn-m18-51"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m18-52"><b>Lab Topology 2</b></h3>
+
+<ul id="cn-m18-53">
+
+<li id="cn-m18-53"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+<li id="cn-m18-54"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+<li id="cn-m18-55"><b>PLABWIN10 </b>- Domain Member Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m18-56">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m18-57"><b>Exercise 1 - Exploring General Logging in a Public Cloud Environment</b></h2>
+
+<p id="cn-m18-58">Logging is the heart of an infrastructure’s security 
+posture when it comes to ensuring cloud security. Logs provide full 
+visibility to administrators on which resources are currently functional
+ and which may need some remediation. Logs can also provide key insights
+ during an incident response plan and provide potential markers and 
+flags to look for in the future to improve and iterate on a response 
+plan.</p>
+
+<p id="cn-m18-59">For example, an infrastructure could have a device 
+that shows irregularities on security logs before it fully goes down. In
+ the future, if this same device started showing the same 
+irregularities, it could act as a good indicator that another issue was 
+about to happen, further improving incident response procedures.</p>
+
+<p id="cn-m18-60">It is important to remember that, depending on the 
+size of an infrastructure, the sheer volume of data being reported by 
+multiple devices can be staggering, so logging should be done in 
+accordance with what needs to be monitored. Logs should be relevant, 
+easy to access, accurate, and analyzable.</p>
+
+<span class="atom-code hidden">dbcf419e-9a85-49c1-af00-cbf217c14f89</span>
+
+<p id="cn-m18-63">In this exercise, we will investigate how to enable logging in a public cloud environment.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m18-65">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m18-66">
+
+<li id="cn-m18-66">Define and Describe Logging Concepts</li>
+
+<li id="cn-m18-67">Define and Describe Log Collectors</li>
+
+<li id="cn-m18-68">Define and Describe Analysis Methods</li>
+
+<li id="cn-m18-69">Define and Describe Log Severity Categorization</li>
+
+<li id="cn-m18-70">Explore Azure Monitor</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m18-72">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<ul id="cn-m18-75">
+
+<li id="cn-m18-75"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m18-76"><b>Task 1 - Explore Azure Monitor</b></h3>
+
+<p id="cn-m18-77"><b>Monitor </b>is a tool in Azure that allows 
+real-time analysis and logging of multiple types of logs, including data
+ received by specific resource groups, resource types or locations.</p>
+
+<p id="cn-m18-78">In this task, we will explore Monitor in Azure.</p>
+
+<h4 id="cn-m18-79"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m18-80">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m18-81"></p><figure><img class="cn-img" id="cn-image-m18-c-0" src="ConfiguringLoggingforCloudResources_files/image-m18-c-0.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: The Windows 10 desktop is displayed."><figcaption>Figure 1.1 Screenshot of PLABWIN10: The Windows 10 desktop is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-83"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m18-84">From the <b>Taskbar</b>, select <b>Microsoft Edge</b>.</p>
+
+<span class="cn-quote" id="cn-m18-85"><b><i>Note</i></b><i>: When 
+opening the Microsoft Edge browser, it will redirect you to the Azure 
+portal and sign in automatically. An Azure subscription will be provided
+ for all lab activities that utilize the Azure platform.</i></span>
+
+<p id="cn-m18-86"></p><figure><img class="cn-img" id="cn-image-m18-c-1" src="ConfiguringLoggingforCloudResources_files/image-m18-c-1.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with the Microsoft Edge icon highlighted on the Taskbar."><figcaption>Figure 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with the Microsoft Edge icon highlighted on the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-88"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m18-89">In the <b>Azure Portal</b>, click into the <b>Search resources, services and docs </b>textbox and type:</p>
+
+<pre id="cn-m18-90"><code>Monitor
+
+</code></pre>
+
+<p id="cn-m18-91">Under the results for <b>Services</b>, select <b>Monitor</b>.</p>
+
+<p id="cn-m18-93"></p><figure><img class="cn-img" id="cn-image-m18-c-2" src="ConfiguringLoggingforCloudResources_files/image-m18-c-2.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: Microsoft Azure window is displayed with the word Monitor typed into the search textbox, and the Monitor result is highlighted from the search results."><figcaption>Figure
+ 1.3 Screenshot of PLABWIN10: Microsoft Azure window is displayed with 
+the word Monitor typed into the search textbox, and the Monitor result 
+is highlighted from the search results.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-95"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m18-96">This will open the <b>Monitor | Overview </b>page.</p>
+
+<span class="cn-quote" id="cn-m18-97"><b><i>Note</i></b><i>: The 
+Overview page in Monitor allows easy navigation to different types of 
+insights, provided intelligently by Azure automatically analyzing any 
+produced logs. This includes Application, Container, VM and Network 
+insights from the main dashboard.</i></span>
+
+<p id="cn-m18-98"></p><figure><img class="cn-img" id="cn-image-m18-c-3" src="ConfiguringLoggingforCloudResources_files/image-m18-c-3.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: The Monitor | Overview page is displayed."><figcaption>Figure 1.4 Screenshot of PLABWIN10: The Monitor | Overview page is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-100"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m18-101">On the left-hand navigation pane, click <b>Logs</b>.</p>
+
+<p id="cn-m18-102"></p><figure><img class="cn-img" id="cn-image-m18-c-4" src="ConfiguringLoggingforCloudResources_files/image-m18-c-4.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: The Monitor | Overview page is displayed, and the Logs option is highlighted on the left-hand navigation pane."><figcaption>Figure
+ 1.5 Screenshot of PLABWIN10: The Monitor | Overview page is displayed, 
+and the Logs option is highlighted on the left-hand navigation pane.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-104"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m18-105">This will open the <b>Monitor | Logs </b>page, otherwise known as <b>Log Analytics</b>.</p>
+
+<p id="cn-m18-106">Click the <b>Close </b>(<b>X</b>) button on the <b>Welcome to Log Analytics </b>pane.</p>
+
+<span class="cn-quote" id="cn-m18-107"><b><i>Note</i></b><i>: Log Analytics in Azure will allow you to simply and effectively query log data generated from an infrastructure.</i></span>
+
+<p id="cn-m18-108"></p><figure><img class="cn-img" id="cn-image-m18-c-5" src="ConfiguringLoggingforCloudResources_files/image-m18-c-5.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: The Monitor | Logs page is displayed. The Close icon is highlighted on the Welcome to Log Analytics pane."><figcaption>Figure
+ 1.6 Screenshot of PLABWIN10: The Monitor | Logs page is displayed. The 
+Close icon is highlighted on the Welcome to Log Analytics pane.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-110"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m18-111">Once this pane has closed, you will be directed to the <b>Select a scope </b>page.</p>
+
+<p id="cn-m18-112">Expand the <b>Resource group </b>dropdown.</p>
+
+<span class="cn-quote" id="cn-m18-113"><b><i>Note</i></b><i>: The scope 
+page allows you to specify which type of logs you want to review and 
+which resources currently exist as part of your overall Azure 
+subscription. If you had multiple resource groups (or multiple resource 
+groups working in tandem with each other), you could use this drop-down 
+to filter exactly which needs to be queried.</i></span>
+
+<p id="cn-m18-114"></p><figure><img class="cn-img" id="cn-image-m18-c-6" src="ConfiguringLoggingforCloudResources_files/image-m18-c-6.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: The Monitor | Logs page is displayed on the Select a scope pane. The Resource group dropdown menu has been expanded."><figcaption>Figure
+ 1.7 Screenshot of PLABWIN10: The Monitor | Logs page is displayed on 
+the Select a scope pane. The Resource group dropdown menu has been 
+expanded.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-116"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m18-117">Next, expand the <b>Resource types </b>dropdown.</p>
+
+<span class="cn-quote" id="cn-m18-118"><b><i>Note</i></b><i>: This 
+option, similar to resource groups, allows you to specify a specific 
+type of resource that currently exists in your infrastructure to 
+analyze.</i></span>
+
+<p id="cn-m18-119"></p><figure><img class="cn-img" id="cn-image-m18-c-7" src="ConfiguringLoggingforCloudResources_files/image-m18-c-7.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: The Monitor | Logs page is displayed on the Select a scope pane. The Resource types dropdown menu has been expanded."><figcaption>Figure
+ 1.8 Screenshot of PLABWIN10: The Monitor | Logs page is displayed on 
+the Select a scope pane. The Resource types dropdown menu has been 
+expanded.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-121"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m18-122">Finally, expand the <b>Locations </b>dropdown.</p>
+
+<span class="cn-quote" id="cn-m18-123"><b><i>Note</i></b><i>: This 
+option is important to consider if you have multiple available resources
+ for specific availability zones. It is key to remember that you can 
+narrow this search further by using all three options in tandem if you 
+wish. For example, you could navigate specifically to a VM that is part 
+of the UK South availability zone and belongs to a specific resource 
+group.</i></span>
+
+<p id="cn-m18-124"></p><figure><img class="cn-img" id="cn-image-m18-c-8" src="ConfiguringLoggingforCloudResources_files/image-m18-c-8.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: The Monitor | Logs page is displayed on the Select a scope pane. The Locations dropdown menu has been expanded."><figcaption>Figure
+ 1.9 Screenshot of PLABWIN10: The Monitor | Logs page is displayed on 
+the Select a scope pane. The Locations dropdown menu has been expanded.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<h4 id="cn-m18-128"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m18-129">At the bottom of the page, click <b>Cancel</b>.</p>
+
+<p id="cn-m18-130"></p><figure><img class="cn-img" id="cn-image-m18-c-9" src="ConfiguringLoggingforCloudResources_files/image-m18-c-9.jpg" alt="Figure 1.10 Screenshot of PLABWIN10: Displaying the Azure portal. The Monitor | Logs page is displayed on the Select a scope pane. The Cancel button is highlighted."><figcaption>Figure
+ 1.10 Screenshot of PLABWIN10: Displaying the Azure portal. The Monitor |
+ Logs page is displayed on the Select a scope pane. The Cancel button is
+ highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-132"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m18-133">This will close the <b>Scope </b>section and bring you to the <b>Query </b>page.</p>
+
+<span class="cn-quote" id="cn-m18-134"><b><i>Note</i></b><i>: This tool 
+will allow you to run specialized queries allocated by the query scope. 
+There are also options to select a certain time range and save and share
+ log reports. You can also use this page to create and enable automatic 
+alerts, an example of automated logging and alerting.</i></span>
+
+<span class="cn-alert" id="cn-m18-136"><b>Alert</b>: In the lab 
+environment, the query pane will be greyed out due to not allocating a 
+scope, as currently, no resources exist as part of the infrastructure. 
+This may differ from the below screenshots, however, if you have already
+ created resources in Azure and have selected an appropriate scope.</span>
+
+<p id="cn-m18-137"></p><figure><img class="cn-img" id="cn-image-m18-c-10" src="ConfiguringLoggingforCloudResources_files/image-m18-c-10.jpg" alt="Figure 1.11 Screenshot of PLABWIN10: The Monitor | Logs page is displayed, with the Query pane shown."><figcaption>Figure 1.11 Screenshot of PLABWIN10: The Monitor | Logs page is displayed, with the Query pane shown.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m18-139">Power down <b>PLABWIN10 </b>and proceed to the next exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m18-140"><b>Exercise 2 - Exploring Audit Logging in a Private Cloud Environment</b></h2>
+
+<p id="cn-m18-141"><b>Audit logging </b>(or keeping an Audit trial) is a process that aims to document different types of activity within an infrastructure.</p>
+
+<p id="cn-m18-142">This is a key process in terms of logging as it enables administrators to track the usage and impact of users on cloud systems.</p>
+
+<span class="atom-code hidden">4177295e-555d-4554-8962-7954cd0091ad</span>
+
+<p id="cn-m18-145">In this exercise, we will explore audit logging in a private cloud environment.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m18-147">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m18-148">
+
+<li id="cn-m18-148">Define and Describe Audit Logging Principles and Types</li>
+
+<li id="cn-m18-149">Define and Describe Logging Automation</li>
+
+<li id="cn-m18-150">Explore and Enable Audit Logging in a Private Cloud Environment</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m18-152">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">ffa9631d-03cc-4b32-bf76-0634d67f7bb7</span>
+
+<ul id="cn-m18-155">
+
+<li id="cn-m18-155"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+</ul>
+
+<h3 id="cn-m18-156"><b>Task 1 - Explore Event Viewer</b></h3>
+
+<p id="cn-m18-157"><b>Windows Event Viewer </b>is a native tool for 
+Windows operating systems that allows administrators to capture logs for
+ many different applications and resources being utilized on a Windows 
+device.</p>
+
+<p id="cn-m18-158">In this task, we will access Event Viewer in Windows Server 2019.</p>
+
+<h4 id="cn-m18-159"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m18-160">Connect to <b>PLABDC01</b>.</p>
+
+<p id="cn-m18-161">The <b>Windows Server Manager </b>dashboard will open by default.</p>
+
+<p id="cn-m18-162"></p><figure><img class="cn-img" id="cn-image-m18-c-11" src="ConfiguringLoggingforCloudResources_files/image-m18-c-11.jpg" alt="Figure 2.1 Screenshot of PLABDC01: The Server Manager Dashboard is displayed."><figcaption>Figure 2.1 Screenshot of PLABDC01: The Server Manager Dashboard is displayed.</figcaption></figure><p></p>
+
+<p id="cn-m18-164" class="cn-wdTeal"><b><i>Step 2</i></b></p>
+
+<p id="cn-m18-165">Click <b>Tools </b>and select <b>Event Viewer</b>.</p>
+
+<p id="cn-m18-166"></p><figure><img class="cn-img" id="cn-image-m18-c-12" src="ConfiguringLoggingforCloudResources_files/image-m18-c-12.jpg" alt="Figure 2.2 Screenshot of PLABDC01: The Server Manager Dashboard is displayed with the Tools dropdown menu has been expanded, and the Event Viewer option highlighted."><figcaption>Figure
+ 2.2 Screenshot of PLABDC01: The Server Manager Dashboard is displayed 
+with the Tools dropdown menu has been expanded, and the Event Viewer 
+option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-168"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m18-169">The <b>Event Viewer </b>tool will open.</p>
+
+<p id="cn-m18-170"></p><figure><img class="cn-img" id="cn-image-m18-c-13" src="ConfiguringLoggingforCloudResources_files/image-m18-c-13.jpg" alt="Figure 2.3 Screenshot of PLABDC01: The Event Viewer (Local) window is displayed."><figcaption>Figure 2.3 Screenshot of PLABDC01: The Event Viewer (Local) window is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-172"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m18-173">In the left-hand panel, expand <b>Windows Logs </b>and select <b>Application</b>.</p>
+
+<span class="cn-quote" id="cn-m18-174"><b><i>Note</i></b><i>: Windows 
+logs refer to all types of logs generated by the operating system 
+specifically related to system-level functions. This can be a good 
+diagnostic tool for individual devices.</i></span>
+
+<p id="cn-m18-175"></p><figure><img class="cn-img" id="cn-image-m18-c-14" src="ConfiguringLoggingforCloudResources_files/image-m18-c-14.jpg" alt="Figure 2.4 Screenshot of PLABDC01: The Event Viewer window is displayed with the Windows Logs &amp;gt; Application directory expanded."><figcaption>Figure
+ 2.4 Screenshot of PLABDC01: The Event Viewer window is displayed with 
+the Windows Logs &gt; Application directory expanded.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-177"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m18-178">Scroll to the bottom of the page and click the <b>Winlogon </b>event.</p>
+
+<p id="cn-m18-179">The bottom pane will populate to provide more information regarding this event.</p>
+
+<span class="cn-quote" id="cn-m18-180"><b><i>Note</i></b><i>: This type 
+of event specifies data gathered from logging in to a specific device 
+and can be used for access audit logging for individual devices in a 
+network.</i></span>
+
+<p id="cn-m18-181"></p><figure><img class="cn-img" id="cn-image-m18-c-15" src="ConfiguringLoggingforCloudResources_files/image-m18-c-15.jpg" alt="Figure 2.5 Screenshot of PLABDC01: the Event Viewer window is displayed with the Windows Logs &amp;gt; Application directory expanded, and the Winlogon event opened."><figcaption>Figure
+ 2.5 Screenshot of PLABDC01: the Event Viewer window is displayed with 
+the Windows Logs &gt; Application directory expanded, and the Winlogon 
+event opened.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-183"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m18-184">Next, on the left-hand panel, navigate to the <b>Applications and Services </b>&gt; <b>Microsoft </b>&gt; <b>Windows </b>&gt; <b>Hyper-V-Compute </b>directory.</p>
+
+<p id="cn-m18-185"></p><figure><img class="cn-img" id="cn-image-m18-c-16" src="ConfiguringLoggingforCloudResources_files/image-m18-c-16.jpg" alt="Figure 2.6 Screenshot of PLABDC01: The Event Viewer window is displayed with the Applications and Services &amp;gt; Microsoft &amp;gt; Windows &amp;gt; Hyper-V-Compute directory expanded."><figcaption>Figure
+ 2.6 Screenshot of PLABDC01: The Event Viewer window is displayed with 
+the Applications and Services &gt; Microsoft &gt; Windows &gt; 
+Hyper-V-Compute directory expanded.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-187"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m18-188">Click <b>Admin</b>.</p>
+
+<p id="cn-m18-189">From the right-hand panel, click <b>Open</b>.</p>
+
+<p id="cn-m18-190"></p><figure><img class="cn-img" id="cn-image-m18-c-17" src="ConfiguringLoggingforCloudResources_files/image-m18-c-17.jpg" alt="Figure 2.7 Screenshot of PLABDC01: The Event Viewer window is displayed with the Applications and Services &amp;gt; Microsoft &amp;gt; Windows &amp;gt; Hyper-V-Compute directory expanded. The Admin option is selected, and Open is highlighted on the right-hand pane."><figcaption>Figure
+ 2.7 Screenshot of PLABDC01: The Event Viewer window is displayed with 
+the Applications and Services &gt; Microsoft &gt; Windows &gt; 
+Hyper-V-Compute directory expanded. The Admin option is selected, and 
+Open is highlighted on the right-hand pane.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-192"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m18-193">This will open a list of all event logs for the <b>Hyper-V-Compute </b>service, noting that they started successfully.</p>
+
+<span class="cn-quote" id="cn-m18-194"><b><i>Note</i></b><i>: The </i><b><i>Applications and Services </i></b><i>directory
+ in event viewer allows you to review logs for specific services and 
+applications. In this example, you investigated Hyper-V, a key 
+application for VM virtualization in private cloud environments.</i></span>
+
+<p id="cn-m18-195"></p><figure><img class="cn-img" id="cn-image-m18-c-18" src="ConfiguringLoggingforCloudResources_files/image-m18-c-18.jpg" alt="Figure 2.8 Screenshot of PLABDC01: The Event Viewer window is displayed with the Applications and Services &amp;gt; Microsoft &amp;gt; Windows &amp;gt; Hyper-V-Compute directory expanded, and all Admin information events are shown."><figcaption>Figure
+ 2.8 Screenshot of PLABDC01: The Event Viewer window is displayed with 
+the Applications and Services &gt; Microsoft &gt; Windows &gt; 
+Hyper-V-Compute directory expanded, and all Admin information events are
+ shown.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m18-197">Keep <b>PLABDC01 </b>in its current state for the next task.</span>
+
+<h3 id="cn-m18-199"><b>Task 2 - Enable Audit Logging using Local Group Policy Editor</b></h3>
+
+<p id="cn-m18-200">Now that you have seen some of the types of event 
+logs generated automatically by Windows, it is important to ensure that 
+you are capturing information critical to the needs of your 
+infrastructure.</p>
+
+<p id="cn-m18-201">In this task, we will learn how to enable audit logging using Local Group Policy Editor in Windows Server 2019.</p>
+
+<h4 id="cn-m18-202"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m18-203">Ensure you are connected to <b>PLABDC01 </b>with the <b>Event Viewer </b>window open.</p>
+
+<p id="cn-m18-204"></p><figure><img class="cn-img" id="cn-image-m18-c-19" src="ConfiguringLoggingforCloudResources_files/image-m18-c-19.jpg" alt="Figure 2.9 Screenshot of PLABDC01: The Event Viewer window is displayed with the Applications and Services &amp;gt; Microsoft &amp;gt; Windows &amp;gt; Hyper-V-Compute directory expanded."><figcaption>Figure
+ 2.9 Screenshot of PLABDC01: The Event Viewer window is displayed with 
+the Applications and Services &gt; Microsoft &gt; Windows &gt; 
+Hyper-V-Compute directory expanded.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-206"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m18-207">From the <b>Taskbar, </b>click the <b>Type here to search </b>magnifying glass icon, then type:</p>
+
+<pre id="cn-m18-208"><code>Edit Group Policy
+
+</code></pre>
+
+<p id="cn-m18-209">From the <b>Best match </b>results, click <b>Edit group policy</b>.</p>
+
+<p id="cn-m18-210"></p><figure><img class="cn-img" id="cn-image-m18-c-20" src="ConfiguringLoggingforCloudResources_files/image-m18-c-20.jpg" alt="Figure 2.10 Screenshot of PLABDC01: The search textbox is typed-in with the Best match results shown and the Edit group policy option highlighted."><figcaption>Figure
+ 2.10 Screenshot of PLABDC01: The search textbox is typed-in with the 
+Best match results shown and the Edit group policy option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-212"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m18-213">This will open the <b>Local Group Policy Editor </b>window.</p>
+
+<span class="cn-quote" id="cn-m18-214"><b><i>Note</i></b><i>: </i><b><i>Group Policy </i></b><i>(or </i><b><i>Local Group Policy Editor</i></b><i>) is another standard </i><b><i>Microsoft Management Console </i></b><i>(</i><b><i>MMC</i></b><i>) tool that allows administrators to modify policies applied to </i><b><i>Group Policy Objects </i></b><i>(</i><b><i>GPOs</i></b><i>).</i></span>
+
+<p id="cn-m18-216"></p><figure><img class="cn-img" id="cn-image-m18-c-21" src="ConfiguringLoggingforCloudResources_files/image-m18-c-21.jpg" alt="Figure 2.11 Screenshot of PLABDC01: The Local Group Policy Editor window is displayed."><figcaption>Figure 2.11 Screenshot of PLABDC01: The Local Group Policy Editor window is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-218"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m18-219">In the left-hand pane, expand <b>Computer Configuration &gt; Windows Settings </b>&gt; <b>Security Settings </b>&gt; <b>Local Policies</b>.</p>
+
+<p id="cn-m18-220">Then click the <b>Audit Policy </b>directory.</p>
+
+<p id="cn-m18-221"></p><figure><img class="cn-img" id="cn-image-m18-c-22" src="ConfiguringLoggingforCloudResources_files/image-m18-c-22.jpg" alt="Figure 2.12 Screenshot of PLABDC01: The Local Group Policy Editor window is displayed with the Windows Settings &amp;gt; Security Settings &amp;gt; Local Policies &amp;gt; Audit Policy directory expanded."><figcaption>Figure
+ 2.12 Screenshot of PLABDC01: The Local Group Policy Editor window is 
+displayed with the Windows Settings &gt; Security Settings &gt; Local 
+Policies &gt; Audit Policy directory expanded.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-223"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m18-224">Double-click the <b>Audit logon events </b>policy.</p>
+
+<p id="cn-m18-225">Notice that the <b>Security Setting </b>is shown as <b>no auditing</b>.</p>
+
+<p id="cn-m18-226"></p><figure><img class="cn-img" id="cn-image-m18-c-23" src="ConfiguringLoggingforCloudResources_files/image-m18-c-23.jpg" alt="Figure 2.13 Screenshot of PLABDC01: The Local Group Policy Editor window is displayed with the Windows Settings &amp;gt; Security Settings &amp;gt; Local Policies &amp;gt; Audit Policy directory expanded, and the Audit logon events option highlighted."><figcaption>Figure
+ 2.13 Screenshot of PLABDC01: The Local Group Policy Editor window is 
+displayed with the Windows Settings &gt; Security Settings &gt; Local 
+Policies &gt; Audit Policy directory expanded, and the Audit logon 
+events option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-228"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m18-229">This will open the <b>Audit logon events Properties </b>window.</p>
+
+<p id="cn-m18-230">Tick both the <b>Success and Failure </b>checkboxes.</p>
+
+<p id="cn-m18-231">Click <b>Apply</b>.</p>
+
+<p id="cn-m18-232"></p><figure><img class="cn-img" id="cn-image-m18-c-24" src="ConfiguringLoggingforCloudResources_files/image-m18-c-24.jpg" alt="Figure 2.14 Screenshot of PLABDC01: The Local Group Policy Editor window is displayed with the Audit logon events Properties window shown. The Success and Failure checkboxes have been ticked, and the Apply button is highlighted."><figcaption>Figure
+ 2.14 Screenshot of PLABDC01: The Local Group Policy Editor window is 
+displayed with the Audit logon events Properties window shown. The 
+Success and Failure checkboxes have been ticked, and the Apply button is
+ highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-234"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m18-235"><b>Audit logging </b>has now been enabled.</p>
+
+<p id="cn-m18-236">Click <b>OK </b>to close the <b>Audit logon events Properties </b>window.</p>
+
+<span class="cn-quote" id="cn-m18-237"><b><i>Note</i></b><i>: Now that this has been enabled, </i><b><i>Event Viewer </i></b><i>will
+ start generating security logs noting both success and failure states 
+for logon attempts for the specific device. In private cloud 
+environments, this could be enabled either for all devices on a network 
+or only individual devices.</i></span>
+
+<p id="cn-m18-238"></p><figure><img class="cn-img" id="cn-image-m18-c-25" src="ConfiguringLoggingforCloudResources_files/image-m18-c-25.jpg" alt="Figure 2.15 Screenshot of PLABDC01: Displaying the Local Group Policy Editor window. The Audit logon events Properties window is shown, and the Success and Failure checkboxes have been applied. OK is highlighted."><figcaption>Figure
+ 2.15 Screenshot of PLABDC01: Displaying the Local Group Policy Editor 
+window. The Audit logon events Properties window is shown, and the 
+Success and Failure checkboxes have been applied. OK is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m18-240"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m18-241">Notice that Audit logon events policy <b>Security Setting </b>is now showing as <b>Success, Failure</b>.</p>
+
+<p id="cn-m18-242"></p><figure><img class="cn-img" id="cn-image-m18-c-26" src="ConfiguringLoggingforCloudResources_files/image-m18-c-26.jpg" alt="Figure 2.16 Screenshot of PLABDC01: The Local Group Policy Editor window is displayed with the Windows Settings &amp;gt; Security Settings &amp;gt; Local Policies &amp;gt; Audit Policy directory expanded, and the Audit logon events option highlighted and showing the Security Settings as Success, Failure."><figcaption>Figure
+ 2.16 Screenshot of PLABDC01: The Local Group Policy Editor window is 
+displayed with the Windows Settings &gt; Security Settings &gt; Local 
+Policies &gt; Audit Policy directory expanded, and the Audit logon 
+events option highlighted and showing the Security Settings as Success, 
+Failure.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">7d0ac9fb-5de8-4057-8699-2545ccd83fb6</span>
+
+<h4 id="cn-m18-248"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m18-249"><b>Close </b>all open windows.</p>
+
+<p id="cn-m18-250"></p><figure><img class="cn-img" id="cn-image-m18-c-27" src="ConfiguringLoggingforCloudResources_files/image-m18-c-27.jpg" alt="Figure 2.17 Screenshot of PLABDC01: The Local Group Policy Editor window is displayed with the Windows Settings &amp;gt; Security Settings &amp;gt; Local Policies &amp;gt; Audit Policy directory expanded, and the Audit logon events option highlighted and showing the Security Settings as Success, Failure. The Close x icon is highlighted."><figcaption>Figure
+ 2.17 Screenshot of PLABDC01: The Local Group Policy Editor window is 
+displayed with the Windows Settings &gt; Security Settings &gt; Local 
+Policies &gt; Audit Policy directory expanded, and the Audit logon 
+events option highlighted and showing the Security Settings as Success, 
+Failure. The Close x icon is highlighted.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m18-257"><b>Review</b></h2>
+
+<p id="cn-m18-258">Well done, you have completed <b>Configuring Logging for Cloud Resources </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">50631c09-0f58-44f6-985e-257ef974d70b</span>
+
+<span class="atom-code hidden">2bcdc391-5b83-4dc9-b3ab-3182550dd7bb</span>
+
+<span class="atom-code hidden">7034ecaf-c796-4fa6-bd6e-d2955fce5270</span>
+
+<span class="atom-code hidden">b82fb354-a9c7-4c2b-a7da-40296aad04b4</span>
+
+<span class="atom-code hidden">34e4efc4-403d-4287-a030-96626ef83cf1</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m18-270">You completed the following exercises:</p>
+
+<ul id="cn-m18-271">
+
+<li id="cn-m18-271">Exercise 1 - Exploring General Logging in a Public Cloud Environment</li>
+
+<li id="cn-m18-272">Exercise 2 - Exploring Audit Logging in a Private Cloud Environment</li>
+
+</ul>
+
+<p id="cn-m18-273">You should now be able to:</p>
+
+<ul id="cn-m18-274">
+
+<li id="cn-m18-274">Define and Describe Logging Concepts</li>
+
+<li id="cn-m18-275">Define and Describe Log Collectors</li>
+
+<li id="cn-m18-276">Define and Describe Analysis Methods</li>
+
+<li id="cn-m18-277">Define and Describe Log Severity Categorization</li>
+
+<li id="cn-m18-278">Explore Azure Monitor</li>
+
+<li id="cn-m18-279">Define and Describe Audit Logging Principles and Types</li>
+
+<li id="cn-m18-280">Define and Describe Logging Automation</li>
+
+<li id="cn-m18-281">Explore and Enable Audit Logging in a Private Cloud Environment</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m18-285">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
