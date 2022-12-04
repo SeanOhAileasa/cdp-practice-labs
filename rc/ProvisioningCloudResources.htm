@@ -1,0 +1,1055 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="ProvisioningCloudResources_files/print-styles.css" rel="stylesheet">
+    <script src="ProvisioningCloudResources_files/jquery.min.js"></script>
+    <script src="ProvisioningCloudResources_files/jspdf.js"></script>
+    <script src="ProvisioningCloudResources_files/from_html.js"></script>
+    <script src="ProvisioningCloudResources_files/addimage.js"></script>
+    <script src="ProvisioningCloudResources_files/filesaver.js"></script>
+    <script src="ProvisioningCloudResources_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="1a39fYUXmw/76xnLwhH5FgJ7ibl/0GV8HYJV+i+Zlpl1x1NDTISP1rIQR0odUhug1gIa+P/NizP5gf5cJ8QRrnhKyn+Uyuk4RDuXVgktirU=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Provisioning Cloud Resources</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Provisioning Storage Resources</li><li>Exercise 2 - Integrating Template Solutions and Containers into a Cloud Solution</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m12-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>CompTIA Cloud+</div>
+
+<div>Microsoft Azure</div>
+
+<div>Storage Accounts</div>
+
+<div>Containers</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m12-7">Welcome to the <b>Provisioning Cloud Resources </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m12-13">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m12-14">
+
+<li id="cn-m12-14">Exercise 1 - Provisioning Storage Resources</li>
+
+<li id="cn-m12-15">Exercise 2 - Integrating Templates and Containers into a Cloud Solution</li>
+
+</ul>
+
+<p id="cn-m12-16">After completing this module, you should be able to:</p>
+
+<ul id="cn-m12-17">
+
+<li id="cn-m12-17">Explain about Microsoft Azure Storage</li>
+
+<li id="cn-m12-18">Create a Storage Account in Azure</li>
+
+<li id="cn-m12-19">Create a Container and set access permissions</li>
+
+<li id="cn-m12-20">Upload a file to Blob storage and review its metadata</li>
+
+<li id="cn-m12-21">Provision an App Service</li>
+
+<li id="cn-m12-22">Configure an Autoscale App Services</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m12-24">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m12-25">
+
+<li id="cn-m12-25">3.1 Given a scenario, integrate components into a cloud solution</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m12-27">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m12-31">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m12-32">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m12-34"><b>Lab Topology</b></h2>
+
+<p id="cn-m12-35">During your session, you will have access to the following lab configuration.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<p id="cn-m12-38">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m12-39">
+
+<li id="cn-m12-39"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m12-40">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m12-41"><b>Exercise 1 - Provisioning Storage Resources</b></h2>
+
+<p id="cn-m12-42">With any given environment, retaining enough storage 
+to manage an organization’s data needs, took delicate planning. 
+Leveraging Azure’s cloud storage platform provides system administrators
+ more flexibility in adjusting to the ever-fluctuating data requirements
+ presented by their organizations.</p>
+
+<p id="cn-m12-43">Additionally, Azure storage offers various options for
+ data redundancy and availability, without the additional strain of 
+planning out physical hardware requirements like an on-perm environment.</p>
+
+<p id="cn-m12-44">In this exercise, you will provision a storage account and create a blob storage.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m12-47">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m12-48">
+
+<li id="cn-m12-48">Define and Describe Microsoft Azure Storage</li>
+
+<li id="cn-m12-49">Create a Storage Account in Azure</li>
+
+<li id="cn-m12-50">Create a Container and Set Access Permissions</li>
+
+<li id="cn-m12-51">Upload a File to Blob Storage and Review Metadata</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m12-53">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<ul id="cn-m12-56">
+
+<li id="cn-m12-56"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m12-58"><b>Task 1 - Provision a Storage Account in Azure</b></h3>
+
+<p id="cn-m12-59">Azure’s storage platform is Microsoft’s solution to 
+cloud storage solution. Highly available, massively scalable, durable, 
+and secure, using Azure storage can be utilized for various forms of 
+data objects.</p>
+
+<p id="cn-m12-60">In this task, you will create a storage account.</p>
+
+<h4 id="cn-m12-63"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m12-64">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m12-65"></p><figure><img class="cn-img" id="cn-image-m12-c-0" src="ProvisioningCloudResources_files/image-m12-c-0.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: Windows 10 desktop is displayed."><figcaption>Figure 1.1 Screenshot of PLABWIN10: Windows 10 desktop is displayed.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m12-68"><b><i>Note</i></b><i>: When opening the Microsoft Edge browser, it will redirect you to the Azure portal and sign in automatically.</i><br><i>An Azure subscription will be provided for all lab activities that utilize the Azure platform.</i><br><i>Note
+ that in a real-world scenario, either a subscription will need to be 
+purchased or will already exist as part of an existing company 
+infrastructure.</i></span>
+
+<h4 id="cn-m12-69"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m12-70">From the <b>Taskbar</b>, click <b>Microsoft Edge</b>.</p>
+
+<p id="cn-m12-71"></p><figure><img class="cn-img" id="cn-image-m12-c-1" src="ProvisioningCloudResources_files/image-m12-c-1.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with the Microsoft Edge icon is highlighted from the Taskbar."><figcaption>Figure
+ 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with 
+the Microsoft Edge icon is highlighted from the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-73"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m12-74">In the <b>Azure Portal</b>, click into the <b>Search resources, services and docs </b>textbox and type:</p>
+
+<pre id="cn-m12-75"><code>storage
+
+</code></pre>
+
+<p id="cn-m12-77">Under the results for <b>Services</b>, select <b>Storage accounts</b>.</p>
+
+<p id="cn-m12-78"></p><figure><img class="cn-img" id="cn-image-m12-c-2" src="ProvisioningCloudResources_files/image-m12-c-2.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: Microsoft Azure window is displayed with the word storage typed into the search textbox, and the Storage accounts result is highlighted from the search results."><figcaption>Figure
+ 1.3 Screenshot of PLABWIN10: Microsoft Azure window is displayed with 
+the word storage typed into the search textbox, and the Storage accounts
+ result is highlighted from the search results.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-80"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m12-81">From the <b>Storage accounts </b>page, click <b>Create</b>.</p>
+
+<p id="cn-m12-82"></p><figure><img class="cn-img" id="cn-image-m12-c-3" src="ProvisioningCloudResources_files/image-m12-c-3.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: The Microsoft Azure &amp;gt; Storage accounts page is displayed with the Create button highlighted."><figcaption>Figure
+ 1.4 Screenshot of PLABWIN10: The Microsoft Azure &gt; Storage accounts 
+page is displayed with the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-84"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m12-85">On the <b>Basics </b>tab, under <b>Project details</b>, click on the <b>Resource group </b>dropdown and select the pre-populated resource group.</p>
+
+<p id="cn-m12-87">From the <b>Create a storage account </b>page, scroll down to the <b>Instance details </b>section, click into the <b>Storage account name </b>textbox and type:</p>
+
+<pre id="cn-m12-88"><code>cloudplusstorage00
+
+</code></pre>
+
+<span class="cn-quote" id="cn-m12-89"><b><i>Note</i></b><i>: Names 
+should be 3-24 characters, and can only contain lowercase letters and 
+numbers. If a message appears stating this already exists, increase the 
+number by 1, e.g., 02.</i></span>
+
+<p id="cn-m12-91"></p><figure><img class="cn-img" id="cn-image-m12-c-4" src="ProvisioningCloudResources_files/image-m12-c-4.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: The Create a storage account page is displayed with a name typed into the Storage account name textbox."><figcaption>Figure
+ 1.5 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with a name typed into the Storage account name textbox.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-93"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m12-94">From the <b>Region </b>dropdown, select <b>(Europe) UK South</b>.</p>
+
+<p id="cn-m12-95"></p><figure><img class="cn-img" id="cn-image-m12-c-5" src="ProvisioningCloudResources_files/image-m12-c-5.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Region dropdown expanded and the (Europe UK South) option highlighted."><figcaption>Figure
+ 1.6 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the Region dropdown expanded and the (Europe UK South) 
+option highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-97"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m12-98">Under <b>Performance</b>, ensure the <b>Standard </b>option is selected.</p>
+
+<p id="cn-m12-99">From the <b>Redundancy </b>dropdown, select the <b>Locally-redundant storage (LRS</b>).</p>
+
+<p id="cn-m12-100">Click <b>Next : Advanced </b>&gt;.</p>
+
+<p id="cn-m12-101"></p><figure><img class="cn-img" id="cn-image-m12-c-6" src="ProvisioningCloudResources_files/image-m12-c-6.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Redundancy dropdown set to Locally-redundant storage (LRS) and the Next : Advanced button highlighted."><figcaption>Figure
+ 1.7 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the Redundancy dropdown set to Locally-redundant storage 
+(LRS) and the Next : Advanced button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-103"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m12-104">In the <b>Advanced </b>tab, ensure the checkboxes for <b>REST API, blob public access </b>and <b>key access </b>are ticked.</p>
+
+<p id="cn-m12-105">Keep the default options for the <b>Minimum TLS version</b>.</p>
+
+<p id="cn-m12-107">Click <b>Next : Networking </b>&gt;.</p>
+
+<p id="cn-m12-108"></p><figure><img class="cn-img" id="cn-image-m12-c-7" src="ProvisioningCloudResources_files/image-m12-c-7.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Review button highlighted."><figcaption>Figure 1.8 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Review button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-110"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m12-111">From the <b>Networking </b>tab, under <b>Network connectivity &gt; Network access</b>, ensure <b>Enable public access from all networks </b>is selected.</p>
+
+<p id="cn-m12-112"></p><figure><img class="cn-img" id="cn-image-m12-c-8" src="ProvisioningCloudResources_files/image-m12-c-8.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: The Create a storage account page is displayed with Enable public access from all networks selected."><figcaption>Figure
+ 1.9 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with Enable public access from all networks selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-114"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m12-115">Under <b>Network routing &gt; Routing preference</b>, ensure <b>Microsoft network routing </b>is selected.</p>
+
+<p id="cn-m12-116">Click <b>Next : Data protection </b>&gt;.</p>
+
+<p id="cn-m12-117"></p><figure><img class="cn-img" id="cn-image-m12-c-9" src="ProvisioningCloudResources_files/image-m12-c-9.jpg" alt="Figure 1.10 Screenshot of PLABWIN10: The Create a storage account page is displayed with the default settings shown and the Next : Data protection button highlighted."><figcaption>Figure
+ 1.10 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the default settings shown and the Next : Data protection
+ button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-119"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m12-120">In the <b>Data protection </b>tab, under the <b>Recovery </b>section, ensure all four checkboxes are unticked.</p>
+
+<p id="cn-m12-121">Click <b>Review</b>.</p>
+
+<p id="cn-m12-122"></p><figure><img class="cn-img" id="cn-image-m12-c-10" src="ProvisioningCloudResources_files/image-m12-c-10.jpg" alt="Figure 1.11 Screenshot of PLABWIN10: The Create a storage account page is displayed with the four checkboxes under the Recovery section unticked and the Review button highlighted."><figcaption>Figure
+ 1.11 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the four checkboxes under the Recovery section unticked 
+and the Review button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-124"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m12-125">From the <b>Review </b>tab, click <b>Create</b>.</p>
+
+<p id="cn-m12-126"></p><figure><img class="cn-img" id="cn-image-m12-c-11" src="ProvisioningCloudResources_files/image-m12-c-11.jpg" alt="Figure 1.12 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Create button highlighted."><figcaption>Figure 1.12 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-128"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m12-129">Notice the <b>Deployment is in progress </b>message is displayed.</p>
+
+<p id="cn-m12-130"></p><figure><img class="cn-img" id="cn-image-m12-c-12" src="ProvisioningCloudResources_files/image-m12-c-12.jpg" alt="Figure 1.13 Screenshot of PLABWIN10: The cloudplusstorage00 page is displayed with the message Deployment is in progress shown."><figcaption>Figure 1.13 Screenshot of PLABWIN10: The cloudplusstorage00 page is displayed with the message Deployment is in progress shown.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-132"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m12-133">Notice that the message <b>Your deployment is complete </b>has appeared.</p>
+
+<p id="cn-m12-134"></p><figure><img class="cn-img" id="cn-image-m12-c-13" src="ProvisioningCloudResources_files/image-m12-c-13.jpg" alt="Figure 1.14 Screenshot of PLABWIN10: The cloudplusstorage00 page is displayed with the message Your deployment is complete shown. The Go to resource button is highlighted."><figcaption>Figure
+ 1.14 Screenshot of PLABWIN10: The cloudplusstorage00 page is displayed 
+with the message Your deployment is complete shown. The Go to resource 
+button is highlighted.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m12-136">Leave <b>PLABWIN10 </b>in its current state for the next task.</span>
+
+<h3 id="cn-m12-137"><b>Task 2 - Create a Blob Container</b></h3>
+
+<p id="cn-m12-138">In the previous task, you created a storage account; 
+this task will explore further into the provisioning of a blob 
+container. This is Microsoft’s object storage solution, optimized for 
+storing massive amounts of data.</p>
+
+<p id="cn-m12-139">Objects in Blob storage, with the right permissions configuration, can be accessed anywhere using HTTP or HTTPS.</p>
+
+<p id="cn-m12-140">Additionally, system administrators can even use 
+Azure Storage Explorer to connect to the storage resource and manage it 
+like it was on a local machine.</p>
+
+<p id="cn-m12-141">In this task, you will provision a blob storage.</p>
+
+<h4 id="cn-m12-143"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m12-144">Ensure you are connected to <b>PLABWIN10 </b>with the <b>Azure portal </b>window open to the <b>cloudplusstorage00 </b>page.</p>
+
+<p id="cn-m12-145"></p><figure><img class="cn-img" id="cn-image-m12-c-14" src="ProvisioningCloudResources_files/image-m12-c-14.jpg" alt="Figure 1.15 Screenshot of PLABWIN10: The cloudplusstorage00 page is displayed with the message Your deployment is complete shown."><figcaption>Figure
+ 1.15 Screenshot of PLABWIN10: The cloudplusstorage00 page is displayed 
+with the message Your deployment is complete shown.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-147"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m12-148">From the <b>cloudplusstorage00[...] | Overview </b>page, click <b>Go to resource</b>.</p>
+
+<p id="cn-m12-149"></p><figure><img class="cn-img" id="cn-image-m12-c-15" src="ProvisioningCloudResources_files/image-m12-c-15.jpg" alt="Figure 1.16 Screenshot of PLABWIN10: The cloudplusstorage00 page is displayed with the Go to resource button highlighted."><figcaption>Figure 1.16 Screenshot of PLABWIN10: The cloudplusstorage00 page is displayed with the Go to resource button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-151"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m12-152">Under the <b>Data storage </b>menu, click <b>Containers</b>.</p>
+
+<p id="cn-m12-153"></p><figure><img class="cn-img" id="cn-image-m12-c-16" src="ProvisioningCloudResources_files/image-m12-c-16.jpg" alt="Figure 1.17 Screenshot of PLABWIN10: The cloudplusstorage00 page is displayed with the Containers menu option highlighted under Data storage."><figcaption>Figure
+ 1.17 Screenshot of PLABWIN10: The cloudplusstorage00 page is displayed 
+with the Containers menu option highlighted under Data storage.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-155"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m12-156">Click <b>Container</b>.</p>
+
+<p id="cn-m12-157"></p><figure><img class="cn-img" id="cn-image-m12-c-17" src="ProvisioningCloudResources_files/image-m12-c-17.jpg" alt="Figure 1.18 Screenshot of PLABWIN10: The cloudplusstorage00 page is displayed with the Container button highlighted."><figcaption>Figure 1.18 Screenshot of PLABWIN10: The cloudplusstorage00 page is displayed with the Container button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-159"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m12-160">In the <b>Name </b>textbox, type:</p>
+
+<pre id="cn-m12-161"><code>cloudpluscontainer
+
+</code></pre>
+
+<p id="cn-m12-162">Keep <b>Public access level </b>as <b>Private</b>.</p>
+
+<p id="cn-m12-163">Click <b>Create</b>.</p>
+
+<p id="cn-m12-164"></p><figure><img class="cn-img" id="cn-image-m12-c-18" src="ProvisioningCloudResources_files/image-m12-c-18.jpg" alt="Figure 1.19 Screenshot of PLABWIN10: The New container fly-out window is displayed with the Name textbox typed in, and the Create button highlighted."><figcaption>Figure
+ 1.19 Screenshot of PLABWIN10: The New container fly-out window is 
+displayed with the Name textbox typed in, and the Create button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-166"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m12-167">Now that we have a container, we can look to upload information into the cloud.</p>
+
+<p id="cn-m12-168">Click on the newly created <b>cloudpluscontainer </b>container.</p>
+
+<p id="cn-m12-169"></p><figure><img class="cn-img" id="cn-image-m12-c-19" src="ProvisioningCloudResources_files/image-m12-c-19.jpg" alt="Figure 1.20 Screenshot of PLABWIN10: The cloudplusstorage00 page is displayed with the cloudpluscontainer container highlighted."><figcaption>Figure 1.20 Screenshot of PLABWIN10: The cloudplusstorage00 page is displayed with the cloudpluscontainer container highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-171"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m12-172">Within <b>cloudpluscontainer</b>, click <b>Upload</b>.</p>
+
+<p id="cn-m12-173"></p><figure><img class="cn-img" id="cn-image-m12-c-20" src="ProvisioningCloudResources_files/image-m12-c-20.jpg" alt="Figure 1.21 Screenshot of PLABWIN10: The cloudpluscontainer page is displayed with the Upload button highlighted."><figcaption>Figure 1.21 Screenshot of PLABWIN10: The cloudpluscontainer page is displayed with the Upload button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-175"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m12-176">Under <b>Upload blob</b>, click on the <b>blue folder icon </b>to browse for a file.</p>
+
+<p id="cn-m12-177"></p><figure><img class="cn-img" id="cn-image-m12-c-21" src="ProvisioningCloudResources_files/image-m12-c-21.jpg" alt="Figure 1.22 Screenshot of PLABWIN10: The Upload blob fly-out window is displayed with the Select a file button highlighted."><figcaption>Figure 1.22 Screenshot of PLABWIN10: The Upload blob fly-out window is displayed with the Select a file button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-179"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m12-180">Right-click and select <b>New </b>&gt; <b>Text document</b>.</p>
+
+<p id="cn-m12-181">Name the file:</p>
+
+<pre id="cn-m12-182"><code>example
+
+</code></pre>
+
+<p id="cn-m12-183">Select <b>example.txt </b>and click <b>Open</b>.</p>
+
+<p id="cn-m12-184"></p><figure><img class="cn-img" id="cn-image-m12-c-22" src="ProvisioningCloudResources_files/image-m12-c-22.jpg" alt="Figure 1.23 Screenshot of PLABWIN10: The Open dialog box is displayed with the This PC &amp;gt; Download folder open and the example.txt file selected. The Open button is highlighted."><figcaption>Figure
+ 1.23 Screenshot of PLABWIN10: The Open dialog box is displayed with the
+ This PC &gt; Download folder open and the example.txt file selected. 
+The Open button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-186"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m12-187">Once selected, click <b>Upload</b>.</p>
+
+<p id="cn-m12-188"></p><figure><img class="cn-img" id="cn-image-m12-c-23" src="ProvisioningCloudResources_files/image-m12-c-23.jpg" alt="Figure 1.24 Screenshot of PLABWIN10: The Upload blob fly-out window is displayed with the File details populated in the Files field and the Upload button highlighted."><figcaption>Figure
+ 1.24 Screenshot of PLABWIN10: The Upload blob fly-out window is 
+displayed with the File details populated in the Files field and the 
+Upload button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-190"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m12-191">Close the <b>Upload blob </b>window using the <b>X </b>icon.</p>
+
+<p id="cn-m12-192">Once uploaded, notice that the metadata is also visible. You can see file information such as <b>Modified date</b>, <b>Access tier </b>and <b>Blob type</b>.</p>
+
+<p id="cn-m12-193">Click the <b>example.txt </b>file.</p>
+
+<p id="cn-m12-195"></p><figure><img class="cn-img" id="cn-image-m12-c-24" src="ProvisioningCloudResources_files/image-m12-c-24.jpg" alt="Figure 1.25 Screenshot of PLABWIN10: The cloudpluscontainer page is displayed with the example.txt file highlighted."><figcaption>Figure 1.25 Screenshot of PLABWIN10: The cloudpluscontainer page is displayed with the example.txt file highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-197"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m12-198">Notice that full metadata details for this file are shown.</p>
+
+<p id="cn-m12-199"></p><figure><img class="cn-img" id="cn-image-m12-c-25" src="ProvisioningCloudResources_files/image-m12-c-25.jpg" alt="Figure 1.26 Screenshot of PLABWIN10: The example.txt file is displayed, showing the Overview tab details."><figcaption>Figure 1.26 Screenshot of PLABWIN10: The example.txt file is displayed, showing the Overview tab details.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m12-201"><b><i>Note</i></b><i>: The </i><b><i>Change tier </i></b><i>option is also available from this page. This can be helpful, for example, to amend files that should now be moved into </i><b><i>Archive</i></b><i>.</i></span>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<span class="cn-alert" id="cn-m12-205">Keep <b>PLABWIN10 </b>in its current state for the next exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m12-206"><b>Exercise 2 - Integrating Template Solutions and Containers into a Cloud Solution</b></h2>
+
+<p id="cn-m12-207">Azure allows for a very modular approach to creating 
+and configuring your environment, as various resources can be created on
+ Azure cloud as individual instances. The utilization of the native 
+templates, whether for OS image or individual solutions, allows for 
+quick and consistent deployments.</p>
+
+<p id="cn-m12-208">This approach allows for individual instances 
+independent of fully constructed Virtual Machines. Implementing only the
+ resources needed for any given solution. Traditionally, virtual 
+machines would be deployed with all resources needed for a given 
+functions as well as resources that might not be used at a given point 
+in time.</p>
+
+<p id="cn-m12-209">In this exercise, you will provision an app service and configure autoscale for this service.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m12-212">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m12-213">
+
+<li id="cn-m12-213">Provision an App Service</li>
+
+<li id="cn-m12-214">Configure an Autoscale App Service</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m12-216">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<ul id="cn-m12-219">
+
+<li id="cn-m12-219"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m12-221"><b>Task 1 - Provisioning App Service</b></h3>
+
+<p id="cn-m12-222">App Service is a Platform as a Service (PaaS) offered
+ in Azure with a diverse range of supported programming languages, and 
+the ability to quickly build, deploy and scale web applications.</p>
+
+<p id="cn-m12-224">This hosting service enables developers to build 
+mobile and web apps in a containerized environment, while still taking 
+advantage of Azure’s DevOps capabilities.</p>
+
+<h4 id="cn-m12-225"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m12-226">Ensure you are connected to <b>PLABWIN10 </b>with the <b>Azure portal </b>window open.</p>
+
+<p id="cn-m12-227"></p><figure><img class="cn-img" id="cn-image-m12-c-26" src="ProvisioningCloudResources_files/image-m12-c-26.jpg" alt="Figure 2.1 Screenshot of PLABWIN10: Windows 10 desktop is displayed."><figcaption>Figure 2.1 Screenshot of PLABWIN10: Windows 10 desktop is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-229"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m12-230">In the <b>Azure Portal</b>, click into the <b>Search resources, services and docs </b>textbox and type:</p>
+
+<pre id="cn-m12-231"><code>storage
+
+</code></pre>
+
+<p id="cn-m12-233">Under the results for <b>Services</b>, select <b>Storage accounts</b>.</p>
+
+<p id="cn-m12-234"></p><figure><img class="cn-img" id="cn-image-m12-c-27" src="ProvisioningCloudResources_files/image-m12-c-27.jpg" alt="Figure 2.2 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed with the search term storage accounts typed into the search bar, and storage accounts highlighted in the results list."><figcaption>Figure
+ 2.2 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed with the search term storage accounts typed into the
+ search bar, and storage accounts highlighted in the results list.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-236"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m12-237">Click <b>Create</b></p><figure><img class="cn-img" id="cn-image-m12-c-28" src="ProvisioningCloudResources_files/image-m12-c-28.jpg" alt="Figure 2.3 Screenshot of PLABWIN10: The Microsoft Azure &amp;gt; Storage accounts page is displayed with the Create button highlighted."><figcaption>Figure
+ 2.3 Screenshot of PLABWIN10: The Microsoft Azure &gt; Storage accounts 
+page is displayed with the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-239"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m12-240">From the <b>Create a storage account </b>page, scroll down to the <b>Instance details </b>section, click into the <b>Storage account name </b>textbox and type:</p>
+
+<pre id="cn-m12-241"><code>plabstorage
+
+</code></pre>
+
+<p id="cn-m12-242">From the <b>Region </b>dropdown, select <b>(Europe) UK South</b>.</p>
+
+<p id="cn-m12-243">Under <b>Performance</b>, ensure the <b>Standard </b>option is selected.</p>
+
+<p id="cn-m12-244">From the <b>Redundancy </b>dropdown, select the <b>Locally-redundant storage (LRS</b>).</p>
+
+<p id="cn-m12-245">Click <b>Next : Advanced </b>&gt;.</p>
+
+<p id="cn-m12-247"></p><figure><img class="cn-img" id="cn-image-m12-c-29" src="ProvisioningCloudResources_files/image-m12-c-29.jpg" alt="Figure 2.4 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Next : Advanced button highlighted."><figcaption>Figure 2.4 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Next : Advanced button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-249"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m12-250">Click <b>Next : Networking</b>.</p>
+
+<p id="cn-m12-251"></p><figure><img class="cn-img" id="cn-image-m12-c-30" src="ProvisioningCloudResources_files/image-m12-c-30.jpg" alt="Figure 2.5 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Next : Networking button highlighted."><figcaption>Figure
+ 2.5 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the Next : Networking button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-253"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m12-254">Click <b>Next : Data protection</b>.</p>
+
+<p id="cn-m12-256"></p><figure><img class="cn-img" id="cn-image-m12-c-31" src="ProvisioningCloudResources_files/image-m12-c-31.jpg" alt="Figure 2.6 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Next &amp;gt; Data protection button highlighted."><figcaption>Figure
+ 2.6 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the Next &gt; Data protection button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-258"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m12-259">From the <b>Data protection </b>tab, under the <b>Recovery </b>section, ensure all four checkboxes are unticked.</p>
+
+<p id="cn-m12-260"></p><figure><img class="cn-img" id="cn-image-m12-c-32" src="ProvisioningCloudResources_files/image-m12-c-32.jpg" alt="Figure 2.7 Screenshot of PLABWIN10: The Create a storage account page is displayed with the four checkboxes unticked under the Recovery section."><figcaption>Figure
+ 2.7 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the four checkboxes unticked under the Recovery section.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-262"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m12-263">Under the <b>Tracking </b>section, ensure the checkboxes for <b>Enable versioning for blobs</b>, and <b>Enable blob change feed </b>are ticked</p><figure><img class="cn-img" id="cn-image-m12-c-33" src="ProvisioningCloudResources_files/image-m12-c-33.jpg" alt="Figure 2.8 Screenshot of PLABWIN10: The Create a storage account page is displayed with the blob and change feed checkboxes ticked under the Tracking section."><figcaption>Figure
+ 2.8 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the blob and change feed checkboxes ticked under the 
+Tracking section.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-265"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m12-266">Under the <b>Access control</b>, tick the checkbox for <b>Enable version-level immutability support</b>.</p>
+
+<p id="cn-m12-267">Click <b>Review</b>.</p>
+
+<p id="cn-m12-268"></p><figure><img class="cn-img" id="cn-image-m12-c-34" src="ProvisioningCloudResources_files/image-m12-c-34.jpg" alt="Figure 2.9 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal, displaying creating a storage account page. Version level immutability support checkbox clicked."><figcaption>Figure
+ 2.9 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal, displaying creating a storage account page. Version level 
+immutability support checkbox clicked.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-270"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m12-271">From the <b>Review </b>tab, click <b>Create</b></p><figure><img class="cn-img" id="cn-image-m12-c-35" src="ProvisioningCloudResources_files/image-m12-c-35.jpg" alt="Figure 2.10 Screenshot of PLABWIN10: The Create a storage account page is displayed with the Review + create tab shown and the Create button highlighted."><figcaption>Figure
+ 2.10 Screenshot of PLABWIN10: The Create a storage account page is 
+displayed with the Review + create tab shown and the Create button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-273"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m12-274"></p><figure><img class="cn-img" id="cn-image-m12-c-36" src="ProvisioningCloudResources_files/image-m12-c-36.jpg" alt="Figure 2.11 Screenshot of PLABWIN10: The plabstorage […] overview page is displaying, showing the Deployment is in progress message."><figcaption>Figure
+ 2.11 Screenshot of PLABWIN10: The plabstorage […] overview page is 
+displaying, showing the Deployment is in progress message.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-276"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m12-277">Click <b>Go to resource</b></p><figure><img class="cn-img" id="cn-image-m12-c-37" src="ProvisioningCloudResources_files/image-m12-c-37.jpg" alt="Figure 2.12 Screenshot of PLABWIN10: The plabstorage[…] overview page is displayed with the Go to resource button highlighted."><figcaption>Figure 2.12 Screenshot of PLABWIN10: The plabstorage[…] overview page is displayed with the Go to resource button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-279"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m12-280">Under <b>Data storage</b>, select <b>Containers</b>.</p>
+
+<p id="cn-m12-281"></p><figure><img class="cn-img" id="cn-image-m12-c-38" src="ProvisioningCloudResources_files/image-m12-c-38.jpg" alt="Figure 2.13 Screenshot of PLABWIN10: The plabstorage page is displayed with the Containers menu option is highlighted under the Data storage section."><figcaption>Figure
+ 2.13 Screenshot of PLABWIN10: The plabstorage page is displayed with 
+the Containers menu option is highlighted under the Data storage 
+section.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-283"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m12-284">Click <b>Container</b></p><figure><img class="cn-img" id="cn-image-m12-c-39" src="ProvisioningCloudResources_files/image-m12-c-39.jpg" alt="Figure 2.14 Screenshot of PLABWIN10: The plabstorage &amp;gt; Containers page is displayed with the Containers button highlighted."><figcaption>Figure 2.14 Screenshot of PLABWIN10: The plabstorage &gt; Containers page is displayed with the Containers button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-286"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m12-287">In the <b>Name </b>textbox, type:</p>
+
+<pre id="cn-m12-288"><code>plabcontainer
+
+</code></pre>
+
+<p id="cn-m12-289">Keep <b>Public access level </b>as <b>Private</b>.</p>
+
+<p id="cn-m12-290">Click <b>Create</b>.</p>
+
+<p id="cn-m12-291"></p><figure><img class="cn-img" id="cn-image-m12-c-40" src="ProvisioningCloudResources_files/image-m12-c-40.jpg" alt="Figure 2.15 Screenshot of PLABWIN10: The New container fly-out window is displayed with the Name textbox typed in."><figcaption>Figure 2.15 Screenshot of PLABWIN10: The New container fly-out window is displayed with the Name textbox typed in.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-293"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m12-294">Under <b>Data storage</b>, select <b>File shares</b>.</p>
+
+<p id="cn-m12-296"><img class="cn-img" id="cn-image-m12-c-41" src="ProvisioningCloudResources_files/image-m12-c-41.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m12-297">Figure 2.16 Screenshot of PLABWIN10: The plabstorage 
+&gt; Containers page is displayed with the Containers menu option 
+selected under Data Storage.</p>
+
+<h4 id="cn-m12-298"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m12-299">From the <b>plabstorage | File shares </b>page, click <b>File share</b></p><figure><img class="cn-img" id="cn-image-m12-c-42" src="ProvisioningCloudResources_files/image-m12-c-42.jpg" alt="Figure 2.17 Screenshot of PLABWIN10: The plabstorage &amp;gt; File shares page is displayed with the File share button highlighted."><figcaption>Figure 2.17 Screenshot of PLABWIN10: The plabstorage &gt; File shares page is displayed with the File share button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-301"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m12-302">In the <b>Name </b>textbox, type:</p>
+
+<pre id="cn-m12-303"><code>cloudplusfs
+
+</code></pre>
+
+<p id="cn-m12-304">From the <b>Tier </b>dropdown, select <b>Hot</b>.</p>
+
+<p id="cn-m12-305">Click <b>Create</b>.</p>
+
+<p id="cn-m12-306"></p><figure><img class="cn-img" id="cn-image-m12-c-43" src="ProvisioningCloudResources_files/image-m12-c-43.jpg" alt="Figure 2.18 Screenshot of PLABWIN10: The New file share flyout window is displayed with the Name typed in and the Tier dropdown set to Hot."><figcaption>Figure
+ 2.18 Screenshot of PLABWIN10: The New file share flyout window is 
+displayed with the Name typed in and the Tier dropdown set to Hot.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-308"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m12-309">Click into the <b>Search resources, services and docs </b>textbox and type:</p>
+
+<pre id="cn-m12-310"><code>virtual network
+
+</code></pre>
+
+<p id="cn-m12-311">Under the <b>Services </b>results, select <b>Virtual networks</b>.</p>
+
+<p id="cn-m12-312"></p><figure><img class="cn-img" id="cn-image-m12-c-44" src="ProvisioningCloudResources_files/image-m12-c-44.jpg" alt="Figure 2.19 Screenshot of PLABWIN10: The plabstorage &amp;gt; File shares page is displayed with the term virtual network typed into the search textbox, and Virtual network is highlighted from the results list."><figcaption>Figure
+ 2.19 Screenshot of PLABWIN10: The plabstorage &gt; File shares page is 
+displayed with the term virtual network typed into the search textbox, 
+and Virtual network is highlighted from the results list.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-314"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m12-315">Click <b>Create</b>.</p>
+
+<p id="cn-m12-316"></p><figure><img class="cn-img" id="cn-image-m12-c-45" src="ProvisioningCloudResources_files/image-m12-c-45.jpg" alt="Figure 2.20 Screenshot of PLABWIN10: The Virtual networks page is displayed with the Create button highlighted."><figcaption>Figure 2.20 Screenshot of PLABWIN10: The Virtual networks page is displayed with the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-318"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m12-319">On the <b>Basics </b>tab, under the <b>Project details </b>section, click on the <b>Resource group </b>dropdown and select the pre-populated resource group.</p>
+
+<p id="cn-m12-320">Under <b>Instance details &gt; Name </b>textbox type:</p>
+
+<pre id="cn-m12-321"><code>plabvnet
+
+</code></pre>
+
+<p id="cn-m12-323">Ensure <b>Region </b>is set to <b>UK South</b>.</p>
+
+<p id="cn-m12-324">Leave all other defaults and click <b>Review + create</b></p><figure><img class="cn-img" id="cn-image-m12-c-46" src="ProvisioningCloudResources_files/image-m12-c-46.jpg" alt="Figure 2.21 Screenshot of PLABWIN10: The Create Virtual network page is displayed with the fields populated and the Review + create button highlighted."><figcaption>Figure
+ 2.21 Screenshot of PLABWIN10: The Create Virtual network page is 
+displayed with the fields populated and the Review + create button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-326"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m12-327">On the <b>Validation </b>page, click <b>Create</b>.</p>
+
+<p id="cn-m12-328"></p><figure><img class="cn-img" id="cn-image-m12-c-47" src="ProvisioningCloudResources_files/image-m12-c-47.jpg" alt="Figure 2.22 Screenshot of PLABWIN10: Displaying the validation page. Create is highlighted."><figcaption>Figure 2.22 Screenshot of PLABWIN10: Displaying the validation page. Create is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-330"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m12-331">The resource will then begin the deployment process.</p>
+
+<p id="cn-m12-332">Please allow a few moments for this to complete.</p>
+
+<p id="cn-m12-333"></p><figure><img class="cn-img" id="cn-image-m12-c-48" src="ProvisioningCloudResources_files/image-m12-c-48.jpg" alt="Figure 2.23 Screenshot of PLABWIN10: Displaying the deployment of the Virtual Network in progress."><figcaption>Figure 2.23 Screenshot of PLABWIN10: Displaying the deployment of the Virtual Network in progress.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-335"><b><i>Step 24</i></b></h4>
+
+<p id="cn-m12-336">Once the deployment is complete, click the <b>Home </b>weblink.</p>
+
+<p id="cn-m12-338"></p><figure><img class="cn-img" id="cn-image-m12-c-49" src="ProvisioningCloudResources_files/image-m12-c-49.jpg" alt="Figure 2.24 Screenshot of PLABWIN10: Displaying the validation page. The Home button is highlighted."><figcaption>Figure 2.24 Screenshot of PLABWIN10: Displaying the validation page. The Home button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-340"><b><i>Step 25</i></b></h4>
+
+<p id="cn-m12-341">Click into the <b>Search resources, services and docs </b>textbox and type:</p>
+
+<pre id="cn-m12-342"><code>app services
+
+</code></pre>
+
+<p id="cn-m12-343">Under the <b>Services </b>results, select <b>App Services</b>.</p>
+
+<p id="cn-m12-345"></p><figure><img class="cn-img" id="cn-image-m12-c-50" src="ProvisioningCloudResources_files/image-m12-c-50.jpg" alt="Figure 2.25 Screenshot of PLABWIN10: The Azure portal, home page is displayed with app services typed into the search textbox and App Services is highlighted from the results list."><figcaption>Figure
+ 2.25 Screenshot of PLABWIN10: The Azure portal, home page is displayed 
+with app services typed into the search textbox and App Services is 
+highlighted from the results list.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-347"><b><i>Step 26</i></b></h4>
+
+<p id="cn-m12-348">From the <b>App Services </b>page, click <b>Create</b></p><figure><img class="cn-img" id="cn-image-m12-c-51" src="ProvisioningCloudResources_files/image-m12-c-51.jpg" alt="Figure 2.26 Screenshot of PLABWIN10: The App Services page is displayed with the + Create button highlighted."><figcaption>Figure 2.26 Screenshot of PLABWIN10: The App Services page is displayed with the + Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-350"><b><i>Step 27</i></b></h4>
+
+<p id="cn-m12-351">On the <b>Create Web App </b>page, from the <b>Resource group </b>dropdown, select the pre-populated resource group.</p>
+
+<p id="cn-m12-352">In the <b>Name </b>textbox, type:</p>
+
+<pre id="cn-m12-353"><code>cloudplusapp
+
+</code></pre>
+
+<p id="cn-m12-354">Leave <b>Publish </b>set to <b>Code</b>.</p>
+
+<p id="cn-m12-355">From the <b>Runtime stack </b>dropdown, select <b>.NET 6 (LTS</b>).</p>
+
+<p id="cn-m12-356">From the <b>Region </b>dropdown, select <b>UK South</b>.</p>
+
+<p id="cn-m12-357">Click <b>Review + create</b>.</p>
+
+<p id="cn-m12-358"></p><figure><img class="cn-img" id="cn-image-m12-c-52" src="ProvisioningCloudResources_files/image-m12-c-52.jpg" alt="Figure 2.27 Screenshot of PLABWIN10: The Create Web App page is displayed with the fields populated and the Review + create button highlighted."><figcaption>Figure
+ 2.27 Screenshot of PLABWIN10: The Create Web App page is displayed with
+ the fields populated and the Review + create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-360"><b><i>Step 28</i></b></h4>
+
+<p id="cn-m12-361">From the <b>Review + create </b>tab, click <b>Create</b></p><figure><img class="cn-img" id="cn-image-m12-c-53" src="ProvisioningCloudResources_files/image-m12-c-53.jpg" alt="Figure 2.28 Screenshot of PLABWIN10: The Create Web App page is displayed with the Create button highlighted."><figcaption>Figure 2.28 Screenshot of PLABWIN10: The Create Web App page is displayed with the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-363"><b><i>Step 29</i></b></h4>
+
+<p id="cn-m12-364">The <b>Microsoft.Web-WebApp-Portal […]| Overview </b>page is displayed, showing the <b>Deployment is in progress </b>message.</p>
+
+<p id="cn-m12-365">Azure will open a notification in the top-right-hand side of the screen to state that <b>your deployment is complete</b>.</p>
+
+<p id="cn-m12-366">Once the resource has been deployed, click <b>Go to resource</b>.</p>
+
+<p id="cn-m12-367"></p><figure><img class="cn-img" id="cn-image-m12-c-54" src="ProvisioningCloudResources_files/image-m12-c-54.jpg" alt="Figure 2.29 Screenshot of PLABWIN10: The Microsoft.Web-WebApp-Portal […]| Overview page is displayed, showing the message Your deployment is complete. The Go to resource button is highlighted."><figcaption>Figure
+ 2.29 Screenshot of PLABWIN10: The Microsoft.Web-WebApp-Portal […]| 
+Overview page is displayed, showing the message Your deployment is 
+complete. The Go to resource button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-369"><b><i>Step 30</i></b></h4>
+
+<p id="cn-m12-370">Under <b>Deployment</b>, select <b>Deployment slots</b>.</p>
+
+<p id="cn-m12-372"><img class="cn-img" id="cn-image-m12-c-55" src="ProvisioningCloudResources_files/image-m12-c-55.jpg" alt="Practice Labs screenshot."></p>
+
+<p id="cn-m12-373">Figure 2.30 Screenshot of PLABWIN10: The cloudplusapp
+ page is displayed with the Deployment slots menu option highlighted 
+under Deployment.</p>
+
+<h4 id="cn-m12-374"><b><i>Step 31</i></b></h4>
+
+<p id="cn-m12-375">Click <b>Add Slot</b></p><figure><img class="cn-img" id="cn-image-m12-c-56" src="ProvisioningCloudResources_files/image-m12-c-56.jpg" alt="Figure 2.31 Screenshot of PLABWIN10: The cloudplusapp &amp;gt; Deployment slots page is displayed with the Add Slot button highlighted."><figcaption>Figure
+ 2.31 Screenshot of PLABWIN10: The cloudplusapp &gt; Deployment slots 
+page is displayed with the Add Slot button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-377"><b><i>Step 32</i></b></h4>
+
+<p id="cn-m12-378">In the <b>Name </b>textbox, type:</p>
+
+<pre id="cn-m12-379"><code>Blue
+
+</code></pre>
+
+<p id="cn-m12-380">From the <b>Clone settings from </b>dropdown, select <b>cloudplusapp</b>.</p>
+
+<p id="cn-m12-381">Click <b>Add</b></p><figure><img class="cn-img" id="cn-image-m12-c-57" src="ProvisioningCloudResources_files/image-m12-c-57.jpg" alt="Figure 2.32 Screenshot of PLABWIN10: The Add a slot flyout window is displayed with the name textbox showing the title Blue and the Clone settings from dropdown set to cloudplusapp. The Add button is highlighted."><figcaption>Figure
+ 2.32 Screenshot of PLABWIN10: The Add a slot flyout window is displayed
+ with the name textbox showing the title Blue and the Clone settings 
+from dropdown set to cloudplusapp. The Add button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-383"><b><i>Step 33</i></b></h4>
+
+<p id="cn-m12-384">Once successfully created, click <b>Close</b>.</p>
+
+<p id="cn-m12-385">Under the <b>Settings </b>menu, select <b>Configuration</b>.</p>
+
+<p id="cn-m12-387"></p><figure><img class="cn-img" id="cn-image-m12-c-58" src="ProvisioningCloudResources_files/image-m12-c-58.jpg" alt="Figure 2.33 Screenshot of PLABWIN10: The cloudplusapp &amp;gt; Deployment slots page is displayed with the Configuration menu option highlighted under Settings."><figcaption>Figure
+ 2.33 Screenshot of PLABWIN10: The cloudplusapp &gt; Deployment slots 
+page is displayed with the Configuration menu option highlighted under 
+Settings.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-389"><b><i>Step 34</i></b></h4>
+
+<p id="cn-m12-390">Click the <b>Path mappings </b>tab.</p>
+
+<p id="cn-m12-391"></p><figure><img class="cn-img" id="cn-image-m12-c-59" src="ProvisioningCloudResources_files/image-m12-c-59.jpg" alt="Figure 2.34 Screenshot of PLABWIN10: The cloudplusapp &amp;gt; Configuration page is displayed with the Path mappings tab highlighted."><figcaption>Figure
+ 2.34 Screenshot of PLABWIN10: The cloudplusapp &gt; Configuration page 
+is displayed with the Path mappings tab highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-393"><b><i>Step 35</i></b></h4>
+
+<p id="cn-m12-394">Scroll down to the <b>Mount storage </b>section and click the <b>New Azure Storage Mount </b>weblink</p><figure><img class="cn-img" id="cn-image-m12-c-60" src="ProvisioningCloudResources_files/image-m12-c-60.jpg" alt="Figure 2.35 Screenshot of PLABWIN10: The cloudplusapp &amp;gt; Configuration page is displayed with the New Azure Storage Mount weblink highlighted."><figcaption>Figure
+ 2.35 Screenshot of PLABWIN10: The cloudplusapp &gt; Configuration page 
+is displayed with the New Azure Storage Mount weblink highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-396"><b><i>Step 36</i></b></h4>
+
+<p id="cn-m12-397">In the <b>Name </b>textbox, type:</p>
+
+<pre id="cn-m12-398"><code>Cloudplusstoragemount
+
+</code></pre>
+
+<p id="cn-m12-399">Ensure <b>Configuration options </b>is set to <b>Basic</b>.</p>
+
+<p id="cn-m12-400">From the <b>Storage accounts </b>dropdown, select <b>plabstorage</b>.</p>
+
+<p id="cn-m12-401">From the <b>Storage container </b>downdown, select <b>cloudplusfs</b>.</p>
+
+<p id="cn-m12-402">In the <b>Mount path </b>textbox, type:</p>
+
+<pre id="cn-m12-403"><code>/mounts/foo
+
+</code></pre>
+
+<p id="cn-m12-404">Click <b>OK</b></p><figure><img class="cn-img" id="cn-image-m12-c-61" src="ProvisioningCloudResources_files/image-m12-c-61.jpg" alt="Figure 2.36 Screenshot of PLABWIN10: The New Azure Storage Mount flyout window is displayed with the fields populated, and the OK button highlighted."><figcaption>Figure
+ 2.36 Screenshot of PLABWIN10: The New Azure Storage Mount flyout window
+ is displayed with the fields populated, and the OK button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-406"><b><i>Step 37</i></b></h4>
+
+<p id="cn-m12-407">Click <b>Save</b></p><figure><img class="cn-img" id="cn-image-m12-c-62" src="ProvisioningCloudResources_files/image-m12-c-62.jpg" alt="Figure 2.37 Screenshot of PLABWIN10: The cloudplusapp page is displayed with the Save button highlighted."><figcaption>Figure 2.37 Screenshot of PLABWIN10: The cloudplusapp page is displayed with the Save button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-409"><b><i>Step 38</i></b></h4>
+
+<p id="cn-m12-410">On the <b>Save changes </b>message, click <b>Continue</b>.</p>
+
+<p id="cn-m12-411">Once saved, under <b>Settings</b>, select <b>Networking</b>.</p>
+
+<p id="cn-m12-412"></p><figure><img class="cn-img" id="cn-image-m12-c-63" src="ProvisioningCloudResources_files/image-m12-c-63.jpg" alt="Figure 2.38 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal, displaying cloudplusapp page. highlighting networking blade."><figcaption>Figure
+ 2.38 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal, displaying cloudplusapp page. highlighting networking blade.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-414"><b><i>Step 39</i></b></h4>
+
+<p id="cn-m12-415">Scroll down to the <b>Outbound Traffic </b>section.</p>
+
+<p id="cn-m12-416">Click the <b>VNet integration </b>weblink.</p>
+
+<p id="cn-m12-417"></p><figure><img class="cn-img" id="cn-image-m12-c-64" src="ProvisioningCloudResources_files/image-m12-c-64.jpg" alt="Figure 2.39 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal, displaying cloudplusapp page. highlighting networking blade. Highlighting VNet integration."><figcaption>Figure
+ 2.39 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal, displaying cloudplusapp page. highlighting networking blade. 
+Highlighting VNet integration.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-419"><b><i>Step 40</i></b></h4>
+
+<p id="cn-m12-420">Click <b>Add VNet</b></p><figure><img class="cn-img" id="cn-image-m12-c-65" src="ProvisioningCloudResources_files/image-m12-c-65.jpg" alt="Figure 2.40 Screenshot of PLABWIN10: The VNet Integration page is displayed with the Add VNet button highlighted."><figcaption>Figure 2.40 Screenshot of PLABWIN10: The VNet Integration page is displayed with the Add VNet button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-422"><b><i>Step 41</i></b></h4>
+
+<p id="cn-m12-423">From the <b>Virtual Network </b>dropdown, select <b>plabvnet (UK South</b>).</p>
+
+<p id="cn-m12-424">From the <b>Subnet </b>dropdown, select <b>default</b>.</p>
+
+<p id="cn-m12-425">Click <b>OK</b>. </p><figure><img class="cn-img" id="cn-image-m12-c-66" src="ProvisioningCloudResources_files/image-m12-c-66.jpg" alt="Figure 2.41 Screenshot of PLABWIN10: The Add VNet Integration flyout window is displayed with the dropdown set and the OK button highlighted."><figcaption>Figure
+ 2.41 Screenshot of PLABWIN10: The Add VNet Integration flyout window is
+ displayed with the dropdown set and the OK button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-427"><b><i>Step 42</i></b></h4>
+
+<p id="cn-m12-428">VNet and subnet are now associated with App service</p><figure><img class="cn-img" id="cn-image-m12-c-67" src="ProvisioningCloudResources_files/image-m12-c-67.jpg" alt="Figure 2.42 Screenshot of PLABWIN10: The VNet Integration page is displayed with the VNet configuration completed successfully message shown."><figcaption>Figure
+ 2.42 Screenshot of PLABWIN10: The VNet Integration page is displayed 
+with the VNet configuration completed successfully message shown.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m12-431">Leave <b>PLABWIN10 </b>in its current state for the next task.</span>
+
+<h3 id="cn-m12-432"><b>Task 2 - Configure an Autoscale App Service</b></h3>
+
+<p id="cn-m12-433">A useful feature available to Azure App Services is 
+the ability to scale out the required resources to handle fluctuations 
+in environment needs.</p>
+
+<p id="cn-m12-434">Implementation of this feature doesn’t require a 
+change in the code the App service would be hosting, or even to redeploy
+ the application itself.</p>
+
+<p id="cn-m12-435">This task will cover the utilization of Scaling out, which increases the number of VM instances that run the hosted application.</p>
+
+<h4 id="cn-m12-436"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m12-437">Ensure you are connected to <b>PLABWIN10 </b>with the <b>Azure portal </b>window open.</p>
+
+<p id="cn-m12-438">Navigate to the app service <b>cloudplusapp </b>by clicking the <b>cloudplusapp | Networking breadcrumb </b>weblink.</p>
+
+<p id="cn-m12-439"></p><figure><img class="cn-img" id="cn-image-m12-c-68" src="ProvisioningCloudResources_files/image-m12-c-68.jpg" alt="Figure 2.43 Screenshot of PLABWIN10: The VNet Integration page is displayed with the cloudplusapp | Networking breadcrumb weblink highlighted."><figcaption>Figure
+ 2.43 Screenshot of PLABWIN10: The VNet Integration page is displayed 
+with the cloudplusapp | Networking breadcrumb weblink highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-441"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m12-442">Under <b>Settings</b>, select <b>Scale out (App Service plan</b>).</p>
+
+<p id="cn-m12-443"></p><figure><img class="cn-img" id="cn-image-m12-c-69" src="ProvisioningCloudResources_files/image-m12-c-69.jpg" alt="Figure 2.44 Screenshot of PLABWIN10: The cloudplus app &amp;gt; Networking page is displayed with the Scale out (App Service plan) menu option highlighted under Settings."><figcaption>Figure
+ 2.44 Screenshot of PLABWIN10: The cloudplus app &gt; Networking page is
+ displayed with the Scale out (App Service plan) menu option highlighted
+ under Settings.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-445"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m12-446">From the <b>Configure </b>tab, select <b>Custom autoscale</b>.</p>
+
+<p id="cn-m12-447"></p><figure><img class="cn-img" id="cn-image-m12-c-70" src="ProvisioningCloudResources_files/image-m12-c-70.jpg" alt="Figure 2.45 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal, displaying cloudplusapp page. Scale out blade highlighted, and custom autoscale ticked."><figcaption>Figure
+ 2.45 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal, displaying cloudplusapp page. Scale out blade highlighted, and 
+custom autoscale ticked.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-449"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m12-450">Scroll down to the <b>Auto created scale condition </b>section, and ensure that the <b>Scale based on metric </b>checkbox is selected.</p>
+
+<p id="cn-m12-451">From the <b>Instance limits &gt; Maximum </b>textbox type:</p>
+
+<pre id="cn-m12-452"><code>2
+
+</code></pre>
+
+<p id="cn-m12-453">Then, from <b>Rules</b>, click on the <b>Add a rule </b>weblink.</p>
+
+<p id="cn-m12-454"></p><figure><img class="cn-img" id="cn-image-m12-c-71" src="ProvisioningCloudResources_files/image-m12-c-71.jpg" alt="Figure 2.46 Screenshot of PLABWIN10: The cloudplusapp | Scale out (App Service plan) page is displayed with the Instance limited Maximum field changed to 2. The Add a rule weblink is highlighted."><figcaption>Figure
+ 2.46 Screenshot of PLABWIN10: The cloudplusapp | Scale out (App Service
+ plan) page is displayed with the Instance limited Maximum field changed
+ to 2. The Add a rule weblink is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-456"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m12-457">From the <b>Scale rule </b>flyout window, leave all the selected defaults and click <b>Add</b>.</p>
+
+<span class="cn-quote" id="cn-m12-458"><b><i>Note</i></b><i>: Reviewing 
+over the configuration listed, when the CPU usage on the application 
+sustains over 70% usage for 10 minutes or more, an additional VM will be
+ deployed to handle the additional workload.</i></span>
+
+<p id="cn-m12-460"></p><figure><img class="cn-img" id="cn-image-m12-c-72" src="ProvisioningCloudResources_files/image-m12-c-72.jpg" alt="Figure 2.47 Screenshot of PLABWIN10: The Scale rule flyout window is displayed with default values, and the Add button highlighted."><figcaption>Figure
+ 2.47 Screenshot of PLABWIN10: The Scale rule flyout window is displayed
+ with default values, and the Add button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m12-462"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m12-463"></p><figure><img class="cn-img" id="cn-image-m12-c-73" src="ProvisioningCloudResources_files/image-m12-c-73.jpg" alt="Figure 2.48 Screenshot of PLABWIN10: The cloudplusapp &amp;gt; Scale out (App Service plain) page is displayed with the Save button highlighted."><figcaption>Figure
+ 2.48 Screenshot of PLABWIN10: The cloudplusapp &gt; Scale out (App 
+Service plain) page is displayed with the Save button highlighted.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<span class="cn-alert" id="cn-m12-470">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m12-471"><b>Review</b></h2>
+
+<p id="cn-m12-472">Well done, you have completed the <b>Provisioning Cloud Resources </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">daf304b4-d36b-4953-9bc3-8904b20529ed</span>
+
+<span class="atom-code hidden">99c38eb1-538e-4ec2-b9ec-e0af4fb45bb5</span>
+
+<span class="atom-code hidden">a06afa80-acfe-4b75-9107-ac2ebc5c8ad7</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m12-482">You completed the following exercises:</p>
+
+<ul id="cn-m12-483">
+
+<li id="cn-m12-483">Exercise 1 - Provisioning Storage Resources</li>
+
+<li id="cn-m12-484">Exercise 2 - Integrating Templates and Containers into a Cloud Solution</li>
+
+</ul>
+
+<p id="cn-m12-485">You should now be able to:</p>
+
+<ul id="cn-m12-486">
+
+<li id="cn-m12-486">Define and Describe Microsoft Azure Storage</li>
+
+<li id="cn-m12-487">Create a Storage Account in Azure</li>
+
+<li id="cn-m12-488">Create a Container and set access permissions.</li>
+
+<li id="cn-m12-489">Upload a file to Blob storage and review its metadata.</li>
+
+<li id="cn-m12-490">Provision an App Service</li>
+
+<li id="cn-m12-491">Configure an Autoscale App Services</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m12-495">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
