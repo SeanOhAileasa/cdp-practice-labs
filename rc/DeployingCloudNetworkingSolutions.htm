@@ -1,0 +1,978 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="DeployingCloudNetworkingSolutions_files/print-styles.css" rel="stylesheet">
+    <script src="DeployingCloudNetworkingSolutions_files/jquery.min.js"></script>
+    <script src="DeployingCloudNetworkingSolutions_files/jspdf.js"></script>
+    <script src="DeployingCloudNetworkingSolutions_files/from_html.js"></script>
+    <script src="DeployingCloudNetworkingSolutions_files/addimage.js"></script>
+    <script src="DeployingCloudNetworkingSolutions_files/filesaver.js"></script>
+    <script src="DeployingCloudNetworkingSolutions_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="NXNdQkQR7YFPU73jSUa6u5h7MUcnUWxf18QS7Yreykgt82z8EXhr/dlI3zmXNqhjqUkiTA19yzjy2Q2/KFgp08wkdPg2DZiwaB7iVwY6HfE=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Deploying Cloud Networking Solutions</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Exploring Virtual Private Cloud</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m15-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Cloud+</div>
+
+<div>Hub and Spoke</div>
+
+<div>Load Balancer</div>
+
+<div>Virtual Network Gateway</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m15-7">Welcome to the Deploying <b>Cloud Networking Solution </b>Practice Lab. In this module you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m15-13">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m15-14">
+
+<li id="cn-m15-14">Exercise 1 - Virtual Private Cloud</li>
+
+</ul>
+
+<p id="cn-m15-15">After completing this module, you should be able to:</p>
+
+<ul id="cn-m15-16">
+
+<li id="cn-m15-16">Define and Describe Network Configuration Solutions and Concepts</li>
+
+<li id="cn-m15-17">Deploy a Hub and Spoke Network in Azure</li>
+
+<li id="cn-m15-18">Deploy a Virtual Network Gateway in Azure</li>
+
+<li id="cn-m15-19">Deploy a Load Balancer in Azure</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m15-21">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m15-22">
+
+<li id="cn-m15-22">3.3 Given a scenario, deploy cloud networking solutions</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m15-24">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m15-28">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m15-29">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m15-31"><b>Lab Topology</b></h2>
+
+<p id="cn-m15-32">During your session, you will have access to the following lab configuration.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<p id="cn-m15-35">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m15-36">
+
+<li id="cn-m15-36"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m15-37">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m15-38"><b>Exercise 1 - Exploring Virtual Private Cloud</b></h2>
+
+<p id="cn-m15-39">Virtual private clouds are computer resources and 
+services offered over the Internet or on a private internal network, not
+ accessible by the general public.</p>
+
+<p id="cn-m15-40">Like the public cloud, businesses gain the benefits of
+ self-service, scalability and elasticity while retaining control and 
+customization from these dedicated resources.</p>
+
+<p id="cn-m15-41"><b>Infrastructure as a Service (IaaS) </b>and <b>Platform as a Service (PaaS) </b>are the two models offered as cloud services in a private cloud.</p>
+
+<p id="cn-m15-42">With IaaS, a cloud computing service provider manages 
+the infrastructure, Leaving the tenant to manage their software's 
+license, installation, configuration, and management.</p>
+
+<span class="atom-code hidden">4e865347-ad38-4f85-af71-ad9f50ac129d</span>
+
+<p id="cn-m15-45">In this exercise, you will explore the configuration of various IaaS network solutions.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m15-47">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m15-48">
+
+<li id="cn-m15-48">Define and Describe Network Configuration Solutions and Concepts</li>
+
+<li id="cn-m15-49">Deploy a Hub and Spoke Network in Azure</li>
+
+<li id="cn-m15-50">Deploy a Virtual Network Gateway in Azure</li>
+
+<li id="cn-m15-51">Deploy a Load Balancer in Azure</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m15-53">You will be using the following devices in this lab. Please power these on now.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<ul id="cn-m15-56">
+
+<li id="cn-m15-56"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m15-58"><b>Task 1 - Configure A Hub and Spoke Network</b></h3>
+
+<p id="cn-m15-59">A <b>Hub and Spoke </b>network (also known as a star 
+network) refers to the logical layout of a network. This Site-to-site 
+topology has a central device called the hub and connects to various 
+devices referred to as spokes.</p>
+
+<p id="cn-m15-60">Large organizations often have different offices in 
+very different geographical locations, anywhere from within the same 
+city to global locations.</p>
+
+<p id="cn-m15-61">This topology is normally used to keep all the spokes 
+sites connected to a central hub. With Azure, a virtual hub still acts 
+as the central point of connectivity for all spoke virtual networks, 
+with the spokes peering with the hub to isolate workloads.</p>
+
+<h4 id="cn-m15-62"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m15-63">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m15-64"></p><figure><img class="cn-img" id="cn-image-m15-c-0" src="DeployingCloudNetworkingSolutions_files/image-m15-c-0.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: Windows 10 desktop is displayed."><figcaption>Figure 1.1 Screenshot of PLABWIN10: Windows 10 desktop is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-66"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m15-67">From the <b>Taskbar</b>, click <b>Microsoft Edge</b>.</p>
+
+<p id="cn-m15-68"></p><figure><img class="cn-img" id="cn-image-m15-c-1" src="DeployingCloudNetworkingSolutions_files/image-m15-c-1.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with the Microsoft Edge icon highlighted from the Taskbar."><figcaption>Figure
+ 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with 
+the Microsoft Edge icon highlighted from the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-70"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m15-71">In the <b>Microsoft Azure Portal</b>, click into the <b>Search resources, services and docs </b>textbox and type:</p>
+
+<pre id="cn-m15-72"><code>virtual networks
+
+</code></pre>
+
+<p id="cn-m15-73">Under the results for <b>Services</b>, select <b>Virtual networks</b>.</p>
+
+<p id="cn-m15-74"></p><figure><img class="cn-img" id="cn-image-m15-c-2" src="DeployingCloudNetworkingSolutions_files/image-m15-c-2.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: Microsoft Azure window is displayed with the words virtual networks typed into the search textbox, and the Virtual network result is highlighted from the search results."><figcaption>Figure
+ 1.3 Screenshot of PLABWIN10: Microsoft Azure window is displayed with 
+the words virtual networks typed into the search textbox, and the 
+Virtual network result is highlighted from the search results.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-76"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m15-77">On the <b>Virtual networks </b>page, click <b>Create</b>.</p>
+
+<p id="cn-m15-78"></p><figure><img class="cn-img" id="cn-image-m15-c-3" src="DeployingCloudNetworkingSolutions_files/image-m15-c-3.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: The Virtual network page is displayed with the Create button highlighted."><figcaption>Figure 1.4 Screenshot of PLABWIN10: The Virtual network page is displayed with the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-80"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m15-81">On the <b>Basics </b>tab, under <b>Project details</b>, click on the <b>Resource group </b>dropdown and select the prepopulated resource group.</p>
+
+<p id="cn-m15-83"></p><figure><img class="cn-img" id="cn-image-m15-c-4" src="DeployingCloudNetworkingSolutions_files/image-m15-c-4.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: The Create virtual network page is displayed with the Resource group dropdown expanded and the prepopulated resource group highlighted."><figcaption>Figure
+ 1.5 Screenshot of PLABWIN10: The Create virtual network page is 
+displayed with the Resource group dropdown expanded and the prepopulated
+ resource group highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m15-85"><b><i>Note</i></b><i>: The Azure 
+account has been prepopulated with a Resource Group in the lab 
+infrastructure. A restriction prevents users from creating a new 
+Resource Group. It is essential to select the prepopulated resource 
+group for this task.</i></span>
+
+<h4 id="cn-m15-86"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m15-87">From the <b>Instance details </b>section, click into the <b>Name </b>textbox and type:</p>
+
+<pre id="cn-m15-88"><code>CloudPlusVnet01
+
+</code></pre>
+
+<p id="cn-m15-89">Ensure the <b>Region </b>is to <b>UK South</b>.</p>
+
+<p id="cn-m15-90">Click <b>Next : IP Addresses </b>&gt;.</p>
+
+<p id="cn-m15-91"></p><figure><img class="cn-img" id="cn-image-m15-c-5" src="DeployingCloudNetworkingSolutions_files/image-m15-c-5.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: The Create a virtual network page is displayed with CloudPlusVnet01 typed into the Name textbox. Next: the IP Addresses button is highlighted."><figcaption>Figure
+ 1.6 Screenshot of PLABWIN10: The Create a virtual network page is 
+displayed with CloudPlusVnet01 typed into the Name textbox. Next: the IP
+ Addresses button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-93"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m15-94">From the <b>IP Addresses </b>tab, delete the default IP address and replace it with a private IP address range by typing:</p>
+
+<pre id="cn-m15-95"><code>172.16.0.0/16
+
+</code></pre>
+
+<p id="cn-m15-96">Click into the empty field below. Notice the number of addresses available next to this recently added IP address range.</p>
+
+<p id="cn-m15-97"></p><figure><img class="cn-img" id="cn-image-m15-c-6" src="DeployingCloudNetworkingSolutions_files/image-m15-c-6.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: The Create a virtual network page is displayed with 172.16.0.0/16 typed into the IPv4 address space."><figcaption>Figure
+ 1.7 Screenshot of PLABWIN10: The Create a virtual network page is 
+displayed with 172.16.0.0/16 typed into the IPv4 address space.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-99"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m15-100">Click <b>Add subnet</b>, then type:</p>
+
+<p id="cn-m15-101"><b>Subnet name</b>:</p>
+
+<pre id="cn-m15-102"><code>PlabSubnet01
+
+</code></pre>
+
+<p id="cn-m15-103">Set the <b>Subnet address range </b>to:</p>
+
+<pre id="cn-m15-104"><code>172.16.1.0/24
+
+</code></pre>
+
+<p id="cn-m15-105">Click <b>Add</b>.</p>
+
+<p id="cn-m15-106"></p><figure><img class="cn-img" id="cn-image-m15-c-7" src="DeployingCloudNetworkingSolutions_files/image-m15-c-7.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed on Create virtual network page, with the Add subnet blade shown. The Subnet address range has been set to 172.16.1.0/24, ad Add is highlighted."><figcaption>Figure
+ 1.8 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed on Create virtual network page, with the Add subnet 
+blade shown. The Subnet address range has been set to 172.16.1.0/24, ad 
+Add is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-108"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m15-109">At the foot of the page, click <b>Review + create</b>.</p>
+
+<p id="cn-m15-110"></p><figure><img class="cn-img" id="cn-image-m15-c-8" src="DeployingCloudNetworkingSolutions_files/image-m15-c-8.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed on Create virtual network page, and the Review + Create button is highlighted."><figcaption>Figure
+ 1.9 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed on Create virtual network page, and the Review + 
+Create button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-112"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m15-113">On the <b>Validation </b>page, click <b>Create</b>.</p>
+
+<p id="cn-m15-114"></p><figure><img class="cn-img" id="cn-image-m15-c-9" src="DeployingCloudNetworkingSolutions_files/image-m15-c-9.jpg" alt="Figure 1.10 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed on Create virtual network page, and the Create button is highlighted."><figcaption>Figure
+ 1.10 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed on Create virtual network page, and the Create 
+button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-116"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m15-117">Once the deployment has completed, In the <b>Microsoft Azure Portal</b>, click into the <b>Search resources, services and docs </b>textbox and type:</p>
+
+<pre id="cn-m15-118"><code>virtual networks
+
+</code></pre>
+
+<p id="cn-m15-119">Under the results for <b>Services</b>, select <b>Virtual networks</b>.</p>
+
+<p id="cn-m15-120"></p><figure><img class="cn-img" id="cn-image-m15-c-10" src="DeployingCloudNetworkingSolutions_files/image-m15-c-10.jpg" alt="Figure 1.11 Screenshot of PLABWIN10: Microsoft Azure window is displayed with the words virtual networks typed into the search textbox, and the Virtual network result is highlighted from the search results."><figcaption>Figure
+ 1.11 Screenshot of PLABWIN10: Microsoft Azure window is displayed with 
+the words virtual networks typed into the search textbox, and the 
+Virtual network result is highlighted from the search results.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-122"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m15-123">From the <b>Virtual networks </b>page, click <b>Create</b>.</p>
+
+<p id="cn-m15-124"></p><figure><img class="cn-img" id="cn-image-m15-c-11" src="DeployingCloudNetworkingSolutions_files/image-m15-c-11.jpg" alt="Figure 1.12 Screenshot of PLABWIN10: The Virtual network page is displayed with the Create button highlighted."><figcaption>Figure 1.12 Screenshot of PLABWIN10: The Virtual network page is displayed with the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-126"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m15-127">On the <b>Basics </b>tab, under <b>Project details</b>, click on the <b>Resource group </b>dropdown and select the prepopulated resource group.</p>
+
+<p id="cn-m15-129"></p><figure><img class="cn-img" id="cn-image-m15-c-12" src="DeployingCloudNetworkingSolutions_files/image-m15-c-12.jpg" alt="Figure 1.13 Screenshot of PLABWIN10: The Create virtual network page is displayed with the Resource group dropdown expanded and the prepopulated resource group highlighted."><figcaption>Figure
+ 1.13 Screenshot of PLABWIN10: The Create virtual network page is 
+displayed with the Resource group dropdown expanded and the prepopulated
+ resource group highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m15-131"><b><i>Note</i></b><i>: The Azure 
+account has been prepopulated with a Resource Group in the lab 
+infrastructure. A restriction prevents users from creating a new 
+Resource Group. It is essential to select the prepopulated resource 
+group for this task.</i></span>
+
+<h4 id="cn-m15-132"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m15-133">From the <b>Instance details </b>section, click into the <b>Name </b>textbox and type:</p>
+
+<pre id="cn-m15-134"><code>CloudPlusVnet02
+
+</code></pre>
+
+<p id="cn-m15-135">Ensure the <b>Region </b>is set to <b>UK South</b>.</p>
+
+<p id="cn-m15-136">Click <b>Next : IP Addresses </b>&gt;.</p>
+
+<p id="cn-m15-137"></p><figure><img class="cn-img" id="cn-image-m15-c-13" src="DeployingCloudNetworkingSolutions_files/image-m15-c-13.jpg" alt="Figure 1.14 Screenshot of PLABWIN10: The Create a virtual network page is displayed with CloudPlusVnet01 typed into the Name textbox. Next: the IP Addresses button is highlighted."><figcaption>Figure
+ 1.14 Screenshot of PLABWIN10: The Create a virtual network page is 
+displayed with CloudPlusVnet01 typed into the Name textbox. Next: the IP
+ Addresses button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-139"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m15-140">From the <b>IP Addresses </b>tab, delete the default IP address and replace it with a private IP address range by typing:</p>
+
+<pre id="cn-m15-141"><code>172.17.0.0/16
+
+</code></pre>
+
+<p id="cn-m15-142">Click into the empty field below. Notice the number of addresses available next to this recently added IP address range.</p>
+
+<p id="cn-m15-143"></p><figure><img class="cn-img" id="cn-image-m15-c-14" src="DeployingCloudNetworkingSolutions_files/image-m15-c-14.jpg" alt="Figure 1.15 Screenshot of PLABWIN10: The Create a virtual network page is displayed with 172.16.0.0/16 typed into the IPv4 address space."><figcaption>Figure
+ 1.15 Screenshot of PLABWIN10: The Create a virtual network page is 
+displayed with 172.16.0.0/16 typed into the IPv4 address space.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-145"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m15-146">Click <b>Add subnet</b>, then type:</p>
+
+<p id="cn-m15-147"><b>Subnet name</b>:</p>
+
+<pre id="cn-m15-148"><code>PlabSubnet02
+
+</code></pre>
+
+<p id="cn-m15-149">Set the <b>Subnet address range </b>to:</p>
+
+<pre id="cn-m15-150"><code>172.17.1.0/24
+
+</code></pre>
+
+<p id="cn-m15-151">Click <b>Add</b>.</p>
+
+<p id="cn-m15-152"></p><figure><img class="cn-img" id="cn-image-m15-c-15" src="DeployingCloudNetworkingSolutions_files/image-m15-c-15.jpg" alt="Figure 1.16 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed on Create virtual network page, IPv4 address space filled out with 10.0.0.0/16 and 172.16.1.0/24."><figcaption>Figure
+ 1.16 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed on Create virtual network page, IPv4 address space 
+filled out with 10.0.0.0/16 and 172.16.1.0/24.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-154"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m15-155">Then, click <b>Review + create</b>.</p>
+
+<p id="cn-m15-156"></p><figure><img class="cn-img" id="cn-image-m15-c-16" src="DeployingCloudNetworkingSolutions_files/image-m15-c-16.jpg" alt="Figure 1.17 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed on Create virtual network page, with the Add subnet blade shown. The Subnet address range has been set to 172.16.1.0/24, ad Add is highlighted."><figcaption>Figure
+ 1.17 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed on Create virtual network page, with the Add subnet 
+blade shown. The Subnet address range has been set to 172.16.1.0/24, ad 
+Add is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-158"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m15-159">On the <b>Validation </b>page, click <b>Create</b>.</p>
+
+<p id="cn-m15-160"></p><figure><img class="cn-img" id="cn-image-m15-c-17" src="DeployingCloudNetworkingSolutions_files/image-m15-c-17.jpg" alt="Figure 1.18 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed on Create virtual network page, and the Create button is highlighted."><figcaption>Figure
+ 1.18 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed on Create virtual network page, and the Create 
+button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-162"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m15-163">Once the deployment has completed, In the <b>Microsoft Azure Portal</b>, click into the <b>Search resources, services and docs </b>textbox and type:</p>
+
+<pre id="cn-m15-164"><code>virtual networks
+
+</code></pre>
+
+<p id="cn-m15-165">Under the results for <b>Services</b>, select <b>Virtual networks</b>.</p>
+
+<h4 id="cn-m15-166"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m15-167"></p><figure><img class="cn-img" id="cn-image-m15-c-18" src="DeployingCloudNetworkingSolutions_files/image-m15-c-18.jpg" alt="Figure 1.19 Screenshot of PLABWIN10: Microsoft Azure window is displayed with the words virtual networks typed into the search textbox, and the Virtual network result is highlighted from the search results."><figcaption>Figure
+ 1.19 Screenshot of PLABWIN10: Microsoft Azure window is displayed with 
+the words virtual networks typed into the search textbox, and the 
+Virtual network result is highlighted from the search results.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-169"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m15-170">Click the newly created resource <b>CloudPlusVnet01</b>.</p>
+
+<p id="cn-m15-171"></p><figure><img class="cn-img" id="cn-image-m15-c-19" src="DeployingCloudNetworkingSolutions_files/image-m15-c-19.jpg" alt="Figure 1.20 Screenshot of PLABWIN10: Microsoft Azure window is displayed on the Virtual networks page. The CloudPlusVnet01 network is highlighted."><figcaption>Figure
+ 1.20 Screenshot of PLABWIN10: Microsoft Azure window is displayed on 
+the Virtual networks page. The CloudPlusVnet01 network is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-173"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m15-174">Under the <b>Settings </b>menu, select <b>Peerings</b>.</p>
+
+<p id="cn-m15-175">Click <b>Add</b>.</p>
+
+<p id="cn-m15-176"></p><figure><img class="cn-img" id="cn-image-m15-c-20" src="DeployingCloudNetworkingSolutions_files/image-m15-c-20.jpg" alt="Figure 1.21 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed on, the CloudPlusVnet01 page. Displaying Peering Blade, with +Add highlighted."><figcaption>Figure
+ 1.21 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed on, the CloudPlusVnet01 page. Displaying Peering 
+Blade, with +Add highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-178"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m15-179">In the <b>Add peering </b>page, the <b>Peering link name </b>textbox, type:</p>
+
+<pre id="cn-m15-180"><code>PlabPeer01
+
+</code></pre>
+
+<p id="cn-m15-181"></p><figure><img class="cn-img" id="cn-image-m15-c-21" src="DeployingCloudNetworkingSolutions_files/image-m15-c-21.jpg" alt="Figure 1.22 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed; add peering page. PLabPeer01 typed in the peering link name textbox."><figcaption>Figure
+ 1.22 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed; add peering page. PLabPeer01 typed in the peering 
+link name textbox.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-183"><b><i>Step 24</i></b></h4>
+
+<p id="cn-m15-184">Leave the selected defaults and scroll down to <b>Remote Virtual Network</b>.</p>
+
+<p id="cn-m15-185">Under the <b>Remote virtual network </b>section, in the <b>Peering link name </b>textbox, type:</p>
+
+<pre id="cn-m15-186"><code>PlabLink01
+
+</code></pre>
+
+<p id="cn-m15-187">This will name the connection for the associated 
+virtual network and will display under the peering of the other virtual 
+network.</p>
+
+<p id="cn-m15-188"></p><figure><img class="cn-img" id="cn-image-m15-c-22" src="DeployingCloudNetworkingSolutions_files/image-m15-c-22.jpg" alt="Figure 1.23 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed; add peering page. PLabLink01 typed in the peering link name textbox, located under Remote virtual network."><figcaption>Figure
+ 1.23 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed; add peering page. PLabLink01 typed in the peering 
+link name textbox, located under Remote virtual network.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-190"><b><i>Step 25</i></b></h4>
+
+<p id="cn-m15-191">From the <b>Virtual network </b>dropdown, select <b>CloudPLabVnet02</b>.</p>
+
+<p id="cn-m15-192"></p><figure><img class="cn-img" id="cn-image-m15-c-23" src="DeployingCloudNetworkingSolutions_files/image-m15-c-23.jpg" alt="Figure 1.24 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed; add peering page. CloudPlusVnet02 is highlighted in the Virtual Network drop-down menu."><figcaption>Figure
+ 1.24 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed; add peering page. CloudPlusVnet02 is highlighted in
+ the Virtual Network drop-down menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-194"><b><i>Step 26</i></b></h4>
+
+<p id="cn-m15-195">Leaving the remaining selections as their defaults.</p>
+
+<p id="cn-m15-196">Click <b>Add</b>.</p>
+
+<p id="cn-m15-197"></p><figure><img class="cn-img" id="cn-image-m15-c-24" src="DeployingCloudNetworkingSolutions_files/image-m15-c-24.jpg" alt="Figure 1.25 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed; add peering page. The Add button is highlighted."><figcaption>Figure
+ 1.25 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed; add peering page. The Add button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-199"><b><i>Step 27</i></b></h4>
+
+<p id="cn-m15-200">After completing the steps, navigate back to <b>Peerings </b>in <b>CloudPlusVnet01</b>.</p>
+
+<span class="cn-quote" id="cn-m15-201"><b><i>Note</i></b><i>: The 
+associated links have now been added to CloudPlusVnet01, making this 
+virtual network the hub connecting the other virtual networks. This 
+peering allows for Virtual Machines that would be added to the separate 
+virtual networks to connect, treating the virtual networks as one 
+network for connectivity.</i></span>
+
+<p id="cn-m15-202"></p><figure><img class="cn-img" id="cn-image-m15-c-25" src="DeployingCloudNetworkingSolutions_files/image-m15-c-25.jpg" alt="Figure 1.26 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed on the CloudPlusVnet01 page. Displaying Peering Blade, displaying all created peering connections."><figcaption>Figure
+ 1.26 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed on the CloudPlusVnet01 page. Displaying Peering 
+Blade, displaying all created peering connections.</figcaption></figure><p></p>
+
+<h3 id="cn-m15-204"><b>Task 2 - Deploy a Virtual Network Gateway</b></h3>
+
+<p id="cn-m15-205">A virtual network is not very different from an 
+on-perm network that utilizes switches and routers. These virtual 
+network gateways are created using two or more VMs by Azure.</p>
+
+<p id="cn-m15-206">Automatically configured and deployed, you don’t have
+ direct access to these VMs, as they are part of Azure's internal 
+infrastructure. The settings you select when configuring your gateway 
+will impact the configuration and deployment of these VMs.</p>
+
+<h4 id="cn-m15-207"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m15-208">In the <b>Microsoft Azure Portal</b>, click into the <b>Search resources, services and docs </b>textbox and type:</p>
+
+<pre id="cn-m15-209"><code>Virtual network gateways
+
+</code></pre>
+
+<p id="cn-m15-210">From the results, under <b>Services</b>, select <b>Virtual network gateways</b>.</p>
+
+<p id="cn-m15-211"></p><figure><img class="cn-img" id="cn-image-m15-c-26" src="DeployingCloudNetworkingSolutions_files/image-m15-c-26.jpg" alt="Figure 1.27 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed with the search term virtual network gateways typed into the search bar and Virtual network gateways highlighted in the results list."><figcaption>Figure
+ 1.27 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed with the search term virtual network gateways typed 
+into the search bar and Virtual network gateways highlighted in the 
+results list.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-213"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m15-214">From the <b>Virtual network gateways </b>page, click <b>Create</b>.</p>
+
+<p id="cn-m15-215"></p><figure><img class="cn-img" id="cn-image-m15-c-27" src="DeployingCloudNetworkingSolutions_files/image-m15-c-27.jpg" alt="Figure 1.28 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed, and the virtual network gateways page is displayed with create button highlighted."><figcaption>Figure
+ 1.28 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed, and the virtual network gateways page is displayed 
+with create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-217"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m15-218">Under <b>Instance details </b>type:</p>
+
+<p id="cn-m15-219"><b>Name</b>:</p>
+
+<pre id="cn-m15-220"><code>Plab-Gateway
+
+</code></pre>
+
+<p id="cn-m15-221"><b>Region</b>:</p>
+
+<pre id="cn-m15-222"><code>UK South
+
+</code></pre>
+
+<p id="cn-m15-223"><b>SKU</b>:</p>
+
+<pre id="cn-m15-224"><code>VpnGW1
+
+</code></pre>
+
+<p id="cn-m15-225"><b>Generation</b>:</p>
+
+<pre id="cn-m15-226"><code>Generation1
+
+</code></pre>
+
+<p id="cn-m15-227"><b>Virtual Network</b>:</p>
+
+<pre id="cn-m15-228"><code>CloudPlusVnet01
+
+</code></pre>
+
+<p id="cn-m15-229"></p><figure><img class="cn-img" id="cn-image-m15-c-28" src="DeployingCloudNetworkingSolutions_files/image-m15-c-28.jpg" alt="Figure 1.29 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed, and the Create virtual network gateway page is displayed. Plab-Gateway typed in the name textbox, VpnGw1 selected from SKU dropdown, Generation 1 selected for a generation."><figcaption>Figure
+ 1.29 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed, and the Create virtual network gateway page is 
+displayed. Plab-Gateway typed in the name textbox, VpnGw1 selected from 
+SKU dropdown, Generation 1 selected for a generation.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-231"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m15-232">Leave <b>Public IP address type </b>set to <b>Standard</b>.</p>
+
+<p id="cn-m15-233">In the <b>Public IP address name </b>textbox, type:</p>
+
+<pre id="cn-m15-234"><code>Plab-Gateway-IP
+
+</code></pre>
+
+<p id="cn-m15-235">Leave the remaining options as their defaults.</p>
+
+<p id="cn-m15-236">Select <b>Review + create</b>.</p>
+
+<p id="cn-m15-237"></p><figure><img class="cn-img" id="cn-image-m15-c-29" src="DeployingCloudNetworkingSolutions_files/image-m15-c-29.jpg" alt="Figure 1.30 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed, and the Create virtual network gateway page is displayed. Plab-Gateway-IP typed in Public IP address name, review + Create highlighted."><figcaption>Figure
+ 1.30 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed, and the Create virtual network gateway page is 
+displayed. Plab-Gateway-IP typed in Public IP address name, review + 
+Create highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-239"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m15-240">On the <b>Validation </b>page, click <b>Create</b>.</p>
+
+<span class="cn-alert" id="cn-m15-241"><b>Alert</b>: Deployment of this resource may take some time, and it does not need to complete in order to proceed.</span>
+
+<span class="cn-quote" id="cn-m15-243"><b><i>Note</i></b><i>: Virtual 
+Network Gateway serves as a bridge connecting workloads in Azure Virtual
+ Networks and even to on-prem assets.  In real-world environments, you 
+instead would configure these according to which virtual networks are 
+needed to be connected via the gateway.</i></span>
+
+<p id="cn-m15-244"></p><figure><img class="cn-img" id="cn-image-m15-c-30" src="DeployingCloudNetworkingSolutions_files/image-m15-c-30.jpg" alt="Figure 1.31 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed, and the Create virtual network gateway page is displayed. Create is highlighted."><figcaption>Figure
+ 1.31 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed, and the Create virtual network gateway page is 
+displayed. Create is highlighted.</figcaption></figure><p></p>
+
+<h3 id="cn-m15-246"><b>Task 3 - Configure a Load Balancer</b></h3>
+
+<p id="cn-m15-247">Virtual Machines and Networks are efficient at processing workloads and job requests to the extent of their physical capacities.</p>
+
+<p id="cn-m15-248">As network traffic and general application usage 
+grows, that limit will bottleneck workloads, slowing response times. The
+ solution to this situation would be evenly distributing the workloads 
+across various resources.</p>
+
+<p id="cn-m15-249">One convenient aspect of load balancers is that 
+workloads can be distributed to resources based on their needs. Such as 
+directing all HTTP requests to a set of VMs that will handle website 
+traffic that might require extensive resources while directing SQL 
+traffic to a dedicated VM that might not have as heavy workloads.</p>
+
+<h4 id="cn-m15-250"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m15-251">In the <b>Microsoft Azure Portal</b>, click into the <b>Search resources, services and docs </b>textbox and type:</p>
+
+<pre id="cn-m15-252"><code>Load balancers
+
+</code></pre>
+
+<p id="cn-m15-253">From the results, under <b>Services</b>, select <b>Load balancers</b>.</p>
+
+<p id="cn-m15-254"></p><figure><img class="cn-img" id="cn-image-m15-c-31" src="DeployingCloudNetworkingSolutions_files/image-m15-c-31.jpg" alt="Figure 1.32Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed with the search term Load Balancer typed into the search bar, and Load Balancers highlighted in the results list."><figcaption>Figure
+ 1.32Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed with the search term Load Balancer typed into the 
+search bar, and Load Balancers highlighted in the results list.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-256"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m15-257">From the <b>Load balancer </b>page, click <b>Create</b>.</p>
+
+<p id="cn-m15-258"></p><figure><img class="cn-img" id="cn-image-m15-c-32" src="DeployingCloudNetworkingSolutions_files/image-m15-c-32.jpg" alt="Figure 1.33 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed, Load balancing page displayed, with load balancer blade selected, + Create highlighted"><figcaption>Figure
+ 1.33 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed, Load balancing page displayed, with load balancer 
+blade selected, + Create highlighted</figcaption></figure><p></p>
+
+<h4 id="cn-m15-260"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m15-261">From the <b>Create load balancer </b>page, fill the following fields in the <b>Instance details</b>:</p>
+
+<p id="cn-m15-262"><b>Name</b>:</p>
+
+<pre id="cn-m15-263"><code>PlabLoadBalancer
+
+</code></pre>
+
+<p id="cn-m15-264"><b>Region</b>:</p>
+
+<pre id="cn-m15-265"><code>UK South
+
+</code></pre>
+
+<p id="cn-m15-266"><b>SKU</b>:</p>
+
+<pre id="cn-m15-267"><code>Standard
+
+</code></pre>
+
+<p id="cn-m15-268"><b>Type</b>:</p>
+
+<pre id="cn-m15-269"><code>Internal
+
+</code></pre>
+
+<p id="cn-m15-270"><b>Tier</b>:</p>
+
+<pre id="cn-m15-271"><code>Regional
+
+</code></pre>
+
+<p id="cn-m15-272">Click <b>Next: Frontend IP configuration </b>&gt;.</p>
+
+<p id="cn-m15-273"></p><figure><img class="cn-img" id="cn-image-m15-c-33" src="DeployingCloudNetworkingSolutions_files/image-m15-c-33.jpg" alt="Figure 1.34 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed. Create load Balancer page, PlabLoadBalancer typed in name textbox. Next: Frontend IP configuration highlighted."><figcaption>Figure
+ 1.34 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed. Create load Balancer page, PlabLoadBalancer typed 
+in name textbox. Next: Frontend IP configuration highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-275"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m15-276">In the <b>Frontend IP configuration</b>, click the <b>Add a frontend IP configuration</b>.</p>
+
+<p id="cn-m15-277">On the fly-out menu, In the <b>Name </b>textbox, type:</p>
+
+<pre id="cn-m15-278"><code>PlabFrontEnd
+
+</code></pre>
+
+<p id="cn-m15-279">Under Virtual Networks, select <b>CloudPlusVnet01</b>.</p>
+
+<p id="cn-m15-280">Under Subnet, select <b>PlabSubnet01</b>.</p>
+
+<p id="cn-m15-281">Select <b>dynamic </b>for assignments.</p>
+
+<p id="cn-m15-282">Under Availability Zone, select <b>Zone-redundant</b>.</p>
+
+<p id="cn-m15-283">Select <b>Add</b>.</p>
+
+<p id="cn-m15-284">Click <b>Next: Backend Pools </b>&gt;.</p>
+
+<p id="cn-m15-285"></p><figure><img class="cn-img" id="cn-image-m15-c-34" src="DeployingCloudNetworkingSolutions_files/image-m15-c-34.jpg" alt="Figure 1.35 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed. Create load Balancer page, Add frontend IP configuration window displayed, PlabLoadBalancer typed in name textbox, Subnet PLabSubnet01 selected from the dropdown."><figcaption>Figure
+ 1.35 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed. Create load Balancer page, Add frontend IP 
+configuration window displayed, PlabLoadBalancer typed in name textbox, 
+Subnet PLabSubnet01 selected from the dropdown.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-287"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m15-288">In the <b>Backend pools </b>tab, click <b>Add a backend pool</b>.</p>
+
+<p id="cn-m15-289"></p><figure><img class="cn-img" id="cn-image-m15-c-35" src="DeployingCloudNetworkingSolutions_files/image-m15-c-35.jpg" alt="Figure 1.36 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed. Create load Balancer page, Backend pools page, +Add backend pool highlighted."><figcaption>Figure
+ 1.36 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed. Create load Balancer page, Backend pools page, +Add
+ backend pool highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-291"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m15-292">In the <b>Name </b>textbox, type:</p>
+
+<pre id="cn-m15-293"><code>PlabBackEnd
+
+</code></pre>
+
+<p id="cn-m15-294">Select <b>IP address For back-end pool configuration</b>.</p>
+
+<p id="cn-m15-295">Under <b>IP address </b>type:</p>
+
+<pre id="cn-m15-296"><code>172.16.1.25
+
+</code></pre>
+
+<p id="cn-m15-297">The <b>Resource Name </b>field will auto-populate.</p>
+
+<p id="cn-m15-298">Click <b>Save</b>.</p>
+
+<p id="cn-m15-299"></p><figure><img class="cn-img" id="cn-image-m15-c-36" src="DeployingCloudNetworkingSolutions_files/image-m15-c-36.jpg" alt="Figure 1.37 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed. Create load Balancer page, Add Backend pools page, PlabBackEnd typed in Name textbox, 172.16.1.25 typed in the IP Address, with Private Network Resource auto-populated for the Resource name."><figcaption>Figure
+ 1.37 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed. Create load Balancer page, Add Backend pools page, 
+PlabBackEnd typed in Name textbox, 172.16.1.25 typed in the IP Address, 
+with Private Network Resource auto-populated for the Resource name.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-301"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m15-302">Select <b>Next: Inbound rules </b>&gt;.</p>
+
+<p id="cn-m15-303"></p><figure><img class="cn-img" id="cn-image-m15-c-37" src="DeployingCloudNetworkingSolutions_files/image-m15-c-37.jpg" alt="Figure 1.38 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed. Create load Balancer page, Backend pools page, Next: Inbound rules highlighted."><figcaption>Figure
+ 1.38 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed. Create load Balancer page, Backend pools page, 
+Next: Inbound rules highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-305"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m15-306">From the <b>Load balancing rules </b>page, in the <b>Inbound rules </b>tab, click <b>Add a load balancing rule</b>.</p>
+
+<p id="cn-m15-307"></p><figure><img class="cn-img" id="cn-image-m15-c-38" src="DeployingCloudNetworkingSolutions_files/image-m15-c-38.jpg" alt="Figure 1.39 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed. Create load Balancer page, Inbound rules page, +Add a load balancing rule highlighted."><figcaption>Figure
+ 1.39 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed. Create load Balancer page, Inbound rules page, +Add
+ a load balancing rule highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-309"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m15-310">Fill the <b>Add load balancing rule </b>window with the following:</p>
+
+<p id="cn-m15-311">In the <b>Name field, </b>type the following<b>:</b></p>
+
+<pre id="cn-m15-312"><code>PlabHTTPRule
+
+</code></pre>
+
+<p id="cn-m15-313">Under <b>Select IP Version</b>, ensure <b>IPv4 </b>is ticked.</p>
+
+<p id="cn-m15-314">Under <b>Frontend IP address, </b>click the drop-down and select <b>PlabFrontEnd (Dynamic</b>).</p>
+
+<p id="cn-m15-315">Under <b>Backend pool</b>, click the drop-down and select <b>PlabBackEnd</b>.</p>
+
+<p id="cn-m15-316"></p><figure><img class="cn-img" id="cn-image-m15-c-39" src="DeployingCloudNetworkingSolutions_files/image-m15-c-39.jpg" alt="Figure 1.40 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed. Create load Balancer page, Inbound rules page, +Add a load balancing rule highlighted."><figcaption>Figure
+ 1.40 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed. Create load Balancer page, Inbound rules page, +Add
+ a load balancing rule highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-318"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m15-319">Leave the <b>HA Ports </b>checkbox unticked.</p>
+
+<p id="cn-m15-320">Under <b>Protocol</b>, select <b>TCP</b>.</p>
+
+<p id="cn-m15-321"></p><figure><img class="cn-img" id="cn-image-m15-c-40" src="DeployingCloudNetworkingSolutions_files/image-m15-c-40.jpg" alt="Figure 1.41 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed. Create load Balancer page, Inbound rules page, and Add load balancing rule window."><figcaption>Figure
+ 1.41 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed. Create load Balancer page, Inbound rules page, and 
+Add load balancing rule window.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-323"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m15-324">Scrolling down the page, type the following into the <b>Port </b>field:</p>
+
+<pre id="cn-m15-325"><code>80
+
+</code></pre>
+
+<p id="cn-m15-326">In the <b>Backend port </b>field, type the following:</p>
+
+<pre id="cn-m15-327"><code>80
+
+</code></pre>
+
+<p id="cn-m15-328">Under <b>Health probe</b>, click the <b>Create new </b>weblink.</p>
+
+<p id="cn-m15-329"></p><figure><img class="cn-img" id="cn-image-m15-c-41" src="DeployingCloudNetworkingSolutions_files/image-m15-c-41.jpg" alt="Figure 1.42 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed. Create load Balancer page, Inbound rules page, Add load balancing rule window. Highlighting create new under Health probe."><figcaption>Figure
+ 1.42 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed. Create load Balancer page, Inbound rules page, Add 
+load balancing rule window. Highlighting create new under Health probe.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-331"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m15-332">In the <b>Name </b>textbox, type:</p>
+
+<pre id="cn-m15-333"><code>PlabHP
+
+</code></pre>
+
+<p id="cn-m15-334">Select <b>TCP </b>in <b>Protocol</b>.</p>
+
+<p id="cn-m15-335">Leave all other entries as the default options, and click <b>OK</b>.</p>
+
+<p id="cn-m15-336"></p><figure><img class="cn-img" id="cn-image-m15-c-42" src="DeployingCloudNetworkingSolutions_files/image-m15-c-42.jpg" alt="Figure 1.43 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed. Create load Balancer page, Inbound rules page, Add load balancing rule window. Health Probe context window open, PLabHP typed in name textbox."><figcaption>Figure
+ 1.43 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed. Create load Balancer page, Inbound rules page, Add 
+load balancing rule window. Health Probe context window open, PLabHP 
+typed in name textbox.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-338"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m15-339">Click the <b>Session persistence </b>dropdown and select <b>None</b>.</p>
+
+<p id="cn-m15-340">Ensure <b>Idle timeout (minutes) </b>is set to <b>20</b>.</p>
+
+<p id="cn-m15-341">Under <b>TCP reset</b>, select <b>Enabled</b>.</p>
+
+<p id="cn-m15-342">Under <b>Floating IP</b>, select <b>Disabled</b>.</p>
+
+<p id="cn-m15-343">Click <b>Add</b>.</p>
+
+<span class="cn-quote" id="cn-m15-344"><b><i>Note</i></b><i>: Without 
+flowing IP, Azure exposes a traditional load balancing IP address 
+mapping scheme for ease of use. The VM instances, IP. Enabling floating 
+IP changes, the IP address mapping to the front end IP of the load 
+balancer to allow for additional flexibility.</i></span>
+
+<p id="cn-m15-345"></p><figure><img class="cn-img" id="cn-image-m15-c-43" src="DeployingCloudNetworkingSolutions_files/image-m15-c-43.jpg" alt="Figure 1.44 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed. Create load Balancer page, Add load balancing rule window. Add button highlighted"><figcaption>Figure
+ 1.44 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed. Create load Balancer page, Add load balancing rule 
+window. Add button highlighted</figcaption></figure><p></p>
+
+<h4 id="cn-m15-347"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m15-348">Click <b>Review + create</b>.</p>
+
+<p id="cn-m15-349"></p><figure><img class="cn-img" id="cn-image-m15-c-44" src="DeployingCloudNetworkingSolutions_files/image-m15-c-44.jpg" alt="Figure 1.45 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed. Create load Balancer page, and load balancing rule page. Review + create button highlighted."><figcaption>Figure
+ 1.45 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed. Create load Balancer page, and load balancing rule 
+page. Review + create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m15-351"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m15-352">Click <b>Create</b>.</p>
+
+<span class="cn-quote" id="cn-m15-353"><b><i>Note</i></b><i>: Once the load counter is created, Additional targets could be added to the backend pool within the designated virtual network.</i></span>
+
+<p id="cn-m15-355"></p><figure><img class="cn-img" id="cn-image-m15-c-45" src="DeployingCloudNetworkingSolutions_files/image-m15-c-45.jpg" alt="Figure 1.46 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure portal is displayed. Create load Balancer page, Review + create page, highlighting create button."><figcaption>Figure
+ 1.46 Screenshot of PLABWIN10: The Microsoft Edge browser with Azure 
+portal is displayed. Create load Balancer page, Review + create page, 
+highlighting create button.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<span class="cn-alert" id="cn-m15-361">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m15-362"><b>Review</b></h2>
+
+<p id="cn-m15-363">Well done, you have completed the <b>Deploying Cloud Networking Solution </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">d591f040-f5a0-48ed-b66a-e468728f334d</span>
+
+<span class="atom-code hidden">23856b6e-980d-4535-9a5b-abe15478ab08</span>
+
+<span class="atom-code hidden">370636fb-3d7b-4788-ae08-228585c22bb5</span>
+
+<span class="atom-code hidden">842930c4-fe48-4d5a-83eb-cade29fb7e9b</span>
+
+<span class="atom-code hidden">f50cd2d2-9db0-46c1-904e-1df2e290cce8</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m15-374">You completed the following exercises:</p>
+
+<ul id="cn-m15-375">
+
+<li id="cn-m15-375">Exercise 1 - Exploring Virtual Private Cloud</li>
+
+</ul>
+
+<p id="cn-m15-376">You should now be able to:</p>
+
+<ul id="cn-m15-377">
+
+<li id="cn-m15-377">Define and Describe Network Configuration Solutions and Concepts</li>
+
+<li id="cn-m15-378">Deploy a Hub and Spoke Network in Azure</li>
+
+<li id="cn-m15-379">Deploy a Virtual Network Gateway in Azure</li>
+
+<li id="cn-m15-380">Deploy a Load Balancer in Azure</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m15-384">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
