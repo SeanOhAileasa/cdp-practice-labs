@@ -1,0 +1,1185 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="ProvisioningPrivateCloudStorageSolutions_files/print-styles.css" rel="stylesheet">
+    <script src="ProvisioningPrivateCloudStorageSolutions_files/jquery.min.js"></script>
+    <script src="ProvisioningPrivateCloudStorageSolutions_files/jspdf.js"></script>
+    <script src="ProvisioningPrivateCloudStorageSolutions_files/from_html.js"></script>
+    <script src="ProvisioningPrivateCloudStorageSolutions_files/addimage.js"></script>
+    <script src="ProvisioningPrivateCloudStorageSolutions_files/filesaver.js"></script>
+    <script src="ProvisioningPrivateCloudStorageSolutions_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="Mbl0DV8zCWTRJXqj+WcoXR8d1zONjdgpQwX5PyywgYqGFl3PVJJpaDH9H82bxj1hIYtDXCMSrpUyNVzKdu1repaJSJeKo2lRTFduyF089qg=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                &lt; <a href="https://github.com/SeanOhAileasa">Home</a> &gt;
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Provisioning Private Cloud Storage Solutions</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Configuring RAID Storage on a Virtual Machine</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m14-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>CompTIA Cloud+</div>
+
+<div>Virtual Machine</div>
+
+<div>Cloud Storage Solutions</div>
+
+<div>RAID</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m14-7">Welcome to the <b>Provisioning Private Cloud Storage Solutions </b>Practice Lab. In this module you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m14-13">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m14-14">
+
+<li id="cn-m14-14">Exercise 1 - Configuring RAID Storage on a Virtual Machine</li>
+
+</ul>
+
+<p id="cn-m14-15">After completing this module, you should be able to:</p>
+
+<ul id="cn-m14-16">
+
+<li id="cn-m14-16">Define and Describe Different Storage Features and Considerations</li>
+
+<li id="cn-m14-17">Configure RAID 0</li>
+
+<li id="cn-m14-18">Configure RAID 1</li>
+
+<li id="cn-m14-19">Enable Compression on an Allocated Disk</li>
+
+<li id="cn-m14-20">Enable Deduplication on a Fileshare</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m14-22">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m14-23">
+
+<li id="cn-m14-23">3.2 Given a scenario, provision storage in cloud environments</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m14-25">It will take approximately <b>1 hour </b>complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m14-29">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m14-30">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m14-32"><b>Lab Topology</b></h2>
+
+<p id="cn-m14-33">During your session, you will have access to the following lab configuration.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<p id="cn-m14-36">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m14-37">
+
+<li id="cn-m14-37"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m14-38">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m14-39"><b>Exercise 1 - Configuring RAID Storage on a Virtual Machine</b></h2>
+
+<p id="cn-m14-40">When considering storage available in the cloud, there
+ are different types of storage that can be utilized for different types
+ of data, such as:</p>
+
+<p id="cn-m14-41"><b>Block storage</b>: This type of storage allows data
+ to be distributed onto different drives or partitions, where each block
+ will be an individual hard drive. Provisioning this type of storage 
+provides redundancy and avoids a single point of failure. An additional 
+use of block storage is the incorporation of RAID for further redundancy
+ or an increase in performance. Block storage is commonly used with a <b>Storage Area Network (SAN</b>), where the access the data across the network from a centralized device. <b>Zoning </b>of the data can be used to classify the data according to the type or location.</p>
+
+<p id="cn-m14-42">&lt;b&gt;File storage&lt;/b&gt;: This type of storage is accessed on the 
+network and is normally created on a local device or through a file 
+server rather than spreading it across different devices or hard drives.
+ This can be typically used on Windows devices, and the file share will 
+appear on the device as a hard drive. This storage environment is known 
+as <b>Network Attached Storage (NAS</b>).</p>
+
+<span class="atom-code hidden">a7c14aeb-d59e-441c-a1bc-ca636eb7d571</span>
+
+<p id="cn-m14-45">Storage redundancy comes in many forms, with RAID configuration being a common approach to protecting sensitive data.</p>
+
+<p id="cn-m14-46">RAID uses an error protection scheme known as “parity”, to provide fault tolerance in a set of data.</p>
+
+<p id="cn-m14-47">In this exercise, you will Configure RAID 0 and RAID 1.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m14-49">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m14-50">
+
+<li id="cn-m14-50">Define and Describe Different Storage Features and Considerations</li>
+
+<li id="cn-m14-51">Configure RAID 0</li>
+
+<li id="cn-m14-52">Configure RAID 1</li>
+
+<li id="cn-m14-53">Enable Compression on an allocated Disk</li>
+
+<li id="cn-m14-54">Enable Deduplication on a Fileshare</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m14-56">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">af4fa57a-53be-4f51-bf97-9ac3495df239</span>
+
+<ul id="cn-m14-60">
+
+<li id="cn-m14-60"><b>PLABWIN10 </b>- Standalone Azure Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m14-62"><b>Task 1 - Configure RAID 0</b></h3>
+
+<p id="cn-m14-63">Despite the fact that <b>RAID 0 </b>does not provide 
+information redundancy, or fault tolerance, its general purpose is to 
+increase performance or used to create a large logical volume.</p>
+
+<p id="cn-m14-64">This configuration is primarily used when high 
+performance is required, and an application can tolerate lower 
+reliability. RAID 0 can be configured using two disks, of varied sizes, 
+but the array will be limited to the size of the smallest disk.</p>
+
+<p id="cn-m14-65">Pairing RAID 0 and RAID 1 grants the benefits of high 
+performance and a layer of redundancy; the trade-off is that it requires
+ a minimum of four disks to set up.</p>
+
+<p id="cn-m14-66">A drawback to keep in mind when utilizing RAID 0 is 
+that without redundancy, if one drive fails, it can cause the entire 
+array to fail. Having data striped across all disks can result in 
+complete data loss from a single disk failure.</p>
+
+<p id="cn-m14-67">In this task, you will provision a virtual machine and configure a RAID 0 using the attached disks.</p>
+
+<h4 id="cn-m14-68"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-69">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m14-70"></p><figure><img class="cn-img" id="cn-image-m14-c-0" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-0.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: Windows 10 desktop is displayed."><figcaption>Figure 1.1 Screenshot of PLABWIN10: Windows 10 desktop is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-72"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m14-73">From the <b>Taskbar</b>, select <b>Microsoft Edge</b>.</p>
+
+<p id="cn-m14-74"></p><figure><img class="cn-img" id="cn-image-m14-c-1" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-1.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with the Microsoft Edge icon highlighted from the Taskbar."><figcaption>Figure
+ 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with 
+the Microsoft Edge icon highlighted from the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-76"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-77">Click <b>Create a resource</b>.</p>
+
+<p id="cn-m14-78"></p><figure><img class="cn-img" id="cn-image-m14-c-2" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-2.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: The Azure portal home page is displayed with the Create a resource button highlighted."><figcaption>Figure 1.3 Screenshot of PLABWIN10: The Azure portal home page is displayed with the Create a resource button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-80"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-81">From the <b>Create a resource page</b>, under <b>Virtual machine, </b>click the <b>Create </b>weblink.</p>
+
+<p id="cn-m14-82"></p><figure><img class="cn-img" id="cn-image-m14-c-3" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-3.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: The Create Resource page is displayed with the Create weblink highlighted under The Virtual machine option."><figcaption>Figure
+ 1.4 Screenshot of PLABWIN10: The Create Resource page is displayed with
+ the Create weblink highlighted under The Virtual machine option.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-84"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-85">On the <b>Basics </b>tab, under the <b>Project details </b>section, click on the <b>Resource group </b>dropdown and select the prepopulated resource group.</p>
+
+<p id="cn-m14-86">Scroll down to the <b>Instance details </b>section, click into the <b>Virtual Machine name </b>textbox and type:</p>
+
+<pre id="cn-m14-87"><code>plabvm01
+
+</code></pre>
+
+<h4 id="cn-m14-89"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-90">Ensure the <b>Region </b>dropdown is set to <b>(Europe) UK South</b>.</p>
+
+<p id="cn-m14-91">Leave <b>Security type </b>set to <b>Standard</b>.</p>
+
+<p id="cn-m14-92">From <b>Images</b>, click the <b>See all images </b>weblink.</p>
+
+<p id="cn-m14-93"></p><figure><img class="cn-img" id="cn-image-m14-c-5" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-5.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the See all images weblink highlighted."><figcaption>Figure 1.6 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the See all images weblink highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-95"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m14-96">From the <b>Select an image </b>page, under <b>Windows Server</b>, click the <b>Select </b>dropdown.</p>
+
+<p id="cn-m14-97"></p><figure><img class="cn-img" id="cn-image-m14-c-6" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-6.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: The Select an image page is displayed with the Select dropdown under Windows Server highlighted."><figcaption>Figure
+ 1.7 Screenshot of PLABWIN10: The Select an image page is displayed with
+ the Select dropdown under Windows Server highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-99"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m14-100">Select <b>Windows Server 2019 Datacenter Gen 1</b>.</p>
+
+<p id="cn-m14-101"></p><figure><img class="cn-img" id="cn-image-m14-c-7" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-7.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: The Create virtual machine page is displayed with Windows Server 2019 Datacenter Gen 1 highlighted."><figcaption>Figure
+ 1.8 Screenshot of PLABWIN10: The Create virtual machine page is 
+displayed with Windows Server 2019 Datacenter Gen 1 highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-103"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m14-104">From the <b>Administrator account </b>section, click into the <b>Username </b>textbox and type:</p>
+
+<pre id="cn-m14-105"><code>plabadmin
+
+</code></pre>
+
+<p id="cn-m14-106">In the <b>Password </b>textbox, type:</p>
+
+<pre id="cn-m14-107"><code>Passw0rd1234
+
+</code></pre>
+
+<p id="cn-m14-108">Type the password again in the <b>Confirm password </b>textbox.</p>
+
+<p id="cn-m14-109"></p><figure><img class="cn-img" id="cn-image-m14-c-8" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-8.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: The Create virtual machine page is displayed with login credentials typed in to the Administrator account fields."><figcaption>Figure
+ 1.9 Screenshot of PLABWIN10: The Create virtual machine page is 
+displayed with login credentials typed in to the Administrator account 
+fields.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-111"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m14-112">Click <b>Review + create</b>.</p>
+
+<p id="cn-m14-113"></p><figure><img class="cn-img" id="cn-image-m14-c-9" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-9.jpg" alt="Figure 1.10 Screenshot of PLABWIN10: The Create virtual machine page is displayed with the Review + create button highlighted."><figcaption>Figure 1.10 Screenshot of PLABWIN10: The Create virtual machine page is displayed with the Review + create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-115"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m14-116">In the <b>Review + create </b>tab, click <b>Create</b>.</p>
+
+<p id="cn-m14-117"></p><figure><img class="cn-img" id="cn-image-m14-c-10" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-10.jpg" alt="Figure 1.11 Screenshot of PLABWIN10: The Create virtual machine page is displayed with the Create button highlighted."><figcaption>Figure 1.11 Screenshot of PLABWIN10: The Create virtual machine page is displayed with the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-119"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m14-120">Once the deployment has completed, a green tick icon will display.</p>
+
+<p id="cn-m14-121">Click <b>Go to resource</b>.</p>
+
+<span class="cn-quote" id="cn-m14-122"><b><i>Note</i></b><i>: There may be a delay when creating a virtual machine. Please allow up to 5 minutes for this process to complete.</i></span>
+
+<p id="cn-m14-123"></p><figure><img class="cn-img" id="cn-image-m14-c-11" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-11.jpg" alt="Figure 1.12 Screenshot of PLABWIN10: The CreateVm-MicrosoftWindowsServer.WindowsServer[….] page is displayed with the message stating Your deployment is complete."><figcaption>Figure
+ 1.12 Screenshot of PLABWIN10: The 
+CreateVm-MicrosoftWindowsServer.WindowsServer[….] page is displayed with
+ the message stating Your deployment is complete.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-125"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m14-126">From the <b>Settings </b>menu, select <b>Disks</b>.</p>
+
+<p id="cn-m14-127"></p><figure><img class="cn-img" id="cn-image-m14-c-12" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-12.jpg" alt="Figure 1.13 Screenshot of PLABWIN10: The plabvm01 page is displayed with the Disks option highlighted under the Settings menu."><figcaption>Figure 1.13 Screenshot of PLABWIN10: The plabvm01 page is displayed with the Disks option highlighted under the Settings menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-129"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m14-130">Click <b>Create and attach a new disk</b>.</p>
+
+<p id="cn-m14-131"></p><figure><img class="cn-img" id="cn-image-m14-c-13" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-13.jpg" alt="Figure 1.14 Screenshot of PLABWIN10: The plabvm01 | Disks page is displayed with the Create and attach a new disk weblink highlighted."><figcaption>Figure
+ 1.14 Screenshot of PLABWIN10: The plabvm01 | Disks page is displayed 
+with the Create and attach a new disk weblink highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-133"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m14-134">In the <b>Disk name </b>textbox, type:</p>
+
+<pre id="cn-m14-135"><code>plabvm01-disk1
+
+</code></pre>
+
+<p id="cn-m14-136">Ensure <b>Storage type </b>is set to <b>Standard SSD</b>.</p>
+
+<p id="cn-m14-137">In <b>Size (GiB) </b>textbox, type over the existing value with:</p>
+
+<pre id="cn-m14-138"><code>64
+
+</code></pre>
+
+<p id="cn-m14-140"></p><figure><img class="cn-img" id="cn-image-m14-c-14" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-14.jpg" alt="Figure 1.15 Screenshot of PLABWIN10: The plabvm01 | Disks page is displayed with the fields for a new disk populated."><figcaption>Figure 1.15 Screenshot of PLABWIN10: The plabvm01 | Disks page is displayed with the fields for a new disk populated.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-142"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m14-143">Attach a second disk by clicking <b>Create and attach a new disk </b>again.</p>
+
+<p id="cn-m14-144">In the <b>Disk name </b>textbox, type:</p>
+
+<pre id="cn-m14-145"><code>plabvm01-disk2
+
+</code></pre>
+
+<p id="cn-m14-146">Ensure <b>Storage type </b>is set to <b>Standard SSD</b>.</p>
+
+<p id="cn-m14-147">In <b>Size (GiB) </b>textbox, type over the existing value with:</p>
+
+<pre id="cn-m14-148"><code>64
+
+</code></pre>
+
+<p id="cn-m14-149">Click <b>Save</b>.</p>
+
+<p id="cn-m14-150"></p><figure><img class="cn-img" id="cn-image-m14-c-15" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-15.jpg" alt="Figure 1.16 Screenshot of PLABWIN10: The plabvm01 | Disk page is displayed with the Save button highlighted."><figcaption>Figure 1.16 Screenshot of PLABWIN10: The plabvm01 | Disk page is displayed with the Save button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-152"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m14-153">Under the <b>Settings </b>menu, select <b>Connect</b>.</p>
+
+<p id="cn-m14-154"></p><figure><img class="cn-img" id="cn-image-m14-c-16" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-16.jpg" alt="Figure 1.17 Screenshot of PLABWIN10: The plabvm01 | Disks page is displayed with the Connect menu option highlighted under Settings."><figcaption>Figure
+ 1.17 Screenshot of PLABWIN10: The plabvm01 | Disks page is displayed 
+with the Connect menu option highlighted under Settings.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-156"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m14-157">Click <b>Download RDP File</b>.</p>
+
+<p id="cn-m14-158"></p><figure><img class="cn-img" id="cn-image-m14-c-17" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-17.jpg" alt="Figure 1.18 Screenshot of PLABWIN10: The plabvm01 | Connect page is displayed with the Download RDP File button highlighted."><figcaption>Figure 1.18 Screenshot of PLABWIN10: The plabvm01 | Connect page is displayed with the Download RDP File button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-160"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m14-161">Once the RDP File has been completed, from the context menu that pops up in the top-right corner, click <b>Open file</b>.</p>
+
+<p id="cn-m14-162"></p><figure><img class="cn-img" id="cn-image-m14-c-18" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-18.jpg" alt="Figure 1.19 Screenshot of PLABWIN10: The plabvm01 | Connect page is displayed with the Download notification windows shown in the top right-hand corner of the window with the Open file weblink highlighted for the plabvm01.rdp file."><figcaption>Figure
+ 1.19 Screenshot of PLABWIN10: The plabvm01 | Connect page is displayed 
+with the Download notification windows shown in the top right-hand 
+corner of the window with the Open file weblink highlighted for the 
+plabvm01.rdp file.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-164"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m14-165">Click <b>Connect</b>.</p>
+
+<p id="cn-m14-166"></p><figure><img class="cn-img" id="cn-image-m14-c-19" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-19.jpg" alt="Figure 1.20 Screenshot of PLABWIN10: The Remote Desktop Connection pop-up window is displayed with the Connect button highlighted."><figcaption>Figure
+ 1.20 Screenshot of PLABWIN10: The Remote Desktop Connection pop-up 
+window is displayed with the Connect button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-168"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m14-169">Click the <b>More choices </b>weblink and select <b>Use a different account</b>.</p>
+
+<p id="cn-m14-170"></p><figure><img class="cn-img" id="cn-image-m14-c-20" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-20.jpg" alt="Figure 1.21 Screenshot of PLABWIN10: The Window Security - Enter your credentials window is displayed with the Use a different account option highlighted."><figcaption>Figure
+ 1.21 Screenshot of PLABWIN10: The Window Security - Enter your 
+credentials window is displayed with the Use a different account option 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-172"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m14-173">Type in the following credentials:</p>
+
+<p id="cn-m14-174"><b>User name</b>:</p>
+
+<pre id="cn-m14-175"><code>plabadmin
+
+</code></pre>
+
+<p id="cn-m14-176"><b>Password</b>:</p>
+
+<pre id="cn-m14-177"><code>Passw0rd1234
+
+</code></pre>
+
+<p id="cn-m14-179">Click <b>OK</b>.</p>
+
+<p id="cn-m14-180"></p><figure><img class="cn-img" id="cn-image-m14-c-21" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-21.jpg" alt="Figure 1.22 Screenshot of PLABWIN10: The Window Security - Enter your credentials window is displayed with the login credentials typed in and the OK button highlighted."><figcaption>Figure
+ 1.22 Screenshot of PLABWIN10: The Window Security - Enter your 
+credentials window is displayed with the login credentials typed in and 
+the OK button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-182"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m14-183">On the <b>Remote Desktop Connection </b>pop-up window, click <b>Yes</b>.</p>
+
+<p id="cn-m14-184"></p><figure><img class="cn-img" id="cn-image-m14-c-22" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-22.jpg" alt="Figure 1.23 Screenshot of PLABWIN10: The Remote Desktop Connection pop-up window is displayed with the Yes button highlighted."><figcaption>Figure 1.23 Screenshot of PLABWIN10: The Remote Desktop Connection pop-up window is displayed with the Yes button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-186"><b><i>Step 24</i></b></h4>
+
+<p id="cn-m14-187">Once the desktop of <b>plabvm01 </b>displays, right-click on the <b>Start </b>icon and select <b>Disk Management</b>.</p>
+
+<p id="cn-m14-188"></p><figure><img class="cn-img" id="cn-image-m14-c-23" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-23.jpg" alt="Figure 1.24 Screenshot of PLABWIN10: The Server Manager &amp;gt; Dashboard window is displayed with the Start icon right-clicked and the Disk Management menu option highlighted."><figcaption>Figure
+ 1.24 Screenshot of PLABWIN10: The Server Manager &gt; Dashboard window 
+is displayed with the Start icon right-clicked and the Disk Management 
+menu option highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m14-191"><b><i>Note</i></b><i>: If the Networks flyout menu appears, click </i><b><i>Yes</i></b><i>.</i></span>
+
+<h4 id="cn-m14-193"><b><i>Step 25</i></b></h4>
+
+<p id="cn-m14-194">The <b>Initialized Disk </b>window will pop up, asking for the newly attached disks to be initialized.</p>
+
+<p id="cn-m14-195">If not already selected, tick the checkboxes for <b>Disk 2 </b>and <b>Disk 3</b>.</p>
+
+<p id="cn-m14-196">Set partition style to <b>GPT (GUID Partition Table</b>).</p>
+
+<p id="cn-m14-197">Click <b>OK</b>.</p>
+
+<p id="cn-m14-199"></p><figure><img class="cn-img" id="cn-image-m14-c-24" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-24.jpg" alt="Figure 1.25 Screenshot of PLABWIN10: The Disk Management window is displayed with the Initialize Disk dialog box shown and the OK button highlighted."><figcaption>Figure
+ 1.25 Screenshot of PLABWIN10: The Disk Management window is displayed 
+with the Initialize Disk dialog box shown and the OK button highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m14-201"><b><i>Note</i></b><i>: MBR 
+(Master Boot Record) and GPT (GUID Partition Table) are two different 
+methods of storing partitioning information on a drive. MBR has a hard 
+2TB limit for the entire drive. When utilizing MBR, the maximum storage 
+on that volume is 2TB; everything else will be wasted. GPT is a newer 
+standard supporting up to 128 partitions with much larger capacities. 
+Both can be used to configure an RAID, and should only be an issue when 
+consideration for legacy resources and size limits are necessary.</i></span>
+
+<h4 id="cn-m14-202"><b><i>Step 26</i></b></h4>
+
+<p id="cn-m14-203">The <b>Disk Management </b>window will open, displaying the newly attached disks as Disk 2 and Disk 3.</p>
+
+<p id="cn-m14-204">Right-click <b>Disk 2 </b>and select <b>New Striped Volume</b>.</p>
+
+<p id="cn-m14-206"></p><figure><img class="cn-img" id="cn-image-m14-c-25" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-25.jpg" alt="Figure 1.26 Screenshot of PLABWIN10: The Disk Management window is displayed with Disk 2 right-clicked and the New Striped Volume menu option highlighted."><figcaption>Figure
+ 1.26 Screenshot of PLABWIN10: The Disk Management window is displayed 
+with Disk 2 right-clicked and the New Striped Volume menu option 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-208"><b><i>Step 27</i></b></h4>
+
+<p id="cn-m14-209">From the <b>Welcome to the New Striped Volume Wizard</b>, select <b>Next</b>.</p>
+
+<p id="cn-m14-210"></p><figure><img class="cn-img" id="cn-image-m14-c-26" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-26.jpg" alt="Figure 1.27 Screenshot of PLABWIN10: The New Striped Volume - Welcome to the New Striped Volume Wizard window is displayed with the Next button highlighted."><figcaption>Figure
+ 1.27 Screenshot of PLABWIN10: The New Striped Volume - Welcome to the 
+New Striped Volume Wizard window is displayed with the Next button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-212"><b><i>Step 28</i></b></h4>
+
+<p id="cn-m14-213">Under the <b>Available </b>column, select the <b>Disk 3 </b>listed.</p>
+
+<p id="cn-m14-214">Click <b>Add </b>to move it to the <b>Selected </b>column.</p>
+
+<p id="cn-m14-215">Click <b>Next</b>.</p>
+
+<p id="cn-m14-216"></p><figure><img class="cn-img" id="cn-image-m14-c-27" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-27.jpg" alt="Figure 1.28 Screenshot of PLABWIN10: The New Striped Volume - Select Disks window is displayed with Disk 2 and 3 shown in the Selected column, and the Next button highlighted."><figcaption>Figure
+ 1.28 Screenshot of PLABWIN10: The New Striped Volume - Select Disks 
+window is displayed with Disk 2 and 3 shown in the Selected column, and 
+the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-218"><b><i>Step 29</i></b></h4>
+
+<p id="cn-m14-219">Leave the assign the following drive letter as default.</p>
+
+<p id="cn-m14-220">Click <b>Next</b>.</p>
+
+<p id="cn-m14-221"></p><figure><img class="cn-img" id="cn-image-m14-c-28" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-28.jpg" alt="Figure 1.29 Screenshot of PLABWIN10: The New Striped Volume - Assign Drive Letter or Path window is displayed with the Next button highlighted."><figcaption>Figure
+ 1.29 Screenshot of PLABWIN10: The New Striped Volume - Assign Drive 
+Letter or Path window is displayed with the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-223"><b><i>Start 30</i></b></h4>
+
+<p id="cn-m14-224">In the <b>Volume label </b>textbox, type:</p>
+
+<pre id="cn-m14-225"><code>Raid 0
+
+</code></pre>
+
+<p id="cn-m14-226">Tick the checkboxes for <b>Perform a quick format </b>and <b>Enable file and folder compression</b>.</p>
+
+<p id="cn-m14-227">Click <b>Next</b>.</p>
+
+<p id="cn-m14-228"></p><figure><img class="cn-img" id="cn-image-m14-c-29" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-29.jpg" alt="Figure 1.30 Screenshot of PLABWIN10: The New Striped Volume - Format Volume window is displayed with the Volume label name of Raid 0 typed in, and the Next button highlighted."><figcaption>Figure
+ 1.30 Screenshot of PLABWIN10: The New Striped Volume - Format Volume 
+window is displayed with the Volume label name of Raid 0 typed in, and 
+the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-230"><b><i>Step 31</i></b></h4>
+
+<p id="cn-m14-231">Click <b>Finish</b>.</p>
+
+<p id="cn-m14-232"></p><figure><img class="cn-img" id="cn-image-m14-c-30" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-30.jpg" alt="Figure 1.31 Screenshot of PLABWIN10: The New Striped Volume - Completing the New Striped Volume Wizard window is displayed with the Finish button highlighted."><figcaption>Figure
+ 1.31 Screenshot of PLABWIN10: The New Striped Volume - Completing the 
+New Striped Volume Wizard window is displayed with the Finish button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-234"><b><i>Step 32</i></b></h4>
+
+<p id="cn-m14-235"><b>Disk Management </b>warning message may pop up notifying you that the operation you selected will convert the selected basic disks to dynamic disks.</p>
+
+<p id="cn-m14-236">Click <b>Yes</b>.</p>
+
+<p id="cn-m14-237"></p><figure><img class="cn-img" id="cn-image-m14-c-31" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-31.jpg" alt="Figure 1.32 Screenshot of PLABWIN10: The Disk Management warning pop-up window is displayed with the Yes button highlighted."><figcaption>Figure 1.32 Screenshot of PLABWIN10: The Disk Management warning pop-up window is displayed with the Yes button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-239"><b><i>Step 33</i></b></h4>
+
+<p id="cn-m14-240">Notice Disk 2 is now showing Raid 0.</p>
+
+<p id="cn-m14-241">From the <b>Taskbar</b>, click <b>File Explorer</b>.</p>
+
+<p id="cn-m14-242"></p><figure><img class="cn-img" id="cn-image-m14-c-32" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-32.jpg" alt="Figure 1.33 Screenshot of PLABWIN10: The Disk Management window is displayed with the File Explorer icon highlighted on the Taskbar."><figcaption>Figure
+ 1.33 Screenshot of PLABWIN10: The Disk Management window is displayed 
+with the File Explorer icon highlighted on the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-244"><b><i>Step 34</i></b></h4>
+
+<p id="cn-m14-245">Click <b>This PC</b>.</p>
+
+<p id="cn-m14-246">Notice the newly created RAID 0 drive with a storage size of 127 GB is shown.</p>
+
+<p id="cn-m14-248"></p><figure><img class="cn-img" id="cn-image-m14-c-33" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-33.jpg" alt="Figure 1.34 Screenshot of PLABWIN10: The File Explorer window is displayed with This PC selected and Raid 0 showing under Devices and drives."><figcaption>Figure
+ 1.34 Screenshot of PLABWIN10: The File Explorer window is displayed 
+with This PC selected and Raid 0 showing under Devices and drives.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-250"><b><i>Step 35</i></b></h4>
+
+<p id="cn-m14-251"><b>Close plabvm01</b>.</p>
+
+<p id="cn-m14-252"></p><figure><img class="cn-img" id="cn-image-m14-c-34" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-34.jpg" alt="Figure 1.35 Screenshot of PLABWIN10: The File Explorer window is displayed with the Close button for plabvm01 highlighted."><figcaption>Figure 1.35 Screenshot of PLABWIN10: The File Explorer window is displayed with the Close button for plabvm01 highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-254"><b><i>Step 36</i></b></h4>
+
+<p id="cn-m14-255">On the <b>Remote Desktop Connect </b>message, click <b>OK</b>.</p>
+
+<p id="cn-m14-256"></p><figure><img class="cn-img" id="cn-image-m14-c-35" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-35.jpg" alt="Figure 1.36 Screenshot of PLABWIN10: Remote Desktop Connect window is displayed with the OK button highlighted."><figcaption>Figure 1.36 Screenshot of PLABWIN10: Remote Desktop Connect window is displayed with the OK button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-258"><b><i>Step 37</i></b></h4>
+
+<p id="cn-m14-259">You will be taken back to the Azure <b>plabvm01 | Connect </b>page.</p>
+
+<p id="cn-m14-260"></p><figure><img class="cn-img" id="cn-image-m14-c-36" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-36.jpg" alt="Figure 1.37 Screenshot of PLABWIN10: The plabvm01 | Connect window is displayed."><figcaption>Figure 1.37 Screenshot of PLABWIN10: The plabvm01 | Connect window is displayed.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m14-263">Keep <b>PLABWIN10 </b>in its current state for the next task.</span>
+
+<h3 id="cn-m14-265"><b>Task 2 - Configure RAID 1</b></h3>
+
+<p id="cn-m14-266">Raid 1, 5, 6, and 1 0 are where failure redundancy is
+ addressed. Based on the Raid configuration that is chosen to be set up,
+ will determine the technique that is employed.</p>
+
+<p id="cn-m14-267">Raid 1 is known as mirroring, requiring a minimum of 2
+ disks to configure. Using this configuration allows data to be 
+replicated across the selected disks. In the event of a hardware failure
+ of one of the disks, the remaining disk still retains a full copy of 
+the data.</p>
+
+<p id="cn-m14-268">Raid 5 is known as distributed parity, requiring a 
+minimum of 3 disks. A parity is a set of computations used for fault 
+tolerance by calculating the data that is stored in the first 2 drives 
+and storing the results in the third.  In the event of a disk failure, 
+the array status will change to degraded, but the array will remain 
+functional.</p>
+
+<p id="cn-m14-269">Raid 6 is known as dual parity, requiring a minimum 
+of 4 disks. Raid 6 extends the allocation of its parity disk to 2 and 
+can withstand a 2-disk failure. Despite the added benefit of enhanced 
+redundancy, Raid 6 suffers from reduced write operations, as its 
+associated parity calculations.</p>
+
+<p id="cn-m14-270">For added resiliency, Raid configurations can be 
+nested. Raid 1 0 is a simple example of this as it combines both 
+striping and mirroring. The only shortcoming of nesting these raid 
+configurations is decreased capacity utilization.</p>
+
+<p id="cn-m14-271">In this task, you will provision a VM and configure a RAID 1 using attached disks….</p>
+
+<h4 id="cn-m14-272"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m14-273">Ensure you are connected to <b>PLABWIN10 </b>and the <b>Azure </b>window is open.</p>
+
+<p id="cn-m14-274"></p><figure><img class="cn-img" id="cn-image-m14-c-37" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-37.jpg" alt="Figure 1.38 Screenshot of PLABDC01: The plabvm01 | Connect window is displayed."><figcaption>Figure 1.38 Screenshot of PLABDC01: The plabvm01 | Connect window is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-276"><b><i> Step 2</i></b></h4>
+
+<p id="cn-m14-277">From the <b>Search resources, services and docs </b>textbox type:</p>
+
+<pre id="cn-m14-278"><code>virtual machine
+
+</code></pre>
+
+<p id="cn-m14-279">Under <b>Services, </b>select <b>Virtual machines</b>.</p>
+
+<h4 id="cn-m14-281"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m14-282">Click <b>Create &gt; Azure virtual machine</b>.</p>
+
+<p id="cn-m14-283"></p><figure><img class="cn-img" id="cn-image-m14-c-39" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-39.jpg" alt="Figure 1.40 Screenshot of PLABWIN10: The Virtual machines page is displayed with the Create button selected and the Azure virtual machine option highlighted."><figcaption>Figure
+ 1.40 Screenshot of PLABWIN10: The Virtual machines page is displayed 
+with the Create button selected and the Azure virtual machine option 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-285"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m14-286">On the <b>Basics </b>tab, under the <b>Project details </b>section, click on the <b>Resource group </b>dropdown and select the prepopulated resource group.</p>
+
+<p id="cn-m14-287">Scroll down to the <b>Instance details </b>section, click into the <b>Virtual Machine name </b>textbox and type:</p>
+
+<pre id="cn-m14-288"><code>plabvm02
+
+</code></pre>
+
+<p id="cn-m14-289">Ensure <b>Region </b>is set to <b>(Europe) UK South</b>.</p>
+
+<p id="cn-m14-290"></p><figure><img class="cn-img" id="cn-image-m14-c-40" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-40.jpg" alt=" Figure 1.41 Screenshot of PLABWIN10: The Create virtual machine page is displayed with the prepopulated resource group selected and the Virtual machine name typed into the textbox."><figcaption>
+ Figure 1.41 Screenshot of PLABWIN10: The Create virtual machine page is
+ displayed with the prepopulated resource group selected and the Virtual
+ machine name typed into the textbox.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-292"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m14-293">Leave <b>Security type </b>set to <b>Standard</b>.</p>
+
+<p id="cn-m14-294">From <b>Images</b>, click the <b>See all images </b>weblink.</p>
+
+<p id="cn-m14-295"></p><figure><img class="cn-img" id="cn-image-m14-c-41" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-41.jpg" alt="Figure 1.42 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the See all images weblink highlighted."><figcaption>Figure 1.42 Screenshot of PLABWIN10: The Create a virtual machine page is displayed with the See all images weblink highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-297"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m14-298">From the <b>Select an image </b>page, under <b>Windows Server</b>, click the <b>Select </b>dropdown.</p>
+
+<p id="cn-m14-299"></p><figure><img class="cn-img" id="cn-image-m14-c-42" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-42.jpg" alt="Figure 1.43 Screenshot of PLABWIN10: The Select an image page is displayed with the Select dropdown under Windows Server highlighted."><figcaption>Figure
+ 1.43 Screenshot of PLABWIN10: The Select an image page is displayed 
+with the Select dropdown under Windows Server highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-301"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m14-302">Select <b>Windows Server 2019 Datacenter Gen 1</b>.</p>
+
+<p id="cn-m14-303"></p><figure><img class="cn-img" id="cn-image-m14-c-43" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-43.jpg" alt="Figure 1.44 Screenshot of PLABWIN10: The Create virtual machine page is displayed with Windows Server 2019 Datacenter Gen 1 highlighted."><figcaption>Figure
+ 1.44 Screenshot of PLABWIN10: The Create virtual machine page is 
+displayed with Windows Server 2019 Datacenter Gen 1 highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-305"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m14-306">From the <b>Administrator account </b>section, click into the <b>Username </b>textbox and type:</p>
+
+<pre id="cn-m14-307"><code>plabadmin
+
+</code></pre>
+
+<p id="cn-m14-308">In the <b>Password </b>textbox, type:</p>
+
+<pre id="cn-m14-309"><code>Passw0rd1234
+
+</code></pre>
+
+<p id="cn-m14-310">Type the password again in the <b>Confirm password </b>textbox.</p>
+
+<p id="cn-m14-311"></p><figure><img class="cn-img" id="cn-image-m14-c-44" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-44.jpg" alt="Figure 1.45 Screenshot of PLABWIN10: The Create virtual machine page is displayed with login credentials typed in to the Administrator account fields."><figcaption>Figure
+ 1.45 Screenshot of PLABWIN10: The Create virtual machine page is 
+displayed with login credentials typed in to the Administrator account 
+fields.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-313"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m14-314">Click <b>Review + create</b>.</p>
+
+<p id="cn-m14-315"></p><figure><img class="cn-img" id="cn-image-m14-c-45" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-45.jpg" alt="Figure 1.46 Screenshot of PLABWIN10: The Create virtual machine page is displayed with the Review + create button highlighted."><figcaption>Figure 1.46 Screenshot of PLABWIN10: The Create virtual machine page is displayed with the Review + create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-317"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m14-318">In the <b>Review + create </b>tab, click <b>Create</b>.</p>
+
+<p id="cn-m14-319"></p><figure><img class="cn-img" id="cn-image-m14-c-46" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-46.jpg" alt="Figure 1.47 Screenshot of PLABWIN10: The Create virtual machine page is displayed with the Create button highlighted."><figcaption>Figure 1.47 Screenshot of PLABWIN10: The Create virtual machine page is displayed with the Create button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-321"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m14-322">Once the deployment has completed, a green tick icon will display.</p>
+
+<p id="cn-m14-323">Click <b>Go to resource</b>.</p>
+
+<p id="cn-m14-324"></p><figure><img class="cn-img" id="cn-image-m14-c-47" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-47.jpg" alt="Figure 1.48 Screenshot of PLABWIN10: The CreateVm-MicrosoftWindowsServer.WindoewsServer[….] page is displayed with the message stating Your deployment is complete."><figcaption>Figure
+ 1.48 Screenshot of PLABWIN10: The 
+CreateVm-MicrosoftWindowsServer.WindoewsServer[….] page is displayed 
+with the message stating Your deployment is complete.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-326"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m14-327">From the <b>Settings </b>menu, select <b>Disks</b>.</p>
+
+<p id="cn-m14-328"></p><figure><img class="cn-img" id="cn-image-m14-c-48" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-48.jpg" alt="Figure 1.49 Screenshot of PLABWIN10: The plabvm02 page is displayed with the Disks option highlighted under the Settings menu."><figcaption>Figure 1.49 Screenshot of PLABWIN10: The plabvm02 page is displayed with the Disks option highlighted under the Settings menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-330"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m14-331">Click <b>Create and attach a new disk</b>.</p>
+
+<p id="cn-m14-332"></p><figure><img class="cn-img" id="cn-image-m14-c-49" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-49.jpg" alt="Figure 1.50 Screenshot of PLABWIN10: The plabvm02 | Disks page is displayed with the Create and attach a new disk weblink highlighted."><figcaption>Figure
+ 1.50 Screenshot of PLABWIN10: The plabvm02 | Disks page is displayed 
+with the Create and attach a new disk weblink highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-334"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m14-335">In the <b>Disk name </b>textbox, type:</p>
+
+<pre id="cn-m14-336"><code>plabvm02-disk1
+
+</code></pre>
+
+<p id="cn-m14-337">Ensure <b>Storage type </b>is set to <b>Standard SSD</b>.</p>
+
+<p id="cn-m14-338">In <b>Size (GiB) </b>textbox, type over the existing value with:</p>
+
+<pre id="cn-m14-339"><code>64
+
+</code></pre>
+
+<p id="cn-m14-341"></p><figure><img class="cn-img" id="cn-image-m14-c-50" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-50.jpg" alt="Figure 1.51 Screenshot of PLABWIN10: The plabvm02 | Disks page is displayed with the fields for a new disk populated."><figcaption>Figure 1.51 Screenshot of PLABWIN10: The plabvm02 | Disks page is displayed with the fields for a new disk populated.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-343"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m14-344">Attach a second disk by clicking <b>Create and attach a new disk </b>again.</p>
+
+<p id="cn-m14-345">In the <b>Disk name </b>textbox, type:</p>
+
+<pre id="cn-m14-346"><code>plabvm02-disk2
+
+</code></pre>
+
+<p id="cn-m14-347">Ensure <b>Storage type </b>is set to <b>Standard SSD</b>.</p>
+
+<p id="cn-m14-348">In <b>Size (GiB) </b>textbox, type over the existing value with:</p>
+
+<pre id="cn-m14-349"><code>64
+
+</code></pre>
+
+<p id="cn-m14-350">Click <b>Save</b>.</p>
+
+<p id="cn-m14-351"></p><figure><img class="cn-img" id="cn-image-m14-c-51" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-51.jpg" alt="Figure 1.52 Screenshot of PLABWIN10: The plabvm02 | Disk page is displayed with the Save button highlighted."><figcaption>Figure 1.52 Screenshot of PLABWIN10: The plabvm02 | Disk page is displayed with the Save button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-353"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m14-354">Under the <b>Settings </b>menu, select <b>Connect</b>.</p>
+
+<p id="cn-m14-355"></p><figure><img class="cn-img" id="cn-image-m14-c-52" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-52.jpg" alt="Figure 1.53 Screenshot of PLABWIN10: The plabvm02 | Disks page is displayed with the Connect menu option highlighted under Settings."><figcaption>Figure
+ 1.53 Screenshot of PLABWIN10: The plabvm02 | Disks page is displayed 
+with the Connect menu option highlighted under Settings.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-357"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m14-358">Click <b>Download RDP File</b>.</p>
+
+<p id="cn-m14-359"></p><figure><img class="cn-img" id="cn-image-m14-c-53" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-53.jpg" alt="Figure 1.54 Screenshot of PLABWIN10: The plabvm02 | Connect page is displayed with the Download RDP File button highlighted."><figcaption>Figure 1.54 Screenshot of PLABWIN10: The plabvm02 | Connect page is displayed with the Download RDP File button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-361"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m14-362">Once the RDP File has been completed, from the context menu that pops up in the top-right corner, click <b>Open file</b>.</p>
+
+<p id="cn-m14-363"></p><figure><img class="cn-img" id="cn-image-m14-c-54" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-54.jpg" alt="Figure 1.55 Screenshot of PLABWIN10: The plabvm02 | Connect page is displayed with the Download notification windows shown in the top right-hand corner of the window with the Open file weblink highlighted for the plabvm01.rdp file."><figcaption>Figure
+ 1.55 Screenshot of PLABWIN10: The plabvm02 | Connect page is displayed 
+with the Download notification windows shown in the top right-hand 
+corner of the window with the Open file weblink highlighted for the 
+plabvm01.rdp file.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-365"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m14-366">Click <b>Connect</b>.</p>
+
+<p id="cn-m14-367"></p><figure><img class="cn-img" id="cn-image-m14-c-55" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-55.jpg" alt="Figure 1.56 Screenshot of PLABWIN10: The Remote Desktop Connection pop-up window is displayed with the Connect button highlighted."><figcaption>Figure
+ 1.56 Screenshot of PLABWIN10: The Remote Desktop Connection pop-up 
+window is displayed with the Connect button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-369"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m14-370">Click the <b>More choices </b>weblink and select <b>Use a different account</b>.</p>
+
+<p id="cn-m14-371"></p><figure><img class="cn-img" id="cn-image-m14-c-56" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-56.jpg" alt="Figure 1.57 Screenshot of PLABWIN10: The Window Security - Enter your credentials window is displayed with the Use a different account option highlighted."><figcaption>Figure
+ 1.57 Screenshot of PLABWIN10: The Window Security - Enter your 
+credentials window is displayed with the Use a different account option 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-373"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m14-374">Type in the following credentials:</p>
+
+<p id="cn-m14-375"><b>User name</b></p>
+
+<pre id="cn-m14-376"><code>plabadmin
+
+</code></pre>
+
+<p id="cn-m14-377"><b>Password</b></p>
+
+<pre id="cn-m14-378"><code>Passw0rd1234
+
+</code></pre>
+
+<p id="cn-m14-380">Click <b>OK</b>.</p>
+
+<p id="cn-m14-381"></p><figure><img class="cn-img" id="cn-image-m14-c-57" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-57.jpg" alt="Figure 1.58 Screenshot of PLABWIN10: The Window Security - Enter your credentials window is displayed with the login credentials typed in and the OK button highlighted."><figcaption>Figure
+ 1.58 Screenshot of PLABWIN10: The Window Security - Enter your 
+credentials window is displayed with the login credentials typed in and 
+the OK button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-383"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m14-384">On the <b>Remote Desktop Connection </b>pop-up window, click <b>Yes</b>.</p>
+
+<p id="cn-m14-385"></p><figure><img class="cn-img" id="cn-image-m14-c-58" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-58.jpg" alt="Figure 1.59 Screenshot of PLABWIN10: The Remote Desktop Connection pop-up window is displayed with the Yes button highlighted."><figcaption>Figure 1.59 Screenshot of PLABWIN10: The Remote Desktop Connection pop-up window is displayed with the Yes button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-387"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m14-388">Once the desktop of <b>plabvm02 </b>displays, right-click the <b>Start </b>icon and select <b>Disk Management</b>.</p>
+
+<p id="cn-m14-389"></p><figure><img class="cn-img" id="cn-image-m14-c-59" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-59.jpg" alt="Figure 1.60 Screenshot of PLABWIN10: The Server Manager &amp;gt; Dashboard window is displayed with the Start icon right-clicked and the Disk Management menu option highlighted."><figcaption>Figure
+ 1.60 Screenshot of PLABWIN10: The Server Manager &gt; Dashboard window 
+is displayed with the Start icon right-clicked and the Disk Management 
+menu option highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m14-392"><b><i>Note</i></b><i>: If the Networks flyout menu appears, click </i><b><i>Yes</i></b><i>.</i></span>
+
+<h4 id="cn-m14-394"><b><i>Step 24</i></b></h4>
+
+<p id="cn-m14-395">The <b>Initialized Disk </b>window will pop up, asking for the newly attached disks to be initialized.</p>
+
+<p id="cn-m14-396">If not already selected, tick the checkboxes for <b>Disk 2 </b>and <b>Disk 3</b>.</p>
+
+<p id="cn-m14-397">Set partition style to <b>GPT (GUID Partition Table</b>).</p>
+
+<p id="cn-m14-398">Click <b>OK</b>.</p>
+
+<p id="cn-m14-399"></p><figure><img class="cn-img" id="cn-image-m14-c-60" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-60.jpg" alt="Figure 1.61 Screenshot of PLABWIN10: The Disk Management window is displayed with the Initialize Disk dialog box shown and the OK button highlighted."><figcaption>Figure
+ 1.61 Screenshot of PLABWIN10: The Disk Management window is displayed 
+with the Initialize Disk dialog box shown and the OK button highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m14-402"><b><i>Note</i></b><i>: MBR 
+(Master Boot Record) and GPT (GUID Partition Table) are two different 
+methods of storing partitioning information on a drive. </i><br><i>MBR 
+has a hard 2TB limit for the entire drive. When utilizing MBR, the 
+maximum storage on that volume is 2TB; everything else will be wasted. 
+GPT is a newer standard supporting up to 128 partitions with much larger
+ capacities.</i><br><i>Both can be used to configure an RAID, and should
+ only be an issue when consideration for legacy resources and size 
+limits are necessary.</i></span>
+
+<h4 id="cn-m14-403"><b><i>Step 25</i></b></h4>
+
+<p id="cn-m14-404">The <b>Disk Management </b>window will open, displaying the newly attached disks as Disk 2 and Disk 3.</p>
+
+<p id="cn-m14-405">Right-click <b>Disk 2 </b>and select <b>New Mirrored Volume</b>.</p>
+
+<p id="cn-m14-406"></p><figure><img class="cn-img" id="cn-image-m14-c-61" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-61.jpg" alt="Figure 1.62 Screenshot of PLABWIN10: The Disk Management window is displayed with Disk 2 right-clicked and the New Mirrored Volume menu option highlighted."><figcaption>Figure
+ 1.62 Screenshot of PLABWIN10: The Disk Management window is displayed 
+with Disk 2 right-clicked and the New Mirrored Volume menu option 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-408"><b><i>Step 26</i></b></h4>
+
+<p id="cn-m14-409">From the <b>Welcome to the New Mirrored Volume Wizard</b>, select <b>Next</b>.</p>
+
+<p id="cn-m14-410"></p><figure><img class="cn-img" id="cn-image-m14-c-62" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-62.jpg" alt="Figure 1.63 Screenshot of PLABWIN10: The New Mirrored Volume - Welcome to the New MIrroed Volume Wizard window is displayed with the Next button highlighted."><figcaption>Figure
+ 1.63 Screenshot of PLABWIN10: The New Mirrored Volume - Welcome to the 
+New MIrroed Volume Wizard window is displayed with the Next button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-412"><b><i>Step 27</i></b></h4>
+
+<p id="cn-m14-413">Under the <b>Available </b>column, select the <b>Disk 3 </b>listed.</p>
+
+<p id="cn-m14-414">Click <b>Add </b>to move it to the <b>Selected </b>column.</p>
+
+<p id="cn-m14-415">Click <b>Next</b>.</p>
+
+<p id="cn-m14-416"></p><figure><img class="cn-img" id="cn-image-m14-c-63" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-63.jpg" alt="Figure 1.64 Screenshot of PLABWIN10: The New Mirrored Volume - Select Disks window is displayed with Disk 2 and 3 shown in the Selected column, and the Next button highlighted."><figcaption>Figure
+ 1.64 Screenshot of PLABWIN10: The New Mirrored Volume - Select Disks 
+window is displayed with Disk 2 and 3 shown in the Selected column, and 
+the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-418"><b><i>Step 28</i></b></h4>
+
+<p id="cn-m14-419">Leave the assign the following drive letter as default.</p>
+
+<p id="cn-m14-420">Click <b>Next</b>.</p>
+
+<p id="cn-m14-421"></p><figure><img class="cn-img" id="cn-image-m14-c-64" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-64.jpg" alt="Figure 1.65 Screenshot of PLABWIN10: The New Mirrored Volume - Assign Drive Letter or Path window is displayed with the Next button highlighted."><figcaption>Figure
+ 1.65 Screenshot of PLABWIN10: The New Mirrored Volume - Assign Drive 
+Letter or Path window is displayed with the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-423"><b><i>Step 29</i></b></h4>
+
+<p id="cn-m14-424">In the <b>Volume label </b>textbox, type:</p>
+
+<pre id="cn-m14-425"><code>Raid 1
+
+</code></pre>
+
+<p id="cn-m14-426">Tick the checkboxes for <b>Perform a quick format </b>and <b>Enable file and folder compression</b>.</p>
+
+<p id="cn-m14-427">Click <b>Next</b>.</p>
+
+<p id="cn-m14-428"></p><figure><img class="cn-img" id="cn-image-m14-c-65" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-65.jpg" alt="Figure 1.66 Screenshot of PLABWIN10: The New Mirrored Volume - Format Volume window is displayed with the Volume label name of Raid 1 typedin, and the Next button highlighted."><figcaption>Figure
+ 1.66 Screenshot of PLABWIN10: The New Mirrored Volume - Format Volume 
+window is displayed with the Volume label name of Raid 1 typedin, and 
+the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-430"><b><i>Step 30</i></b></h4>
+
+<p id="cn-m14-431">Click <b>Finish</b>.</p>
+
+<p id="cn-m14-432"></p><figure><img class="cn-img" id="cn-image-m14-c-66" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-66.jpg" alt="Figure 1.67 Screenshot of PLABWIN10: The New Mirrored Volume - Completing the New Mirrored Volume Wizard window is displayed with the Finish button highlighted."><figcaption>Figure
+ 1.67 Screenshot of PLABWIN10: The New Mirrored Volume - Completing the 
+New Mirrored Volume Wizard window is displayed with the Finish button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-434"><b><i>Step 31</i></b></h4>
+
+<p id="cn-m14-435"><b>Disk Management </b>warning message may pop up notifying you that the operation you selected will convert the selected basic disks to dynamic disks.</p>
+
+<p id="cn-m14-436">Click <b>Yes</b>.</p>
+
+<p id="cn-m14-437"></p><figure><img class="cn-img" id="cn-image-m14-c-67" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-67.jpg" alt="Figure 1.68 Screenshot of PLABWIN10: The Disk Management warning pop-up window is displayed with the Yes button highlighted."><figcaption>Figure 1.68 Screenshot of PLABWIN10: The Disk Management warning pop-up window is displayed with the Yes button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-439"><b><i>Step 32</i></b></h4>
+
+<p id="cn-m14-440">Notice Disk 2 is now showing Raid 1.</p>
+
+<p id="cn-m14-441">From the <b>Taskbar</b>, click <b>File Explorer</b>.</p>
+
+<p id="cn-m14-442"></p><figure><img class="cn-img" id="cn-image-m14-c-68" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-68.jpg" alt="Figure 1.69 Screenshot of PLABWIN10: The Disk Management window is displayed with the File Explorer icon highlighted on the Taskbar."><figcaption>Figure
+ 1.69 Screenshot of PLABWIN10: The Disk Management window is displayed 
+with the File Explorer icon highlighted on the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-444"><b><i>Step 33</i></b></h4>
+
+<p id="cn-m14-445">Click <b>This PC</b>.</p>
+
+<p id="cn-m14-446">Notice the newly created RAID 1 drive with a storage size of 63.9 GB is shown.</p>
+
+<p id="cn-m14-447"></p><figure><img class="cn-img" id="cn-image-m14-c-69" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-69.jpg" alt="Figure 1.70 Screenshot of PLABWIN10: The File Explorer window is displayed with This PC selected and Raid 1 showing under Devices and drives."><figcaption>Figure
+ 1.70 Screenshot of PLABWIN10: The File Explorer window is displayed 
+with This PC selected and Raid 1 showing under Devices and drives.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m14-450"><b><i>Note</i></b><i>: As you 
+will notice, the storage size did not expand like when setting up a RAID
+ 0, but attached the 2 disks to replicate data across them. This ensures
+ if one of the Disks fails, the data will still be in tack on the 
+operational disk.</i><br><br><i>Though this is useful in maintaining 
+redundancy, it does not address the fact that data can grow by leaps and
+ bounds. In this situation, you will leverage a feature known as Data 
+deduplication.</i></span>
+
+<h4 id="cn-m14-451"><b><i>Step 34</i></b></h4>
+
+<p id="cn-m14-452">From the <b>Taskbar</b>, open <b>Server Manager</b>.</p>
+
+<p id="cn-m14-453"></p><figure><img class="cn-img" id="cn-image-m14-c-70" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-70.jpg" alt="Figure 1.71 Screenshot of PLABWIN10: The File Explorer window is displayed with the Server Manager icon highlighted on the Taskbar."><figcaption>Figure
+ 1.71 Screenshot of PLABWIN10: The File Explorer window is displayed 
+with the Server Manager icon highlighted on the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-455"><b><i>Step 35</i></b></h4>
+
+<p id="cn-m14-456">From the top-right corner, under <b>Manage</b>, select <b>Add Roles and Features</b>.</p>
+
+<p id="cn-m14-457"></p><figure><img class="cn-img" id="cn-image-m14-c-71" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-71.jpg" alt="Figure 1.72 Screenshot of PLABWIN10: The Server Manager &amp;gt; Dashboard window is displayed with the Manage menu option selected and the Add Roles and Features option highlighted for the dropdown list."><figcaption>Figure
+ 1.72 Screenshot of PLABWIN10: The Server Manager &gt; Dashboard window 
+is displayed with the Manage menu option selected and the Add Roles and 
+Features option highlighted for the dropdown list.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-459"><b><i>Step 36</i></b></h4>
+
+<p id="cn-m14-460">From the <b>Add Roles and Features Wizard</b>, click <b>Next</b>.</p>
+
+<p id="cn-m14-461"></p><figure><img class="cn-img" id="cn-image-m14-c-72" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-72.jpg" alt="Figure 1.73 Screenshot of PLABWIN10: The Add Roles and Features Wizard - Before you begin window is displayed with the Next button highlighted."><figcaption>Figure
+ 1.73 Screenshot of PLABWIN10: The Add Roles and Features Wizard - 
+Before you begin window is displayed with the Next button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-463"><b><i>Step 37</i></b></h4>
+
+<p id="cn-m14-464">Click each <b>Next </b>prompt until the <b>Select server roles </b>page appears.</p>
+
+<p id="cn-m14-465">Expand the dropdown for <b>File and Storage Services &gt; File and iSCI Services</b>.</p>
+
+<p id="cn-m14-466">Tick the checkboxes for <b>File Server </b>and <b>Data Duplication</b>.</p>
+
+<p id="cn-m14-467">Click <b>Next</b>.</p>
+
+<p id="cn-m14-468"></p><figure><img class="cn-img" id="cn-image-m14-c-73" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-73.jpg" alt="Figure 1.74 Screenshot of PLABWIN10:  Add Roles and Features Wizard - Select server roles window is displayed with File and Storage Services &amp;gt; File and iSCSI Services dropdown expanded and the checkboxes ticked for File Server and Data Deduplication."><figcaption>Figure
+ 1.74 Screenshot of PLABWIN10:  Add Roles and Features Wizard - Select 
+server roles window is displayed with File and Storage Services &gt; 
+File and iSCSI Services dropdown expanded and the checkboxes ticked for 
+File Server and Data Deduplication.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-470"><b><i>Step 38</i></b></h4>
+
+<p id="cn-m14-471">Click <b>Install </b>once it’s active.</p>
+
+<p id="cn-m14-473"></p><figure><img class="cn-img" id="cn-image-m14-c-74" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-74.jpg" alt="Figure 1.75 Screenshot of PLABWIN10: The Add Roles and Features Wizard - Confirm installation selections window is displayed with the Install button highlighted."><figcaption>Figure
+ 1.75 Screenshot of PLABWIN10: The Add Roles and Features Wizard - 
+Confirm installation selections window is displayed with the Install 
+button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-475"><b><i>Step 39</i></b></h4>
+
+<p id="cn-m14-476">Notice the installation is in progress.</p>
+
+<p id="cn-m14-478"></p><figure><img class="cn-img" id="cn-image-m14-c-75" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-75.jpg" alt="Figure 1.76 Screenshot of PLABWIN10: The Add Roles and Features Wizard - Installation progress window is displayed with the installation progress bar shown."><figcaption>Figure
+ 1.76 Screenshot of PLABWIN10: The Add Roles and Features Wizard - 
+Installation progress window is displayed with the installation progress
+ bar shown.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m14-481"><b><i>Note</i></b><i>: Installation of the role and features might take a few minutes to complete.</i></span>
+
+<h4 id="cn-m14-483"><b><i>Step 40</i></b></h4>
+
+<p id="cn-m14-484">Once complete, click <b>Close</b>.</p>
+
+<p id="cn-m14-485"></p><figure><img class="cn-img" id="cn-image-m14-c-76" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-76.jpg" alt="Figure 1.77 Screenshot of PLABWIN10: The Add Roles and Features Wizard - Installation progress window is displayed with a message stating the Installation succeeded on plabvm02 and the Close button highlighted."><figcaption>Figure
+ 1.77 Screenshot of PLABWIN10: The Add Roles and Features Wizard - 
+Installation progress window is displayed with a message stating the 
+Installation succeeded on plabvm02 and the Close button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-487"><b><i>Step 41</i></b></h4>
+
+<p id="cn-m14-488">Once back on the <b>Server Manager &gt; Dashboard</b>, from the left-hand pane, click <b>File and Storage Services</b>.</p>
+
+<p id="cn-m14-489"></p><figure><img class="cn-img" id="cn-image-m14-c-77" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-77.jpg" alt="Figure 1.78 Screenshot of PLABWIN10: The Server Manager &amp;gt; Dashboard window is displayed with the Files and Storage Services weblink in the left-hand side pane highlighted."><figcaption>Figure
+ 1.78 Screenshot of PLABWIN10: The Server Manager &gt; Dashboard window 
+is displayed with the Files and Storage Services weblink in the 
+left-hand side pane highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m14-491"><b><i>Step 42</i></b></h4>
+
+<p id="cn-m14-492">From the left-hand menu, click <b>Volumes</b>.</p>
+
+<p id="cn-m14-493">Wait for the data to display.</p>
+
+<p id="cn-m14-494">Right-click on <b>F: </b>and select <b>Configure Data Deduplication</b>.</p>
+
+<p id="cn-m14-495"></p><figure><img class="cn-img" id="cn-image-m14-c-78" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-78.jpg" alt="Figure 1.79 Screenshot of PLABWIN10: The File and Storage Services &amp;gt; Volumes window is displayed with the F drive right-clicked and the Configure Data Deduplication menu option highlighted."><figcaption>Figure
+ 1.79 Screenshot of PLABWIN10: The File and Storage Services &gt; 
+Volumes window is displayed with the F drive right-clicked and the 
+Configure Data Deduplication menu option highlighted.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m14-497"><b><i>Note</i></b><i>: Data 
+deduplication deletes unnecessary copies of data. In this case, it will 
+not delete the data that is mirrored across the 2 disks, but the data 
+that would be contained in files on the drive. </i><br><br><i>Deduplication
+ is perfect for highly redundant operations like SQL backups. These 
+Files can be backed up weekly, daily or even hourly, creating large 
+amounts of duplicate data. This process analyzes the data and stores 
+only the compressed, unique file segments.</i></span>
+
+<h4 id="cn-m14-498"><b><i>Step 43</i></b></h4>
+
+<p id="cn-m14-499">From the <b>Data duplication </b>dropdown, select <b>General purpose file server</b>.</p>
+
+<p id="cn-m14-500">Click <b>Apply</b>, then click <b>OK</b>.</p>
+
+<p id="cn-m14-501"></p><figure><img class="cn-img" id="cn-image-m14-c-79" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-79.jpg" alt="Figure 1.80 Screenshot of PLABWIN10: The Raid 1 (F:\) Deduplication Settings dialog box is displayed with General purpose file server selected from the Data deduplication dropdown and the OK button highlighted."><figcaption>Figure
+ 1.80 Screenshot of PLABWIN10: The Raid 1 (F:\) Deduplication Settings 
+dialog box is displayed with General purpose file server selected from 
+the Data deduplication dropdown and the OK button highlighted.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<h4 id="cn-m14-505"><b><i>Step 44</i></b></h4>
+
+<p id="cn-m14-506"><b>Close </b>all windows.</p>
+
+<p id="cn-m14-507"></p><figure><img class="cn-img" id="cn-image-m14-c-80" src="ProvisioningPrivateCloudStorageSolutions_files/image-m14-c-80.jpg" alt="Figure 1.81 Screenshot of PLABWIN10: The File and Storage Services &amp;gt; Volumes window is displayed with the Close X icon highlighted."><figcaption>Figure
+ 1.81 Screenshot of PLABWIN10: The File and Storage Services &gt; 
+Volumes window is displayed with the Close X icon highlighted.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<span class="cn-alert" id="cn-m14-512">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m14-513"><b>Review</b></h2>
+
+<p id="cn-m14-514">Well done, you have completed the <b>Provisioning Private Cloud Storage Solutions </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">e8276db5-e0a8-462b-abe2-9a7ffb4af8d4</span>
+
+<span class="atom-code hidden">304b89d0-a8a3-4056-a9be-529b80cbee83</span>
+
+<span class="atom-code hidden">8334291c-c5b1-4aaf-b656-f4dd34f0fa1c</span>
+
+<span class="atom-code hidden">f7ff4b0d-6481-4c85-98cb-4d9f23db62d7</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m14-524">You completed the following exercises:</p>
+
+<ul id="cn-m14-525">
+
+<li id="cn-m14-525">Exercise 1 - Configuring RAID Storage on a Virtual Machine</li>
+
+</ul>
+
+<p id="cn-m14-526">You should now be able to:</p>
+
+<ul id="cn-m14-527">
+
+<li id="cn-m14-527">Define and Describe Different Storage Features and Considerations</li>
+
+<li id="cn-m14-528">Configure RAID 0</li>
+
+<li id="cn-m14-529">Configure RAID 1</li>
+
+<li id="cn-m14-530">Enable Compression on an Allocated Disk</li>
+
+<li id="cn-m14-531">Enable Deduplication on a Fileshare</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m14-535">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
