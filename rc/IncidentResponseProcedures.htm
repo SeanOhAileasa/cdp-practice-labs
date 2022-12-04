@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="IncidentResponseProcedures_files/print-styles.css" rel="stylesheet">
+    <script src="IncidentResponseProcedures_files/jquery.min.js"></script>
+    <script src="IncidentResponseProcedures_files/jspdf.js"></script>
+    <script src="IncidentResponseProcedures_files/from_html.js"></script>
+    <script src="IncidentResponseProcedures_files/addimage.js"></script>
+    <script src="IncidentResponseProcedures_files/filesaver.js"></script>
+    <script src="IncidentResponseProcedures_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="iyySnUrROsvTnhJ5jePZdiQs3NQh2xFVavprTKWaZgkMyTOt4H+7nOSEh/JgxckHws6fgJLhePsib6nAi9/ETq8+ooRMbawkUAPHAB2ntjo=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Incident Response Procedures</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Incident Response Planning</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m10-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Incident Response Plan</div>
+
+<div>Call Tree</div>
+
+<div>Training</div>
+
+<div>Tabletop</div>
+
+<div>Documentation</div>
+
+<div>Threat Categories</div>
+
+<div>Identification</div>
+
+<div>Scope</div>
+
+<div>Investigation</div>
+
+<div>Containment, Eradication, Recovery</div>
+
+<div>Lessons Learned</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m10-14">Welcome to the <b>Incident Response Procedures </b>Practice Lab. In this module you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m10-22">In this module, you will complete the following exercise:</p>
+
+<ul id="cn-m10-23">
+
+<li id="cn-m10-23">Exercise 1 - Incident Response Planning</li>
+
+</ul>
+
+<p id="cn-m10-24">After completing this module, you should be able to:</p>
+
+<ul id="cn-m10-25">
+
+<li id="cn-m10-25">Define and Describe Appropriate Incident Response Planning</li>
+
+<li id="cn-m10-26">Define and Describe Proper Planning Techniques</li>
+
+<li id="cn-m10-27">Define and Describe Proper Response Techniques</li>
+
+<li id="cn-m10-28">Explore Incident Response Template Documentation</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m10-30">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m10-31">
+
+<li id="cn-m10-31">2.6 Explain the Importance of Incident Response Procedures</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m10-33">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m10-37">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m10-38">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m10-40"><b>Lab Topology</b></h2>
+
+<p id="cn-m10-41">During your session, you will have access to the following lab configuration.</p>
+
+<span class="atom-code hidden">b441a737-e075-40c4-a6a6-d57d4dcbeb25</span>
+
+<p id="cn-m10-44">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m10-45">
+
+<li id="cn-m10-45"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+<li id="cn-m10-46"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+<li id="cn-m10-47"><b>PLABWIN10 </b>- Domain Member Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m10-48">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m10-49"><b>Exercise 1 - Incident Response Planning</b></h2>
+
+<p id="cn-m10-50">As organizations grow, it is important for IT staff to
+ plan ahead and be strategic for cases where incidents may happen that 
+threaten infrastructure and a business running smoothly. When planning 
+for these incidents, it is imperative to consider anything that may put 
+an infrastructure at risk of failure and have an appropriate response to
+ remediate the issue rather than working reactionarily, which typically 
+leads to more downtime.</p>
+
+<p id="cn-m10-51">This becomes more important and equally difficult to 
+gauge as infrastructures become larger and more intricate. For example, 
+an infrastructure engineer may push an update through to a live 
+environment (that safely passes through dev and QA environments), only 
+to find that it causes an effect on a legacy resource. In the worst 
+cases, where that resource was a <b>Single Point of Failure </b>(<b>SPOF</b>), this can bring down the entire infrastructure.</p>
+
+<p id="cn-m10-52">Incident Response planning involves the following stages:</p>
+
+<span class="atom-code hidden">f6a06fb7-9501-4b94-9ee0-065fa63c7899</span>
+
+<p id="cn-m10-55">Figure 1.1 Diagram of the seven incident response 
+stages: Preparation, Identification, Containment, Investigation, 
+Eradication, Recovery and Follow-up.</p>
+
+<span class="atom-code hidden">b4ba939e-5984-4a44-9193-dc8153b85237</span>
+
+<p id="cn-m10-58">In this exercise, we will investigate a template incident response procedure.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m10-60">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m10-61">
+
+<li id="cn-m10-61">Define and Describe Appropriate Incident Response Planning</li>
+
+<li id="cn-m10-62">Define and Describe Proper Planning Techniques</li>
+
+<li id="cn-m10-63">Define and Describe Proper Response Techniques</li>
+
+<li id="cn-m10-64">Explore Incident Response Template Documentation</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m10-66">You will be using the following device in this lab. Please power this on now.</p>
+
+<p id="cn-m10-67"><img class="cn-img" id="cn-image-m10-c-0" src="IncidentResponseProcedures_files/image-m10-c-0.jpg" alt="Practice Labs screenshot."></p>
+
+<ul id="cn-m10-68">
+
+<li id="cn-m10-68"><b>PLABWIN10 </b>- Domain Member Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m10-69"><b>Task 1 - Review a Template Incident Response Documentation</b></h3>
+
+<p id="cn-m10-70">Various documents comprise incident response planning, and the exact documentation will vary from business to business.</p>
+
+<p id="cn-m10-71">In this task, we will review some example documents that can be used in incident response planning.</p>
+
+<h4 id="cn-m10-72"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m10-73">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m10-74"></p><figure><img class="cn-img" id="cn-image-m10-c-1" src="IncidentResponseProcedures_files/image-m10-c-1.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed."><figcaption>Figure 1.2 Screenshot of PLABWIN10: The Windows 10 desktop is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m10-76"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m10-77">From the <b>Taskbar</b>, click <b>File Explorer</b>.</p>
+
+<p id="cn-m10-78"></p><figure><img class="cn-img" id="cn-image-m10-c-2" src="IncidentResponseProcedures_files/image-m10-c-2.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with the File Explorer icon highlighted on the Taskbar."><figcaption>Figure 1.3 Screenshot of PLABWIN10: The Windows 10 desktop is displayed with the File Explorer icon highlighted on the Taskbar.</figcaption></figure><p></p>
+
+<h4 id="cn-m10-80"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m10-81">In the <b>File Explorer </b>window, under <b>Quick access</b>, click <b>Documents</b>.</p>
+
+<p id="cn-m10-82">Double-click the <b>Incident Response Planning Template </b>Excel file.</p>
+
+<p id="cn-m10-83"></p><figure><img class="cn-img" id="cn-image-m10-c-3" src="IncidentResponseProcedures_files/image-m10-c-3.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: The File Explorer window is displayed with the Incident Response Planning Template file highlighted."><figcaption>Figure
+ 1.4 Screenshot of PLABWIN10: The File Explorer window is displayed with
+ the Incident Response Planning Template file highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m10-85"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m10-86"><b>Close </b>the <b>Microsoft Office Professional Plus 2016 Wizard</b>.</p>
+
+<p id="cn-m10-88">The <b>Microsoft Excel </b>file will open on the <b>Threat Categorization Matrix </b>tab.</p>
+
+<p id="cn-m10-89">Here, you can see an example of different threat 
+classifications based on the probability of the issue occurring vs. the 
+impact it would have on an infrastructure.</p>
+
+<p id="cn-m10-90">The exact specifications here will change from business to business, although there are four categories here, for example: <b>Low</b>, <b>Medium</b>, <b>High</b>, and <b>Priority 1 High</b>.</p>
+
+<p id="cn-m10-91"></p><figure><img class="cn-img" id="cn-image-m10-c-4" src="IncidentResponseProcedures_files/image-m10-c-4.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: The Incident Response Planning Template Excel file is displayed with the Threat Categorization Matrix tab is selected."><figcaption>Figure
+ 1.5 Screenshot of PLABWIN10: The Incident Response Planning Template 
+Excel file is displayed with the Threat Categorization Matrix tab is 
+selected.</figcaption></figure><p></p>
+
+<h4 id="cn-m10-93"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m10-94">Click on the <b>Monitoring Plan </b>tab.</p>
+
+<p id="cn-m10-96"></p><figure><img class="cn-img" id="cn-image-m10-c-5" src="IncidentResponseProcedures_files/image-m10-c-5.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: The Incident Response Planning Template Excel file is displayed with the Monitoring Plan tab highlighted."><figcaption>Figure
+ 1.6 Screenshot of PLABWIN10: The Incident Response Planning Template 
+Excel file is displayed with the Monitoring Plan tab highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m10-98"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m10-99">This tab displays a simple monitoring sheet that 
+outlines different resources that comprise a wider infrastructure, 
+including the resource description, a judgment of risk, backup details, 
+and if it is part of a wider infrastructure or a stand-alone resource.</p>
+
+<p id="cn-m10-100"></p><figure><img class="cn-img" id="cn-image-m10-c-6" src="IncidentResponseProcedures_files/image-m10-c-6.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: Figure 1.4 Screenshot of PLABWIN10: The Incident Response Planning Template Excel file is displayed with the Monitoring Plan tab shown."><figcaption>Figure
+ 1.7 Screenshot of PLABWIN10: Figure 1.4 Screenshot of PLABWIN10: The 
+Incident Response Planning Template Excel file is displayed with the 
+Monitoring Plan tab shown.</figcaption></figure><p></p>
+
+<h4 id="cn-m10-102"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m10-103">Scroll to the right of the page to view the remaining data.</p>
+
+<p id="cn-m10-104">You can see multiple potential concerns.</p>
+
+<p id="cn-m10-105">For example, PLABKV01, an Azure Key Vault, does not 
+have any infrastructure relying on it directly (as noted in column G) 
+and therefore has been declared as not a risk, although it has not been 
+backed up for a year and a half before the other resources.</p>
+
+<p id="cn-m10-106">This could indicate a SPOF, as the Key Vault could store business-critical data.</p>
+
+<p id="cn-m10-107"></p><figure><img class="cn-img" id="cn-image-m10-c-7" src="IncidentResponseProcedures_files/image-m10-c-7.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: The Incident Response Planning Template Excel file is displayed with the Monitoring Plan tab shown and scrolled to the right of the sheet."><figcaption>Figure
+ 1.8 Screenshot of PLABWIN10: The Incident Response Planning Template 
+Excel file is displayed with the Monitoring Plan tab shown and scrolled 
+to the right of the sheet.</figcaption></figure><p></p>
+
+<h4 id="cn-m10-109"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m10-110">Finally, click the <b>Call Tree &amp; Decision Plan </b>tab.</p>
+
+<p id="cn-m10-112"></p><figure><img class="cn-img" id="cn-image-m10-c-8" src="IncidentResponseProcedures_files/image-m10-c-8.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: The Incident Response Planning Template Excel file is displayed with the Call Tree &amp;amp; Decision Plan highlighted."><figcaption>Figure
+ 1.9 Screenshot of PLABWIN10: The Incident Response Planning Template 
+Excel file is displayed with the Call Tree &amp; Decision Plan 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m10-114"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m10-115">This tab outlines a blank call tree, in which different hierarchal levels are shown with fields for contact details.</p>
+
+<p id="cn-m10-116">It outlines a plan of whom to communicate with in 
+case of an incident and could also potentially double up as an outline 
+of roles and responsibilities.</p>
+
+<p id="cn-m10-117">In the given example, the Director may be the person who can authorize decisions.</p>
+
+<p id="cn-m10-118"></p><figure><img class="cn-img" id="cn-image-m10-c-9" src="IncidentResponseProcedures_files/image-m10-c-9.jpg" alt="Figure 1.10 Screenshot of PLABWIN10: The Incident Response Planning Template Excel file is displayed with the Call Tree &amp;amp; Decision Plan tab shown."><figcaption>Figure
+ 1.10 Screenshot of PLABWIN10: The Incident Response Planning Template 
+Excel file is displayed with the Call Tree &amp; Decision Plan tab 
+shown.</figcaption></figure><p></p>
+
+<h4 id="cn-m10-120"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m10-121">Close the <b>Microsoft Excel </b>window by clicking the <b>Close </b>button.</p>
+
+<p id="cn-m10-122"></p><figure><img class="cn-img" id="cn-image-m10-c-10" src="IncidentResponseProcedures_files/image-m10-c-10.jpg" alt="Figure 1.11: Screenshot of PLABWIN10: The Incident Response Planning Template Excel file is displayed with the Call Tree &amp;amp; Decision Plan tab shown and the Close button highlighted."><figcaption>Figure
+ 1.11: Screenshot of PLABWIN10: The Incident Response Planning Template 
+Excel file is displayed with the Call Tree &amp; Decision Plan tab shown
+ and the Close button highlighted.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<span class="cn-alert" id="cn-m10-126">Close all open windows and proceed to the review section.</span>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m10-129"><b>Review</b></h2>
+
+<p id="cn-m10-130">Well done, you have completed <b>Incident Response Procedures </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">be7db9da-dad9-4016-b274-e65b53ecb97f</span>
+
+<span class="atom-code hidden">a8920be9-fd57-4f40-9489-0bd6c8cb445b</span>
+
+<span class="atom-code hidden">09a7f16e-6634-4334-bbee-cf95143bc7c9</span>
+
+<span class="atom-code hidden">61caeca2-f578-4c15-bc54-42d30798fc3f</span>
+
+<span class="atom-code hidden">33e76536-6417-4e87-bd5f-ebf79dc0d87e</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m10-141">You completed the following exercise:</p>
+
+<ul id="cn-m10-142">
+
+<li id="cn-m10-142">Exercise 1 - Incident Response Planning</li>
+
+</ul>
+
+<p id="cn-m10-143">You should now be able to:</p>
+
+<ul id="cn-m10-144">
+
+<li id="cn-m10-144">Define and Describe Appropriate Incident Response Planning</li>
+
+<li id="cn-m10-145">Define and Describe Proper Planning Techniques</li>
+
+<li id="cn-m10-146">Define and Describe Proper Response Techniques</li>
+
+<li id="cn-m10-147">Explore Incident Response Template Documentation</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m10-151">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
