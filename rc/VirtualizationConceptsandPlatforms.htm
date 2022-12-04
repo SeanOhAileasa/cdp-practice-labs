@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="VirtualizationConceptsandPlatforms_files/print-styles.css" rel="stylesheet">
+    <script src="VirtualizationConceptsandPlatforms_files/jquery.min.js"></script>
+    <script src="VirtualizationConceptsandPlatforms_files/jspdf.js"></script>
+    <script src="VirtualizationConceptsandPlatforms_files/from_html.js"></script>
+    <script src="VirtualizationConceptsandPlatforms_files/addimage.js"></script>
+    <script src="VirtualizationConceptsandPlatforms_files/filesaver.js"></script>
+    <script src="VirtualizationConceptsandPlatforms_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="JgLoLsjhUuZ39G9zZLHWUQUN2WVGlZN5TY/LhBnaOfSIQXzIuiCFiyxEebkD6CE0z1rh8KnVdtN56PS/QQr689dqZ/qnkZ67Aonl8pyx+yU=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Virtualization Concepts and Platforms</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Virtual Networking Software</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m16-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Cloud+</div>
+
+<div>Network+</div>
+
+<div>Hyper-V Application</div>
+
+<div>Network Load Balancer</div>
+
+<div>Virtualization</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m16-8">Welcome to the <b>Virtualization Concepts and Platforms </b>Practice Lab. In this module, you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<p id="cn-m16-9"><b>Virtual Machines (VMs) </b>are created using <b>Hypervisor </b>software,
+ and when working in private cloud infrastructures there are multiple 
+considerations to consider when looking to provision VMs. Hypervisors 
+can be one of two types, known as <b>Type 1 </b>and <b>Type 2 </b>hypervisors.</p>
+
+<p id="cn-m16-10">Type 1 refers to a hypervisor that runs on a host’s physical hardware, otherwise known as a “bare metal” configuration.</p>
+
+<p id="cn-m16-11">In this type of virtualization, the Hypervisor does 
+not rely on the operating system used by the host machine and instead 
+makes calls directly to hardware to generate virtual resources, and an 
+example of this would be <b>VMWare ESXi</b>.</p>
+
+<p id="cn-m16-12">This is the opposite with Type 2 hypervisors, which 
+run “on top” of an operating system and rely on that OS to make calls to
+ the system hardware in its place. An example of this type of 
+configuration would be <b>Virtual Box</b>.</p>
+
+<p id="cn-m16-13">In this module, a Type 1 hypervisor, <b>Microsoft Hyper-V</b>, will be used to explain virtualization concepts.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m16-19">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m16-20">
+
+<li id="cn-m16-20">Exercise 1 - Virtual Networking Software</li>
+
+</ul>
+
+<p id="cn-m16-21">After completing this module, you should be able to:</p>
+
+<ul id="cn-m16-22">
+
+<li id="cn-m16-22">Define and Describe Compute Sizing Requirements and Concepts</li>
+
+<li id="cn-m16-23">Install and Explore the Microsoft Hyper-V Application</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m16-25">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m16-26">
+
+<li id="cn-m16-26">3.4 Given a scenario, configure the appropriate compute sizing for a deployment</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m16-28">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m16-32">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m16-33">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m16-35"><b>Lab Topology</b></h2>
+
+<p id="cn-m16-36">During your session, you will have access to the following lab configuration.</p>
+
+<span class="atom-code hidden">75813da0-66b4-4c2c-ac64-3300a6a40efa</span>
+
+<p id="cn-m16-39">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m16-40">
+
+<li id="cn-m16-40"><b>PFSENSE - </b>(Virtual Firewall)</li>
+
+<li id="cn-m16-41"><b>PLABDC01 - </b>(Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m16-42"><b>PLABDM01 - </b>(Windows Server 2019 - Domain Member)</li>
+
+<li id="cn-m16-43"><b>PLABKALI - </b>(Kali 2021.1 - Standalone Server)</li>
+
+<li id="cn-m16-44"><b>PLABWIN10 - </b>(Windows 10 - Domain Member)</li>
+
+<li id="cn-m16-45"><b>PLABWEB01 - </b>(Windows Server 2019 - Standalone Server)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m16-46">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m16-47"><b>Exercise 1 - Virtual Networking Software</b></h2>
+
+<p id="cn-m16-48">Virtual networking software is used to create virtual 
+networking components. These components are used to connect physical or 
+virtual devices. Virtual networking software can simulate physical 
+devices and also functions the same. The only difference is that 
+software is used for these devices.</p>
+
+<p id="cn-m16-49">In this exercise, virtual networking software will be installed and explored.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m16-51">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m16-52">
+
+<li id="cn-m16-52">Define and Describe Compute Sizing Requirements and Concepts</li>
+
+<li id="cn-m16-53">Install and Explore the Microsoft Hyper-V Application</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m16-55">You will be using the following devices in this lab. Please power these on now.</p>
+
+<span class="atom-code hidden">7f717de2-69ea-4924-822f-197bf9e78c83</span>
+
+<ul id="cn-m16-58">
+
+<li id="cn-m16-58"><b>PLABDC01 - </b>(Windows Server 2019 - Domain Controller)</li>
+
+<li id="cn-m16-59"><b>PLABWIN10 - </b>(Windows 10 - Domain Member)</li>
+
+</ul>
+
+<h3 id="cn-m16-60"><b>Task 1 - Install Microsoft Hyper-V</b></h3>
+
+<p id="cn-m16-61">Microsoft Hyper-V is a virtualization technology used 
+to virtualize physical devices and resources, such as creating a virtual
+ machine or virtual switch.</p>
+
+<p id="cn-m16-62">In this task, the Microsoft Hyper-V application will 
+be installed and explored, and a virtual machine will be provisioned for
+ oversubscription.</p>
+
+<h4 id="cn-m16-63"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m16-64">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m16-65">Click <b>Start</b>, type the following and press <b>Enter</b>.</p>
+
+<pre id="cn-m16-66"><code>Control Panel
+
+</code></pre>
+
+<p id="cn-m16-67"></p><figure><img class="cn-img" id="cn-image-m16-c-0" src="VirtualizationConceptsandPlatforms_files/image-m16-c-0.jpg" alt="Figure 1.1 Screenshot of PLABWIN10: Displaying opening Control Panel from the Start menu."><figcaption>Figure 1.1 Screenshot of PLABWIN10: Displaying opening Control Panel from the Start menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-69"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m16-70">In the <b>Control Panel </b>window, click <b>Programs</b>.</p>
+
+<p id="cn-m16-71"></p><figure><img class="cn-img" id="cn-image-m16-c-1" src="VirtualizationConceptsandPlatforms_files/image-m16-c-1.jpg" alt="Figure 1.2 Screenshot of PLABWIN10: Displaying opening Programs in the Control Panel window."><figcaption>Figure 1.2 Screenshot of PLABWIN10: Displaying opening Programs in the Control Panel window.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-73"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m16-74">Click <b>Turn Windows features on or off </b>in the <b>Control Panel &gt; Programs </b>window.</p>
+
+<p id="cn-m16-75"></p><figure><img class="cn-img" id="cn-image-m16-c-2" src="VirtualizationConceptsandPlatforms_files/image-m16-c-2.jpg" alt="Figure 1.3 Screenshot of PLABWIN10: Displaying clicking Turn Windows features on or off in the Control Panel window."><figcaption>Figure 1.3 Screenshot of PLABWIN10: Displaying clicking Turn Windows features on or off in the Control Panel window.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-77"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m16-78">In the <b>Windows Features </b>pop-up window, select the <b>Hyper-V </b>checkbox and click <b>OK</b>.</p>
+
+<p id="cn-m16-79"></p><figure><img class="cn-img" id="cn-image-m16-c-3" src="VirtualizationConceptsandPlatforms_files/image-m16-c-3.jpg" alt="Figure 1.4 Screenshot of PLABWIN10: Displaying enabling the Hyper-V feature through Control Panel."><figcaption>Figure 1.4 Screenshot of PLABWIN10: Displaying enabling the Hyper-V feature through Control Panel.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-81"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m16-82">In the <b>Windows Features </b>window, click <b>Restart now</b>.</p>
+
+<p id="cn-m16-83"></p><figure><img class="cn-img" id="cn-image-m16-c-4" src="VirtualizationConceptsandPlatforms_files/image-m16-c-4.jpg" alt="Figure 1.5 Screenshot of PLABWIN10: Displaying enabling the Hyper-V feature in Control Panel."><figcaption>Figure 1.5 Screenshot of PLABWIN10: Displaying enabling the Hyper-V feature in Control Panel.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m16-85"><b><i>Note: </i></b><i>Enabling and installing the Hyper-V feature will require the </i><b><i>PLABWIN10 </i></b><i>devices to restart. This might take a couple of minutes to complete.</i></span>
+
+<h3 id="cn-m16-86"><b>Task 2 - Explore the Hyper-V Application</b></h3>
+
+<p id="cn-m16-87">The Hyper-V application in Windows 10 can be used to virtualize network resources. These resources include devices and switches.</p>
+
+<p id="cn-m16-88">In this task, the Hyper-V application will be explored to get a better understanding of the Hyper-V application.</p>
+
+<h4 id="cn-m16-89"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m16-90">Connect to <b>PLABWIN10</b>.</p>
+
+<p id="cn-m16-91">Click <b>Start, </b>type the following:</p>
+
+<pre id="cn-m16-92"><code>Hyper-V Manager
+
+</code></pre>
+
+<p id="cn-m16-93">Press <b>Enter</b>.</p>
+
+<p id="cn-m16-94"></p><figure><img class="cn-img" id="cn-image-m16-c-5" src="VirtualizationConceptsandPlatforms_files/image-m16-c-5.jpg" alt="Figure 1.6 Screenshot of PLABWIN10: Displaying opening the Hyper-V application from the Start menu."><figcaption>Figure 1.6 Screenshot of PLABWIN10: Displaying opening the Hyper-V application from the Start menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-96"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m16-97">In the <b>Hyper-V Manager </b>window, click <b>PLABWIN10 </b>on the left pane.</p>
+
+<p id="cn-m16-98"></p><figure><img class="cn-img" id="cn-image-m16-c-6" src="VirtualizationConceptsandPlatforms_files/image-m16-c-6.jpg" alt="Figure 1.7 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the Hyper-V application."><figcaption>Figure 1.7 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the Hyper-V application.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-100"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m16-101">In the <b>Hyper-V Manager </b>window, click <b>Hyper-V Settings </b>on the right pane.</p>
+
+<p id="cn-m16-102"></p><figure><img class="cn-img" id="cn-image-m16-c-7" src="VirtualizationConceptsandPlatforms_files/image-m16-c-7.jpg" alt="Figure 1.8 Screenshot of PLABWIN10: Displaying clicking Hyper-V Settings in the Hyper-V Manager window."><figcaption>Figure 1.8 Screenshot of PLABWIN10: Displaying clicking Hyper-V Settings in the Hyper-V Manager window.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-104"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m16-105">Click <b>Cancel </b>in the <b>Hyper-V Settings for PLABWIN10 </b>window.</p>
+
+<p id="cn-m16-106"></p><figure><img class="cn-img" id="cn-image-m16-c-8" src="VirtualizationConceptsandPlatforms_files/image-m16-c-8.jpg" alt="Figure 1.9 Screenshot of PLABWIN10: Displaying closing the Hyper-V settings window."><figcaption>Figure 1.9 Screenshot of PLABWIN10: Displaying closing the Hyper-V settings window.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m16-108"><b><i>Note: </i></b><i>In </i><b><i>Hyper-V Settings, </i></b><i>specific
+ parameters can be set to manage the virtual components used by Hyper-V.
+ These parameters include where virtual machines will be stored on the 
+specific device. It is essential to specify the correct storage to 
+ensure the manageability of all the virtual devices.</i></span>
+
+<h4 id="cn-m16-109"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m16-110">Back on the <b>Hyper-V Manager </b>window, click <b>Virtual Switch Manager </b>on the right pane.</p>
+
+<p id="cn-m16-111"></p><figure><img class="cn-img" id="cn-image-m16-c-9" src="VirtualizationConceptsandPlatforms_files/image-m16-c-9.jpg" alt="Figure 1.10 Screenshot of PLABWIN10: Displaying selecting Virtual Switch Manager in Hyper-V Manager."><figcaption>Figure 1.10 Screenshot of PLABWIN10: Displaying selecting Virtual Switch Manager in Hyper-V Manager.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-113"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m16-114">Click <b>Cancel </b>in the <b>Virtual Switch Manager for PLABWIN10 </b>window.</p>
+
+<p id="cn-m16-115"></p><figure><img class="cn-img" id="cn-image-m16-c-10" src="VirtualizationConceptsandPlatforms_files/image-m16-c-10.jpg" alt="Figure 1.11 Screenshot of PLABWIN10: Displaying closing the Virtual Switch Manager window."><figcaption>Figure 1.11 Screenshot of PLABWIN10: Displaying closing the Virtual Switch Manager window.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m16-117"><b><i>Note: </i></b><i>The Virtual Switch Manager is used to create virtual switches to connect virtual devices.</i></span>
+
+<h4 id="cn-m16-118"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m16-119">Back on the <b>Hyper-V Manager </b>window, click <b>New </b>on the right pane and select <b>Virtual Machine.</b></p>
+
+<p id="cn-m16-120"></p><figure><img class="cn-img" id="cn-image-m16-c-11" src="VirtualizationConceptsandPlatforms_files/image-m16-c-11.jpg" alt="Figure 1.12 Screenshot of PLABWIN10: Displaying selecting to create a new Virtual Machine."><figcaption>Figure 1.12 Screenshot of PLABWIN10: Displaying selecting to create a new Virtual Machine.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-122"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m16-123">Click <b>Cancel </b>in the <b>New Virtual Machine Wizard</b>.</p>
+
+<p id="cn-m16-124"></p><figure><img class="cn-img" id="cn-image-m16-c-12" src="VirtualizationConceptsandPlatforms_files/image-m16-c-12.jpg" alt="Figure 1.13 Screenshot of PLABWIN10: Displaying closing the New Virtual Machine Wizard."><figcaption>Figure 1.13 Screenshot of PLABWIN10: Displaying closing the New Virtual Machine Wizard.</figcaption></figure><p></p>
+
+<span class="cn-quote" id="cn-m16-126"><b><i>Note: </i></b><i>The 
+Hyper-V application can be used to create virtual machines on a specific
+ device. Virtual machines can create specific devices on the Network, 
+for example, a Web Server. A virtual network will be used to connect 
+these devices.</i></span>
+
+<h4 id="cn-m16-127"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m16-128">Close the <b>Hyper-V Manager </b>application.</p>
+
+<p id="cn-m16-129"></p><figure><img class="cn-img" id="cn-image-m16-c-13" src="VirtualizationConceptsandPlatforms_files/image-m16-c-13.jpg" alt="Figure 1.14 Screenshot of PLABWIN10: Displaying closing the Hyper-V Manager application."><figcaption>Figure 1.14 Screenshot of PLABWIN10: Displaying closing the Hyper-V Manager application.</figcaption></figure><p></p>
+
+<h3 id="cn-m16-131"><b>Task 3 - Provisioning a Virtual machine for Oversubscription</b></h3>
+
+<p id="cn-m16-132">The Hyper-V application in Windows 10 can be used with virtualized machine resources to demonstrate <b>Oversubscription </b>of
+ shared resources. This oversubscription of resources happens when the 
+Hypervisor shares with virtual machines beyond the available physical 
+resources on the host hardware.</p>
+
+<p id="cn-m16-133">Oversubscription of CPU cores isn’t a new concept; this capability is largely attributed to <b>Simultaneous Multi-Threading (SMT</b>).
+ SMT is the technique used in modern processor designs that enable the 
+processor's resources to be shared by separate, independent execution 
+threads. Generally used to run parallelizing computations to increase 
+instruction throughput, this also allows for several virtual machines to
+ run on a single host.</p>
+
+<p id="cn-m16-134">Among other resources that can be shared are memory 
+and local storage. Normally when configuring these resources for a 
+virtual machine, they would be statically set; however, there are 
+instances where it's necessary to allocate it dynamically, such as 
+having hardware limitations or optimizing currently available resources.
+ Hypervisors can manage this type of resource sharing using techniques 
+such as <b>Ballooning </b>and <b>Dynamic Memory Allocation.</b></p>
+
+<p id="cn-m16-135">In this task, the <b>Hyper-V </b>application will be further explored to get a better understanding of some common virtualization concepts.</p>
+
+<h4 id="cn-m16-137"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m16-138">Open <b>Hyper-V Manager</b>.</p>
+
+<p id="cn-m16-139"></p><figure><img class="cn-img" id="cn-image-m16-c-14" src="VirtualizationConceptsandPlatforms_files/image-m16-c-14.jpg" alt="Figure 1.15 Screenshot of PLABWIN10: Displaying opening the Hyper-V application from the Start menu."><figcaption>Figure 1.15 Screenshot of PLABWIN10: Displaying opening the Hyper-V application from the Start menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-141"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m16-142">Right click on <b>PLABWIN10 </b>located under the left column.</p>
+
+<p id="cn-m16-143"></p><figure><img class="cn-img" id="cn-image-m16-c-15" src="VirtualizationConceptsandPlatforms_files/image-m16-c-15.jpg" alt="Figure 1.16 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the Hyper-V application."><figcaption>Figure 1.16 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the Hyper-V application.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-145"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m16-146">From the context menu, highlight <b>New </b>and select <b>Virtual Machine </b>from the drop-down.</p>
+
+<p id="cn-m16-147"></p><figure><img class="cn-img" id="cn-image-m16-c-16" src="VirtualizationConceptsandPlatforms_files/image-m16-c-16.jpg" alt="Figure 1.17 Screenshot of PLABWIN10: The Hyper-V manager window is displayed. New &amp;gt; Virtual machine is highlighted."><figcaption>Figure 1.17 Screenshot of PLABWIN10: The Hyper-V manager window is displayed. New &gt; Virtual machine is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-149"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m16-150">In the <b>New Virtual Machine Wizard</b>, select <b>Next</b>.</p>
+
+<p id="cn-m16-151"></p><figure><img class="cn-img" id="cn-image-m16-c-17" src="VirtualizationConceptsandPlatforms_files/image-m16-c-17.jpg" alt="Figure 1.18 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the Hyper-V application. New virtual Machine Wizard, before you begin page with the Next button Highlighted."><figcaption>Figure
+ 1.18 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the 
+Hyper-V application. New virtual Machine Wizard, before you begin page 
+with the Next button Highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-153"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m16-154">On the <b>Specify name and location </b>page, type the following into the <b>Name </b>field:</p>
+
+<pre id="cn-m16-155"><code>PLabWINVM01
+
+</code></pre>
+
+<p id="cn-m16-156">Click <b>Next</b>.</p>
+
+<p id="cn-m16-157"></p><figure><img class="cn-img" id="cn-image-m16-c-18" src="VirtualizationConceptsandPlatforms_files/image-m16-c-18.jpg" alt="Figure 1.19 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the Hyper-V application. New virtual Machine Wizard, Specify name and location page, PLabWINVM01 typed in name, highlighting next."><figcaption>Figure
+ 1.19 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the 
+Hyper-V application. New virtual Machine Wizard, Specify name and 
+location page, PLabWINVM01 typed in name, highlighting next.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-159"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m16-160">On the <b>Specify Generation </b>page, select <b>Generation 1 </b>and click <b>Next</b>.</p>
+
+<p id="cn-m16-161">It will take a couple of minutes as the new VM is being set up.</p>
+
+<span class="cn-quote" id="cn-m16-162"><b><i>Note</i></b><i>: The 
+selected generation is an important consideration determined by the 
+image of the VM that will be created. For example, if an older version 
+of a Linux operating system needs to be installed, in this example, it 
+is unimportant as no Image will be loaded into the VM.</i></span>
+
+<p id="cn-m16-163"><img class="cn-img" id="cn-image-m16-c-19" src="VirtualizationConceptsandPlatforms_files/image-m16-c-19.jpg" alt="Practice Labs screenshot."></p>
+
+<h4 id="cn-m16-166"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m16-167">On the <b>Assign memory </b>page, change the <b>startup memory </b>to <b>4096 MB</b>.</p>
+
+<p id="cn-m16-168">Verify the check box for used <b>dynamic memory </b>for this virtual machine is selected and click <b>Next</b>.</p>
+
+<p id="cn-m16-169"></p><figure><img class="cn-img" id="cn-image-m16-c-20" src="VirtualizationConceptsandPlatforms_files/image-m16-c-20.jpg" alt="Figure 1.21 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the Hyper-V application. New virtual Machine Wizard, Assign memory tab, 4096 typed in Startup memory, Use Dynamic Memory for this virtual machine checked, next highlighted."><figcaption>Figure
+ 1.21 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the 
+Hyper-V application. New virtual Machine Wizard, Assign memory tab, 4096
+ typed in Startup memory, Use Dynamic Memory for this virtual machine 
+checked, next highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-171"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m16-172">On the <b>Configure Networking </b>and <b>Connect Virtual Hard Disk </b>pages, leave the default entries and click <b>Next</b>.</p>
+
+<p id="cn-m16-173"></p><figure><img class="cn-img" id="cn-image-m16-c-21" src="VirtualizationConceptsandPlatforms_files/image-m16-c-21.jpg" alt="Figure 1.22 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the Hyper-V application. New virtual Machine Wizard, Connect Virtual Machine tab, Create a virtual machine selected, defaults auto-filled in text boxes. Next highlighted."><figcaption>Figure
+ 1.22 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the 
+Hyper-V application. New virtual Machine Wizard, Connect Virtual Machine
+ tab, Create a virtual machine selected, defaults auto-filled in text 
+boxes. Next highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-175"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m16-176">On the <b>Installation Options </b>page, verify that <b>Install an Operating System Later </b>is selected.</p>
+
+<p id="cn-m16-177">Click <b>Next</b>.</p>
+
+<p id="cn-m16-178"></p><figure><img class="cn-img" id="cn-image-m16-c-22" src="VirtualizationConceptsandPlatforms_files/image-m16-c-22.jpg" alt="Figure 1.23 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the Hyper-V application. New virtual Machine Wizard, Installation option tab, Install an operating system later selected, next button highlighted."><figcaption>Figure
+ 1.23 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the 
+Hyper-V application. New virtual Machine Wizard, Installation option 
+tab, Install an operating system later selected, next button 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-180"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m16-181">On the <b>Summary </b>Page, click <b>Finish</b>.</p>
+
+<span class="cn-alert" id="cn-m16-182"><b>Alert</b>: Repeat <b>Steps 2 through Step 10 </b>to create an additional VM with the name <b>PLabWINVM02</b>.</span>
+
+<p id="cn-m16-183"></p><figure><img class="cn-img" id="cn-image-m16-c-23" src="VirtualizationConceptsandPlatforms_files/image-m16-c-23.jpg" alt="Figure 1.24 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the Hyper-V application. New virtual Machine Wizard, Summary tab, finish button highlighted."><figcaption>Figure
+ 1.24 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the 
+Hyper-V application. New virtual Machine Wizard, Summary tab, finish 
+button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-185"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m16-186">Once the two VMs have been created, right click on <b>PLabWINVM01</b>.</p>
+
+<p id="cn-m16-187">Select <b>Settings </b>from the context menu.</p>
+
+<p id="cn-m16-188"></p><figure><img class="cn-img" id="cn-image-m16-c-24" src="VirtualizationConceptsandPlatforms_files/image-m16-c-24.jpg" alt="Figure 1.25 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the Hyper-V application. PLabWINVM01 selected, Settings highlighted from the context menu."><figcaption>Figure
+ 1.25 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the 
+Hyper-V application. PLabWINVM01 selected, Settings highlighted from the
+ context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-190"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m16-191">In the <b>Settings for PLabWINVM01 on the PLABWIN10 </b>window, select <b>Processor </b>from the left column.</p>
+
+<p id="cn-m16-192">Increase the <b>Number of virtual Processors </b>from <b>1 </b>to <b>4.</b></p>
+
+<p id="cn-m16-193">Notice that the value under Percent of total system resources has changed from <b>25 </b>to <b>100</b>.</p>
+
+<p id="cn-m16-194">Click <b>OK</b>.</p>
+
+<p id="cn-m16-195">Repeat this step for <b>PLabWINVM02</b>.</p>
+
+<span class="cn-quote" id="cn-m16-196"><b><i>Note</i></b><i>:  
+Simultaneous multi-threading (SMT) is what allows for the hosting of 
+multiple virtual machines on a single host. This is the process of 
+splitting a Physical CPU core into virtual cores, also known as threads.
+ Allowing each core to run multiple instruction streams simultaneously 
+rather than all the virtual machines sharing a singular thread.</i><br><i>Having
+ provisioned these two virtual machines on a single host represents a 
+simple form of hyper-converged infrastructure. This solution combines 
+storage, computing, and networking into a single system reducing 
+complexity and increasing scalability. Without the ability to virtualize
+ this infrastructure, it would have been necessary to obtain, configure 
+and connect multiple physical assets.</i></span>
+
+<p id="cn-m16-198"></p><figure><img class="cn-img" id="cn-image-m16-c-25" src="VirtualizationConceptsandPlatforms_files/image-m16-c-25.jpg" alt="Figure 1.26 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the Hyper-V application. Settings for PLabWINVM01 on PLabWIN01 open, Processor page selected, Number of virtual processors set to 4, and the apply button highlighted."><figcaption>Figure
+ 1.26 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the 
+Hyper-V application. Settings for PLabWINVM01 on PLabWIN01 open, 
+Processor page selected, Number of virtual processors set to 4, and the 
+apply button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-200"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m16-201">Minimize the <b>Hyper-V Manager </b>window.</p>
+
+<p id="cn-m16-202">On <b>the type here to search </b>field, type the following:</p>
+
+<pre id="cn-m16-203"><code>Task Manager
+
+</code></pre>
+
+<p id="cn-m16-204">Click the <b>Task Manager </b>entry to open <b>Task Manager</b>.</p>
+
+<p id="cn-m16-205"></p><figure><img class="cn-img" id="cn-image-m16-c-26" src="VirtualizationConceptsandPlatforms_files/image-m16-c-26.jpg" alt="Figure 1.27 Screenshot of PLABWIN10: Displaying opening the Task Manager application from the Start menu."><figcaption>Figure 1.27 Screenshot of PLABWIN10: Displaying opening the Task Manager application from the Start menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-207"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m16-208">In <b>Task Manager</b>, click on the <b>Performance </b>tab.</p>
+
+<p id="cn-m16-209">Under the <b>CPU monitor </b>graph display, notice where it indicates this machine has a base speed and cores.</p>
+
+<span class="cn-quote" id="cn-m16-210"><b><i>Note</i></b><i>: Some of 
+the host machine's resources are looking over the information provided 
+below the monitor graph. For this task, it's important to note that this
+ host currently has 4 cores, and its base speed is 2.60GHz (Gigahertz). 
+This speed of 2.60GHz is the computer’s processor clock speed, which 
+determines how quickly the CPU can retrieve and interpret instructions.</i><br><i>By
+ setting both Virtual machines to use the 4 cores provided, the CPU is 
+considered Oversubscribed, as the CPU has to support these two VMs. In 
+essence, it allows the host machine to retain both VMs without expanding
+ the physical CPU, which would add costs but will require the 
+administrator to assess for degraded performance beyond acceptable 
+levels. CPU speeds can be measured using </i><b><i>Instructions per Cycle/Clock (IPC</i></b><i>), demonstrating how many tasks a CPU can conduct each cycle.</i></span>
+
+<p id="cn-m16-212"></p><figure><img class="cn-img" id="cn-image-m16-c-27" src="VirtualizationConceptsandPlatforms_files/image-m16-c-27.jpg" alt="Figure 1.28 Screenshot of PLABWIN10: Displaying open Task Manager application, page open to Performance."><figcaption>Figure 1.28 Screenshot of PLABWIN10: Displaying open Task Manager application, page open to Performance.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-214"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m16-215">Close <b>Task Manager </b>and maximize <b>Hyper-V Manager</b>.</p>
+
+<p id="cn-m16-216">Right Click on <b>PLabWINVM01</b>, and select <b>Settings</b>.</p>
+
+<p id="cn-m16-217"></p><figure><img class="cn-img" id="cn-image-m16-c-28" src="VirtualizationConceptsandPlatforms_files/image-m16-c-28.jpg" alt="Figure 1.29 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the Hyper-V application. PLabWINVM01 selected, Settings highlighted from the context menu."><figcaption>Figure
+ 1.29 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the 
+Hyper-V application. PLabWINVM01 selected, Settings highlighted from the
+ context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-219"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m16-220">Select <b>Memory </b>from the left column.</p>
+
+<p id="cn-m16-221">Using the scroll bar, change the <b>Memory </b>toward <b>High</b>.</p>
+
+<span class="cn-quote" id="cn-m16-222"><b><i>Note</i></b><i>: Glancing 
+at the setting available on the Memory page, Under Dynamic Memory with 
+it enabled, it allows for a Minimum and Maximum utilization of Ram. 
+Despite the fact that 4096 MB has been statically set to this Virtual 
+Machine, enabling Dynamic Memory allows for the Hypervisor to perform 
+memory ballooning.</i><br><br><i>This allows the Hypervisor to expand 
+the memory pool artificially by using or reclaiming unused memory 
+assigned to the hosted virtual machines. Setting the memory to weigh in 
+this instance notifies the Hypervisor to prioritize this VM when 
+allocating memory. Depending on the utilization across all the virtual 
+machines, it is possible to exhaust available memory if all the VMs 
+simultaneously require this memory, reducing the overall performance of 
+the systems.</i></span>
+
+<p id="cn-m16-224"></p><figure><img class="cn-img" id="cn-image-m16-c-29" src="VirtualizationConceptsandPlatforms_files/image-m16-c-29.jpg" alt="Figure 1.30 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the Hyper-V application. Settings for PLabWINVM01 on PLabWIN01 open, Memory page selected, RAM set to 4096 MB, and the apply button highlighted."><figcaption>Figure
+ 1.30 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the 
+Hyper-V application. Settings for PLabWINVM01 on PLabWIN01 open, Memory 
+page selected, RAM set to 4096 MB, and the apply button highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m16-226"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m16-227">Click on <b>Add Hardware</b>, located on the left column.</p>
+
+<span class="cn-quote" id="cn-m16-228"><b><i>Note</i></b><i>: Due to Lab
+ environment limitations, a GPU can not be added to the Virtual machines
+ through the Add Hardware on this device. A Graphics processing unit 
+(GPU) is a specialized processor originally designed to accelerate 
+graphics and video rendering.</i><br><br><i>In a different host 
+environment that utilizes a Hardware Graphics processing unit or a 
+graphics card, it is possible to virtualize this resource and share it 
+with the virtual machines hosted on it. This is possible through GPU 
+Passthrough, where the device acts as if it was directly physically 
+attached to the VM. Commonly used to run a Windows virtual machine that 
+requires a dedicated GPU for an application to operate at native speeds.</i></span>
+
+<p id="cn-m16-230"></p><figure><img class="cn-img" id="cn-image-m16-c-30" src="VirtualizationConceptsandPlatforms_files/image-m16-c-30.jpg" alt="Figure 1.31 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the Hyper-V application. Settings for PLabWINVM01 on PLabWIN01 open, Add Hardware page selected."><figcaption>Figure
+ 1.31 Screenshot of PLABWIN10: Displaying selecting PLABWIN10 in the 
+Hyper-V application. Settings for PLabWINVM01 on PLabWIN01 open, Add 
+Hardware page selected.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<span class="cn-alert" id="cn-m16-236">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m16-237"><b>Review</b></h2>
+
+<p id="cn-m16-238">Well done, you have completed the <b>Virtual Network Concepts </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">610e9385-58aa-4a33-b2d6-79e4594b2205</span>
+
+<span class="atom-code hidden">40071302-4c90-4301-bae4-f704d38d3fd7</span>
+
+<span class="atom-code hidden">02a10a0d-5129-4c2e-9279-32ca6632a98b</span>
+
+<span class="atom-code hidden">fea23a54-d93e-4aa6-b0f0-a40e288e87b2</span>
+
+<span class="atom-code hidden">add763cd-1cb0-4bca-80d4-c77b0a81dec3</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m16-248">You completed the following exercises:</p>
+
+<ul id="cn-m16-249">
+
+<li id="cn-m16-249">Exercise 1 - Virtual Networking Software</li>
+
+</ul>
+
+<p id="cn-m16-250">You should now be able to:</p>
+
+<ul id="cn-m16-251">
+
+<li id="cn-m16-251">Define and Describe Compute Sizing Requirements and Concepts</li>
+
+<li id="cn-m16-252">Install and Explore the Microsoft Hyper-V Application</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m16-256">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
