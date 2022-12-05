@@ -1,0 +1,938 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="SecurityTroubleshootingTechniques_files/print-styles.css" rel="stylesheet">
+    <script src="SecurityTroubleshootingTechniques_files/jquery.min.js"></script>
+    <script src="SecurityTroubleshootingTechniques_files/jspdf.js"></script>
+    <script src="SecurityTroubleshootingTechniques_files/from_html.js"></script>
+    <script src="SecurityTroubleshootingTechniques_files/addimage.js"></script>
+    <script src="SecurityTroubleshootingTechniques_files/filesaver.js"></script>
+    <script src="SecurityTroubleshootingTechniques_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="SiU/zZJ6dnKYcKUoUt9QVeMqByEOka086qpZrqSy2QD6jBhH0OFcdmqNjpeYjTocqRIcjsg98vEFs1c1TvvMdAvXsSieycnFeQgWNV01A0M=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Security Troubleshooting Techniques</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Examining and Performing Security Troubleshooting </li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m28-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Cloud+</div>
+
+<div>Privilege</div>
+
+<div>Authentication</div>
+
+<div>Authorization</div>
+
+<div>Security Groups</div>
+
+<div>Keys and Certificates</div>
+
+<div>Policy Troubleshooting</div>
+
+<div>Data Security Issues</div>
+
+<div>Exposed Endpoints</div>
+
+<div>Misconfigured or Failed Security Appliances</div>
+
+<div>Unsupported Protocols</div>
+
+<div>External/Internal Attacks</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m28-15">Welcome to the <b>Security Troubleshooting Techniques </b>Practice Lab. In this module you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m28-21">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m28-22">
+
+<li id="cn-m28-22">Exercise 1 - Examining and Performing Security Troubleshooting Concepts</li>
+
+</ul>
+
+<p id="cn-m28-23">After completing this module, you should be able to:</p>
+
+<ul id="cn-m28-24">
+
+<li id="cn-m28-24">Define and Describe Security Troubleshooting Concepts</li>
+
+<li id="cn-m28-25">Perform Security Troubleshooting Tasks</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m28-27">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m28-28">
+
+<li id="cn-m28-28">5.2 Given a scenario, troubleshoot security issues</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m28-30">It will take approximately <b>45 minutes </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m28-34">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m28-35">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m28-37"><b>Lab Topology</b></h2>
+
+<p id="cn-m28-38">During your session, you will have access to the following lab configuration.</p>
+
+<span class="atom-code hidden">b441a737-e075-40c4-a6a6-d57d4dcbeb25</span>
+
+<p id="cn-m28-41">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m28-42">
+
+<li id="cn-m28-42"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+<li id="cn-m28-43"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+<li id="cn-m28-44"><b>PLABWIN10 </b>- Domain Member Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m28-45">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m28-46"><b>Exercise 1 - Examining and Performing Security Troubleshooting </b></h2>
+
+<p id="cn-m28-47">In this exercise, you will go over security 
+troubleshooting concepts associated with privilege, authentication, 
+authorization, security groups, keys and certificates, misconfigured or 
+misapplied policies, data security issues, exposed endpoints, 
+misconfigured or failed security appliances, unsupported protocols, and 
+external/internal attacks.</p>
+
+<p id="cn-m28-48">We will also troubleshoot users in a Ubuntu Server 
+22.04 LTS environment, granting certain users sudo access, changing 
+passwords, and examining what users have sudo access.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m28-50">After completing this module, you should be able to:</p>
+
+<ul id="cn-m28-51">
+
+<li id="cn-m28-51">Define and Describe Security Troubleshooting Concepts</li>
+
+<li id="cn-m28-52">Perform Security Troubleshooting Tasks</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m28-54">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">13204a44-8abe-4426-8a36-20597085f51d</span>
+
+<ul id="cn-m28-58">
+
+<li id="cn-m28-58"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+</ul>
+
+<h3 id="cn-m28-59"><b>Task 1 - Examine Security Troubleshooting Concepts</b></h3>
+
+<span class="atom-code hidden">68fb01e0-21e3-4d9e-9356-bb94ae4f2730</span>
+
+<p id="cn-m28-62">In this task, you will go over security 
+troubleshooting concepts associated with privilege, authentication, 
+authorization, security groups, keys and certificates, misconfigured or 
+misapplied policies, data security issues, exposed endpoints, 
+misconfigured or failed security appliances, unsupported protocols, and 
+external/internal attacks.</p>
+
+<h4 id="cn-m28-63"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m28-64">Connect to <b>PLABDM01</b>.</p>
+
+<p id="cn-m28-65"></p><figure><img class="cn-img" id="cn-image-m28-c-0" src="SecurityTroubleshootingTechniques_files/image-m28-c-0.jpg" alt="Figure 1.1 Screenshot of PLABDM01: Displaying the Server Manager dashboard."><figcaption>Figure 1.1 Screenshot of PLABDM01: Displaying the Server Manager dashboard.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-68"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m28-69">Click in the <b>Type here to search </b>textbox and type:</p>
+
+<pre id="cn-m28-70"><code>hyper-v
+
+</code></pre>
+
+<p id="cn-m28-71">From the <b>Best match </b>results, click on the <b>Hyper-V Manager </b>application.</p>
+
+<p id="cn-m28-73"></p><figure><img class="cn-img" id="cn-image-m28-c-1" src="SecurityTroubleshootingTechniques_files/image-m28-c-1.jpg" alt="Figure 1.2 Screenshot of PLABDM01: Displaying the Start menu. Hyper-V Manager is highlighted in the Best match search results."><figcaption>Figure 1.2 Screenshot of PLABDM01: Displaying the Start menu. Hyper-V Manager is highlighted in the Best match search results.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-75"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m28-76">Once the <b>Hyper-V Manager </b>application opens, click on <b>PLABDM01 </b>on the far left.</p>
+
+<p id="cn-m28-78"></p><figure><img class="cn-img" id="cn-image-m28-c-2" src="SecurityTroubleshootingTechniques_files/image-m28-c-2.jpg" alt="Figure 1.3 Screenshot of PLABDM01: Displaying the Hyper-V manager window. PLABDM01 is highlighted."><figcaption>Figure 1.3 Screenshot of PLABDM01: Displaying the Hyper-V manager window. PLABDM01 is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-81"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m28-82">From the <b>Actions </b>menu on the far right, click <b>Import Virtual Machine</b>.</p>
+
+<p id="cn-m28-83">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</p>
+
+<p id="cn-m28-84"></p><figure><img class="cn-img" id="cn-image-m28-c-3" src="SecurityTroubleshootingTechniques_files/image-m28-c-3.jpg" alt="Figure 1.4 Screenshot of PLABDM01: Displaying the Hyper-V manager window. PLABDM01 has been selected, and the Import Virtual Machine option has been highlighted."><figcaption>Figure
+ 1.4 Screenshot of PLABDM01: Displaying the Hyper-V manager window. 
+PLABDM01 has been selected, and the Import Virtual Machine option has 
+been highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-86"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m28-87">You will see the <b>Import Virtual Machine Wizard</b>.</p>
+
+<p id="cn-m28-88">Click <b>Next</b>.</p>
+
+<p id="cn-m28-90"></p><figure><img class="cn-img" id="cn-image-m28-c-4" src="SecurityTroubleshootingTechniques_files/image-m28-c-4.jpg" alt="Figure 1.5 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Before you begin page. Next is highlighted."><figcaption>Figure
+ 1.5 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The 
+Import Virtual machine window is shown on the Before you begin page. 
+Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-92"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m28-93">From the <b>Locate Folder </b>page, click <b>Browse</b>.</p>
+
+<p id="cn-m28-95"></p><figure><img class="cn-img" id="cn-image-m28-c-5" src="SecurityTroubleshootingTechniques_files/image-m28-c-5.jpg" alt="Figure 1.6 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Locate folder page. Browse is highlighted."><figcaption>Figure
+ 1.6 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The 
+Import Virtual machine window is shown on the Locate folder page. Browse
+ is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-97"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m28-98">The <b>Select Folder </b>box will appear in File Explorer. Navigate to the following folder:</p>
+
+<pre id="cn-m28-99"><code>Downloads &gt; Ubuntu-VM &gt; Module 29 &gt; Ubuntu29
+
+</code></pre>
+
+<p id="cn-m28-100">Highlight the <b>Virtual Machines </b>folder, and click on the <b>Select Folder </b>button.</p>
+
+<p id="cn-m28-103"></p><figure><img class="cn-img" id="cn-image-m28-c-6" src="SecurityTroubleshootingTechniques_files/image-m28-c-6.jpg" alt="Figure 1.7 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The File Manager window is shown with the Virtual Machines window selected. Select folder is highlighted."><figcaption>Figure
+ 1.7 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The 
+File Manager window is shown with the Virtual Machines window selected. 
+Select folder is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-105"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m28-106">Back on the <b>Locate Folder </b>page, click <b>Next</b>.</p>
+
+<p id="cn-m28-108"></p><figure><img class="cn-img" id="cn-image-m28-c-7" src="SecurityTroubleshootingTechniques_files/image-m28-c-7.jpg" alt="Figure 1.8 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Locate folder page. Next is highlighted."><figcaption>Figure
+ 1.8 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The 
+Import Virtual machine window is shown on the Locate folder page. Next 
+is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-110"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m28-111">From the <b>Select Virtual Machine </b>page, select the <b>ubuntu29 </b>virtual machine.</p>
+
+<p id="cn-m28-112">Click <b>Next</b>.</p>
+
+<p id="cn-m28-113"></p><figure><img class="cn-img" id="cn-image-m28-c-8" src="SecurityTroubleshootingTechniques_files/image-m28-c-8.jpg" alt="Figure 1.9 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Select Virtual Machine page. Ubuntu29 has been selected, and Next is highlighted"><figcaption>Figure
+ 1.9 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The 
+Import Virtual machine window is shown on the Select Virtual Machine 
+page. Ubuntu29 has been selected, and Next is highlighted</figcaption></figure><p></p>
+
+<h4 id="cn-m28-115"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m28-116">From the <b>Choose Import Type </b>page, select the <b>Copy the virtual machine (create a new unique ID) </b>option.</p>
+
+<p id="cn-m28-117">Click <b>Next</b>.</p>
+
+<p id="cn-m28-119"></p><figure><img class="cn-img" id="cn-image-m28-c-9" src="SecurityTroubleshootingTechniques_files/image-m28-c-9.jpg" alt="Figure 1.10 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Choose Import Type page. The Copy the virtual machine (create a new unique ID) option has been checked, and Next is highlighted."><figcaption>Figure
+ 1.10 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ Import Virtual machine window is shown on the Choose Import Type page. 
+The Copy the virtual machine (create a new unique ID) option has been 
+checked, and Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-121"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m28-122">From the <b>Choose Folders for Virtual Machine Files </b>page, click <b>Next</b>.</p>
+
+<p id="cn-m28-124"></p><figure><img class="cn-img" id="cn-image-m28-c-10" src="SecurityTroubleshootingTechniques_files/image-m28-c-10.jpg" alt="Figure 1.11 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Choose Folders for Virtual Machine Files page. Next is highlighted."><figcaption>Figure
+ 1.11 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ Import Virtual machine window is shown on the Choose Folders for 
+Virtual Machine Files page. Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-126"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m28-127">From the <b>Choose Folders for to Store Virtual Hard Drives </b>page, click <b>Next</b>.</p>
+
+<p id="cn-m28-129"></p><figure><img class="cn-img" id="cn-image-m28-c-11" src="SecurityTroubleshootingTechniques_files/image-m28-c-11.jpg" alt="Figure 1.12 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Choose Folders to Store Virtual Hard Disks page. Next is highlighted."><figcaption>Figure
+ 1.12 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ Import Virtual machine window is shown on the Choose Folders to Store 
+Virtual Hard Disks page. Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-131"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m28-132">On the <b>Saved State Errors </b>window, click <b>Delete Saved State</b>.</p>
+
+<p id="cn-m28-134"></p><figure><img class="cn-img" id="cn-image-m28-c-12" src="SecurityTroubleshootingTechniques_files/image-m28-c-12.jpg" alt="Figure 1.13 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Saved State Errors window is shown, and Delete Saved State is highlighted."><figcaption>Figure
+ 1.13 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ Saved State Errors window is shown, and Delete Saved State is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-136"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m28-137">From the <b>Connect Network </b>page, click on the <b>Connection </b>dropdown and select  <b>Microsoft Hyper-V Network Adapter - Virtual Switch</b>.</p>
+
+<p id="cn-m28-138">Click <b>Next</b>.</p>
+
+<p id="cn-m28-139"></p><figure><img class="cn-img" id="cn-image-m28-c-13" src="SecurityTroubleshootingTechniques_files/image-m28-c-13.jpg" alt="Figure 1.14 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Connect Network page. The Microsoft Hyper-V Network Adapter - Virtual Switch option has been selected in the Connection field, and Next is highlighted."><figcaption>Figure
+ 1.14 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ Import Virtual machine window is shown on the Connect Network page. The
+ Microsoft Hyper-V Network Adapter - Virtual Switch option has been 
+selected in the Connection field, and Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-141"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m28-142">From the <b>Completing Import Wizard </b>page, click <b>Finish</b>.</p>
+
+<p id="cn-m28-143"></p><figure><img class="cn-img" id="cn-image-m28-c-14" src="SecurityTroubleshootingTechniques_files/image-m28-c-14.jpg" alt="Figure 1.15 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Completing Import Wizard page. Finish is highlighted."><figcaption>Figure
+ 1.15 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ Import Virtual machine window is shown on the Completing Import Wizard 
+page. Finish is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-145"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m28-146">The copying process will begin.</p>
+
+<p id="cn-m28-147"></p><figure><img class="cn-img" id="cn-image-m28-c-15" src="SecurityTroubleshootingTechniques_files/image-m28-c-15.jpg" alt="Figure 1.16 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The Import Virtual machine window is shown on the Completing Import Wizard page."><figcaption>Figure
+ 1.16 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ Import Virtual machine window is shown on the Completing Import Wizard 
+page.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-149"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m28-150">Once the copying process has completed, notice in <b>Hyper-V Manager</b>, the named <b>ubuntu29 </b>virtual machine is shown.</p>
+
+<p id="cn-m28-151">Right-click <b>ubuntu29 </b>and select <b>Start</b>.</p>
+
+<p id="cn-m28-154"></p><figure><img class="cn-img" id="cn-image-m28-c-16" src="SecurityTroubleshootingTechniques_files/image-m28-c-16.jpg" alt="Figure 1.17 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The ubuntu29 VM has been right-clicked, and Start is highlighted in the context menu."><figcaption>Figure
+ 1.17 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ ubuntu29 VM has been right-clicked, and Start is highlighted in the 
+context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-156"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m28-157">Once the virtual machine is running, right-click on the ubuntu29 again and select <b>Connect</b>.</p>
+
+<p id="cn-m28-158"></p><figure><img class="cn-img" id="cn-image-m28-c-17" src="SecurityTroubleshootingTechniques_files/image-m28-c-17.jpg" alt="Figure 1.18 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The ubuntu29 VM has been right-clicked, and Connect is highlighted in the context menu."><figcaption>Figure
+ 1.18 Screenshot of PLABDM01: Displaying the Hyper-V manager window. The
+ ubuntu29 VM has been right-clicked, and Connect is highlighted in the 
+context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-160"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m28-161">When you see the <b>Virtual Machine Connection </b>window appear, click the <b>Maximize </b>button at the top-right corner.</p>
+
+<p id="cn-m28-163"></p><figure><img class="cn-img" id="cn-image-m28-c-18" src="SecurityTroubleshootingTechniques_files/image-m28-c-18.jpg" alt="Figure 1.19 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The Maximize button is highlighted."><figcaption>Figure 1.19 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The Maximize button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-165"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m28-166">The server will finish booting , type the following:</p>
+
+<p id="cn-m28-167"><b>ubuntu00 login</b></p>
+
+<pre id="cn-m28-168"><code>ubuntu
+
+</code></pre>
+
+<p id="cn-m28-169">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-170"><b>Password</b></p>
+
+<pre id="cn-m28-171"><code><span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m28-172">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-174"></p><figure><img class="cn-img" id="cn-image-m28-c-19" src="SecurityTroubleshootingTechniques_files/image-m28-c-19.jpg" alt="Figure 1.20 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The Username and Password has been entered."><figcaption>Figure 1.20 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The Username and Password has been entered.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-176"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m28-177">You will now see a prompt that says <b>ubuntu@ubuntu00</b>:~$.</p>
+
+<p id="cn-m28-178"></p><figure><img class="cn-img" id="cn-image-m28-c-20" src="SecurityTroubleshootingTechniques_files/image-m28-c-20.jpg" alt="Figure 1.21 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The user has been successfully logged in."><figcaption>Figure 1.21 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The user has been successfully logged in.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-180"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m28-181">Now that we are logged into the Ubuntu server we want to see a list of all users on the system.</p>
+
+<p id="cn-m28-182">Type the <b>compgen -u </b>command to view a complete list of users:</p>
+
+<pre id="cn-m28-183"><code>compgen -u
+
+</code></pre>
+
+<p id="cn-m28-184">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-185">Notice the last four users, helpdesk01, helpdesk02, sysadmin01, sysadmin02. These are the users that we want to configure.</p>
+
+<p id="cn-m28-186">We will be granting the sysadmin users sudo privileges. We will make sure that the helpdesk users do not have sudo privileges.</p>
+
+<p id="cn-m28-187"></p><figure><img class="cn-img" id="cn-image-m28-c-21" src="SecurityTroubleshootingTechniques_files/image-m28-c-21.jpg" alt="Figure 1.22 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The compgen command has been executed."><figcaption>Figure 1.22 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The compgen command has been executed.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-189"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m28-190">Now to find out exactly what users currently have sudo privileges type:</p>
+
+<pre id="cn-m28-191"><code>getent group sudo | cut -d: -f4
+
+</code></pre>
+
+<p id="cn-m28-192">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-193">Now we can see that the only user that has sudo privileges is the <b>ubuntu </b>user we are currently logged in as.</p>
+
+<p id="cn-m28-194"></p><figure><img class="cn-img" id="cn-image-m28-c-22" src="SecurityTroubleshootingTechniques_files/image-m28-c-22.jpg" alt="Figure 1.23 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The getent command has been executed, with Ubuntu displayed as the output."><figcaption>Figure
+ 1.23 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The getent command has been executed, with Ubuntu displayed as 
+the output.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-196"><b><i>Step 24</i></b></h4>
+
+<p id="cn-m28-197">Now you will add the <b>sysadmin01 </b>user to the sudo group, you will do this by typing:</p>
+
+<pre id="cn-m28-198"><code>sudo adduser sysadmin01 sudo
+
+</code></pre>
+
+<p id="cn-m28-199">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-200">If prompted to enter a password, use the following:</p>
+
+<pre id="cn-m28-201"><code><span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m28-202">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-203">You will see the <b>sysadmin01 </b>user has been added to the sudo group.</p>
+
+<p id="cn-m28-204"></p><figure><img class="cn-img" id="cn-image-m28-c-23" src="SecurityTroubleshootingTechniques_files/image-m28-c-23.jpg" alt="Figure 1.24 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The adduser command has been executed, with the sysadmin01 account being created as a result."><figcaption>Figure
+ 1.24 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The adduser command has been executed, with the sysadmin01 
+account being created as a result.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-206"><b><i>Step 25</i></b></h4>
+
+<p id="cn-m28-207">Now lets add <b>sysadmin02 </b>to the sudo group, type:</p>
+
+<pre id="cn-m28-208"><code>sudo adduser sysadmin02 sudo
+
+</code></pre>
+
+<p id="cn-m28-209"><b>Enter</b>.</p>
+
+<p id="cn-m28-211"></p><figure><img class="cn-img" id="cn-image-m28-c-24" src="SecurityTroubleshootingTechniques_files/image-m28-c-24.jpg" alt="Figure 1.25 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The adduser command has been executed, with the sysadmin02 account being created as a result."><figcaption>Figure
+ 1.25 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The adduser command has been executed, with the sysadmin02 
+account being created as a result.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-213"><b><i>Step 26</i></b></h4>
+
+<p id="cn-m28-214">Now lets clear the terminal window so that we don’t have so much information in front of us, type:</p>
+
+<pre id="cn-m28-215"><code>clear
+
+</code></pre>
+
+<p id="cn-m28-216">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-217"></p><figure><img class="cn-img" id="cn-image-m28-c-25" src="SecurityTroubleshootingTechniques_files/image-m28-c-25.jpg" alt="Figure 1.26 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The clear command has been executed."><figcaption>Figure 1.26 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The clear command has been executed.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-219"><b><i>Step 27</i></b></h4>
+
+<p id="cn-m28-220">Now to confirm what user we are logged in as use the <b>whoami </b>command, type:</p>
+
+<pre id="cn-m28-221"><code>whoami
+
+</code></pre>
+
+<p id="cn-m28-222">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-223">Now we can see that we are logged in with the <b>ubuntu </b>user, notice that it also shows in the prompt <b>ubuntu@ubuntu00:~$ </b>this is important to know as you might come across a linux server terminal that does not display the username in the prompt.</p>
+
+<p id="cn-m28-224"></p><figure><img class="cn-img" id="cn-image-m28-c-26" src="SecurityTroubleshootingTechniques_files/image-m28-c-26.jpg" alt="Figure 1.27 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The whoami command has been executed, showing the Ubuntu user logged in."><figcaption>Figure
+ 1.27 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The whoami command has been executed, showing the Ubuntu user 
+logged in.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-226"><b><i>Step 28</i></b></h4>
+
+<p id="cn-m28-227">Now lets switch users to the <b>sysadmin01 </b>user, type:</p>
+
+<pre id="cn-m28-228"><code>su - sysadmin01
+
+</code></pre>
+
+<p id="cn-m28-229">Now we will need to provide the password for this user, type:</p>
+
+<pre id="cn-m28-230"><code><span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m28-231">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-232"></p><figure><img class="cn-img" id="cn-image-m28-c-27" src="SecurityTroubleshootingTechniques_files/image-m28-c-27.jpg" alt="Figure 1.28 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The sysadmin01 account is in the process of logging in."><figcaption>Figure
+ 1.28 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The sysadmin01 account is in the process of logging in.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-234"><b><i>Step 29</i></b></h4>
+
+<p id="cn-m28-235">Now to confirm what user we are logged in as use the <b>whoami </b>command, type:</p>
+
+<pre id="cn-m28-236"><code>whoami
+
+</code></pre>
+
+<p id="cn-m28-237">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-239"></p><figure><img class="cn-img" id="cn-image-m28-c-28" src="SecurityTroubleshootingTechniques_files/image-m28-c-28.jpg" alt="Figure 1.29 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The whoami command has been executed, showing the sysadmin01 user logged in."><figcaption>Figure
+ 1.29 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The whoami command has been executed, showing the sysadmin01 
+user logged in.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-241"><b><i>Step 30</i></b></h4>
+
+<p id="cn-m28-242">Now let’s change the password for user <b>sysadmin02</b>, to do this type:</p>
+
+<pre id="cn-m28-243"><code>sudo passwd sysadmin02
+
+</code></pre>
+
+<p id="cn-m28-244">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-245">Now you must provide the password of the current user you are logged in as, to do this type:</p>
+
+<pre id="cn-m28-246"><code><span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m28-247">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-248"></p><figure><img class="cn-img" id="cn-image-m28-c-29" src="SecurityTroubleshootingTechniques_files/image-m28-c-29.jpg" alt="Figure 1.30 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The passwd command has been executed, showing the sysadmin01 user logged in."><figcaption>Figure
+ 1.30 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The passwd command has been executed, showing the sysadmin01 
+user logged in.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-251"><b><i>Step 31</i></b></h4>
+
+<p id="cn-m28-252">Now we must provide a new password for the <b>sysadmin02 </b>user, type:</p>
+
+<pre id="cn-m28-253"><code>AdminPassw0rd
+
+</code></pre>
+
+<p id="cn-m28-254">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-256"></p><figure><img class="cn-img" id="cn-image-m28-c-30" src="SecurityTroubleshootingTechniques_files/image-m28-c-30.jpg" alt="Figure 1.31 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The passwd command has been executed, showing the new password being entered."><figcaption>Figure
+ 1.31 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The passwd command has been executed, showing the new password 
+being entered.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-258"><b><i>Step 32</i></b></h4>
+
+<p id="cn-m28-259">You will be asked to retype the password so now type:</p>
+
+<pre id="cn-m28-260"><code>AdminPassw0rd
+
+</code></pre>
+
+<p id="cn-m28-261">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-262">You will see the confirmation that the password has been updated successfully.</p>
+
+<p id="cn-m28-263"></p><figure><img class="cn-img" id="cn-image-m28-c-31" src="SecurityTroubleshootingTechniques_files/image-m28-c-31.jpg" alt="Figure 1.32 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The passwd command has been executed, showing the new password being entered."><figcaption>Figure
+ 1.32 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The passwd command has been executed, showing the new password 
+being entered.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-265"><b><i>Step 33</i></b></h4>
+
+<p id="cn-m28-266">Now let’s change the password for user <b>helpdesk01</b>, to do this type:</p>
+
+<pre id="cn-m28-267"><code>sudo passwd helpdesk01
+
+</code></pre>
+
+<p id="cn-m28-268">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-269">Now you must provide the password of the current user you are logged in as, to do this type:</p>
+
+<pre id="cn-m28-270"><code><span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m28-271">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-272"></p><figure><img class="cn-img" id="cn-image-m28-c-32" src="SecurityTroubleshootingTechniques_files/image-m28-c-32.jpg" alt="Figure 1.33 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The helpdesk01 account is showing being created, showing the new password being entered."><figcaption>Figure
+ 1.33 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The helpdesk01 account is showing being created, showing the new
+ password being entered.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-275"><b><i>Step 34</i></b></h4>
+
+<p id="cn-m28-276">Now we must provide a new password for the <b>helpdesk01 </b>user, type:</p>
+
+<pre id="cn-m28-277"><code>helpdesk
+
+</code></pre>
+
+<p id="cn-m28-278">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-279">You will be asked to retype the password so now type:</p>
+
+<pre id="cn-m28-280"><code>helpdesk
+
+</code></pre>
+
+<p id="cn-m28-281">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-282">You will see the confirmation that the password has been updated successfully.</p>
+
+<p id="cn-m28-283"></p><figure><img class="cn-img" id="cn-image-m28-c-33" src="SecurityTroubleshootingTechniques_files/image-m28-c-33.jpg" alt="Figure 1.34 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The helpdesk01 has had it’s password updated."><figcaption>Figure 1.34 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The helpdesk01 has had it’s password updated.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-285"><b><i>Step 35</i></b></h4>
+
+<p id="cn-m28-286">Now let’s change the password for user <b>helpdesk02</b>, to do this type:</p>
+
+<pre id="cn-m28-287"><code>sudo passwd helpdesk02
+
+</code></pre>
+
+<p id="cn-m28-288">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-289">Now you must provide the password of the current user you are logged in as, to do this type:</p>
+
+<pre id="cn-m28-290"><code><span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m28-291">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-292"></p><figure><img class="cn-img" id="cn-image-m28-c-34" src="SecurityTroubleshootingTechniques_files/image-m28-c-34.jpg" alt="Figure 1.35 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The helpdesk02 account is showing being created, showing the new password being entered."><figcaption>Figure
+ 1.35 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The helpdesk02 account is showing being created, showing the new
+ password being entered.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-294"><b><i>Step 36</i></b></h4>
+
+<p id="cn-m28-295">Now we must provide a new password for the <b>helpdesk02 </b>user, type:</p>
+
+<pre id="cn-m28-296"><code>helpdesk
+
+</code></pre>
+
+<p id="cn-m28-297">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-298">You will be asked to retype the password so now type:</p>
+
+<pre id="cn-m28-299"><code>helpdesk
+
+</code></pre>
+
+<p id="cn-m28-300">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-301">You will see the confirmation that the password has been updated successfully.</p>
+
+<p id="cn-m28-302"></p><figure><img class="cn-img" id="cn-image-m28-c-35" src="SecurityTroubleshootingTechniques_files/image-m28-c-35.jpg" alt="Figure 1.36 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The helpdesk01 has had it’s password updated."><figcaption>Figure 1.36 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The helpdesk01 has had it’s password updated.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-304"><b><i>Step 37</i></b></h4>
+
+<p id="cn-m28-305">Now let’s switch users to the <b>helpdesk01 </b>user, type:</p>
+
+<pre id="cn-m28-306"><code>su - helpdesk01
+
+</code></pre>
+
+<p id="cn-m28-307">Now we will need to provide the password for this user, type:</p>
+
+<pre id="cn-m28-308"><code>helpdesk
+
+</code></pre>
+
+<p id="cn-m28-309">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-310"></p><figure><img class="cn-img" id="cn-image-m28-c-36" src="SecurityTroubleshootingTechniques_files/image-m28-c-36.jpg" alt="Figure 1.37 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The helpdesk01 has been logged in."><figcaption>Figure 1.37 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The helpdesk01 has been logged in.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-312"><b><i>Step 38</i></b></h4>
+
+<p id="cn-m28-313">Now to confirm what user we are logged in as use the <b>whoami </b>command, type:</p>
+
+<pre id="cn-m28-314"><code>whoami
+
+</code></pre>
+
+<p id="cn-m28-315">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-317"></p><figure><img class="cn-img" id="cn-image-m28-c-37" src="SecurityTroubleshootingTechniques_files/image-m28-c-37.jpg" alt="Figure 1.38 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The whoami command has been executed, showing the helpdesk01 user logged in."><figcaption>Figure
+ 1.38 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The whoami command has been executed, showing the helpdesk01 
+user logged in.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-319"><b><i>Step 39</i></b></h4>
+
+<p id="cn-m28-320">Now let’s see if we are able to make changes to a sudo user with the <b>helpdesk01 </b>user who does not have sudo privileges. We will try and change the password for the <b>sysadmin02 </b>user. To do this type:</p>
+
+<pre id="cn-m28-321"><code>sudo passwd sysadmin02
+
+</code></pre>
+
+<p id="cn-m28-322">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-323">Now you must provide the password of the current user you are logged in as, to do this type:</p>
+
+<pre id="cn-m28-324"><code>helpdesk
+
+</code></pre>
+
+<p id="cn-m28-325">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-327"></p><figure><img class="cn-img" id="cn-image-m28-c-38" src="SecurityTroubleshootingTechniques_files/image-m28-c-38.jpg" alt="Figure 1.39 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The sysadmin02 account credentials have been updated."><figcaption>Figure
+ 1.39 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The sysadmin02 account credentials have been updated.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-329"><b><i>Step 40</i></b></h4>
+
+<p id="cn-m28-330">Notice that the response back from the terminal is <b>helpdesk01 is not in the sudoers file. This incident will be reported. </b>This is because the <b>helpdesk01 </b>user does not have sudo privileges.</p>
+
+<p id="cn-m28-331"></p><figure><img class="cn-img" id="cn-image-m28-c-39" src="SecurityTroubleshootingTechniques_files/image-m28-c-39.jpg" alt="Figure 1.40 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The failure message is displayed."><figcaption>Figure 1.40 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The failure message is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-333"><b><i>Step 41</i></b></h4>
+
+<p id="cn-m28-334">You can check what users do have sudo privileges by typing:</p>
+
+<pre id="cn-m28-335"><code>getent group sudo | cut -d: -f4
+
+</code></pre>
+
+<p id="cn-m28-336">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-338"></p><figure><img class="cn-img" id="cn-image-m28-c-40" src="SecurityTroubleshootingTechniques_files/image-m28-c-40.jpg" alt="Figure 1.41 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The sudo group command has been executed."><figcaption>Figure 1.41 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The sudo group command has been executed.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-340"><b><i>Step 42</i></b></h4>
+
+<p id="cn-m28-341">As you can see neither <b>helpdesk01 </b>or <b>helpdesk02 </b>users are listed as sudo users. Let’s switch users so we can perform sudo commands. We will now login as the <b>sysadmin02 </b>user, type:</p>
+
+<pre id="cn-m28-342"><code>su - sysadmin02
+
+</code></pre>
+
+<p id="cn-m28-343">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-344">Now we will need to provide the password for this user, type:</p>
+
+<pre id="cn-m28-345"><code>AdminPassw0rd
+
+</code></pre>
+
+<p id="cn-m28-346">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-348"></p><figure><img class="cn-img" id="cn-image-m28-c-41" src="SecurityTroubleshootingTechniques_files/image-m28-c-41.jpg" alt="Figure 1.42 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The sysadmin02 account is in the process of being logged in."><figcaption>Figure
+ 1.42 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The sysadmin02 account is in the process of being logged in.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-350"><b><i>Step 43</i></b></h4>
+
+<p id="cn-m28-351">Now that we are logged in with the <b>sysadmin02 </b>user let’s create a new user named <b>sysadmin03</b>, to do this type:</p>
+
+<pre id="cn-m28-352"><code>sudo adduser sysadmin03
+
+</code></pre>
+
+<p id="cn-m28-353">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-354"></p><figure><img class="cn-img" id="cn-image-m28-c-42" src="SecurityTroubleshootingTechniques_files/image-m28-c-42.jpg" alt="Figure 1.43 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The sysadmin03 account is in the process of being created."><figcaption>Figure
+ 1.43 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The sysadmin03 account is in the process of being created.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-356"><b><i>Step 44</i></b></h4>
+
+<p id="cn-m28-357">Now we will need to provide a new password for this user, type:</p>
+
+<pre id="cn-m28-358"><code>AdminPassw0rd
+
+</code></pre>
+
+<p id="cn-m28-359">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-360"></p><figure><img class="cn-img" id="cn-image-m28-c-43" src="SecurityTroubleshootingTechniques_files/image-m28-c-43.jpg" alt="Figure 1.44 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The sysadmin03 account is in the process of being created, and the new password is being specified."><figcaption>Figure
+ 1.44 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The sysadmin03 account is in the process of being created, and 
+the new password is being specified.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-362"><b><i>Step 45</i></b></h4>
+
+<p id="cn-m28-363">Now we will need to confirm the new password for this user, type:</p>
+
+<pre id="cn-m28-364"><code>AdminPassw0rd
+
+</code></pre>
+
+<p id="cn-m28-365">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-366">Now we will see an option to add <b>Full Name, Room Number, Work Phone, Home Phone, and Other</b>.</p>
+
+<p id="cn-m28-367">Press the <b>Enter </b>button for each of these as this for informational purposes only and do not have any effect on our configuration.</p>
+
+<p id="cn-m28-369"></p><figure><img class="cn-img" id="cn-image-m28-c-44" src="SecurityTroubleshootingTechniques_files/image-m28-c-44.jpg" alt="Figure 1.45 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The sysadmin03 account is in the process of being created, with user credentials being requested."><figcaption>Figure
+ 1.45 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The sysadmin03 account is in the process of being created, with 
+user credentials being requested.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-372"><b><i>Step 46</i></b></h4>
+
+<p id="cn-m28-373">Now we will see that the terminal asks <b>Is the information correct? [Y/n] </b>type:</p>
+
+<pre id="cn-m28-374"><code>y
+
+</code></pre>
+
+<p id="cn-m28-375">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-377"></p><figure><img class="cn-img" id="cn-image-m28-c-45" src="SecurityTroubleshootingTechniques_files/image-m28-c-45.jpg" alt="Figure 1.46 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The Y command has been executed."><figcaption>Figure 1.46 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The Y command has been executed.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-379"><b><i>Step 47</i></b></h4>
+
+<p id="cn-m28-380">Now you will add the <b>sysadmin01 </b>user to the sudo group, you will do this by typing:</p>
+
+<pre id="cn-m28-381"><code>sudo adduser sysadmin01 sudo
+
+</code></pre>
+
+<p id="cn-m28-382">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-383">You will see the <b>sysadmin01 </b>user has been added to the sudo group.</p>
+
+<p id="cn-m28-384"></p><figure><img class="cn-img" id="cn-image-m28-c-46" src="SecurityTroubleshootingTechniques_files/image-m28-c-46.jpg" alt="Figure 1.47 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The adduser command has been executed, adding sysadmin01 to the sudo group."><figcaption>Figure
+ 1.47 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 
+window. The adduser command has been executed, adding sysadmin01 to the 
+sudo group.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-386"><b><i>Step 48</i></b></h4>
+
+<p id="cn-m28-387">Now to confirm our new user has sudo privileges type:</p>
+
+<pre id="cn-m28-388"><code>getent group sudo | cut -d: -f4
+
+</code></pre>
+
+<p id="cn-m28-389">Press <b>Enter</b>.</p>
+
+<p id="cn-m28-391"></p><figure><img class="cn-img" id="cn-image-m28-c-47" src="SecurityTroubleshootingTechniques_files/image-m28-c-47.jpg" alt="Figure 1.48 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The group command has been typed."><figcaption>Figure 1.48 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The group command has been typed.</figcaption></figure><p></p>
+
+<h4 id="cn-m28-393"><b><i>Step 49</i></b></h4>
+
+<p id="cn-m28-394">You now see that <b>sysadmin03 </b>has been added to the sudo group.</p>
+
+<p id="cn-m28-396"></p><figure><img class="cn-img" id="cn-image-m28-c-48" src="SecurityTroubleshootingTechniques_files/image-m28-c-48.jpg" alt="Figure 1.49 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The group command has been executed."><figcaption>Figure 1.49 Screenshot of PLABDM01: Displaying the ubuntu29 on PLABDM01 window. The group command has been executed.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">7d0ac9fb-5de8-4057-8699-2545ccd83fb6</span>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<span class="cn-alert" id="cn-m28-402">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m28-403"><b>Review</b></h2>
+
+<p id="cn-m28-404">Well done, you have completed the <b>Security Troubleshooting Techniques </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">aa933674-b236-4ed7-b00f-d3307a97fe3c</span>
+
+<span class="atom-code hidden">3ce27b95-2cc3-4d51-9b4f-a9da775d5027</span>
+
+<span class="atom-code hidden">321a49c5-a29e-4114-b1ee-f2e81b8171bb</span>
+
+<span class="atom-code hidden">ab5d96a6-0c35-48cf-a323-d9db90255918</span>
+
+<span class="atom-code hidden">5afce6c0-b7f8-4722-926a-89f00099f271</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m28-415">You completed the following exercise:</p>
+
+<ul id="cn-m28-416">
+
+<li id="cn-m28-416">Exercise 1 - Examining and Performing Security Troubleshooting Concepts</li>
+
+</ul>
+
+<p id="cn-m28-417">You should now be able to:</p>
+
+<ul id="cn-m28-418">
+
+<li id="cn-m28-418">Define and Describe Security Troubleshooting Concepts</li>
+
+<li id="cn-m28-419">Perform Security Troubleshooting Tasks</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m28-423">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
