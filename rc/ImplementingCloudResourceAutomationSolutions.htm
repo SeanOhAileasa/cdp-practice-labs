@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="ImplementingCloudResourceAutomationSolutions_files/print-styles.css" rel="stylesheet">
+    <script src="ImplementingCloudResourceAutomationSolutions_files/jquery.min.js"></script>
+    <script src="ImplementingCloudResourceAutomationSolutions_files/jspdf.js"></script>
+    <script src="ImplementingCloudResourceAutomationSolutions_files/from_html.js"></script>
+    <script src="ImplementingCloudResourceAutomationSolutions_files/addimage.js"></script>
+    <script src="ImplementingCloudResourceAutomationSolutions_files/filesaver.js"></script>
+    <script src="ImplementingCloudResourceAutomationSolutions_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="0hAHRdklR+YcEoXG2jylAk8l/dFgr1Ui/kl2/3T8IVZH0+i+/G7YnPt3pDuzcOqfP3Z0KjsiPSn1YLWDIbd8kkJqTP0hE3t7KyU0Joti9QE=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Implementing Cloud Resource Automation Solutions</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Examining Cloud Resource Automation and Scripting</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m24-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>Cloud+</div>
+
+<div>Infrastructure as code</div>
+
+<div>Continuous integration/continuous deployment (CI/CD)</div>
+
+<div>Version Control</div>
+
+<div>Containers</div>
+
+<div>Automation Activities</div>
+
+<div>Secure Scripting</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m24-10">Welcome to the <b>Implementing Cloud Resource Automation Solutions </b>Practice Lab. In this module you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m24-16">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m24-17">
+
+<li id="cn-m24-17">Exercise 1 - Examining Cloud Resource Automation and Scripting</li>
+
+</ul>
+
+<p id="cn-m24-18">After completing this module, you should be able to:</p>
+
+<ul id="cn-m24-19">
+
+<li id="cn-m24-19">Explain Infrastructure as Code (IaC), Continuous 
+Integration/Continuous Deployment (CI/CD), Version Control, Containers, 
+Automation Activities, and Secure Scripting</li>
+
+<li id="cn-m24-20">Write a PowerShell script that will shut down a remote system</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m24-22">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m24-23">
+
+<li id="cn-m24-23">4.4 Given a scenario, apply proper automation and orchestration techniques</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m24-25">It will take approximately <b>30 minutes </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m24-29">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m24-30">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m24-32"><b>Lab Topology</b></h2>
+
+<p id="cn-m24-33">During your session, you will have access to the following lab configuration.</p>
+
+<span class="atom-code hidden">b441a737-e075-40c4-a6a6-d57d4dcbeb25</span>
+
+<p id="cn-m24-36">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m24-37">
+
+<li id="cn-m24-37"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+<li id="cn-m24-38"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+<li id="cn-m24-39"><b>PLABWIN10 </b>- Domain Member Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m24-40">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m24-41"><b>Exercise 1 - Examining Cloud Resource Automation and Scripting</b></h2>
+
+<p id="cn-m24-42">Through the use of automation, administrators are able
+ to quickly deploy or patch hundreds of resources in a much faster 
+timespan than if you were to manually perform these processes.</p>
+
+<span class="atom-code hidden">a791beb8-aaa2-45be-8aab-7f5c1b6429f4</span>
+
+<p id="cn-m24-45">In this exercise, you will learn about the different 
+automation methodologies used to manage cloud resources. You will also 
+write your own script and use it to shut down a remote system.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m24-47">After completing this module, you should be able to:</p>
+
+<ul id="cn-m24-48">
+
+<li id="cn-m24-48">Explain Infrastructure as Code (IaC), Continuous 
+Integration/Continuous Deployment (CI/CD), Version Control, Containers, 
+Automation Activities, and Secure Scripting</li>
+
+<li id="cn-m24-49">Write a PowerShell script that will shutdown a remote system</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m24-51">You will be using the following devices in this lab. Please power these on now.</p>
+
+<span class="atom-code hidden">5f6ff2e9-9b8c-4b17-986b-1e772e6b3b9f</span>
+
+<ul id="cn-m24-54">
+
+<li id="cn-m24-54"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+<li id="cn-m24-55"><b>PLABWIN10 </b>- Domain Member Workstation (Windows 10)</li>
+
+</ul>
+
+<h3 id="cn-m24-56"><b>Task 1 - Automate Shutting Down Remote Systems with a Script</b></h3>
+
+<p id="cn-m24-57">In this task, you will create a PowerShell script that will shut down the <b>PLABDM01 </b>device within the environment.</p>
+
+<h4 id="cn-m24-59"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m24-60">Ensure <b>PLABDM01 </b>and <b>PLABWIN10 </b>are both powered on.</p>
+
+<p id="cn-m24-61">Connect to&nbsp;<b>PLABWIN10</b>.</p>
+
+<p id="cn-m24-62"></p><figure><img class="cn-img" id="cn-image-m24-c-0" src="ImplementingCloudResourceAutomationSolutions_files/image-m24-c-0.jpg" alt="Figure 1.1 Screenshot of PLABWIN10."><figcaption>Figure 1.1 Screenshot of PLABWIN10.</figcaption></figure><p></p>
+
+<h4 id="cn-m24-64"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m24-65">Click into the <b>Type here to search </b>textbox and type:</p>
+
+<pre id="cn-m24-66"><code>notepad
+
+</code></pre>
+
+<p id="cn-m24-67">From the <b>Best match </b>results, click the <b>Notepad </b>app.</p>
+
+<p id="cn-m24-69"></p><figure><img class="cn-img" id="cn-image-m24-c-1" src="ImplementingCloudResourceAutomationSolutions_files/image-m24-c-1.jpg" alt="Figure 1.2 Screenshot of PLABWIN10:"><figcaption>Figure 1.2 Screenshot of PLABWIN10:</figcaption></figure><p></p>
+
+<h4 id="cn-m24-71"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m24-72">Using Notepad, you will create a PowerShell script that will shut down the <b>plabdm01 </b>system within our environment.</p>
+
+<p id="cn-m24-73">In the <b>Untitled - Notepad </b>document, type:</p>
+
+<pre id="cn-m24-74"><code>Stop-Computer -ComputerName plabdm01 -Force
+
+</code></pre>
+
+<p id="cn-m24-75">In our script:</p>
+
+<p id="cn-m24-76"><b>Stop-Computer </b>is the command used to shut down the system.</p>
+
+<p id="cn-m24-77"><b>-ComputerName </b>defines the system to be shut down, in this case, <b>plabdm01.</b></p>
+
+<p id="cn-m24-78"><b>-Force </b>is a switch used in this script that tells the system, “we are sure we want to do this”.</p>
+
+<p id="cn-m24-80"></p><figure><img class="cn-img" id="cn-image-m24-c-2" src="ImplementingCloudResourceAutomationSolutions_files/image-m24-c-2.jpg" alt="Figure 1.3 Screenshot of PLABWIN10:"><figcaption>Figure 1.3 Screenshot of PLABWIN10:</figcaption></figure><p></p>
+
+<h4 id="cn-m24-82"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m24-83">Click on <b>File </b>and select <b>Save As…</b></p>
+
+<p id="cn-m24-84"></p><figure><img class="cn-img" id="cn-image-m24-c-3" src="ImplementingCloudResourceAutomationSolutions_files/image-m24-c-3.jpg" alt="Figure 1.4 Screenshot of PLABWIN10:"><figcaption>Figure 1.4 Screenshot of PLABWIN10:</figcaption></figure><p></p>
+
+<h4 id="cn-m24-86"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m24-87">Click <b>Desktop</b>.</p>
+
+<p id="cn-m24-88">Click in the <b>File name </b>textbox and replace *txt with:</p>
+
+<pre id="cn-m24-89"><code>Stopcomputer.ps1
+
+</code></pre>
+
+<p id="cn-m24-90">Click <b>Save</b>.</p>
+
+<span class="cn-quote" id="cn-m24-91"><b><i>Note</i></b><i>: Adding the </i><b><i>.ps1 </i></b><i>to the filename now makes this a PowerShell script that we can run.</i></span>
+
+<p id="cn-m24-93"></p><figure><img class="cn-img" id="cn-image-m24-c-4" src="ImplementingCloudResourceAutomationSolutions_files/image-m24-c-4.jpg" alt="Figure 1.5 Screenshot of PLABWIN10:"><figcaption>Figure 1.5 Screenshot of PLABWIN10:</figcaption></figure><p></p>
+
+<h4 id="cn-m24-95"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m24-96">Once saved, close <b>Notepad</b>.</p>
+
+<p id="cn-m24-97"></p><figure><img class="cn-img" id="cn-image-m24-c-5" src="ImplementingCloudResourceAutomationSolutions_files/image-m24-c-5.jpg" alt="Figure 1.6 Screenshot of PLABXXXX:"><figcaption>Figure 1.6 Screenshot of PLABXXXX:</figcaption></figure><p></p>
+
+<h4 id="cn-m24-99"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m24-100">Notice that the <b>Stopcomputer.ps1 </b>script icon on the <b>Desktop</b>.</p>
+
+<p id="cn-m24-101"></p><figure><img class="cn-img" id="cn-image-m24-c-6" src="ImplementingCloudResourceAutomationSolutions_files/image-m24-c-6.jpg" alt="Figure 1.7 Screenshot of PLABXXXX:"><figcaption>Figure 1.7 Screenshot of PLABXXXX:</figcaption></figure><p></p>
+
+<h4 id="cn-m24-103"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m24-104">Click into the <b>Type here to search </b>textbox and type:</p>
+
+<pre id="cn-m24-105"><code>cmd
+
+</code></pre>
+
+<p id="cn-m24-106">From the <b>Best match </b>results, click the <b>Command Prompt </b>app.</p>
+
+<p id="cn-m24-108"></p><figure><img class="cn-img" id="cn-image-m24-c-7" src="ImplementingCloudResourceAutomationSolutions_files/image-m24-c-7.jpg" alt="Figure 1.8 Screenshot of PLABWIN10:"><figcaption>Figure 1.8 Screenshot of PLABWIN10:</figcaption></figure><p></p>
+
+<h4 id="cn-m24-110"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m24-111">From the <b>Command Prompt </b>window and type:</p>
+
+<pre id="cn-m24-112"><code>ping plabdm01 -t
+
+</code></pre>
+
+<p id="cn-m24-113">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m24-114"><b><i>Note</i></b><i>: This command sends a constant ping to the </i><b><i>plabdm01 </i></b><i>device. We will use this constant ping as an indicator of when </i><b><i>plabdm01 </i></b><i>will go down once we run our </i><b><i>stopcomputer.ps1 </i></b><i>script in the next steps.</i></span>
+
+<p id="cn-m24-116"></p><figure><img class="cn-img" id="cn-image-m24-c-8" src="ImplementingCloudResourceAutomationSolutions_files/image-m24-c-8.jpg" alt="Figure 1.9 Screenshot of PLABWIN10:"><figcaption>Figure 1.9 Screenshot of PLABWIN10:</figcaption></figure><p></p>
+
+<h4 id="cn-m24-118"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m24-119">Confirm that you are receiving replies from <b>plabdm01 192.168.0.2</b>.</p>
+
+<p id="cn-m24-120">Keep the <b>Administrator: Command Prompt </b>window up while the pings are still running.</p>
+
+<p id="cn-m24-121">Minimize the <b>Administrator: Command Prompt </b>window.</p>
+
+<p id="cn-m24-122"></p><figure><img class="cn-img" id="cn-image-m24-c-9" src="ImplementingCloudResourceAutomationSolutions_files/image-m24-c-9.jpg" alt="Figure 1.10 Screenshot of PLABWIN10:"><figcaption>Figure 1.10 Screenshot of PLABWIN10:</figcaption></figure><p></p>
+
+<h4 id="cn-m24-124"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m24-125">From the <b>Desktop</b>, right-click <b>Stopcomputer.ps1 </b>and select <b>Run with PowerShell</b>.</p>
+
+<p id="cn-m24-126"></p><figure><img class="cn-img" id="cn-image-m24-c-10" src="ImplementingCloudResourceAutomationSolutions_files/image-m24-c-10.jpg" alt="Figure 1.11 Screenshot of PLABWIN10:"><figcaption>Figure 1.11 Screenshot of PLABWIN10:</figcaption></figure><p></p>
+
+<h4 id="cn-m24-128"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m24-129">Reopen the <b>Command Prompt </b>window.</p>
+
+<p id="cn-m24-130">Wait a few minutes and observe the change in response you will see in the <b>Command Prompt</b>.</p>
+
+<p id="cn-m24-131"></p><figure><img class="cn-img" id="cn-image-m24-c-11" src="ImplementingCloudResourceAutomationSolutions_files/image-m24-c-11.jpg" alt="Figure 1.12 Screenshot of PLABWIN10:"><figcaption>Figure 1.12 Screenshot of PLABWIN10:</figcaption></figure><p></p>
+
+<h4 id="cn-m24-133"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m24-134">After a few minutes, notice the pings not responding. This is indicated by the <b>Destination host unreachable </b>response.</p>
+
+<p id="cn-m24-136"></p><figure><img class="cn-img" id="cn-image-m24-c-12" src="ImplementingCloudResourceAutomationSolutions_files/image-m24-c-12.jpg" alt="Figure 1.13 Screenshot of PLABWIN10:"><figcaption>Figure 1.13 Screenshot of PLABWIN10:</figcaption></figure><p></p>
+
+<span class="atom-code hidden">87fab35c-2831-4202-b4f1-46339fa6c815</span>
+
+<h4 id="cn-m24-141"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m24-142">Close the <b>Command Prompt </b>window.</p>
+
+<p id="cn-m24-143"></p><figure><img class="cn-img" id="cn-image-m24-c-13" src="ImplementingCloudResourceAutomationSolutions_files/image-m24-c-13.jpg" alt="Figure 1.14 Screenshot of PLABWIN10:"><figcaption>Figure 1.14 Screenshot of PLABWIN10:</figcaption></figure><p></p>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<span class="cn-alert" id="cn-m24-148">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m24-149"><b>Review</b></h2>
+
+<p id="cn-m24-150">Well done, you have completed the <b>Implementing Cloud Resource Automation Solutions </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">0f4a4819-7dcf-4cbb-9830-650c9e813ef2</span>
+
+<span class="atom-code hidden">4fe36b63-440c-47fb-9ac4-e3546beca337</span>
+
+<span class="atom-code hidden">25211a84-5783-4d17-b651-565c0f613cc6</span>
+
+<span class="atom-code hidden">d84d3eb8-cd9e-4f7a-ae6a-049185d7b865</span>
+
+<span class="atom-code hidden">79bf11e5-43c2-4b74-b6c0-38db1be63de1</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m24-161">You completed the following exercises:</p>
+
+<ul id="cn-m24-162">
+
+<li id="cn-m24-162">Exercise 1 - Examining Cloud Resource Automation and Scripting</li>
+
+</ul>
+
+<p id="cn-m24-163">You should now be able to:</p>
+
+<ul id="cn-m24-164">
+
+<li id="cn-m24-164">Explain infrastructure as code (IaC), continuous 
+integration/continuous deployment (CI/CD), version control, containers, 
+automation activities, and secure scripting</li>
+
+<li id="cn-m24-165">Write a PowerShell script that will shutdown a remote system</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m24-169">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
