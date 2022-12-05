@@ -1,0 +1,1112 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><title>
+	Print content
+</title><link href="CloudDisasterRecoveryConcepts_files/print-styles.css" rel="stylesheet">
+    <script src="CloudDisasterRecoveryConcepts_files/jquery.min.js"></script>
+    <script src="CloudDisasterRecoveryConcepts_files/jspdf.js"></script>
+    <script src="CloudDisasterRecoveryConcepts_files/from_html.js"></script>
+    <script src="CloudDisasterRecoveryConcepts_files/addimage.js"></script>
+    <script src="CloudDisasterRecoveryConcepts_files/filesaver.js"></script>
+    <script src="CloudDisasterRecoveryConcepts_files/pl.js"></script>
+</head>
+<body>
+    <form method="post" action="./vn-print-content.aspx" id="form1">
+<div class="aspNetHidden">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="T0mkWPT5hq7hcEI0dWfRFnYsDLl9W/Ix1w+wRamDk/v0tt24GBf0cbjEniN389KPCdBSXG5TlC1Ah0wfflyvF+NJQiHrMrO2hQeJXSDfmqs=">
+</div>
+
+<div class="aspNetHidden">
+
+	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="918AB9A0">
+</div>
+    <div>
+        
+
+        
+        
+        <div id="panPrintAvailable">
+	
+            <div class="print-content-wrapper" id="print-content">
+                <!--<button class="save-pdf">PDF</button>-->
+                < <a href="https://github.com/SeanOhAileasa">Home</a> >
+
+                <h1>CompTIA Cloud+</h1>
+                <h2>Cloud Disaster Recovery Concepts</h2>
+                <div class="print-content-index">
+                    <ul>
+                        <li>Introduction</li><li>Lab Topology</li><li>Exercise 1 - Deploying, Configuring, and Replicating VMs in Hyper-V Manager</li><li>Review</li>
+                    </ul>
+                </div>
+                <div class="print-content-content">
+                    <h2 class="exercise-title" id="cn-m26-0"><b>Introduction</b></h2>
+
+<div class="cn-metadata"><div>CompTIA Cloud+</div>
+
+<div>Failovers</div>
+
+<div>Failback</div>
+
+<div>Restore Backups</div>
+
+<div>Replication</div>
+
+<div>On-premises and Cloud Sites</div>
+
+</div>
+
+<span class="atom-code hidden">04b06c5e-84c1-4d31-99ed-950d17cb965e</span>
+
+<p id="cn-m26-9">Welcome to the <b>Cloud Disaster Recovery Concepts </b>Practice Lab. In this module you will be provided with the instructions and devices needed to develop your hands-on skills.</p>
+
+<span class="atom-code hidden">438dad03-f98b-4140-b2be-5703e717b5ff</span>
+
+<span class="atom-code hidden">dc640c20-9434-45ea-b7c2-6d4d6a196bfc</span>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m26-15">In this module, you will complete the following exercises:</p>
+
+<ul id="cn-m26-16">
+
+<li id="cn-m26-16">Exercise 1 - Deploying, Configuring, and Replicating VMs in Hyper-V Manager</li>
+
+</ul>
+
+<p id="cn-m26-17">After completing this module, you should be able to:</p>
+
+<ul id="cn-m26-18">
+
+<li id="cn-m26-18">Explain disaster recovery tasks and concepts that 
+include failovers, failback, restore backups, replication, network 
+configurations, on-premise and cloud sites, requirements, documentation,
+ and geographical datacenter requirements.</li>
+
+<li id="cn-m26-19">Explain the concepts used for disaster recovery tasks.</li>
+
+</ul>
+
+<h2 class="cn-examobjectives"><b>Exam Objectives</b></h2>
+
+<p id="cn-m26-21">The following exam objectives are covered in this module:</p>
+
+<ul id="cn-m26-22">
+
+<li id="cn-m26-22">4.6 Given a scenario, perform disaster recovery tasks</li>
+
+</ul>
+
+<h2 class="cn-labduration"><b>Lab Duration</b></h2>
+
+<p id="cn-m26-24">It will take approximately <b>1 hour </b>to complete this lab.</p>
+
+<span class="atom-code hidden">a938f85f-2307-4b51-9675-5e60f8a45af2</span>
+
+<h2 class="cn-helpdandsupport"><b>Help and Support</b></h2>
+
+<p id="cn-m26-28">For more information on using Practice Labs, please see our <b>Help and Support </b>page. You can also raise a technical support ticket from this page.</p>
+
+<span class="cn-alert" id="cn-m26-29">Click <b>Next </b>to view the Lab topology used in this module.</span>
+
+<span class="atom-code hidden">d2c53300-f951-45a9-9aa4-3d4ecae69e11</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m26-31"><b>Lab Topology</b></h2>
+
+<p id="cn-m26-32">During your session, you will have access to the following lab configuration.</p>
+
+<span class="atom-code hidden">b441a737-e075-40c4-a6a6-d57d4dcbeb25</span>
+
+<p id="cn-m26-36">Depending on the exercises, you may or may not use all
+ of the devices, but they are shown here in the layout to get an overall
+ understanding of the topology of the lab.</p>
+
+<ul id="cn-m26-37">
+
+<li id="cn-m26-37"><b>PLABDC01 </b>- Domain Controller (Windows Server 2019)</li>
+
+<li id="cn-m26-38"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+<li id="cn-m26-39"><b>PLABWIN10 </b>- Domain Member Workstation (Windows 10)</li>
+
+</ul>
+
+<span class="cn-alert" id="cn-m26-40">Click <b>Next </b>to proceed to the first exercise.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m26-41"><b>Exercise 1 - Deploying, Configuring, and Replicating VMs in Hyper-V Manager</b></h2>
+
+<p id="cn-m26-42">In this exercise, you will deploy a Virtual Machine 
+running Ubuntu Server 22.04 LTS using Hyper-V, configure it’s Network 
+Card, test connectivity, and then create a copy of the VM and then 
+deploy that copy of the VM.</p>
+
+<h2 class="cn-learningobjectives"><b>Learning Outcomes</b></h2>
+
+<p id="cn-m26-44">After completing this exercise, you should be able to:</p>
+
+<ul id="cn-m26-45">
+
+<li id="cn-m26-45">4.0 Operations and Support</li>
+
+<li id="cn-m26-46">4.6 Given a scenario, perform disaster recovery tasks</li>
+
+</ul>
+
+<h2 class="cn-devices"><b>Your Devices</b></h2>
+
+<p id="cn-m26-48">You will be using the following device in this lab. Please power this on now.</p>
+
+<span class="atom-code hidden">13204a44-8abe-4426-8a36-20597085f51d</span>
+
+<ul id="cn-m26-52">
+
+<li id="cn-m26-52"><b>PLABDM01 </b>- Domain Member Server (Windows Server 2019)</li>
+
+</ul>
+
+<h3 id="cn-m26-54"><b>Task 1 - Deploy Ubuntu Server 22.04 LTS Virtual Machine using Hyper-V</b></h3>
+
+<p id="cn-m26-55">In this task, you will deploy Ubuntu Server 22.04 LTS 
+using Hyper-V. This machine will then be used in the following tasks to 
+perform network configurations, testing connectivity, and then 
+replicating the VM.</p>
+
+<h4 id="cn-m26-56"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m26-57">Connect to <b>PLABDM01</b>.</p>
+
+<p id="cn-m26-58"></p><figure><img class="cn-img" id="cn-image-m26-c-0" src="CloudDisasterRecoveryConcepts_files/image-m26-c-0.jpg" alt="Figure 1.1 Screenshot of PLABDM01: Displaying the Server Manager dashboard."><figcaption>Figure 1.1 Screenshot of PLABDM01: Displaying the Server Manager dashboard.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-61"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m26-62">From the <b>Server Manager &gt; Dashboard</b>, click <b>Tools </b>and select <b>Hyper-V Manager</b>.</p>
+
+<p id="cn-m26-63"></p><figure><img class="cn-img" id="cn-image-m26-c-1" src="CloudDisasterRecoveryConcepts_files/image-m26-c-1.jpg" alt=" Figure 1.2 Screenshot of PLABDM01: Displaying the Server Manager dashboard. Hyper-V manager is highlighted in the Tools drop-down menu."><figcaption>
+ Figure 1.2 Screenshot of PLABDM01: Displaying the Server Manager 
+dashboard. Hyper-V manager is highlighted in the Tools drop-down menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-65"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m26-66">From the <b>Hyper-V Manager </b>window,</p>
+
+<p id="cn-m26-67">From the left-hand pane, click <b>PLABDM01</b>.</p>
+
+<p id="cn-m26-69"></p><figure><img class="cn-img" id="cn-image-m26-c-2" src="CloudDisasterRecoveryConcepts_files/image-m26-c-2.jpg" alt="Figure 1.3 Screenshot of PLABDM01: Displaying the Hyper-V Manager window."><figcaption>Figure 1.3 Screenshot of PLABDM01: Displaying the Hyper-V Manager window.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-71"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m26-72">From the right-hand pane, click <b>New </b>and select <b>Virtual Machine</b>.</p>
+
+<p id="cn-m26-74"></p><figure><img class="cn-img" id="cn-image-m26-c-3" src="CloudDisasterRecoveryConcepts_files/image-m26-c-3.jpg" alt=" Figure 1.4 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The New &amp;gt; Virtual machine option is highlighted in the context-menu."><figcaption>
+ Figure 1.4 Screenshot of PLABDM01: Displaying the Hyper-V Manager 
+window. The New &gt; Virtual machine option is highlighted in the 
+context-menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-76"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m26-77">From the <b>New Virtual Machine Wizard </b>click <b>Next</b>.</p>
+
+<p id="cn-m26-78"></p><figure><img class="cn-img" id="cn-image-m26-c-4" src="CloudDisasterRecoveryConcepts_files/image-m26-c-4.jpg" alt="Figure 1.5 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The New Virtual Machine Wizard window is shown, and Next is highlighted."><figcaption>Figure
+ 1.5 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The 
+New Virtual Machine Wizard window is shown, and Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-80"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m26-81">Click in the <b>Name </b>textbox and replace the existing name with:</p>
+
+<pre id="cn-m26-82"><code>ubuntu00
+
+</code></pre>
+
+<p id="cn-m26-83">Click <b>Next</b>.</p>
+
+<p id="cn-m26-84"></p><figure><img class="cn-img" id="cn-image-m26-c-5" src="CloudDisasterRecoveryConcepts_files/image-m26-c-5.jpg" alt="Figure 1.6 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The New Virtual Machine Wizard window is shown on the Specify Name and Location page. Ubuntu00 has been typed into the Name field, and Next is highlighted."><figcaption>Figure
+ 1.6 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The 
+New Virtual Machine Wizard window is shown on the Specify Name and 
+Location page. Ubuntu00 has been typed into the Name field, and Next is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-86"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m26-87">Make sure <b>Generation 1 </b>is selected and click <b>Next</b>.</p>
+
+<p id="cn-m26-89"></p><figure><img class="cn-img" id="cn-image-m26-c-6" src="CloudDisasterRecoveryConcepts_files/image-m26-c-6.jpg" alt="Figure 1.7 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The New Virtual Machine Wizard window is shown on the Specify Generation page. Generation 1 has been selected, and Next is highlighted."><figcaption>Figure
+ 1.7 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The 
+New Virtual Machine Wizard window is shown on the Specify Generation 
+page. Generation 1 has been selected, and Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-91"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m26-92">Ensure that <b>Startup memory </b>has <b>1024 </b>MB shown.</p>
+
+<p id="cn-m26-93">Click <b>Next</b>.</p>
+
+<p id="cn-m26-94"></p><figure><img class="cn-img" id="cn-image-m26-c-7" src="CloudDisasterRecoveryConcepts_files/image-m26-c-7.jpg" alt="Figure 1.8 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The New Virtual Machine Wizard window is shown on the Assign Memory page. 1024MB has been typed into the Startup memory field, and Next is highlighted."><figcaption>Figure
+ 1.8 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The 
+New Virtual Machine Wizard window is shown on the Assign Memory page. 
+1024MB has been typed into the Startup memory field, and Next is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-96"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m26-97">Click the <b>Connection </b>dropdown and select <b>Microsoft Hyper-V Network Adapter - Virtual Switch </b></p>
+
+<p id="cn-m26-98">Click <b>Next</b>.</p>
+
+<p id="cn-m26-99"></p><figure><img class="cn-img" id="cn-image-m26-c-8" src="CloudDisasterRecoveryConcepts_files/image-m26-c-8.jpg" alt="Figure 1.9 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The New Virtual Machine Wizard window is shown on the Configure Networking page. The Microsoft Hyper-V Network Adapter - Virtual switch has been selected in the Connection drop down, and Next is highlighted."><figcaption>Figure
+ 1.9 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The 
+New Virtual Machine Wizard window is shown on the Configure Networking 
+page. The Microsoft Hyper-V Network Adapter - Virtual switch has been 
+selected in the Connection drop down, and Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-101"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m26-102">In the <b>Size </b>textbox, replace the existing value with:</p>
+
+<pre id="cn-m26-103"><code>12
+
+</code></pre>
+
+<p id="cn-m26-104">Click <b>Next</b>.</p>
+
+<p id="cn-m26-105"></p><figure><img class="cn-img" id="cn-image-m26-c-9" src="CloudDisasterRecoveryConcepts_files/image-m26-c-9.jpg" alt="Figure 1.10 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The New Virtual Machine Wizard window is shown on the Connect Virtual Hard Disk page. 12 has been typed into the Size field, and Next is highlighted."><figcaption>Figure
+ 1.10 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The
+ New Virtual Machine Wizard window is shown on the Connect Virtual Hard 
+Disk page. 12 has been typed into the Size field, and Next is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-107"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m26-108">Select <b>Install an operating system from a bootable CD/DVD-ROM</b>.</p>
+
+<p id="cn-m26-109">Then select <b>Image file (.iso) </b>and click <b>Browse</b>.</p>
+
+<p id="cn-m26-110"></p><figure><img class="cn-img" id="cn-image-m26-c-10" src="CloudDisasterRecoveryConcepts_files/image-m26-c-10.jpg" alt="Figure 1.11 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The New Virtual Machine Wizard window is shown on the Installation Options page. The Image Field (iso) checkbox has been selected, and Browse is highlighted."><figcaption>Figure
+ 1.11 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The
+ New Virtual Machine Wizard window is shown on the Installation Options 
+page. The Image Field (iso) checkbox has been selected, and Browse is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-112"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m26-113">Click the <b>Downloads </b>folder on the left and select <b>Ubuntu-22.04-live-server-amd64 </b>and click the <b>Open </b>button.</p>
+
+<p id="cn-m26-114"></p><figure><img class="cn-img" id="cn-image-m26-c-11" src="CloudDisasterRecoveryConcepts_files/image-m26-c-11.jpg" alt="Figure 1.12 Screenshot of PLABDM01: Displaying the File Explorer window in the Downloads folder. The Ubuntu ISO file has been selected, and Open is highlighted."><figcaption>Figure
+ 1.12 Screenshot of PLABDM01: Displaying the File Explorer window in the
+ Downloads folder. The Ubuntu ISO file has been selected, and Open is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-116"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m26-117">Click <b>Next</b>.</p>
+
+<p id="cn-m26-118"></p><figure><img class="cn-img" id="cn-image-m26-c-12" src="CloudDisasterRecoveryConcepts_files/image-m26-c-12.jpg" alt="Figure 1.13 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The New Virtual Machine Wizard window is shown on the Installation Options page. Next is highlighted."><figcaption>Figure
+ 1.13 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The
+ New Virtual Machine Wizard window is shown on the Installation Options 
+page. Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-120"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m26-121">Click <b>Finish</b>.</p>
+
+<p id="cn-m26-122"></p><figure><img class="cn-img" id="cn-image-m26-c-13" src="CloudDisasterRecoveryConcepts_files/image-m26-c-13.jpg" alt="Figure 1.14 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The New Virtual Machine Wizard window is shown on the Completing the New Virtual Machine Wizard page. Finish is highlighted."><figcaption>Figure
+ 1.14 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The
+ New Virtual Machine Wizard window is shown on the Completing the New 
+Virtual Machine Wizard page. Finish is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-124"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m26-125">Wait for the Virtual Machine to be created.</p>
+
+<p id="cn-m26-126"></p><figure><img class="cn-img" id="cn-image-m26-c-14" src="CloudDisasterRecoveryConcepts_files/image-m26-c-14.jpg" alt="Figure 1.15 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The New Virtual Machine Wizard window is shown on the Completing the New Virtual Machine Wizard page. The Virtual Machine creation is in progress."><figcaption>Figure
+ 1.15 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The
+ New Virtual Machine Wizard window is shown on the Completing the New 
+Virtual Machine Wizard page. The Virtual Machine creation is in 
+progress.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-128"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m26-129">You will now see that the VM has been created and is listed in the Hyper-V Manager as <b>ubuntu00</b>.</p>
+
+<p id="cn-m26-130"></p><figure><img class="cn-img" id="cn-image-m26-c-15" src="CloudDisasterRecoveryConcepts_files/image-m26-c-15.jpg" alt="Figure 1.16 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. Ubuntu00 has appeared in the central pane."><figcaption>Figure 1.16 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. Ubuntu00 has appeared in the central pane.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-132"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m26-133">Right-click <b>ubuntu00 </b>and select <b>Start</b>.</p>
+
+<p id="cn-m26-134"></p><figure><img class="cn-img" id="cn-image-m26-c-16" src="CloudDisasterRecoveryConcepts_files/image-m26-c-16.jpg" alt="Figure 1.17 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. Ubuntu00 has been right clicked, and Start is highlighted in the context menu."><figcaption>Figure
+ 1.17 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. 
+Ubuntu00 has been right clicked, and Start is highlighted in the context
+ menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-136"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m26-137">Once the state of <b>ubuntu </b>has changed to <b>Running</b>, right-click <b>ubuntu00 </b>and select <b>Connect</b>.</p>
+
+<p id="cn-m26-138"></p><figure><img class="cn-img" id="cn-image-m26-c-17" src="CloudDisasterRecoveryConcepts_files/image-m26-c-17.jpg" alt="Figure 1.18 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. Ubuntu00 has been right clicked, and Connect is highlighted in the context menu."><figcaption>Figure
+ 1.18 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. 
+Ubuntu00 has been right clicked, and Connect is highlighted in the 
+context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-140"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m26-141">The <b>Virtual Machine Connection </b>window will appear.</p>
+
+<p id="cn-m26-142">Ensure <b>Try or Install Ubuntu Server </b>is selected and press <b>Enter</b>.</p>
+
+<p id="cn-m26-143"></p><figure><img class="cn-img" id="cn-image-m26-c-18" src="CloudDisasterRecoveryConcepts_files/image-m26-c-18.jpg" alt="Figure 1.19 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 page. The configuration of the VM is in progress."><figcaption>Figure 1.19 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 page. The configuration of the VM is in progress.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-145"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m26-146">Now that the installation configuration has begun you will notice that the <b>Virtual Machine Connection </b>window is much larger.</p>
+
+<p id="cn-m26-147">Use your mouse cursor to click on the top bar of the <b>Virtual Machine Connection </b>to move it to the left so you are able to see the square <b>Maximize </b>icon and click it so that the screen is maximized.</p>
+
+<p id="cn-m26-148"></p><figure><img class="cn-img" id="cn-image-m26-c-19" src="CloudDisasterRecoveryConcepts_files/image-m26-c-19.jpg" alt="Figure 1.20 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window on the Keyboard configuration page. The configuration of the VM is in progress, and the Maximise button is highlighted."><figcaption>Figure
+ 1.20 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window on the Keyboard configuration page. The configuration of the VM 
+is in progress, and the Maximise button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-150"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m26-151">Using the up and down arrows on your keyboard, select the proper keyboard layout of your choice.</p>
+
+<p id="cn-m26-152">In this case, select <b>English (UK</b>).</p>
+
+<p id="cn-m26-153">Use the <b>down arrow </b>key to select <b>Done</b>, then press <b>Enter</b>.</p>
+
+<p id="cn-m26-154"></p><figure><img class="cn-img" id="cn-image-m26-c-20" src="CloudDisasterRecoveryConcepts_files/image-m26-c-20.jpg" alt="Figure 1.21 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window on the Keyboard configuration page. The Language has been set as English (UK), and Done is highlighted."><figcaption>Figure
+ 1.21 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window on the Keyboard configuration page. The Language has been set as 
+English (UK), and Done is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-156"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m26-157">Ensure <b>Ubuntu Server </b>is selected using the up and down arrows on your keyboard to navigate.</p>
+
+<p id="cn-m26-158">Press the <b>space bar </b>to select it.</p>
+
+<p id="cn-m26-159">Use the <b>down </b>arrow to highlight <b>Done</b>, then press <b>Enter</b>.</p>
+
+<p id="cn-m26-160"></p><figure><img class="cn-img" id="cn-image-m26-c-21" src="CloudDisasterRecoveryConcepts_files/image-m26-c-21.jpg" alt="Figure 1.22 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window on the Choose type of install page. The Language has been set as English (UK), and Done is highlighted."><figcaption>Figure
+ 1.22 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window on the Choose type of install page. The Language has been set as 
+English (UK), and Done is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-162"><b><i>Step 23</i></b></h4>
+
+<p id="cn-m26-163">Using the <b>up </b>and <b>down </b>arrows on your keyboard, select <b>Continue without network</b>.</p>
+
+<p id="cn-m26-164">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-165"></p><figure><img class="cn-img" id="cn-image-m26-c-22" src="CloudDisasterRecoveryConcepts_files/image-m26-c-22.jpg" alt="Figure 1.23 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window on the Network connections page. The Continue without network option is highlighted."><figcaption>Figure
+ 1.23 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window on the Network connections page. The Continue without network 
+option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-167"><b><i>Step 24</i></b></h4>
+
+<p id="cn-m26-168">Using the <b>up </b>and <b>down </b>arrows on your keyboard select <b>Done</b>.</p>
+
+<p id="cn-m26-169">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-170"></p><figure><img class="cn-img" id="cn-image-m26-c-23" src="CloudDisasterRecoveryConcepts_files/image-m26-c-23.jpg" alt="Figure 1.24 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window on the Configure proxy page. The Done button is highlighted."><figcaption>Figure
+ 1.24 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window on the Configure proxy page. The Done button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-172"><b><i>Step 25</i></b></h4>
+
+<p id="cn-m26-173">Using the <b>up </b>and <b>down </b>arrows on your keyboard select <b>Done</b>.</p>
+
+<p id="cn-m26-174">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-175"></p><figure><img class="cn-img" id="cn-image-m26-c-24" src="CloudDisasterRecoveryConcepts_files/image-m26-c-24.jpg" alt="Figure 1.25 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window on the Configure ubuntu archive page. The Done button is highlighted."><figcaption>Figure
+ 1.25 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window on the Configure ubuntu archive page. The Done button is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-177"><b><i>Step 26</i></b></h4>
+
+<p id="cn-m26-178">Using the <b>up </b>and <b>down </b>arrows on your keyboard, select <b>Continue without updating</b>.</p>
+
+<p id="cn-m26-179">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-181"></p><figure><img class="cn-img" id="cn-image-m26-c-25" src="CloudDisasterRecoveryConcepts_files/image-m26-c-25.jpg" alt="Figure 1.26 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window on the Checking for installer updates page. The Continue without updating button is highlighted."><figcaption>Figure
+ 1.26 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window on the Checking for installer updates page. The Continue without 
+updating button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-183"><b><i>Step 27</i></b></h4>
+
+<p id="cn-m26-184">Using the <b>up </b>and <b>down </b>arrows on your keyboard make sure <b>Use an entire disk </b>is selected by highlighting it and press the <b>spacebar</b>.</p>
+
+<p id="cn-m26-185">Do the same for <b>Set up this disk as an LVM group</b>, you will see an <b>X </b>to the left of these options to indicate they have been selected.</p>
+
+<p id="cn-m26-186">Then use the <b>down arrow </b>on your keyboard to highlight <b>Done</b>.</p>
+
+<p id="cn-m26-187">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-189"></p><figure><img class="cn-img" id="cn-image-m26-c-26" src="CloudDisasterRecoveryConcepts_files/image-m26-c-26.jpg" alt="Figure 1.27 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window on the Guided storage configuration page. The Done button is highlighted."><figcaption>Figure
+ 1.27 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window on the Guided storage configuration page. The Done button is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-191"><b><i>Step 28</i></b></h4>
+
+<p id="cn-m26-192">Using the <b>up </b>and <b>down </b>arrows on your keyboard, select <b>Done</b>.</p>
+
+<p id="cn-m26-193">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-195"></p><figure><img class="cn-img" id="cn-image-m26-c-27" src="CloudDisasterRecoveryConcepts_files/image-m26-c-27.jpg" alt="Figure 1.28 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window on the Storage configuration page. The Done button is highlighted."><figcaption>Figure
+ 1.28 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window on the Storage configuration page. The Done button is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-197"><b><i>Step 29</i></b></h4>
+
+<p id="cn-m26-198">Using the <b>up </b>and <b>down </b>arrows on your keyboard, select <b>Continue</b>.</p>
+
+<p id="cn-m26-199">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-200"></p><figure><img class="cn-img" id="cn-image-m26-c-28" src="CloudDisasterRecoveryConcepts_files/image-m26-c-28.jpg" alt="Figure 1.29 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window on the Storage configuration page. The Continue button is highlighted:"><figcaption>Figure
+ 1.29 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window on the Storage configuration page. The Continue button is 
+highlighted:</figcaption></figure><p></p>
+
+<h4 id="cn-m26-202"><b><i>Step 30</i></b></h4>
+
+<p id="cn-m26-203">Using the <b>up </b>and <b>down </b>arrows on your keyboard, select the <b>Your name: </b>option and type:</p>
+
+<pre id="cn-m26-204"><code>ubuntu
+
+</code></pre>
+
+<p id="cn-m26-205">Using the <b>up </b>and <b>down </b>arrows on your keyboard, select the <b>Your server’s name: </b>option and type:</p>
+
+<pre id="cn-m26-206"><code>ubuntu00
+
+</code></pre>
+
+<p id="cn-m26-207">Using the <b>up </b>and <b>down </b>arrows on your keyboard, select the <b>Pick a username: </b>option and type:</p>
+
+<pre id="cn-m26-208"><code>ubuntu
+
+</code></pre>
+
+<p id="cn-m26-209">Using the <b>up </b>and <b>down </b>arrows on your keyboard, select the <b>Choose a password: </b>option and type:</p>
+
+<pre id="cn-m26-210"><code><span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m26-211">Using the <b>up </b>and <b>down </b>arrows on your keyboard, select the <b>Confirm your password: </b>option and type:</p>
+
+<pre id="cn-m26-212"><code><span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m26-213">Use the <b>down arrow </b>key and select <b>Done</b>.</p>
+
+<p id="cn-m26-214">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-215"></p><figure><img class="cn-img" id="cn-image-m26-c-29" src="CloudDisasterRecoveryConcepts_files/image-m26-c-29.jpg" alt="Figure 1.30 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window on the Profile setup page. The user credentials have been entered, and the Done button is highlighted."><figcaption>Figure
+ 1.30 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window on the Profile setup page. The user credentials have been 
+entered, and the Done button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-217"><b><i>Step 31</i></b></h4>
+
+<p id="cn-m26-218">Using the <b>up </b>and <b>down </b>arrows on your keyboard select <b>Install OpenSSH Server </b>by highlighting it and pressing <b>spacebar </b>so there is an <b>X </b>to the left.</p>
+
+<p id="cn-m26-219">Then, use the <b>down arrow </b>button to select <b>Done</b>.</p>
+
+<p id="cn-m26-220"><b> </b>Press <b>Enter</b>.</p>
+
+<p id="cn-m26-221"></p><figure><img class="cn-img" id="cn-image-m26-c-30" src="CloudDisasterRecoveryConcepts_files/image-m26-c-30.jpg" alt="Figure 1.31 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window on the SSH Setup page. The Done button is highlighted."><figcaption>Figure
+ 1.31 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window on the SSH Setup page. The Done button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-223"><b><i>Step 32</i></b></h4>
+
+<p id="cn-m26-224">Using the <b>up </b>and <b>down </b>arrows on your keyboard, select <b>Done</b>.</p>
+
+<p id="cn-m26-225">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-226"></p><figure><img class="cn-img" id="cn-image-m26-c-31" src="CloudDisasterRecoveryConcepts_files/image-m26-c-31.jpg" alt="Figure 1.32 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window on the Featured Server Snaps page. The Done button is highlighted."><figcaption>Figure
+ 1.32 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window on the Featured Server Snaps page. The Done button is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-228"><b><i>Step 33</i></b></h4>
+
+<p id="cn-m26-229">You will now see the <b>Installing system </b>screen showing the installation process.</p>
+
+<p id="cn-m26-230"></p><figure><img class="cn-img" id="cn-image-m26-c-32" src="CloudDisasterRecoveryConcepts_files/image-m26-c-32.jpg" alt="Figure 1.33 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window on the Installing system page. The installation is in progress."><figcaption>Figure
+ 1.33 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window on the Installing system page. The installation is in progress.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-232"><b><i>Step 34</i></b></h4>
+
+<p id="cn-m26-233">Once the installation process has completed, use the <b>up </b>and <b>down </b>arrows on your keyboard and select <b>Reboot Now</b>.</p>
+
+<p id="cn-m26-234">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-235"></p><figure><img class="cn-img" id="cn-image-m26-c-33" src="CloudDisasterRecoveryConcepts_files/image-m26-c-33.jpg" alt="Figure 1.34 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window on the Installing complete! page. Reboot now is highlighted."><figcaption>Figure
+ 1.34 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window on the Installing complete! page. Reboot now is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-237"><b><i>Step 35</i></b></h4>
+
+<p id="cn-m26-238">You will see the system go through the process of rebooting.</p>
+
+<p id="cn-m26-240"></p><figure><img class="cn-img" id="cn-image-m26-c-34" src="CloudDisasterRecoveryConcepts_files/image-m26-c-34.jpg" alt="Figure 1.35 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The system is rebooting."><figcaption>Figure 1.35 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The system is rebooting.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-242"><b><i>Step 36</i></b></h4>
+
+<p id="cn-m26-243">Once you see <b>Please remove the installation medium, then press ENTER: </b>at the bottom of the screen, press <b>Enter</b>.</p>
+
+<p id="cn-m26-245"></p><figure><img class="cn-img" id="cn-image-m26-c-35" src="CloudDisasterRecoveryConcepts_files/image-m26-c-35.jpg" alt="Figure 1.36 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. Enter has been executed on the Please remove installation medium message."><figcaption>Figure
+ 1.36 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window. Enter has been executed on the Please remove installation medium
+ message.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-247"><b><i>Step 37</i></b></h4>
+
+<p id="cn-m26-248">You will see the server begin to start up again.</p>
+
+<p id="cn-m26-250"></p><figure><img class="cn-img" id="cn-image-m26-c-36" src="CloudDisasterRecoveryConcepts_files/image-m26-c-36.jpg" alt="Figure 1.37 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The installation is in progress."><figcaption>Figure 1.37 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The installation is in progress.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-252"><b><i>Step 38</i></b></h4>
+
+<p id="cn-m26-253">Once the server finishes booting, and you see the prompt <b>ubuntu00 login</b>:, type the following:</p>
+
+<pre id="cn-m26-254"><code>ubuntu
+
+</code></pre>
+
+<p id="cn-m26-255">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-257"></p><figure><img class="cn-img" id="cn-image-m26-c-37" src="CloudDisasterRecoveryConcepts_files/image-m26-c-37.jpg" alt="Figure 1.38 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. Ubuntu has been entered in the Login field."><figcaption>Figure 1.38 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. Ubuntu has been entered in the Login field.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-259"><b><i>Step 39</i></b></h4>
+
+<p id="cn-m26-260">Once the server finishes booting and you see the prompt <b>Password</b>:, type the following:</p>
+
+<pre id="cn-m26-261"><code><span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m26-264"></p><figure><img class="cn-img" id="cn-image-m26-c-38" src="CloudDisasterRecoveryConcepts_files/image-m26-c-38.jpg" alt="Figure 1.39 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The password has been entered in the Password field."><figcaption>Figure
+ 1.39 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window. The password has been entered in the Password field.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-266"><b><i>Step 40</i></b></h4>
+
+<p id="cn-m26-267">You will now see a prompt that says <b>ubuntu@ubuntu00</b>:~$.</p>
+
+<p id="cn-m26-269"></p><figure><img class="cn-img" id="cn-image-m26-c-39" src="CloudDisasterRecoveryConcepts_files/image-m26-c-39.jpg" alt="Figure 1.40 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The device has been configured."><figcaption>Figure 1.40 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The device has been configured.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m26-271">Keep <b>PLABDM01 </b>in its current state for the next task.</span>
+
+<h3 id="cn-m26-273"><b>Task 2 - Configure Network Settings</b></h3>
+
+<p id="cn-m26-274">In this task you will configure the network settings 
+of the. You will then test to make sure you are able to pass traffic to 
+and from the VM.</p>
+
+<h4 id="cn-m26-275"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m26-276">Ensure you are connected to <b>PLABDM01</b>.</p>
+
+<p id="cn-m26-277">Once you see a prompt that says <b>ubuntu@ubuntu00</b>:~$, type the following:</p>
+
+<pre id="cn-m26-278"><code>cd /etc/netplan
+
+</code></pre>
+
+<p id="cn-m26-279">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-281"></p><figure><img class="cn-img" id="cn-image-m26-c-40" src="CloudDisasterRecoveryConcepts_files/image-m26-c-40.jpg" alt="Figure 1.41 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The netplan command has been executed."><figcaption>Figure 1.41 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The netplan command has been executed.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-283"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m26-284">Type the following:</p>
+
+<pre id="cn-m26-285"><code>ls
+
+</code></pre>
+
+<p id="cn-m26-286">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-287"></p><figure><img class="cn-img" id="cn-image-m26-c-41" src="CloudDisasterRecoveryConcepts_files/image-m26-c-41.jpg" alt="Figure 1.42 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The ls command has been executed."><figcaption>Figure 1.42 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The ls command has been executed.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-289"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m26-290">The prompt will return the name of a file, this name will be used in this steps command.</p>
+
+<p id="cn-m26-291">In our example here, it returned <b>00-installer-config.yaml</b>.</p>
+
+<p id="cn-m26-292">Use the name returned for you for the last part of the command.</p>
+
+<p id="cn-m26-293">Replace the <b>xx-xx-xx </b>with your file name details and type:</p>
+
+<pre id="cn-m26-294"><code>sudo nano xx-xx-xx
+
+</code></pre>
+
+<p id="cn-m26-295">So it should look like this <b>sudo nano 00-installer-config.yaml</b></p>
+
+<p id="cn-m26-296">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m26-297"><b><i>Note</i></b><i>: If you are asked for a password, use the password you setup, </i><span class="cn-password"><b><i>Passw0rd</i></b></span></span>
+
+<p id="cn-m26-298"></p><figure><img class="cn-img" id="cn-image-m26-c-42" src="CloudDisasterRecoveryConcepts_files/image-m26-c-42.jpg" alt="Figure 1.43 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The nano command has been executed."><figcaption>Figure 1.43 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The nano command has been executed.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-300"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m26-301">Now you will see the contents of the file.</p>
+
+<p id="cn-m26-302"></p><figure><img class="cn-img" id="cn-image-m26-c-43" src="CloudDisasterRecoveryConcepts_files/image-m26-c-43.jpg" alt="Figure 1.44 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The file contents is displayed."><figcaption>Figure 1.44 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The file contents is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-304"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m26-305">Using the <b>up </b>and <b>down </b>arrows of your keyboard navigate to the <b>dhcp4: </b>field and delete <b>true </b>and, make sure you leave a space after <b>dhcp4</b>. Type:</p>
+
+<pre id="cn-m26-306"><code>false
+
+</code></pre>
+
+<p id="cn-m26-307">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-308">Then press the <b>Tab </b>key until the cursor is below and aligned with the <b>d </b>of <b>dhcp4</b>. Type:</p>
+
+<pre id="cn-m26-309"><code>addresses: [192.168.0.10/24]
+
+</code></pre>
+
+<p id="cn-m26-310">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-311">Then press the <b>Tab </b>key until the cursor is below and aligned with the <b>a </b>of <b>addresses:. </b>Type:</p>
+
+<pre id="cn-m26-312"><code>gateway4: 192.168.0.250
+
+</code></pre>
+
+<p id="cn-m26-313">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-314">Then press the <b>Tab </b>key until the cursor is below and aligned with the <b>g </b>of <b>gateway4</b>:. Type:</p>
+
+<pre id="cn-m26-315"><code>nameservers:
+
+</code></pre>
+
+<p id="cn-m26-316">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-317">Then press the <b>Tab </b>key until the cursor is below and aligned with the <b>m </b>of <b>nameservers</b>:. Type:</p>
+
+<pre id="cn-m26-318"><code>addresses: [8.8.8.8,4.2.2.2]
+
+</code></pre>
+
+<p id="cn-m26-319">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-320"></p><figure><img class="cn-img" id="cn-image-m26-c-44" src="CloudDisasterRecoveryConcepts_files/image-m26-c-44.jpg" alt="Figure 1.45 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The network config file is displayed."><figcaption>Figure 1.45 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The network config file is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-322"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m26-323">On your keyboard press key-combination of <b>CTRL+X</b>, you will be asked <b>Save modified buffer?</b></p>
+
+<p id="cn-m26-324">Press the <b>Y </b>button on your keyboard.</p>
+
+<p id="cn-m26-325"></p><figure><img class="cn-img" id="cn-image-m26-c-45" src="CloudDisasterRecoveryConcepts_files/image-m26-c-45.jpg" alt="Figure 1.46 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The network config file is displayed. The Y key has been executed."><figcaption>Figure
+ 1.46 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window. The network config file is displayed. The Y key has been 
+executed.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-327"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m26-328">You will see <b>File Name to Write: 00-installer-config.yaml</b>.</p>
+
+<p id="cn-m26-329">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-331"></p><figure><img class="cn-img" id="cn-image-m26-c-46" src="CloudDisasterRecoveryConcepts_files/image-m26-c-46.jpg" alt="Figure 1.47 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The network config file is displayed. The Enter key has been executed."><figcaption>Figure
+ 1.47 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window. The network config file is displayed. The Enter key has been 
+executed.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-333"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m26-334">You will now be back at the <b>ubuntu@ubuntu00:/etc/netplan$ </b>prompt.</p>
+
+<p id="cn-m26-335">From the <b>ubuntu@ubuntu00:/etc/netplan$ </b>prompt, type:</p>
+
+<pre id="cn-m26-336"><code>sudo netplan apply
+
+</code></pre>
+
+<p id="cn-m26-337">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-338"></p><figure><img class="cn-img" id="cn-image-m26-c-47" src="CloudDisasterRecoveryConcepts_files/image-m26-c-47.jpg" alt="Figure 1.48 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The sudo netplan apply command has been typed into the console."><figcaption>Figure
+ 1.48 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window. The sudo netplan apply command has been typed into the console.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-340"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m26-341">You will be back at <b>ubuntu@ubuntu00:/etc/netplan$ </b>prompt and see the changes have been made. Type:</p>
+
+<pre id="cn-m26-342"><code>ip a
+
+</code></pre>
+
+<p id="cn-m26-343">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-344"></p><figure><img class="cn-img" id="cn-image-m26-c-48" src="CloudDisasterRecoveryConcepts_files/image-m26-c-48.jpg" alt="Figure 1.49 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The ip a command has been typed into the console."><figcaption>Figure
+ 1.49 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window. The ip a command has been typed into the console.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-346"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m26-347">You will see the IP address of <b>192.168.0.10/24 </b>listed for <b>eth0</b>, this confirms our configuration changes were successful.</p>
+
+<p id="cn-m26-348"></p><figure><img class="cn-img" id="cn-image-m26-c-49" src="CloudDisasterRecoveryConcepts_files/image-m26-c-49.jpg" alt="Figure 1.50 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The 192.168.0.4 IP address is displayed listed for eth0."><figcaption>Figure
+ 1.50 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 
+window. The 192.168.0.4 IP address is displayed listed for eth0.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-350"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m26-351">Now close out of the connection to <b>ubuntu00</b>. Click on the <b>X </b>button on the right-side of the blue bar.</p>
+
+<p id="cn-m26-352"></p><figure><img class="cn-img" id="cn-image-m26-c-50" src="CloudDisasterRecoveryConcepts_files/image-m26-c-50.jpg" alt="Figure 1.51 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The Close button is highlighted."><figcaption>Figure 1.51 Screenshot of PLABDM01: Displaying the ubtuntu00 on PLABDM01 window. The Close button is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-354"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m26-355">Right-click the <b>Start </b>icon and type:</p>
+
+<pre id="cn-m26-356"><code>command prompt
+
+</code></pre>
+
+<p id="cn-m26-357">From the <b>Best match </b>results, select <b>Command Prompt</b>.</p>
+
+<p id="cn-m26-358"></p><figure><img class="cn-img" id="cn-image-m26-c-51" src="CloudDisasterRecoveryConcepts_files/image-m26-c-51.jpg" alt="Figure 1.52 Screenshot of PLABDM01: Displaying the search menu. Command Prompt is highlighted."><figcaption>Figure 1.52 Screenshot of PLABDM01: Displaying the search menu. Command Prompt is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-360"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m26-361">From the <b>Administrator: Command Prompt </b>window, type:</p>
+
+<pre id="cn-m26-362"><code>ssh ubuntu@192.168.0.10
+
+</code></pre>
+
+<p id="cn-m26-363">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-364"></p><figure><img class="cn-img" id="cn-image-m26-c-52" src="CloudDisasterRecoveryConcepts_files/image-m26-c-52.jpg" alt="Figure 1.54 Screenshot of PLABDM01: Displaying the Administration Command Prompt window. The SSH command has been typed into the console."><figcaption>Figure
+ 1.54 Screenshot of PLABDM01: Displaying the Administration Command 
+Prompt window. The SSH command has been typed into the console.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-366"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m26-367">When asked to continue, type:</p>
+
+<pre id="cn-m26-368"><code>yes
+
+</code></pre>
+
+<p id="cn-m26-369">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-370"></p><figure><img class="cn-img" id="cn-image-m26-c-53" src="CloudDisasterRecoveryConcepts_files/image-m26-c-53.jpg" alt="Figure 1.55 Screenshot of PLABDM01: Displaying the Administration Command Prompt window. The yes/no prompt is shown."><figcaption>Figure 1.55 Screenshot of PLABDM01: Displaying the Administration Command Prompt window. The yes/no prompt is shown.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-372"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m26-373">When asked for the password, type:</p>
+
+<pre id="cn-m26-374"><code><span class="cn-password">Passw0rd</span>
+
+</code></pre>
+
+<p id="cn-m26-375">Press <b>Enter</b>.</p>
+
+<p id="cn-m26-376"></p><figure><img class="cn-img" id="cn-image-m26-c-54" src="CloudDisasterRecoveryConcepts_files/image-m26-c-54.jpg" alt="Figure 1.56 Screenshot of PLABDM01: Displaying the Administration Command Prompt window. The password has been typed into the console."><figcaption>Figure
+ 1.56 Screenshot of PLABDM01: Displaying the Administration Command 
+Prompt window. The password has been typed into the console.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-378"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m26-379">You will now see the command prompt change to <b>ubuntu@ubuntu00</b>:~$.</p>
+
+<p id="cn-m26-380">This means you have successfully logged into the <b>ubuntu00 </b>server.</p>
+
+<p id="cn-m26-381"></p><figure><img class="cn-img" id="cn-image-m26-c-55" src="CloudDisasterRecoveryConcepts_files/image-m26-c-55.jpg" alt="Figure 1.57 Screenshot of PLABDM01: Displaying the Administration Command Prompt window. The SSH command has been successfully established."><figcaption>Figure
+ 1.57 Screenshot of PLABDM01: Displaying the Administration Command 
+Prompt window. The SSH command has been successfully established.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-383"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m26-384">Type:</p>
+
+<pre id="cn-m26-385"><code>ping 8.8.8.8
+
+</code></pre>
+
+<p id="cn-m26-386">Press <b>Enter</b>.</p>
+
+<span class="cn-quote" id="cn-m26-387"><b><i>Note</i></b><i>: Once you have confirmed you are getting replies you can now close the command prompt window by clicking on the </i><b><i>X </i></b><i>at the top right of the window.</i></span>
+
+<p id="cn-m26-389"></p><figure><img class="cn-img" id="cn-image-m26-c-56" src="CloudDisasterRecoveryConcepts_files/image-m26-c-56.jpg" alt="Figure 1.58 Screenshot of PLABDM01: Displaying the Administration Command Prompt window. The ping command has been executed."><figcaption>Figure 1.58 Screenshot of PLABDM01: Displaying the Administration Command Prompt window. The ping command has been executed.</figcaption></figure><p></p>
+
+<span class="cn-alert" id="cn-m26-391">Keep <b>PLABDM01 </b>in its current state for the next task.</span>
+
+<h3 id="cn-m26-392"><b>Task 3 - Replicate and Deploy a copy of the VM</b></h3>
+
+<p id="cn-m26-393">In this task you will create a copy of the virtual 
+machine you just setup and then deploy the copy of the virtual machine 
+you created.</p>
+
+<h4 id="cn-m26-394"><b><i>Step 1</i></b></h4>
+
+<p id="cn-m26-395">Ensure you are connected to <b>PLABDM01</b>.</p>
+
+<p id="cn-m26-396">From the <b>Hyper-V Manager </b>window right-click on <b>ubuntu00 </b>and select <b>Shut Down</b>.</p>
+
+<p id="cn-m26-398"></p><figure><img class="cn-img" id="cn-image-m26-c-57" src="CloudDisasterRecoveryConcepts_files/image-m26-c-57.jpg" alt="Figure 1.59 Screenshot of PLABDM01: Displaying the Hyper-V Manager window, and ubuntu00 has been right clicked. Shut down is highlighted in the context menu."><figcaption>Figure
+ 1.59 Screenshot of PLABDM01: Displaying the Hyper-V Manager window, and
+ ubuntu00 has been right clicked. Shut down is highlighted in the 
+context menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-400"><b><i>Step 2</i></b></h4>
+
+<p id="cn-m26-401">Once the <b>State </b>of <b>ubuntu00 </b>changes to off you can now right-click on <b>ubuntu00 </b>and select <b>Export</b>.</p>
+
+<p id="cn-m26-402"></p><figure><img class="cn-img" id="cn-image-m26-c-58" src="CloudDisasterRecoveryConcepts_files/image-m26-c-58.jpg" alt="Figure 1.60 Screenshot of PLABDM01: Displaying the Hyper-V Manager window, and ubuntu00 has been right clicked. Export is highlighted in the context menu."><figcaption>Figure
+ 1.60 Screenshot of PLABDM01: Displaying the Hyper-V Manager window, and
+ ubuntu00 has been right clicked. Export is highlighted in the context 
+menu.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-404"><b><i>Step 3</i></b></h4>
+
+<p id="cn-m26-405">From the <b>Export Virtual Machine </b>window, click <b>Browse</b>.</p>
+
+<p id="cn-m26-406"></p><figure><img class="cn-img" id="cn-image-m26-c-59" src="CloudDisasterRecoveryConcepts_files/image-m26-c-59.jpg" alt="Figure 1.61 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The Export Virtual Machine pop-up is displayed, and the Browse button is highlighted."><figcaption>Figure
+ 1.61 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The
+ Export Virtual Machine pop-up is displayed, and the Browse button is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-408"><b><i>Step 4</i></b></h4>
+
+<p id="cn-m26-409">From the <b>Select Folder </b>dialog box, on the left pane, select <b>Desktop</b>, then, click <b>Select Folder</b>.</p>
+
+<p id="cn-m26-410"></p><figure><img class="cn-img" id="cn-image-m26-c-60" src="CloudDisasterRecoveryConcepts_files/image-m26-c-60.jpg" alt="Figure 1.62 Screenshot of PLABDM01: Displaying the File Explorer window. The Desktop folder is displayed, and Select Folder is highlighted."><figcaption>Figure
+ 1.62 Screenshot of PLABDM01: Displaying the File Explorer window. The 
+Desktop folder is displayed, and Select Folder is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-412"><b><i>Step 5</i></b></h4>
+
+<p id="cn-m26-413">When you see the <b>Export Virtual Machine </b>window, click <b>Export</b>.</p>
+
+<p id="cn-m26-414"></p><figure><img class="cn-img" id="cn-image-m26-c-61" src="CloudDisasterRecoveryConcepts_files/image-m26-c-61.jpg" alt="Figure 1.63 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The Export Virtual Machine pop-up is displayed, and the Export button is highlighted."><figcaption>Figure
+ 1.63 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The
+ Export Virtual Machine pop-up is displayed, and the Export button is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-416"><b><i>Step 6</i></b></h4>
+
+<p id="cn-m26-417">You will now see the exported virtual machine folder named <b>ubuntu00 </b>appear on the desktop.</p>
+
+<p id="cn-m26-418">From the <b>Hyper-V Manager </b>in the <b>Actions </b>pane, click <b>Import Virtual Machine</b>.</p>
+
+<p id="cn-m26-420"></p><figure><img class="cn-img" id="cn-image-m26-c-62" src="CloudDisasterRecoveryConcepts_files/image-m26-c-62.jpg" alt="Figure 1.64 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The Import Virtual Machine option is highlighted."><figcaption>Figure 1.64 Screenshot of PLABDM01: Displaying the Hyper-V Manager window. The Import Virtual Machine option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-422"><b><i>Step 7</i></b></h4>
+
+<p id="cn-m26-423">When you see the <b>Import Virtual Machine </b>window, click <b>Next</b>.</p>
+
+<p id="cn-m26-424"></p><figure><img class="cn-img" id="cn-image-m26-c-63" src="CloudDisasterRecoveryConcepts_files/image-m26-c-63.jpg" alt="Figure 1.65 Screenshot of PLABDM01: Displaying the Import Virtual Machine window. Next is highlighted."><figcaption>Figure 1.65 Screenshot of PLABDM01: Displaying the Import Virtual Machine window. Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-426"><b><i>Step 8</i></b></h4>
+
+<p id="cn-m26-427">Click <b>Browse</b>.</p>
+
+<p id="cn-m26-429"></p><figure><img class="cn-img" id="cn-image-m26-c-64" src="CloudDisasterRecoveryConcepts_files/image-m26-c-64.jpg" alt="Figure 1.66 Screenshot of PLABDM01: Displaying the Import Virtual Machine window. Browse is highlighted."><figcaption>Figure 1.66 Screenshot of PLABDM01: Displaying the Import Virtual Machine window. Browse is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-431"><b><i>Step 9</i></b></h4>
+
+<p id="cn-m26-432">From the <b>Select Folder </b>dialog box, on the left pane, select <b>Desktop</b>, then, click <b>Select Folder</b>.</p>
+
+<p id="cn-m26-433"></p><figure><img class="cn-img" id="cn-image-m26-c-65" src="CloudDisasterRecoveryConcepts_files/image-m26-c-65.jpg" alt="Figure 1.67 Screenshot of PLABDM01: Displaying the File Explorer window. The ubuntu00 folder is selected inside of the Desktop directory. Select Folder is highlighted."><figcaption>Figure
+ 1.67 Screenshot of PLABDM01: Displaying the File Explorer window. The 
+ubuntu00 folder is selected inside of the Desktop directory. Select 
+Folder is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-435"><b><i>Step 10</i></b></h4>
+
+<p id="cn-m26-436">Click <b>Next</b>.</p>
+
+<p id="cn-m26-437"></p><figure><img class="cn-img" id="cn-image-m26-c-66" src="CloudDisasterRecoveryConcepts_files/image-m26-c-66.jpg" alt="Figure 1.68 Screenshot of PLABDM01: Displaying the Import Virtual Machine window. Next is highlighted on the Locate Folder page."><figcaption>Figure 1.68 Screenshot of PLABDM01: Displaying the Import Virtual Machine window. Next is highlighted on the Locate Folder page.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-439"><b><i>Step 11</i></b></h4>
+
+<p id="cn-m26-440">From the <b>Select a virtual machine to import</b>, select <b>ubuntu00</b>.</p>
+
+<p id="cn-m26-441">Click <b>Next</b>.</p>
+
+<p id="cn-m26-442"></p><figure><img class="cn-img" id="cn-image-m26-c-67" src="CloudDisasterRecoveryConcepts_files/image-m26-c-67.jpg" alt="Figure 1.69 Screenshot of PLABDM01: Displaying the Import Virtual Machine window. Next is highlighted on the Select Virtual Machine page."><figcaption>Figure
+ 1.69 Screenshot of PLABDM01: Displaying the Import Virtual Machine 
+window. Next is highlighted on the Select Virtual Machine page.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-444"><b><i>Step 12</i></b></h4>
+
+<p id="cn-m26-445">Under <b>Choose the type of import to perform</b>, select <b>Copy the virtual machine</b>.</p>
+
+<p id="cn-m26-446">Click <b>Next</b>.</p>
+
+<p id="cn-m26-447"></p><figure><img class="cn-img" id="cn-image-m26-c-68" src="CloudDisasterRecoveryConcepts_files/image-m26-c-68.jpg" alt="Figure 1.70 Screenshot of PLABDM01: Displaying the Import Virtual Machine window, and the Choose Import Type page is displayed. Copy has been selected, and Next is highlighted."><figcaption>Figure
+ 1.70 Screenshot of PLABDM01: Displaying the Import Virtual Machine 
+window, and the Choose Import Type page is displayed. Copy has been 
+selected, and Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-449"><b><i>Step 13</i></b></h4>
+
+<p id="cn-m26-450">Click <b>Next</b>.</p>
+
+<p id="cn-m26-452"></p><figure><img class="cn-img" id="cn-image-m26-c-69" src="CloudDisasterRecoveryConcepts_files/image-m26-c-69.jpg" alt="Figure 1.71 Screenshot of PLABDM01: Displaying the Import Virtual Machine window, and the Choose Folders for Virtual Machine Files page is displayed. Next is highlighted."><figcaption>Figure
+ 1.71 Screenshot of PLABDM01: Displaying the Import Virtual Machine 
+window, and the Choose Folders for Virtual Machine Files page is 
+displayed. Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-454"><b><i>Step 14</i></b></h4>
+
+<p id="cn-m26-455">From the <b>Choose Folders for to Store Virtual Hard Drives </b>window, click <b>Browse</b>.</p>
+
+<p id="cn-m26-456"></p><figure><img class="cn-img" id="cn-image-m26-c-70" src="CloudDisasterRecoveryConcepts_files/image-m26-c-70.jpg" alt="Figure 1.72 Screenshot of PLABDM01: Displaying the Import Virtual Machine window, and the Choose Folders to Store Virtual Hard Disks page is displayed. Browse is highlighted."><figcaption>Figure
+ 1.72 Screenshot of PLABDM01: Displaying the Import Virtual Machine 
+window, and the Choose Folders to Store Virtual Hard Disks page is 
+displayed. Browse is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-458"><b><i>Step 15</i></b></h4>
+
+<p id="cn-m26-459">From the <b>Select Folder </b>box, right-click in the window and select <b>New &gt; Folder</b>.</p>
+
+<p id="cn-m26-461"></p><figure><img class="cn-img" id="cn-image-m26-c-71" src="CloudDisasterRecoveryConcepts_files/image-m26-c-71.jpg" alt="Figure 1.73 Screenshot of PLABDM01: Displaying the File Explorer window. The New &amp;gt; Folder context menu is displayed."><figcaption>Figure 1.73 Screenshot of PLABDM01: Displaying the File Explorer window. The New &gt; Folder context menu is displayed.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-463"><b><i>Step 16</i></b></h4>
+
+<p id="cn-m26-464">Rename the <b>New folder </b>to:</p>
+
+<pre id="cn-m26-465"><code>ubuntu01
+
+</code></pre>
+
+<p id="cn-m26-466">Select the <b>ubuntu01 </b>folder, then click <b>Select Folder</b>.</p>
+
+<p id="cn-m26-468"></p><figure><img class="cn-img" id="cn-image-m26-c-72" src="CloudDisasterRecoveryConcepts_files/image-m26-c-72.jpg" alt="Figure 1.74 Screenshot of PLABDM01: Displaying the File Explorer window. The ubuntu01 folder is selected, and Select Folder is highlighted."><figcaption>Figure
+ 1.74 Screenshot of PLABDM01: Displaying the File Explorer window. The 
+ubuntu01 folder is selected, and Select Folder is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-470"><b><i>Step 17</i></b></h4>
+
+<p id="cn-m26-471">Click <b>Next</b>.</p>
+
+<p id="cn-m26-472"></p><figure><img class="cn-img" id="cn-image-m26-c-73" src="CloudDisasterRecoveryConcepts_files/image-m26-c-73.jpg" alt="Figure 1.75 Screenshot of PLABDM01: Displaying the Import Virtual Machine window. The Choose Folders to Store Virtual Hard Disks page is displayed, and Next is highlighted."><figcaption>Figure
+ 1.75 Screenshot of PLABDM01: Displaying the Import Virtual Machine 
+window. The Choose Folders to Store Virtual Hard Disks page is 
+displayed, and Next is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-474"><b><i>Step 18</i></b></h4>
+
+<p id="cn-m26-475">Click <b>Finish</b>.</p>
+
+<p id="cn-m26-476"></p><figure><img class="cn-img" id="cn-image-m26-c-74" src="CloudDisasterRecoveryConcepts_files/image-m26-c-74.jpg" alt="Figure 1.76 Screenshot of PLABDM01: Displaying the Import Virtual Machine window. The Completing Import Wizard page is displayed, and Finish is highlighted."><figcaption>Figure
+ 1.76 Screenshot of PLABDM01: Displaying the Import Virtual Machine 
+window. The Completing Import Wizard page is displayed, and Finish is 
+highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-478"><b><i>Step 19</i></b></h4>
+
+<p id="cn-m26-479">You will see the import process start.</p>
+
+<p id="cn-m26-481"></p><figure><img class="cn-img" id="cn-image-m26-c-75" src="CloudDisasterRecoveryConcepts_files/image-m26-c-75.jpg" alt="Figure 1.77 Screenshot of PLABDM01: Displaying the Import Virtual Machine window. The creation process is in progress."><figcaption>Figure 1.77 Screenshot of PLABDM01: Displaying the Import Virtual Machine window. The creation process is in progress.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-483"><b><i>Step 20</i></b></h4>
+
+<p id="cn-m26-484">You will now see two virtual machines named <b>ubuntu00</b>.</p>
+
+<p id="cn-m26-485">Right-click on the second virtual machine and select <b>Rename</b>.</p>
+
+<p id="cn-m26-487"></p><figure><img class="cn-img" id="cn-image-m26-c-76" src="CloudDisasterRecoveryConcepts_files/image-m26-c-76.jpg" alt="Figure 1.78 Screenshot of PLABDM01: Displaying the Hyper-V window. ubuntu00 has been selected, and the Rename option is highlighted."><figcaption>Figure
+ 1.78 Screenshot of PLABDM01: Displaying the Hyper-V window. ubuntu00 
+has been selected, and the Rename option is highlighted.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-489"><b><i>Step 21</i></b></h4>
+
+<p id="cn-m26-490">Rename the virtual machine to:</p>
+
+<pre id="cn-m26-491"><code>ubuntu01
+
+</code></pre>
+
+<p id="cn-m26-493"></p><figure><img class="cn-img" id="cn-image-m26-c-77" src="CloudDisasterRecoveryConcepts_files/image-m26-c-77.jpg" alt="Figure 1.79 Screenshot of PLABDM01: Displaying the Hyper-V window. ubuntu00 has been renamed to ubuntu01."><figcaption>Figure 1.79 Screenshot of PLABDM01: Displaying the Hyper-V window. ubuntu00 has been renamed to ubuntu01.</figcaption></figure><p></p>
+
+<h4 id="cn-m26-495"><b><i>Step 22</i></b></h4>
+
+<p id="cn-m26-496">You now have a backup of the virtual machine and can create more copies as and when required.</p>
+
+<p id="cn-m26-498"></p><figure><img class="cn-img" id="cn-image-m26-c-78" src="CloudDisasterRecoveryConcepts_files/image-m26-c-78.jpg" alt="Figure 1.80 Screenshot of PLABDM01: Displaying the Hyper-V window."><figcaption>Figure 1.80 Screenshot of PLABDM01: Displaying the Hyper-V window.</figcaption></figure><p></p>
+
+<span class="atom-code hidden">7d0ac9fb-5de8-4057-8699-2545ccd83fb6</span>
+
+<span class="atom-code hidden">36a80a43-58e4-4dfa-97ab-46b89bcce4fa</span>
+
+<span class="cn-alert" id="cn-m26-504">Keep all devices that you have powered on in their current state and proceed to the review section.</span>
+
+<div class="print-exercise-break"></div><h2 class="exercise-title" id="cn-m26-505"><b>Review</b></h2>
+
+<p id="cn-m26-506">Well done, you have completed the <b>Cloud Disaster Recovery Concepts </b>Practice Lab.</p>
+
+<span class="atom-code hidden">ea452c71-a7f4-48a7-8201-8572916f3b62</span>
+
+<span class="atom-code hidden">868c745f-fffe-4118-88ce-9960ec09adb4</span>
+
+<span class="atom-code hidden">19182455-2ba8-401c-a57a-a8248d4f2eb7</span>
+
+<span class="atom-code hidden">95c5f788-316b-4ae4-af87-6271c2e297ea</span>
+
+<span class="atom-code hidden">aaaaaaaa-1111-1111-1111-193f35a24fe3</span>
+
+<h2 class="cn-summary"><b>Summary</b></h2>
+
+<p id="cn-m26-516">You completed the following exercises:</p>
+
+<ul id="cn-m26-517">
+
+<li id="cn-m26-517">Exercise 1 - Deploying, Configuring, and Replicating VMs in Hyper-V Manager</li>
+
+</ul>
+
+<p id="cn-m26-518">You should now be able to:</p>
+
+<ul id="cn-m26-519">
+
+<li id="cn-m26-519">Explain disaster recovery tasks and concepts that 
+include failovers, failback, restore backups, replication, network 
+configurations, on-premise and cloud sites, requirements, documentation,
+ and geographical datacenter requirements.</li>
+
+<li id="cn-m26-520">Explain the concepts used for disaster recovery tasks.</li>
+
+</ul>
+
+<h2 class="cn-feedback"><b>Feedback</b></h2>
+
+<span class="atom-code hidden">067744a4-4299-4662-b5be-04dbb636a007</span>
+
+<span class="cn-alert" id="cn-m26-525">Shutdown all virtual machines used in this lab. Alternatively, you can log out of the lab platform.</span>
+
+
+                </div>
+            </div>
+        
+</div>
+    </div>
+    </form>
+
+
+</body></html>
